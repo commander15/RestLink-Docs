@@ -1,10 +1,16 @@
 var searchData=
 [
-  ['unsetheader_90',['unsetHeader',['../class_rest_link_1_1_request_interface.html#a5b3710603e7ef336a4027c3dba5290ee',1,'RestLink::RequestInterface']]],
-  ['unsetpathparameter_91',['unsetPathParameter',['../class_rest_link_1_1_request_interface.html#a7191df764b66b90331b6f28aba05b640',1,'RestLink::RequestInterface']]],
-  ['unsetqueryparameter_92',['unsetQueryParameter',['../class_rest_link_1_1_request_interface.html#aba421b7a9ed5aa204a71e48bc475c9f0',1,'RestLink::RequestInterface']]],
-  ['updatemetadata_93',['updateMetaData',['../class_rest_link_1_1_cache.html#ac82cf1e4eed956577f1fc38b80dd192b',1,'RestLink::Cache']]],
-  ['url_94',['url',['../class_rest_link_1_1_api.html#a73ee1a5b8223b05dd382688376b3d99c',1,'RestLink::Api::url()'],['../class_rest_link_1_1_response.html#a3967ddaae9ffaa9b272aa897873f5ff5',1,'RestLink::Response::url()']]],
-  ['urlpath_95',['urlPath',['../class_rest_link_1_1_request.html#a8d463f4779bd11981443a3e8631a7a4f',1,'RestLink::Request']]],
-  ['useragent_96',['userAgent',['../class_rest_link_1_1_api.html#aad8c42de0fc2fd62afdabdf231680d6a',1,'RestLink::Api::userAgent()'],['../class_rest_link_1_1_api.html#a4af630e5fdebfa82c13a0c8e6c6eaa6c',1,'RestLink::Api::userAgent() const override'],['../class_rest_link_1_1_api_base.html#a0682831b71c6f4d60a32a423d946e7a2',1,'RestLink::ApiBase::userAgent()']]]
+  ['readbody_0',['readBody',['../class_rest_link_1_1_response.html#a0f2fe88b9d5913ce80fc81af711f4a4d',1,'RestLink::Response']]],
+  ['readjson_1',['readJson',['../class_rest_link_1_1_response.html#afa86f8cd94fcf5f90e7df7ad93422884',1,'RestLink::Response']]],
+  ['readjsonarray_2',['readJsonArray',['../class_rest_link_1_1_response.html#aff8d31ed0458cd868db5c43d671dcad6',1,'RestLink::Response']]],
+  ['readjsonobject_3',['readJsonObject',['../class_rest_link_1_1_response.html#a636414b156e2b33f2969b7600af76249',1,'RestLink::Response']]],
+  ['readstring_4',['readString',['../class_rest_link_1_1_response.html#a258e564a9d904607a9b1cddf50783be7',1,'RestLink::Response']]],
+  ['remove_5',['remove',['../class_rest_link_1_1_cache.html#a741efa376bff89664c05dac2514e3b47',1,'RestLink::Cache']]],
+  ['removerequestinterceptor_6',['removeRequestInterceptor',['../class_rest_link_1_1_api_base.html#a2191397a2641e9f523f5ee30dcea50f1',1,'RestLink::ApiBase']]],
+  ['request_7',['request',['../class_rest_link_1_1_request.html',1,'RestLink::Request'],['../class_rest_link_1_1_request.html#a7170a1515f1d8f8a6373b8dd32d91e82',1,'RestLink::Request::Request(Request &amp;&amp;other)'],['../class_rest_link_1_1_request.html#a83c180362768dd56e8bdfc2cc63cda18',1,'RestLink::Request::Request(const Request &amp;other)'],['../class_rest_link_1_1_response.html#a581dc27b50e96ef48dd6f53b0b7f6003',1,'RestLink::Response::request()'],['../class_rest_link_1_1_request.html#ae6fa5c29de906de35fb54a9ecb123769',1,'RestLink::Request::Request()'],['../class_rest_link_1_1_request.html#a7baee0189c44e945c57b9942fd82c279',1,'RestLink::Request::Request(const char *endpoint)'],['../class_rest_link_1_1_request.html#a1a2c6bf9354ea049a56767d89ca6104a',1,'RestLink::Request::Request(const QString &amp;endpoint)']]],
+  ['requestinterceptor_8',['RequestInterceptor',['../class_rest_link_1_1_request_interceptor.html',1,'RestLink']]],
+  ['requestinterceptors_9',['requestInterceptors',['../class_rest_link_1_1_api_base.html#ab0fa0676d5fdeb53076baf4abfb67ec9',1,'RestLink::ApiBase']]],
+  ['requestinterface_10',['RequestInterface',['../class_rest_link_1_1_request_interface.html',1,'RestLink']]],
+  ['response_11',['response',['../class_rest_link_1_1_response.html',1,'RestLink::Response'],['../class_rest_link_1_1_response.html#a50b0c7874886fde2c1545dc1c79bee0e',1,'RestLink::Response::Response()']]],
+  ['restlink_12',['RestLink',['../index.html',1,'']]]
 ];

@@ -1,0 +1,75 @@
+\doxysection{queryparameter.\+h}
+\hypertarget{queryparameter_8h_source}{}\label{queryparameter_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/queryparameter.h@{/home/runner/work/RestLink/RestLink/src/lib/queryparameter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_QUERYPARAMETER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_QUERYPARAMETER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtCore/qshareddata.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }QJsonObject;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }QueryParameterData;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ QueryParameter}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{enum}\ ParameterFlag\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ NoFlag\ =\ 0x0,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ AuthenticationFlag\ =\ 0x1,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ SecretFlag\ =\ 0x2}
+\DoxyCodeLine{00020\ \ \ \ \ \};}
+\DoxyCodeLine{00021\ \ \ \ \ Q\_DECLARE\_FLAGS(ParameterFlags,\ ParameterFlag)}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ QueryParameter();}
+\DoxyCodeLine{00024\ \ \ \ \ QueryParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00025\ \ \ \ \ QueryParameter(\textcolor{keyword}{const}\ QueryParameter\ \&other);}
+\DoxyCodeLine{00026\ \ \ \ \ \string~QueryParameter();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ QueryParameter\ \&operator=(\textcolor{keyword}{const}\ QueryParameter\ \&other);}
+\DoxyCodeLine{00029\ \ \ \ \ QueryParameter\ \&operator=(QueryParameter\ \&\&other);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ QString\ name()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ setName(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ QVariant\ value()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ setValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasValue(\textcolor{keyword}{const}\ QVariant\ \&value)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ addValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ removeValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ QList<QVariant>\ values()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ setValues(\textcolor{keyword}{const}\ QList<QVariant>\ \&values);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasFlag(ParameterFlag\ flag)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ ParameterFlags\ flags()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ setFlag(ParameterFlag\ flag,\ \textcolor{keywordtype}{bool}\ on\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ setFlags(\textcolor{keyword}{const}\ ParameterFlags\ \&flags);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ isEnabled()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ setEnabled(\textcolor{keywordtype}{bool}\ enabled\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ isValid()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ QJsonObject\ toJsonObject()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ QueryParameter\ fromJsonbject(\textcolor{keyword}{const}\ QJsonObject\ \&\textcolor{keywordtype}{object});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ swap(QueryParameter\ \&other);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{static}\ QueryParameter\ merge(\textcolor{keyword}{const}\ QueryParameter\ \&r1,\ \textcolor{keyword}{const}\ QueryParameter\ \&r2);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ QSharedDataPointer<QueryParameterData>\ d\_ptr;}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{typedef}\ QList<QueryParameter>\ QueryParameterList;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_QUERYPARAMETER\_H}}
+
+\end{DoxyCode}

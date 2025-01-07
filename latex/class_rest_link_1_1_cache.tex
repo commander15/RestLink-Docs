@@ -1,5 +1,5 @@
-\hypertarget{class_rest_link_1_1_cache}{}\doxysection{Rest\+Link\+::Cache Class Reference}
-\label{class_rest_link_1_1_cache}\index{RestLink::Cache@{RestLink::Cache}}
+\doxysection{Rest\+Link\+::Cache Class Reference}
+\hypertarget{class_rest_link_1_1_cache}{}\label{class_rest_link_1_1_cache}\index{RestLink::Cache@{RestLink::Cache}}
 
 
 A custom network cache implementation for Rest\+Link.  
@@ -9,11 +9,11 @@ A custom network cache implementation for Rest\+Link.
 
 Inherits QAbstract\+Network\+Cache.
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_rest_link_1_1_cache_a10ce72609d38bd1f2e0da38cb0d9d0d4}{$\sim$\+Cache}} ()
-\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_rest_link_1_1_cache}{Cache}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_cache_a10ce72609d38bd1f2e0da38cb0d9d0d4}{\texorpdfstring{$\sim$}{\string~}\+Cache}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_rest_link_1_1_cache}{Cache} class. \end{DoxyCompactList}\item 
 qint64 \mbox{\hyperlink{class_rest_link_1_1_cache_ae34167c789864fd0e41128005fdb6fbe}{max\+Cache\+Size}} () const
 \begin{DoxyCompactList}\small\item\em Returns the maximum allowed cache size. \end{DoxyCompactList}\item 
 Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_cache_a2b9a63c2fa50f482680fa1aedb478c91}{set\+Max\+Cache\+Size}} (qint64 size)
@@ -22,15 +22,15 @@ QNetwork\+Cache\+Meta\+Data \mbox{\hyperlink{class_rest_link_1_1_cache_a27646a4f
 \begin{DoxyCompactList}\small\item\em Retrieves the metadata for a given URL. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_rest_link_1_1_cache_ac82cf1e4eed956577f1fc38b80dd192b}{update\+Meta\+Data}} (const QNetwork\+Cache\+Meta\+Data \&\mbox{\hyperlink{class_rest_link_1_1_cache_a27646a4fb9edead55904d4218af4f99e}{meta\+Data}}) override
 \begin{DoxyCompactList}\small\item\em Updates the cache metadata with the provided data. \end{DoxyCompactList}\item 
-QIODevice $\ast$ \mbox{\hyperlink{class_rest_link_1_1_cache_a0b963e22d05287c13cdf001be3f14f06}{data}} (const QUrl \&url) override
+QIODevice \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_cache_a0b963e22d05287c13cdf001be3f14f06}{data}} (const QUrl \&url) override
 \begin{DoxyCompactList}\small\item\em Retrieves the cached data for a given URL. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_rest_link_1_1_cache_a741efa376bff89664c05dac2514e3b47}{remove}} (const QUrl \&url) override
 \begin{DoxyCompactList}\small\item\em Removes the cached data for a given URL. \end{DoxyCompactList}\item 
 qint64 \mbox{\hyperlink{class_rest_link_1_1_cache_a3e2ad5276e5520d4adf970cec27654db}{cache\+Size}} () const override
 \begin{DoxyCompactList}\small\item\em Returns the total size of the cache. \end{DoxyCompactList}\item 
-QIODevice $\ast$ \mbox{\hyperlink{class_rest_link_1_1_cache_a76db7775bca44e51e17fe865abb9a7cb}{prepare}} (const QNetwork\+Cache\+Meta\+Data \&\mbox{\hyperlink{class_rest_link_1_1_cache_a27646a4fb9edead55904d4218af4f99e}{meta\+Data}}) override
+QIODevice \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_cache_a76db7775bca44e51e17fe865abb9a7cb}{prepare}} (const QNetwork\+Cache\+Meta\+Data \&\mbox{\hyperlink{class_rest_link_1_1_cache_a27646a4fb9edead55904d4218af4f99e}{meta\+Data}}) override
 \begin{DoxyCompactList}\small\item\em Prepares a QIODevice to store data in the cache. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_rest_link_1_1_cache_a7dc591e50adcb42f3731f930b1e6fb63}{insert}} (QIODevice $\ast$device) override
+void \mbox{\hyperlink{class_rest_link_1_1_cache_a7dc591e50adcb42f3731f930b1e6fb63}{insert}} (QIODevice \texorpdfstring{$\ast$}{*}device) override
 \begin{DoxyCompactList}\small\item\em Inserts data into the cache. \end{DoxyCompactList}\item 
 Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_cache_a346bec72d035ee80afacd76c8dc71c87}{clear}} () override
 \begin{DoxyCompactList}\small\item\em Clears the cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -42,20 +42,20 @@ A custom network cache implementation for Rest\+Link.
 This class extends QAbstract\+Network\+Cache to provide custom caching functionality for the Rest\+Link API. It interacts with Cache\+Private to manage cache storage and retrieval. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_a10ce72609d38bd1f2e0da38cb0d9d0d4}\label{class_rest_link_1_1_cache_a10ce72609d38bd1f2e0da38cb0d9d0d4}} 
-\index{RestLink::Cache@{RestLink::Cache}!````~Cache@{$\sim$Cache}}
-\index{````~Cache@{$\sim$Cache}!RestLink::Cache@{RestLink::Cache}}
-\doxysubsubsection{\texorpdfstring{$\sim$Cache()}{~Cache()}}
-{\footnotesize\ttfamily Rest\+Link\+::\+Cache\+::$\sim$\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\Hypertarget{class_rest_link_1_1_cache_a10ce72609d38bd1f2e0da38cb0d9d0d4}\label{class_rest_link_1_1_cache_a10ce72609d38bd1f2e0da38cb0d9d0d4} 
+\index{RestLink::Cache@{RestLink::Cache}!````~Cache@{\texorpdfstring{$\sim$}{\string~}Cache}}
+\index{````~Cache@{\texorpdfstring{$\sim$}{\string~}Cache}!RestLink::Cache@{RestLink::Cache}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Cache()}{\string~Cache()}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Cache\+::\texorpdfstring{$\sim$}{\string~}\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Destructor for the \mbox{\hyperlink{class_rest_link_1_1_cache}{Cache}} class. 
+Destructor for the \doxylink{class_rest_link_1_1_cache}{Cache} class. 
 
 This destructor cleans up the cache private data. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_ae34167c789864fd0e41128005fdb6fbe}\label{class_rest_link_1_1_cache_ae34167c789864fd0e41128005fdb6fbe}} 
+\Hypertarget{class_rest_link_1_1_cache_ae34167c789864fd0e41128005fdb6fbe}\label{class_rest_link_1_1_cache_ae34167c789864fd0e41128005fdb6fbe} 
 \index{RestLink::Cache@{RestLink::Cache}!maxCacheSize@{maxCacheSize}}
 \index{maxCacheSize@{maxCacheSize}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{maxCacheSize()}{maxCacheSize()}}
@@ -68,7 +68,7 @@ Returns the maximum allowed cache size.
 \begin{DoxyReturn}{Returns}
 The maximum cache size in bytes. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_a2b9a63c2fa50f482680fa1aedb478c91}\label{class_rest_link_1_1_cache_a2b9a63c2fa50f482680fa1aedb478c91}} 
+\Hypertarget{class_rest_link_1_1_cache_a2b9a63c2fa50f482680fa1aedb478c91}\label{class_rest_link_1_1_cache_a2b9a63c2fa50f482680fa1aedb478c91} 
 \index{RestLink::Cache@{RestLink::Cache}!setMaxCacheSize@{setMaxCacheSize}}
 \index{setMaxCacheSize@{setMaxCacheSize}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{setMaxCacheSize()}{setMaxCacheSize()}}
@@ -85,7 +85,7 @@ If the new size is different from the current maximum, this function updates the
 {\em size} & The new maximum cache size in bytes. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_a27646a4fb9edead55904d4218af4f99e}\label{class_rest_link_1_1_cache_a27646a4fb9edead55904d4218af4f99e}} 
+\Hypertarget{class_rest_link_1_1_cache_a27646a4fb9edead55904d4218af4f99e}\label{class_rest_link_1_1_cache_a27646a4fb9edead55904d4218af4f99e} 
 \index{RestLink::Cache@{RestLink::Cache}!metaData@{metaData}}
 \index{metaData@{metaData}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{metaData()}{metaData()}}
@@ -105,7 +105,7 @@ This function fetches the metadata associated with a URL in the cache.
 \begin{DoxyReturn}{Returns}
 The metadata associated with the URL. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_ac82cf1e4eed956577f1fc38b80dd192b}\label{class_rest_link_1_1_cache_ac82cf1e4eed956577f1fc38b80dd192b}} 
+\Hypertarget{class_rest_link_1_1_cache_ac82cf1e4eed956577f1fc38b80dd192b}\label{class_rest_link_1_1_cache_ac82cf1e4eed956577f1fc38b80dd192b} 
 \index{RestLink::Cache@{RestLink::Cache}!updateMetaData@{updateMetaData}}
 \index{updateMetaData@{updateMetaData}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{updateMetaData()}{updateMetaData()}}
@@ -120,11 +120,11 @@ Updates the cache metadata with the provided data.
 {\em meta\+Data} & The new metadata to be used in the cache. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_a0b963e22d05287c13cdf001be3f14f06}\label{class_rest_link_1_1_cache_a0b963e22d05287c13cdf001be3f14f06}} 
+\Hypertarget{class_rest_link_1_1_cache_a0b963e22d05287c13cdf001be3f14f06}\label{class_rest_link_1_1_cache_a0b963e22d05287c13cdf001be3f14f06} 
 \index{RestLink::Cache@{RestLink::Cache}!data@{data}}
 \index{data@{data}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{data()}{data()}}
-{\footnotesize\ttfamily QIODevice $\ast$ Rest\+Link\+::\+Cache\+::data (\begin{DoxyParamCaption}\item[{const QUrl \&}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+{\footnotesize\ttfamily QIODevice \texorpdfstring{$\ast$}{*} Rest\+Link\+::\+Cache\+::data (\begin{DoxyParamCaption}\item[{const QUrl \&}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
 
 
 
@@ -140,7 +140,7 @@ This function returns the cached data as a QIODevice object for a given URL.
 \begin{DoxyReturn}{Returns}
 A QIODevice object with the cached data, or nullptr if no data is found. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_a741efa376bff89664c05dac2514e3b47}\label{class_rest_link_1_1_cache_a741efa376bff89664c05dac2514e3b47}} 
+\Hypertarget{class_rest_link_1_1_cache_a741efa376bff89664c05dac2514e3b47}\label{class_rest_link_1_1_cache_a741efa376bff89664c05dac2514e3b47} 
 \index{RestLink::Cache@{RestLink::Cache}!remove@{remove}}
 \index{remove@{remove}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{remove()}{remove()}}
@@ -158,7 +158,7 @@ Removes the cached data for a given URL.
 \begin{DoxyReturn}{Returns}
 True if the data was removed successfully, false otherwise. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_a3e2ad5276e5520d4adf970cec27654db}\label{class_rest_link_1_1_cache_a3e2ad5276e5520d4adf970cec27654db}} 
+\Hypertarget{class_rest_link_1_1_cache_a3e2ad5276e5520d4adf970cec27654db}\label{class_rest_link_1_1_cache_a3e2ad5276e5520d4adf970cec27654db} 
 \index{RestLink::Cache@{RestLink::Cache}!cacheSize@{cacheSize}}
 \index{cacheSize@{cacheSize}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{cacheSize()}{cacheSize()}}
@@ -171,11 +171,11 @@ Returns the total size of the cache.
 \begin{DoxyReturn}{Returns}
 The current size of the cache in bytes. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_a76db7775bca44e51e17fe865abb9a7cb}\label{class_rest_link_1_1_cache_a76db7775bca44e51e17fe865abb9a7cb}} 
+\Hypertarget{class_rest_link_1_1_cache_a76db7775bca44e51e17fe865abb9a7cb}\label{class_rest_link_1_1_cache_a76db7775bca44e51e17fe865abb9a7cb} 
 \index{RestLink::Cache@{RestLink::Cache}!prepare@{prepare}}
 \index{prepare@{prepare}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
-{\footnotesize\ttfamily QIODevice $\ast$ Rest\+Link\+::\+Cache\+::prepare (\begin{DoxyParamCaption}\item[{const QNetwork\+Cache\+Meta\+Data \&}]{meta\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+{\footnotesize\ttfamily QIODevice \texorpdfstring{$\ast$}{*} Rest\+Link\+::\+Cache\+::prepare (\begin{DoxyParamCaption}\item[{const QNetwork\+Cache\+Meta\+Data \&}]{meta\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
 
 
 
@@ -191,11 +191,11 @@ This function prepares a QIODevice for writing data associated with a cache meta
 \begin{DoxyReturn}{Returns}
 A QIODevice object for storing the cache data. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_a7dc591e50adcb42f3731f930b1e6fb63}\label{class_rest_link_1_1_cache_a7dc591e50adcb42f3731f930b1e6fb63}} 
+\Hypertarget{class_rest_link_1_1_cache_a7dc591e50adcb42f3731f930b1e6fb63}\label{class_rest_link_1_1_cache_a7dc591e50adcb42f3731f930b1e6fb63} 
 \index{RestLink::Cache@{RestLink::Cache}!insert@{insert}}
 \index{insert@{insert}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{insert()}{insert()}}
-{\footnotesize\ttfamily void Rest\+Link\+::\+Cache\+::insert (\begin{DoxyParamCaption}\item[{QIODevice $\ast$}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Cache\+::insert (\begin{DoxyParamCaption}\item[{QIODevice \texorpdfstring{$\ast$}{*}}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
 
 
 
@@ -208,7 +208,7 @@ This function inserts a QIODevice containing cache data into the cache.
 {\em device} & The device containing the cache data. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_cache_a346bec72d035ee80afacd76c8dc71c87}\label{class_rest_link_1_1_cache_a346bec72d035ee80afacd76c8dc71c87}} 
+\Hypertarget{class_rest_link_1_1_cache_a346bec72d035ee80afacd76c8dc71c87}\label{class_rest_link_1_1_cache_a346bec72d035ee80afacd76c8dc71c87} 
 \index{RestLink::Cache@{RestLink::Cache}!clear@{clear}}
 \index{clear@{clear}!RestLink::Cache@{RestLink::Cache}}
 \doxysubsubsection{\texorpdfstring{clear()}{clear()}}

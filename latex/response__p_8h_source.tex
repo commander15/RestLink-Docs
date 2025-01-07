@@ -1,0 +1,32 @@
+\doxysection{response\+\_\+p.\+h}
+\hypertarget{response__p_8h_source}{}\label{response__p_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/response\_p.h@{/home/runner/work/RestLink/RestLink/src/lib/response\_p.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_RESPONSE\_P\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_RESPONSE\_P\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}response.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <RestLink/request.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }ResponsePrivate}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ ResponsePrivate(Response\ *q);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ Response\ *q\_ptr;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ Request\ request;}
+\DoxyCodeLine{00018\ \ \ \ \ Api\ *api;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ QByteArray\ body;}
+\DoxyCodeLine{00021\ \ \ \ \ QNetworkReply\ *netReply;}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_RESPONSE\_P\_H}}
+
+\end{DoxyCode}

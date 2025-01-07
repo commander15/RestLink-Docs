@@ -1,5 +1,5 @@
-\hypertarget{class_rest_link_1_1_response}{}\doxysection{Rest\+Link\+::Response Class Reference}
-\label{class_rest_link_1_1_response}\index{RestLink::Response@{RestLink::Response}}
+\doxysection{Rest\+Link\+::Response Class Reference}
+\hypertarget{class_rest_link_1_1_response}{}\label{class_rest_link_1_1_response}\index{RestLink::Response@{RestLink::Response}}
 
 
 Represents a response to an API request in the Rest\+Link framework.  
@@ -9,18 +9,18 @@ Represents a response to an API request in the Rest\+Link framework.
 
 Inherits QObject.
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_rest_link_1_1_response_abe88e463cf78cd37f877d4af4a38b465}{$\sim$\+Response}} ()
-\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response_abe88e463cf78cd37f877d4af4a38b465}{\texorpdfstring{$\sim$}{\string~}\+Response}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_rest_link_1_1_response}{Response}. \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_rest_link_1_1_response_a97425e1415411f3c0113e768baf0970a}{endpoint}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the API endpoint associated with this response. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \mbox{\hyperlink{class_rest_link_1_1_response_a581dc27b50e96ef48dd6f53b0b7f6003}{request}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the API request associated with this response. \end{DoxyCompactList}\item 
 Api\+::\+Operation \mbox{\hyperlink{class_rest_link_1_1_response_a2c49df609edae42dc41d96348b745a7a}{operation}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the HTTP operation type for this response. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_rest_link_1_1_api}{Api}} $\ast$ \mbox{\hyperlink{class_rest_link_1_1_response_aa9b0e939dbc4d86bfe25eb9f3e17acdd}{api}} () const
+\mbox{\hyperlink{class_rest_link_1_1_api}{Api}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_response_aa9b0e939dbc4d86bfe25eb9f3e17acdd}{api}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the API instance associated with this response. \end{DoxyCompactList}\item 
 QUrl \mbox{\hyperlink{class_rest_link_1_1_response_a3967ddaae9ffaa9b272aa897873f5ff5}{url}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the URL associated with this response. \end{DoxyCompactList}\item 
@@ -46,11 +46,11 @@ Q\+\_\+\+INVOKABLE QByte\+Array \mbox{\hyperlink{class_rest_link_1_1_response_a2
 \begin{DoxyCompactList}\small\item\em Retrieves the value of a specific header. \end{DoxyCompactList}\item 
 QByte\+Array\+List \mbox{\hyperlink{class_rest_link_1_1_response_ad42526a371536720637f2297c0240290}{header\+List}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves a list of all headers in the response. \end{DoxyCompactList}\item 
-QJson\+Object \mbox{\hyperlink{class_rest_link_1_1_response_a636414b156e2b33f2969b7600af76249}{read\+Json\+Object}} (QJson\+Parse\+Error $\ast$error=nullptr)
+QJson\+Object \mbox{\hyperlink{class_rest_link_1_1_response_a636414b156e2b33f2969b7600af76249}{read\+Json\+Object}} (QJson\+Parse\+Error \texorpdfstring{$\ast$}{*}error=nullptr)
 \begin{DoxyCompactList}\small\item\em Reads the response body as a JSON object. \end{DoxyCompactList}\item 
-QJson\+Array \mbox{\hyperlink{class_rest_link_1_1_response_aff8d31ed0458cd868db5c43d671dcad6}{read\+Json\+Array}} (QJson\+Parse\+Error $\ast$error=nullptr)
+QJson\+Array \mbox{\hyperlink{class_rest_link_1_1_response_aff8d31ed0458cd868db5c43d671dcad6}{read\+Json\+Array}} (QJson\+Parse\+Error \texorpdfstring{$\ast$}{*}error=nullptr)
 \begin{DoxyCompactList}\small\item\em Reads the response body as a JSON array. \end{DoxyCompactList}\item 
-QJson\+Value \mbox{\hyperlink{class_rest_link_1_1_response_afa86f8cd94fcf5f90e7df7ad93422884}{read\+Json}} (QJson\+Parse\+Error $\ast$error=nullptr)
+QJson\+Value \mbox{\hyperlink{class_rest_link_1_1_response_afa86f8cd94fcf5f90e7df7ad93422884}{read\+Json}} (QJson\+Parse\+Error \texorpdfstring{$\ast$}{*}error=nullptr)
 \begin{DoxyCompactList}\small\item\em Reads the response body as a JSON value. \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_rest_link_1_1_response_a258e564a9d904607a9b1cddf50783be7}{read\+String}} ()
 \begin{DoxyCompactList}\small\item\em Reads the response body as a QString. \end{DoxyCompactList}\item 
@@ -62,52 +62,52 @@ int \mbox{\hyperlink{class_rest_link_1_1_response_a3fd9f301571c07b2daa1d6702bd85
 \begin{DoxyCompactList}\small\item\em Retrieves the network error code. \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_rest_link_1_1_response_a38d9c0d47627c810e843216443954855}{network\+Error\+String}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves a string description of the network error. \end{DoxyCompactList}\item 
-QNetwork\+Reply $\ast$ \mbox{\hyperlink{class_rest_link_1_1_response_a512863f381f5c75ff1cd224ce1206e68}{network\+Reply}} () const
+QNetwork\+Reply \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_response_a512863f381f5c75ff1cd224ce1206e68}{network\+Reply}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the QNetwork\+Reply instance associated with this response. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions}
+\doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_rest_link_1_1_response_a50b0c7874886fde2c1545dc1c79bee0e}{Response}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&\mbox{\hyperlink{class_rest_link_1_1_response_a581dc27b50e96ef48dd6f53b0b7f6003}{request}}, QNetwork\+Reply $\ast$reply, \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} $\ast$\mbox{\hyperlink{class_rest_link_1_1_response_aa9b0e939dbc4d86bfe25eb9f3e17acdd}{api}})
-\begin{DoxyCompactList}\small\item\em Protected constructor for \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_rest_link_1_1_response_a50b0c7874886fde2c1545dc1c79bee0e}{Response}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&\mbox{\hyperlink{class_rest_link_1_1_response_a581dc27b50e96ef48dd6f53b0b7f6003}{request}}, QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply, \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_rest_link_1_1_response_aa9b0e939dbc4d86bfe25eb9f3e17acdd}{api}})
+\begin{DoxyCompactList}\small\item\em Protected constructor for \doxylink{class_rest_link_1_1_response}{Response}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Represents a response to an API request in the Rest\+Link framework. 
 
-The \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} class encapsulates the response from an API request, providing methods for accessing various aspects of the response such as status, headers, body, and progress. It also provides signals for progress updates, completion, and error handling.
+The \doxylink{class_rest_link_1_1_response}{Response} class encapsulates the response from an API request, providing methods for accessing various aspects of the response such as status, headers, body, and progress. It also provides signals for progress updates, completion, and error handling.
 
-The \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object is associated with a specific API request and provides functionality to handle download/upload progress, SSL errors, network errors, and HTTP status codes. It also supports reading the response body as JSON or raw data and provides the option to abort or ignore specific errors during the process. 
+The \doxylink{class_rest_link_1_1_response}{Response} object is associated with a specific API request and provides functionality to handle download/upload progress, SSL errors, network errors, and HTTP status codes. It also supports reading the response body as JSON or raw data and provides the option to abort or ignore specific errors during the process. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_rest_link_1_1_response_abe88e463cf78cd37f877d4af4a38b465}\label{class_rest_link_1_1_response_abe88e463cf78cd37f877d4af4a38b465}} 
-\index{RestLink::Response@{RestLink::Response}!````~Response@{$\sim$Response}}
-\index{````~Response@{$\sim$Response}!RestLink::Response@{RestLink::Response}}
-\doxysubsubsection{\texorpdfstring{$\sim$Response()}{~Response()}}
-{\footnotesize\ttfamily Rest\+Link\+::\+Response\+::$\sim$\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\Hypertarget{class_rest_link_1_1_response_abe88e463cf78cd37f877d4af4a38b465}\label{class_rest_link_1_1_response_abe88e463cf78cd37f877d4af4a38b465} 
+\index{RestLink::Response@{RestLink::Response}!````~Response@{\texorpdfstring{$\sim$}{\string~}Response}}
+\index{````~Response@{\texorpdfstring{$\sim$}{\string~}Response}!RestLink::Response@{RestLink::Response}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Response()}{\string~Response()}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Response\+::\texorpdfstring{$\sim$}{\string~}\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Destructor for \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}. 
+Destructor for \doxylink{class_rest_link_1_1_response}{Response}. 
 
-Cleans up resources held by the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. \mbox{\Hypertarget{class_rest_link_1_1_response_a50b0c7874886fde2c1545dc1c79bee0e}\label{class_rest_link_1_1_response_a50b0c7874886fde2c1545dc1c79bee0e}} 
+Cleans up resources held by the \doxylink{class_rest_link_1_1_response}{Response} object. \Hypertarget{class_rest_link_1_1_response_a50b0c7874886fde2c1545dc1c79bee0e}\label{class_rest_link_1_1_response_a50b0c7874886fde2c1545dc1c79bee0e} 
 \index{RestLink::Response@{RestLink::Response}!Response@{Response}}
 \index{Response@{Response}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{Response()}{Response()}}
-{\footnotesize\ttfamily Rest\+Link\+::\+Response\+::\+Response (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{QNetwork\+Reply $\ast$}]{reply,  }\item[{\mbox{\hyperlink{class_rest_link_1_1_api}{Api}} $\ast$}]{api }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Response\+::\+Response (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{QNetwork\+Reply \texorpdfstring{$\ast$}{*}}]{reply,  }\item[{\mbox{\hyperlink{class_rest_link_1_1_api}{Api}} \texorpdfstring{$\ast$}{*}}]{api }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-Protected constructor for \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}. 
+Protected constructor for \doxylink{class_rest_link_1_1_response}{Response}. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em api} & A pointer to the \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} instance that initiated the request. \\
+{\em api} & A pointer to the \doxylink{class_rest_link_1_1_api}{Api} instance that initiated the request. \\
 \hline
 \end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a97425e1415411f3c0113e768baf0970a}\label{class_rest_link_1_1_response_a97425e1415411f3c0113e768baf0970a}} 
+\Hypertarget{class_rest_link_1_1_response_a97425e1415411f3c0113e768baf0970a}\label{class_rest_link_1_1_response_a97425e1415411f3c0113e768baf0970a} 
 \index{RestLink::Response@{RestLink::Response}!endpoint@{endpoint}}
 \index{endpoint@{endpoint}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{endpoint()}{endpoint()}}
@@ -120,7 +120,7 @@ Retrieves the API endpoint associated with this response.
 \begin{DoxyReturn}{Returns}
 The endpoint as a QString. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a581dc27b50e96ef48dd6f53b0b7f6003}\label{class_rest_link_1_1_response_a581dc27b50e96ef48dd6f53b0b7f6003}} 
+\Hypertarget{class_rest_link_1_1_response_a581dc27b50e96ef48dd6f53b0b7f6003}\label{class_rest_link_1_1_response_a581dc27b50e96ef48dd6f53b0b7f6003} 
 \index{RestLink::Response@{RestLink::Response}!request@{request}}
 \index{request@{request}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{request()}{request()}}
@@ -131,9 +131,9 @@ The endpoint as a QString.
 Retrieves the API request associated with this response. 
 
 \begin{DoxyReturn}{Returns}
-The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object. 
+The \doxylink{class_rest_link_1_1_request}{Request} object. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a2c49df609edae42dc41d96348b745a7a}\label{class_rest_link_1_1_response_a2c49df609edae42dc41d96348b745a7a}} 
+\Hypertarget{class_rest_link_1_1_response_a2c49df609edae42dc41d96348b745a7a}\label{class_rest_link_1_1_response_a2c49df609edae42dc41d96348b745a7a} 
 \index{RestLink::Response@{RestLink::Response}!operation@{operation}}
 \index{operation@{operation}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{operation()}{operation()}}
@@ -146,20 +146,20 @@ Retrieves the HTTP operation type for this response.
 \begin{DoxyReturn}{Returns}
 The HTTP operation as an Api\+::\+Operation. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_aa9b0e939dbc4d86bfe25eb9f3e17acdd}\label{class_rest_link_1_1_response_aa9b0e939dbc4d86bfe25eb9f3e17acdd}} 
+\Hypertarget{class_rest_link_1_1_response_aa9b0e939dbc4d86bfe25eb9f3e17acdd}\label{class_rest_link_1_1_response_aa9b0e939dbc4d86bfe25eb9f3e17acdd} 
 \index{RestLink::Response@{RestLink::Response}!api@{api}}
 \index{api@{api}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{api()}{api()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} $\ast$ Rest\+Link\+::\+Response\+::api (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} \texorpdfstring{$\ast$}{*} Rest\+Link\+::\+Response\+::api (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
 Retrieves the API instance associated with this response. 
 
 \begin{DoxyReturn}{Returns}
-A pointer to the \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} object. 
+A pointer to the \doxylink{class_rest_link_1_1_api}{Api} object. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a3967ddaae9ffaa9b272aa897873f5ff5}\label{class_rest_link_1_1_response_a3967ddaae9ffaa9b272aa897873f5ff5}} 
+\Hypertarget{class_rest_link_1_1_response_a3967ddaae9ffaa9b272aa897873f5ff5}\label{class_rest_link_1_1_response_a3967ddaae9ffaa9b272aa897873f5ff5} 
 \index{RestLink::Response@{RestLink::Response}!url@{url}}
 \index{url@{url}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{url()}{url()}}
@@ -172,7 +172,7 @@ Retrieves the URL associated with this response.
 \begin{DoxyReturn}{Returns}
 The URL as a QUrl object. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a488ffafe54d63220a20448da277c9ad2}\label{class_rest_link_1_1_response_a488ffafe54d63220a20448da277c9ad2}} 
+\Hypertarget{class_rest_link_1_1_response_a488ffafe54d63220a20448da277c9ad2}\label{class_rest_link_1_1_response_a488ffafe54d63220a20448da277c9ad2} 
 \index{RestLink::Response@{RestLink::Response}!networkRequest@{networkRequest}}
 \index{networkRequest@{networkRequest}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{networkRequest()}{networkRequest()}}
@@ -185,7 +185,7 @@ Retrieves the network request used in this response.
 \begin{DoxyReturn}{Returns}
 The QNetwork\+Request object. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a1f28a4b838db750de18967d404f51b95}\label{class_rest_link_1_1_response_a1f28a4b838db750de18967d404f51b95}} 
+\Hypertarget{class_rest_link_1_1_response_a1f28a4b838db750de18967d404f51b95}\label{class_rest_link_1_1_response_a1f28a4b838db750de18967d404f51b95} 
 \index{RestLink::Response@{RestLink::Response}!isRunning@{isRunning}}
 \index{isRunning@{isRunning}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
@@ -198,7 +198,7 @@ Checks if the request is currently running.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the request is running, otherwise {\ttfamily false}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a2bc96f9a6e07767a7331237a0902b808}\label{class_rest_link_1_1_response_a2bc96f9a6e07767a7331237a0902b808}} 
+\Hypertarget{class_rest_link_1_1_response_a2bc96f9a6e07767a7331237a0902b808}\label{class_rest_link_1_1_response_a2bc96f9a6e07767a7331237a0902b808} 
 \index{RestLink::Response@{RestLink::Response}!isFinished@{isFinished}}
 \index{isFinished@{isFinished}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{isFinished()}{isFinished()}}
@@ -211,7 +211,7 @@ Checks if the request has finished processing.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the request is finished, otherwise {\ttfamily false}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_aeefcb5e41ff99991f9ed0d1d173c17f4}\label{class_rest_link_1_1_response_aeefcb5e41ff99991f9ed0d1d173c17f4}} 
+\Hypertarget{class_rest_link_1_1_response_aeefcb5e41ff99991f9ed0d1d173c17f4}\label{class_rest_link_1_1_response_aeefcb5e41ff99991f9ed0d1d173c17f4} 
 \index{RestLink::Response@{RestLink::Response}!isSuccess@{isSuccess}}
 \index{isSuccess@{isSuccess}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{isSuccess()}{isSuccess()}}
@@ -224,7 +224,7 @@ Checks if the request was successful.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the request was successful, otherwise {\ttfamily false}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_ace24582e43ed3d89d22fe65caf7b2033}\label{class_rest_link_1_1_response_ace24582e43ed3d89d22fe65caf7b2033}} 
+\Hypertarget{class_rest_link_1_1_response_ace24582e43ed3d89d22fe65caf7b2033}\label{class_rest_link_1_1_response_ace24582e43ed3d89d22fe65caf7b2033} 
 \index{RestLink::Response@{RestLink::Response}!isHttpStatusSuccess@{isHttpStatusSuccess}}
 \index{isHttpStatusSuccess@{isHttpStatusSuccess}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{isHttpStatusSuccess()}{isHttpStatusSuccess()}}
@@ -237,7 +237,7 @@ Checks if the HTTP status code indicates success.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the HTTP status code indicates success, otherwise {\ttfamily false}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a371a229483acf09456797ef91f57f093}\label{class_rest_link_1_1_response_a371a229483acf09456797ef91f57f093}} 
+\Hypertarget{class_rest_link_1_1_response_a371a229483acf09456797ef91f57f093}\label{class_rest_link_1_1_response_a371a229483acf09456797ef91f57f093} 
 \index{RestLink::Response@{RestLink::Response}!hasHttpStatusCode@{hasHttpStatusCode}}
 \index{hasHttpStatusCode@{hasHttpStatusCode}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{hasHttpStatusCode()}{hasHttpStatusCode()}}
@@ -250,7 +250,7 @@ Checks if the HTTP status code is valid.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the HTTP status code is valid, otherwise {\ttfamily false}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a0a41321e325587dc7ef7bcfcb63c0b29}\label{class_rest_link_1_1_response_a0a41321e325587dc7ef7bcfcb63c0b29}} 
+\Hypertarget{class_rest_link_1_1_response_a0a41321e325587dc7ef7bcfcb63c0b29}\label{class_rest_link_1_1_response_a0a41321e325587dc7ef7bcfcb63c0b29} 
 \index{RestLink::Response@{RestLink::Response}!httpStatusCode@{httpStatusCode}}
 \index{httpStatusCode@{httpStatusCode}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{httpStatusCode()}{httpStatusCode()}}
@@ -263,7 +263,7 @@ Retrieves the HTTP status code of the response.
 \begin{DoxyReturn}{Returns}
 The HTTP status code. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a70ee82721662d972f0b170101e7c69d9}\label{class_rest_link_1_1_response_a70ee82721662d972f0b170101e7c69d9}} 
+\Hypertarget{class_rest_link_1_1_response_a70ee82721662d972f0b170101e7c69d9}\label{class_rest_link_1_1_response_a70ee82721662d972f0b170101e7c69d9} 
 \index{RestLink::Response@{RestLink::Response}!httpReasonPhrase@{httpReasonPhrase}}
 \index{httpReasonPhrase@{httpReasonPhrase}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{httpReasonPhrase()}{httpReasonPhrase()}}
@@ -276,7 +276,7 @@ Retrieves the HTTP reason phrase of the response.
 \begin{DoxyReturn}{Returns}
 The HTTP reason phrase as a QString. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_aeba9208198dcc9c87375f00f44a25144}\label{class_rest_link_1_1_response_aeba9208198dcc9c87375f00f44a25144}} 
+\Hypertarget{class_rest_link_1_1_response_aeba9208198dcc9c87375f00f44a25144}\label{class_rest_link_1_1_response_aeba9208198dcc9c87375f00f44a25144} 
 \index{RestLink::Response@{RestLink::Response}!hasHeader@{hasHeader}}
 \index{hasHeader@{hasHeader}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{hasHeader()}{hasHeader()}}
@@ -294,7 +294,7 @@ Checks if the response contains a specific header.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the header is present, otherwise {\ttfamily false}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a24232e62f098b8d23d700af694633e03}\label{class_rest_link_1_1_response_a24232e62f098b8d23d700af694633e03}} 
+\Hypertarget{class_rest_link_1_1_response_a24232e62f098b8d23d700af694633e03}\label{class_rest_link_1_1_response_a24232e62f098b8d23d700af694633e03} 
 \index{RestLink::Response@{RestLink::Response}!header@{header}}
 \index{header@{header}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{header()}{header()}}
@@ -312,7 +312,7 @@ Retrieves the value of a specific header.
 \begin{DoxyReturn}{Returns}
 The header value as a QByte\+Array. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_ad42526a371536720637f2297c0240290}\label{class_rest_link_1_1_response_ad42526a371536720637f2297c0240290}} 
+\Hypertarget{class_rest_link_1_1_response_ad42526a371536720637f2297c0240290}\label{class_rest_link_1_1_response_ad42526a371536720637f2297c0240290} 
 \index{RestLink::Response@{RestLink::Response}!headerList@{headerList}}
 \index{headerList@{headerList}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{headerList()}{headerList()}}
@@ -325,11 +325,11 @@ Retrieves a list of all headers in the response.
 \begin{DoxyReturn}{Returns}
 A QByte\+Array\+List containing the header names. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a636414b156e2b33f2969b7600af76249}\label{class_rest_link_1_1_response_a636414b156e2b33f2969b7600af76249}} 
+\Hypertarget{class_rest_link_1_1_response_a636414b156e2b33f2969b7600af76249}\label{class_rest_link_1_1_response_a636414b156e2b33f2969b7600af76249} 
 \index{RestLink::Response@{RestLink::Response}!readJsonObject@{readJsonObject}}
 \index{readJsonObject@{readJsonObject}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{readJsonObject()}{readJsonObject()}}
-{\footnotesize\ttfamily QJson\+Object Rest\+Link\+::\+Response\+::read\+Json\+Object (\begin{DoxyParamCaption}\item[{QJson\+Parse\+Error $\ast$}]{error = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily QJson\+Object Rest\+Link\+::\+Response\+::read\+Json\+Object (\begin{DoxyParamCaption}\item[{QJson\+Parse\+Error \texorpdfstring{$\ast$}{*}}]{error = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 
 
@@ -343,11 +343,11 @@ Reads the response body as a JSON object.
 \begin{DoxyReturn}{Returns}
 The response body as a QJson\+Object. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_aff8d31ed0458cd868db5c43d671dcad6}\label{class_rest_link_1_1_response_aff8d31ed0458cd868db5c43d671dcad6}} 
+\Hypertarget{class_rest_link_1_1_response_aff8d31ed0458cd868db5c43d671dcad6}\label{class_rest_link_1_1_response_aff8d31ed0458cd868db5c43d671dcad6} 
 \index{RestLink::Response@{RestLink::Response}!readJsonArray@{readJsonArray}}
 \index{readJsonArray@{readJsonArray}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{readJsonArray()}{readJsonArray()}}
-{\footnotesize\ttfamily QJson\+Array Rest\+Link\+::\+Response\+::read\+Json\+Array (\begin{DoxyParamCaption}\item[{QJson\+Parse\+Error $\ast$}]{error = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily QJson\+Array Rest\+Link\+::\+Response\+::read\+Json\+Array (\begin{DoxyParamCaption}\item[{QJson\+Parse\+Error \texorpdfstring{$\ast$}{*}}]{error = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 
 
@@ -361,11 +361,11 @@ Reads the response body as a JSON array.
 \begin{DoxyReturn}{Returns}
 The response body as a QJson\+Array. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_afa86f8cd94fcf5f90e7df7ad93422884}\label{class_rest_link_1_1_response_afa86f8cd94fcf5f90e7df7ad93422884}} 
+\Hypertarget{class_rest_link_1_1_response_afa86f8cd94fcf5f90e7df7ad93422884}\label{class_rest_link_1_1_response_afa86f8cd94fcf5f90e7df7ad93422884} 
 \index{RestLink::Response@{RestLink::Response}!readJson@{readJson}}
 \index{readJson@{readJson}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{readJson()}{readJson()}}
-{\footnotesize\ttfamily QJson\+Value Rest\+Link\+::\+Response\+::read\+Json (\begin{DoxyParamCaption}\item[{QJson\+Parse\+Error $\ast$}]{error = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily QJson\+Value Rest\+Link\+::\+Response\+::read\+Json (\begin{DoxyParamCaption}\item[{QJson\+Parse\+Error \texorpdfstring{$\ast$}{*}}]{error = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 
 
@@ -379,7 +379,7 @@ Reads the response body as a JSON value.
 \begin{DoxyReturn}{Returns}
 The response body as a QJson\+Value. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a258e564a9d904607a9b1cddf50783be7}\label{class_rest_link_1_1_response_a258e564a9d904607a9b1cddf50783be7}} 
+\Hypertarget{class_rest_link_1_1_response_a258e564a9d904607a9b1cddf50783be7}\label{class_rest_link_1_1_response_a258e564a9d904607a9b1cddf50783be7} 
 \index{RestLink::Response@{RestLink::Response}!readString@{readString}}
 \index{readString@{readString}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{readString()}{readString()}}
@@ -392,7 +392,7 @@ Reads the response body as a QString.
 \begin{DoxyReturn}{Returns}
 The response body as a QString. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a0f2fe88b9d5913ce80fc81af711f4a4d}\label{class_rest_link_1_1_response_a0f2fe88b9d5913ce80fc81af711f4a4d}} 
+\Hypertarget{class_rest_link_1_1_response_a0f2fe88b9d5913ce80fc81af711f4a4d}\label{class_rest_link_1_1_response_a0f2fe88b9d5913ce80fc81af711f4a4d} 
 \index{RestLink::Response@{RestLink::Response}!readBody@{readBody}}
 \index{readBody@{readBody}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{readBody()}{readBody()}}
@@ -405,7 +405,7 @@ Reads the raw response body as a QByte\+Array.
 \begin{DoxyReturn}{Returns}
 The response body as a QByte\+Array. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a8ac9a70551bdf98beedc7db61a1a4ea7}\label{class_rest_link_1_1_response_a8ac9a70551bdf98beedc7db61a1a4ea7}} 
+\Hypertarget{class_rest_link_1_1_response_a8ac9a70551bdf98beedc7db61a1a4ea7}\label{class_rest_link_1_1_response_a8ac9a70551bdf98beedc7db61a1a4ea7} 
 \index{RestLink::Response@{RestLink::Response}!hasNetworkError@{hasNetworkError}}
 \index{hasNetworkError@{hasNetworkError}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{hasNetworkError()}{hasNetworkError()}}
@@ -418,7 +418,7 @@ Checks if a network error occurred during the request.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if a network error occurred, otherwise {\ttfamily false}. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a3fd9f301571c07b2daa1d6702bd8579d}\label{class_rest_link_1_1_response_a3fd9f301571c07b2daa1d6702bd8579d}} 
+\Hypertarget{class_rest_link_1_1_response_a3fd9f301571c07b2daa1d6702bd8579d}\label{class_rest_link_1_1_response_a3fd9f301571c07b2daa1d6702bd8579d} 
 \index{RestLink::Response@{RestLink::Response}!networkError@{networkError}}
 \index{networkError@{networkError}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{networkError()}{networkError()}}
@@ -431,7 +431,7 @@ Retrieves the network error code.
 \begin{DoxyReturn}{Returns}
 The network error code. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a38d9c0d47627c810e843216443954855}\label{class_rest_link_1_1_response_a38d9c0d47627c810e843216443954855}} 
+\Hypertarget{class_rest_link_1_1_response_a38d9c0d47627c810e843216443954855}\label{class_rest_link_1_1_response_a38d9c0d47627c810e843216443954855} 
 \index{RestLink::Response@{RestLink::Response}!networkErrorString@{networkErrorString}}
 \index{networkErrorString@{networkErrorString}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{networkErrorString()}{networkErrorString()}}
@@ -444,11 +444,11 @@ Retrieves a string description of the network error.
 \begin{DoxyReturn}{Returns}
 The network error description as a QString. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_response_a512863f381f5c75ff1cd224ce1206e68}\label{class_rest_link_1_1_response_a512863f381f5c75ff1cd224ce1206e68}} 
+\Hypertarget{class_rest_link_1_1_response_a512863f381f5c75ff1cd224ce1206e68}\label{class_rest_link_1_1_response_a512863f381f5c75ff1cd224ce1206e68} 
 \index{RestLink::Response@{RestLink::Response}!networkReply@{networkReply}}
 \index{networkReply@{networkReply}!RestLink::Response@{RestLink::Response}}
 \doxysubsubsection{\texorpdfstring{networkReply()}{networkReply()}}
-{\footnotesize\ttfamily QNetwork\+Reply $\ast$ Rest\+Link\+::\+Response\+::network\+Reply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily QNetwork\+Reply \texorpdfstring{$\ast$}{*} Rest\+Link\+::\+Response\+::network\+Reply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 

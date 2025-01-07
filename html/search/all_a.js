@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['operation_47',['operation',['../class_rest_link_1_1_response.html#a2c49df609edae42dc41d96348b745a7a',1,'RestLink::Response']]],
-  ['operator_3d_48',['operator=',['../class_rest_link_1_1_request.html#ac556f2c12cc29508e91dd48ad8bffaa6',1,'RestLink::Request::operator=(const Request &amp;other)'],['../class_rest_link_1_1_request.html#a661a5d1fc7dcad0e742334ae99d90233',1,'RestLink::Request::operator=(const Request &amp;&amp;other)']]]
+  ['maxcachesize_0',['maxCacheSize',['../class_rest_link_1_1_cache.html#ae34167c789864fd0e41128005fdb6fbe',1,'RestLink::Cache']]],
+  ['merge_1',['merge',['../class_rest_link_1_1_request.html#a4bf1543bb5ecd58bf14feed3ea125434',1,'RestLink::Request']]],
+  ['metadata_2',['metaData',['../class_rest_link_1_1_cache.html#a27646a4fb9edead55904d4218af4f99e',1,'RestLink::Cache']]]
 ];

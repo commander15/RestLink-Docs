@@ -1,5 +1,5 @@
-\hypertarget{class_rest_link_1_1_api}{}\doxysection{Rest\+Link\+::Api Class Reference}
-\label{class_rest_link_1_1_api}\index{RestLink::Api@{RestLink::Api}}
+\doxysection{Rest\+Link\+::Api Class Reference}
+\hypertarget{class_rest_link_1_1_api}{}\label{class_rest_link_1_1_api}\index{RestLink::Api@{RestLink::Api}}
 
 
 Represents an API interface that manages configuration, requests, and parameters.  
@@ -9,11 +9,11 @@ Represents an API interface that manages configuration, requests, and parameters
 
 Inherits \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Base}}.
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_rest_link_1_1_api_a0dde35330e4fc2b3067d0a0162dac9f1}{Api}} (QObject $\ast$parent=nullptr)
-\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} object with an optional parent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_api_a0dde35330e4fc2b3067d0a0162dac9f1}{Api}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{class_rest_link_1_1_api}{Api} object with an optional parent. \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_rest_link_1_1_api_a650c6533d2c23851372cbe63eba221e3}{name}} () const
 \begin{DoxyCompactList}\small\item\em Returns the name of the API. \end{DoxyCompactList}\item 
 Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0}{set\+Name}} (const QString \&\mbox{\hyperlink{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2}{name}})
@@ -36,16 +36,117 @@ Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_api_a5c6e0e8e9163b7ef055
 \begin{DoxyCompactList}\small\item\em Configures the API with the given URL. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_rest_link_1_1_api_afeb72fa6ad28e2e0abe30c9ff34791eb}{configure}} (const QJson\+Object \&config)
 \begin{DoxyCompactList}\small\item\em Configures the API with the given JSON configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_rest_link_1_1_api_base_a85706408c858ec3854f6c2b18e79b5a4}{\texorpdfstring{$\sim$}{\string~}\+Api\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_rest_link_1_1_api_base}{Api\+Base}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_af7a9838f52f594045fa3359dcb0c0858}{head}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a HEAD request and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_a7d228b925d871e01f4ce213f12a3bd6e}{head}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Makes a HEAD request and returns the \doxylink{class_rest_link_1_1_response}{Response} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_ae9b10e948ed87ff037286465a01dfcc8}{get}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a GET request and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_a753092a332ae26dac90c15cfb0993d5d}{get}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Makes a GET request and returns the \doxylink{class_rest_link_1_1_response}{Response} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a042430bc383213c185218dd087f42bc0}{post}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a POST request with a body and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_aeaa13a32e278187e0fb62ca8a4ea24be}{post}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body)
+\begin{DoxyCompactList}\small\item\em Makes a POST request with a body and returns the \doxylink{class_rest_link_1_1_response}{Response} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_af93144922505fb613f0ec3d3f5cfe152}{put}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a PUT request with a body and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_add35b3db631cb671fe2bf7ce3b0d4f17}{put}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body)
+\begin{DoxyCompactList}\small\item\em Makes a PUT request with a body and returns the \doxylink{class_rest_link_1_1_response}{Response} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a767e4cad0d8ca700052e47ba78122422}{patch}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a PATCH request with a body and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_aac4f290f2196f107e862371cf74de826}{patch}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body)
+\begin{DoxyCompactList}\small\item\em Makes a PATCH request with a body and returns the \doxylink{class_rest_link_1_1_response}{Response} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a8cf9d8b4144c6b1ebc9c2b35d45ebbd1}{delete\+Resource}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a DELETE request and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_a84c5ad205dd4dc1ee6a45752bad3f2ee}{delete\+Resource}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Makes a DELETE request and returns the \doxylink{class_rest_link_1_1_response}{Response} object. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_rest_link_1_1_api_base_ab0fa0676d5fdeb53076baf4abfb67ec9}{request\+Interceptors}} () const
+\begin{DoxyCompactList}\small\item\em Returns the list of request interceptors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_af21ac04e37989e896c844a4387dff46b}{add\+Request\+Interceptor}} (\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} \texorpdfstring{$\ast$}{*}interceptor)
+\begin{DoxyCompactList}\small\item\em Adds a request interceptor to the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a2191397a2641e9f523f5ee30dcea50f1}{remove\+Request\+Interceptor}} (\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} \texorpdfstring{$\ast$}{*}interceptor)
+\begin{DoxyCompactList}\small\item\em Removes a request interceptor from the list. \end{DoxyCompactList}\item 
+QNetwork\+Access\+Manager \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_a5d4524625fa9bbe29a37e3eae2f8d704}{network\+Manager}} () const
+\begin{DoxyCompactList}\small\item\em Returns the network manager used by the \doxylink{class_rest_link_1_1_api_base}{Api\+Base} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a1a2094806701e425f46672c67511cd7c}{set\+Network\+Manager}} (QNetwork\+Access\+Manager \texorpdfstring{$\ast$}{*}manager)
+\begin{DoxyCompactList}\small\item\em Sets the network manager for the \doxylink{class_rest_link_1_1_api_base}{Api\+Base} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_rest_link_1_1_request_interface}{Rest\+Link\+::\+Request\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_rest_link_1_1_request_interface_af8d364900cb9c10df5487e9fed248568}{has\+Path\+Parameter}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Checks if a path parameter exists in the request. \end{DoxyCompactList}\item 
+Path\+Parameter \mbox{\hyperlink{class_rest_link_1_1_request_interface_ab0a45bd990928a450bfd0e50c3e0ef68}{path\+Parameter}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves a specific path parameter. \end{DoxyCompactList}\item 
+QVariant \mbox{\hyperlink{class_rest_link_1_1_request_interface_a55c639e87779c41a65d8b0a48a734440}{path\+Parameter\+Value}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves the value of a path parameter. \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_rest_link_1_1_request_interface_a2460950092d3c2c31d627fb6ec56ba40}{path\+Parameter\+Names}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the names of all path parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a8b10f650c3dc2821a84d294059874ace}{set\+Path\+Parameter}} (const QString \&name, const QVariant \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a path parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_aacab1e2b9d3ba176f03d76477d02034e}{set\+Path\+Parameter}} (const Path\+Parameter \&parameter)
+\begin{DoxyCompactList}\small\item\em Sets a path parameter using a {\ttfamily Path\+Parameter} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a7191df764b66b90331b6f28aba05b640}{unset\+Path\+Parameter}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Unsets (removes) a path parameter from the request. \end{DoxyCompactList}\item 
+QList$<$ Path\+Parameter $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_abfb60e3abaa4882a9f145a8620cbb16c}{path\+Parameters}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all path parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a2128c12f9908fc6c3562b1d5930cd855}{set\+Path\+Parameters}} (const QList$<$ Path\+Parameter $>$ \&parameters)
+\begin{DoxyCompactList}\small\item\em Sets all path parameters. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rest_link_1_1_request_interface_aa1d936036969fccdde4b6a468ccbc86b}{has\+Query\+Parameter}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Checks if a query parameter exists in the request. \end{DoxyCompactList}\item 
+Query\+Parameter \mbox{\hyperlink{class_rest_link_1_1_request_interface_a62114c7a8a32108e52efbccdb88b5203}{query\+Parameter}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves a specific query parameter. \end{DoxyCompactList}\item 
+QList$<$ QVariant $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_a2668210f521e6061359c02998fae8ff8}{query\+Parameter\+Values}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves the values of a query parameter. \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_rest_link_1_1_request_interface_a3689c62b8a099e8560e5d55866c2330b}{query\+Parameter\+Names}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the names of all query parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e}{set\+Query\+Parameter}} (const QString \&name, const QVariant \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a query parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca}{set\+Query\+Parameter}} (const Query\+Parameter \&param)
+\begin{DoxyCompactList}\small\item\em Sets a query parameter using a {\ttfamily Query\+Parameter} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0}{unset\+Query\+Parameter}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Unsets (removes) a query parameter from the request. \end{DoxyCompactList}\item 
+QList$<$ Query\+Parameter $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_a619a1f098e59b40901c05bead4545957}{query\+Parameters}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all query parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_aaf15c64f5514925a05d581c0103d9935}{set\+Query\+Parameters}} (const QList$<$ Query\+Parameter $>$ \&parameters)
+\begin{DoxyCompactList}\small\item\em Sets all query parameters. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rest_link_1_1_request_interface_a25436a94d99726ed4cb8cddd6d3e327e}{has\+Header}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Checks if a header exists in the request. \end{DoxyCompactList}\item 
+Header \mbox{\hyperlink{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22}{header}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves a specific header. \end{DoxyCompactList}\item 
+QList$<$ QVariant $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_ade32ae766379961268379f5d6fd707d7}{header\+Values}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves the values of a header. \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_rest_link_1_1_request_interface_a44151d5025ec43c82f2f1e2c48ef6132}{header\+Names}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the names of all headers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a829159f62eee14566b433499fa59fafa}{set\+Header}} (const QString \&name, const QVariant \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a8698ed9d2417e56549c349638ead8ebd}{set\+Header}} (const Header \&\mbox{\hyperlink{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22}{header}})
+\begin{DoxyCompactList}\small\item\em Sets a header using a {\ttfamily Header} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a5b3710603e7ef336a4027c3dba5290ee}{unset\+Header}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Unsets (removes) a header from the request. \end{DoxyCompactList}\item 
+QList$<$ Header $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}{headers}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all headers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd65dcbf93372d1}{set\+Headers}} (const QList$<$ Header $>$ \&\mbox{\hyperlink{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}{headers}})
+\begin{DoxyCompactList}\small\item\em Sets all headers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 QNetwork\+Request \mbox{\hyperlink{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}{create\+Network\+Request}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, Operation operation) override
 \begin{DoxyCompactList}\small\item\em Creates a network request for the given parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Properties}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Base}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2}\label{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2}} 
-QString \mbox{\hyperlink{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2}{name}}
+virtual QNetwork\+Reply \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_acd63deb149fc00db1a24433cce7d2d61}{create\+Network\+Reply}} (const QNetwork\+Request \&request, const Body \&body, Operation operation)
+\begin{DoxyCompactList}\small\item\em Creates a network reply based on the given request, body, and operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2}\label{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2} 
+QString {\bfseries name}
 \begin{DoxyCompactList}\small\item\em The name of the API. \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_rest_link_1_1_api_aad8c42de0fc2fd62afdabdf231680d6a}{user\+Agent}}
 \begin{DoxyCompactList}\small\item\em The user agent string to be used in API requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -54,18 +155,18 @@ QString \mbox{\hyperlink{class_rest_link_1_1_api_aad8c42de0fc2fd62afdabdf231680d
 \doxysubsection{Detailed Description}
 Represents an API interface that manages configuration, requests, and parameters. 
 
-The \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} class is used to interact with a specific API, including managing the API\textquotesingle{}s name, version, URL, and request parameters. It provides methods for setting and retrieving these properties, as well as configuring the API using both direct URLs and JSON configuration objects. The class allows for adding, removing, and managing request parameters. 
+The \doxylink{class_rest_link_1_1_api}{Api} class is responsible for creating network requests and managing response data. It supports adding parameters to requests, configuring the API from different sources, and emitting signals for configuration changes and network error events. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_rest_link_1_1_api_a0dde35330e4fc2b3067d0a0162dac9f1}\label{class_rest_link_1_1_api_a0dde35330e4fc2b3067d0a0162dac9f1}} 
+\Hypertarget{class_rest_link_1_1_api_a0dde35330e4fc2b3067d0a0162dac9f1}\label{class_rest_link_1_1_api_a0dde35330e4fc2b3067d0a0162dac9f1} 
 \index{RestLink::Api@{RestLink::Api}!Api@{Api}}
 \index{Api@{Api}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{Api()}{Api()}}
-{\footnotesize\ttfamily Rest\+Link\+::\+Api\+::\+Api (\begin{DoxyParamCaption}\item[{QObject $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Api\+::\+Api (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-Constructs an \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} object with an optional parent. 
+Constructs an \doxylink{class_rest_link_1_1_api}{Api} object with an optional parent. 
 
 This constructor initializes the API object, setting the parent if provided. The API object is ready to be configured and used to make requests. The parent object is passed to the QObject constructor, which manages the object\textquotesingle{}s memory and lifecycle.
 
@@ -77,7 +178,7 @@ This constructor initializes the API object, setting the parent if provided. The
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_rest_link_1_1_api_a650c6533d2c23851372cbe63eba221e3}\label{class_rest_link_1_1_api_a650c6533d2c23851372cbe63eba221e3}} 
+\Hypertarget{class_rest_link_1_1_api_a650c6533d2c23851372cbe63eba221e3}\label{class_rest_link_1_1_api_a650c6533d2c23851372cbe63eba221e3} 
 \index{RestLink::Api@{RestLink::Api}!name@{name}}
 \index{name@{name}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{name()}{name()}}
@@ -92,7 +193,7 @@ This method retrieves the current name of the API as a string. The API name typi
 \begin{DoxyReturn}{Returns}
 A QString containing the name of the API. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0}\label{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0}} 
+\Hypertarget{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0}\label{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0} 
 \index{RestLink::Api@{RestLink::Api}!setName@{setName}}
 \index{setName@{setName}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{setName()}{setName()}}
@@ -109,7 +210,7 @@ This method sets a new name for the API. The API name is typically used for iden
 {\em name} & The new name of the API. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_api_ae53904ec93efece3f491816fcb0c569f}\label{class_rest_link_1_1_api_ae53904ec93efece3f491816fcb0c569f}} 
+\Hypertarget{class_rest_link_1_1_api_ae53904ec93efece3f491816fcb0c569f}\label{class_rest_link_1_1_api_ae53904ec93efece3f491816fcb0c569f} 
 \index{RestLink::Api@{RestLink::Api}!version@{version}}
 \index{version@{version}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{version()}{version()}}
@@ -124,7 +225,7 @@ This method retrieves the current version of the API. The version is represented
 \begin{DoxyReturn}{Returns}
 The integer version number of the API. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_api_ad1c7891a661dbaa554e42c4555e64641}\label{class_rest_link_1_1_api_ad1c7891a661dbaa554e42c4555e64641}} 
+\Hypertarget{class_rest_link_1_1_api_ad1c7891a661dbaa554e42c4555e64641}\label{class_rest_link_1_1_api_ad1c7891a661dbaa554e42c4555e64641} 
 \index{RestLink::Api@{RestLink::Api}!setVersion@{setVersion}}
 \index{setVersion@{setVersion}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{setVersion()}{setVersion()}}
@@ -141,7 +242,7 @@ This method sets a new version number for the API. The version number is typical
 {\em version} & The new version number for the API. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_api_a73ee1a5b8223b05dd382688376b3d99c}\label{class_rest_link_1_1_api_a73ee1a5b8223b05dd382688376b3d99c}} 
+\Hypertarget{class_rest_link_1_1_api_a73ee1a5b8223b05dd382688376b3d99c}\label{class_rest_link_1_1_api_a73ee1a5b8223b05dd382688376b3d99c} 
 \index{RestLink::Api@{RestLink::Api}!url@{url}}
 \index{url@{url}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{url()}{url()}}
@@ -160,7 +261,7 @@ A QUrl representing the API URL.
 
 Implements \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Base}}.
 
-\mbox{\Hypertarget{class_rest_link_1_1_api_a7fe9134916fa729bd75f87a8dba9587e}\label{class_rest_link_1_1_api_a7fe9134916fa729bd75f87a8dba9587e}} 
+\Hypertarget{class_rest_link_1_1_api_a7fe9134916fa729bd75f87a8dba9587e}\label{class_rest_link_1_1_api_a7fe9134916fa729bd75f87a8dba9587e} 
 \index{RestLink::Api@{RestLink::Api}!setUrl@{setUrl}}
 \index{setUrl@{setUrl}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{setUrl()}{setUrl()}}
@@ -177,7 +278,7 @@ This method sets a new URL for the API, which will be used for making API reques
 {\em url} & The new URL of the API. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_api_adc3e7bb7a63e2dd64569d38f9efe7476}\label{class_rest_link_1_1_api_adc3e7bb7a63e2dd64569d38f9efe7476}} 
+\Hypertarget{class_rest_link_1_1_api_adc3e7bb7a63e2dd64569d38f9efe7476}\label{class_rest_link_1_1_api_adc3e7bb7a63e2dd64569d38f9efe7476} 
 \index{RestLink::Api@{RestLink::Api}!locale@{locale}}
 \index{locale@{locale}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{locale()}{locale()}}
@@ -197,7 +298,7 @@ This locale is used to set ACCEPT-\/\+LANGUAGE header only, if you want to pass 
 
 Reimplemented from \mbox{\hyperlink{class_rest_link_1_1_api_base_a3a55e077f89cc11e8bc650c4471997c7}{Rest\+Link\+::\+Api\+Base}}.
 
-\mbox{\Hypertarget{class_rest_link_1_1_api_a4af630e5fdebfa82c13a0c8e6c6eaa6c}\label{class_rest_link_1_1_api_a4af630e5fdebfa82c13a0c8e6c6eaa6c}} 
+\Hypertarget{class_rest_link_1_1_api_a4af630e5fdebfa82c13a0c8e6c6eaa6c}\label{class_rest_link_1_1_api_a4af630e5fdebfa82c13a0c8e6c6eaa6c} 
 \index{RestLink::Api@{RestLink::Api}!userAgent@{userAgent}}
 \index{userAgent@{userAgent}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{userAgent()}{userAgent()}}
@@ -216,7 +317,7 @@ A QString representing the user agent for the API.
 
 Reimplemented from \mbox{\hyperlink{class_rest_link_1_1_api_base_a0682831b71c6f4d60a32a423d946e7a2}{Rest\+Link\+::\+Api\+Base}}.
 
-\mbox{\Hypertarget{class_rest_link_1_1_api_aba4ef411220d0f77eb1ab19bfa23e615}\label{class_rest_link_1_1_api_aba4ef411220d0f77eb1ab19bfa23e615}} 
+\Hypertarget{class_rest_link_1_1_api_aba4ef411220d0f77eb1ab19bfa23e615}\label{class_rest_link_1_1_api_aba4ef411220d0f77eb1ab19bfa23e615} 
 \index{RestLink::Api@{RestLink::Api}!setUserAgent@{setUserAgent}}
 \index{setUserAgent@{setUserAgent}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{setUserAgent()}{setUserAgent()}}
@@ -233,7 +334,7 @@ This method sets the user agent string used for API requests. The user agent ide
 {\em agent} & The user agent string to be used for the API. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_api_a5c6e0e8e9163b7ef0552dda621360159}\label{class_rest_link_1_1_api_a5c6e0e8e9163b7ef0552dda621360159}} 
+\Hypertarget{class_rest_link_1_1_api_a5c6e0e8e9163b7ef0552dda621360159}\label{class_rest_link_1_1_api_a5c6e0e8e9163b7ef0552dda621360159} 
 \index{RestLink::Api@{RestLink::Api}!configure@{configure}}
 \index{configure@{configure}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -250,7 +351,7 @@ This method configures the API by setting the URL to the given one, which is use
 {\em url} & The URL to be set for the API. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_api_afeb72fa6ad28e2e0abe30c9ff34791eb}\label{class_rest_link_1_1_api_afeb72fa6ad28e2e0abe30c9ff34791eb}} 
+\Hypertarget{class_rest_link_1_1_api_afeb72fa6ad28e2e0abe30c9ff34791eb}\label{class_rest_link_1_1_api_afeb72fa6ad28e2e0abe30c9ff34791eb} 
 \index{RestLink::Api@{RestLink::Api}!configure@{configure}}
 \index{configure@{configure}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -270,7 +371,7 @@ This method configures the API using a JSON object. The configuration can includ
 \begin{DoxyReturn}{Returns}
 Returns true if the configuration was successful, false otherwise. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}\label{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}} 
+\Hypertarget{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}\label{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8} 
 \index{RestLink::Api@{RestLink::Api}!createNetworkRequest@{createNetworkRequest}}
 \index{createNetworkRequest@{createNetworkRequest}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{createNetworkRequest()}{createNetworkRequest()}}
@@ -280,7 +381,7 @@ Returns true if the configuration was successful, false otherwise.
 
 Creates a network request for the given parameters. 
 
-This function constructs a QNetwork\+Request using the provided \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}, Body, and Operation parameters. It merges the provided request with internal settings, applies any request interceptors, constructs the URL with query parameters, and sets necessary headers (such as User-\/\+Agent, Accept-\/\+Encoding, and Accept-\/\+Language). It also configures cache and connection settings before returning the fully-\/constructed network request.
+This function constructs a QNetwork\+Request using the provided \doxylink{class_rest_link_1_1_request}{Request}, Body, and Operation parameters. It merges the provided request with internal settings, applies any request interceptors, constructs the URL with query parameters, and sets necessary headers (such as User-\/\+Agent, Accept-\/\+Encoding, and Accept-\/\+Language). It also configures cache and connection settings before returning the fully-\/constructed network request.
 
 
 \begin{DoxyParams}{Parameters}
@@ -301,7 +402,7 @@ Reimplemented from \mbox{\hyperlink{class_rest_link_1_1_api_base_aa0a61d3292c3a5
 
 
 \doxysubsection{Property Documentation}
-\mbox{\Hypertarget{class_rest_link_1_1_api_aad8c42de0fc2fd62afdabdf231680d6a}\label{class_rest_link_1_1_api_aad8c42de0fc2fd62afdabdf231680d6a}} 
+\Hypertarget{class_rest_link_1_1_api_aad8c42de0fc2fd62afdabdf231680d6a}\label{class_rest_link_1_1_api_aad8c42de0fc2fd62afdabdf231680d6a} 
 \index{RestLink::Api@{RestLink::Api}!userAgent@{userAgent}}
 \index{userAgent@{userAgent}!RestLink::Api@{RestLink::Api}}
 \doxysubsubsection{\texorpdfstring{userAgent}{userAgent}}
@@ -310,8 +411,6 @@ Reimplemented from \mbox{\hyperlink{class_rest_link_1_1_api_base_aa0a61d3292c3a5
 
 
 The user agent string to be used in API requests. 
-
-The \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} class is responsible for creating network requests and managing response data. It supports adding parameters to requests, configuring the API from different sources, and emitting signals for configuration changes and network error events.
 
 \textbackslash{}signal void Api\+::name\+Changed(const QString \&name)
 
@@ -338,5 +437,5 @@ Emitted when the API configuration is completed.
 Emitted when the API configuration fails.
 
 \begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}}, \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}, Request\+Parameter 
+\doxylink{class_rest_link_1_1_api_base}{Api\+Base}, \doxylink{class_rest_link_1_1_request}{Request}, Request\+Parameter 
 \end{DoxySeeAlso}

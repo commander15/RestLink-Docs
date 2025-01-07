@@ -1,0 +1,63 @@
+\doxysection{request.\+h}
+\hypertarget{request_8h_source}{}\label{request_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/request.h@{/home/runner/work/RestLink/RestLink/src/lib/request.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_REQUEST\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_REQUEST\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RestLink/requestinterface.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QtCore/qshareddata.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QtCore/qmetatype.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }QJsonObject;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }RequestData;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_rest_link_1_1_request_interface}{RequestInterface}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *endpoint);}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}(\textcolor{keyword}{const}\ QString\ \&endpoint);}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&other);}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}(\mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&\&other);}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{\string~Request}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&other);}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&\&other);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ QString\ endpoint()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ setEndpoint(\textcolor{keyword}{const}\ QString\ \&endpoint);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ QString\ urlPath()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ QJsonObject\ toJsonObject()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ fromJsonbject(\textcolor{keyword}{const}\ QJsonObject\ \&\textcolor{keywordtype}{object});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ swap(\mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&other);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ merge(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&r1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&r2);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{const}\ QList<PathParameter>\ *constPathParameters()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00042\ \ \ \ \ QList<PathParameter>\ *mutablePathParameters()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{const}\ QList<QueryParameter>\ *constQueryParameters()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00044\ \ \ \ \ QList<QueryParameter>\ *mutableQueryParameters()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ QList<Header>\ *constHeaders()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00046\ \ \ \ \ QList<Header>\ *mutableHeaders()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ QSharedDataPointer<RequestData>\ d\_ptr;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rest_link_1_1_api_base}{ApiBase}};}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ Q\_DECLARE\_METATYPE(\mbox{\hyperlink{class_rest_link_1_1_request}{RestLink::Request}})}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_REQUEST\_H}}
+
+\end{DoxyCode}

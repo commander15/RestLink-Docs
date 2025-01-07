@@ -1,0 +1,48 @@
+\doxysection{pathparameter.\+h}
+\hypertarget{pathparameter_8h_source}{}\label{pathparameter_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/pathparameter.h@{/home/runner/work/RestLink/RestLink/src/lib/pathparameter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_PATHPARAMETER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_PATHPARAMETER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtCore/qvariant.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }PathParameter}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ PathParameter();}
+\DoxyCodeLine{00014\ \ \ \ \ PathParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00015\ \ \ \ \ PathParameter(\textcolor{keyword}{const}\ PathParameter\ \&other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ \ \ \ \ PathParameter(PathParameter\ \&\&other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ PathParameter\ \&operator=(\textcolor{keyword}{const}\ PathParameter\ \&other);}
+\DoxyCodeLine{00019\ \ \ \ \ PathParameter\ \&operator=(PathParameter\ \&\&other);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ QString\ name()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ setName(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ QVariant\ value()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ setValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ isValid()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ PathParameter\ \&other);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ PathParameter\ \&other)}
+\DoxyCodeLine{00031\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ !operator==(other);\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ m\_name;}
+\DoxyCodeLine{00035\ \ \ \ \ QVariant\ m\_value;}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{typedef}\ QList<PathParameter>\ PathParameterList;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_PATHPARAMETER\_H}}
+
+\end{DoxyCode}

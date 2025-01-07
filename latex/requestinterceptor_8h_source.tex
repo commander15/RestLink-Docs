@@ -1,0 +1,25 @@
+\doxysection{requestinterceptor.\+h}
+\hypertarget{requestinterceptor_8h_source}{}\label{requestinterceptor_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/requestinterceptor.h@{/home/runner/work/RestLink/RestLink/src/lib/requestinterceptor.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_REQUESTINTERCEPTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_REQUESTINTERCEPTOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RestLink/api.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ \mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{RequestInterceptor}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{\string~RequestInterceptor}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \mbox{\hyperlink{class_rest_link_1_1_request_interceptor_acd176f77332d4c37bdac094c928b5f13}{intercept}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api::Operation\ operation)\ =\ 0;}
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_REQUESTINTERCEPTOR\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,26 @@
+\doxysection{compressionutils.\+h}
+\hypertarget{compressionutils_8h_source}{}\label{compressionutils_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/compressionutils.h@{/home/runner/work/RestLink/RestLink/src/lib/compressionutils.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_COMPRESSIONUTILS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_COMPRESSIONUTILS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ CompressionUtils}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{static}\ QByteArray\ decompress(\textcolor{keyword}{const}\ QByteArray\ \&input,\ \textcolor{keyword}{const}\ QByteArray\ \&algorithm);}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ QByteArray\ decompressGzip(\textcolor{keyword}{const}\ QByteArray\ \&input);}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{static}\ QByteArray\ decompressDeflate(\textcolor{keyword}{const}\ QByteArray\ \&input);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ QList<QByteArray>\ supportedAlgorithms();}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_COMPRESSIONUTILS\_H}}
+
+\end{DoxyCode}

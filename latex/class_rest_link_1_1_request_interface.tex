@@ -1,5 +1,5 @@
-\hypertarget{class_rest_link_1_1_request_interface}{}\doxysection{Rest\+Link\+::Request\+Interface Class Reference}
-\label{class_rest_link_1_1_request_interface}\index{RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysection{Rest\+Link\+::Request\+Interface Class Reference}
+\hypertarget{class_rest_link_1_1_request_interface}{}\label{class_rest_link_1_1_request_interface}\index{RestLink::RequestInterface@{RestLink::RequestInterface}}
 
 
 A class for storing and managing some HTTP request informations (url path and query parameter along with headers).  
@@ -9,7 +9,7 @@ A class for storing and managing some HTTP request informations (url path and qu
 
 Inherited by \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Base}}, and \mbox{\hyperlink{class_rest_link_1_1_request}{Rest\+Link\+::\+Request}}.
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{class_rest_link_1_1_request_interface_af8d364900cb9c10df5487e9fed248568}{has\+Path\+Parameter}} (const QString \&name) const
@@ -72,7 +72,7 @@ void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd
 A class for storing and managing some HTTP request informations (url path and query parameter along with headers). 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_af8d364900cb9c10df5487e9fed248568}\label{class_rest_link_1_1_request_interface_af8d364900cb9c10df5487e9fed248568}} 
+\Hypertarget{class_rest_link_1_1_request_interface_af8d364900cb9c10df5487e9fed248568}\label{class_rest_link_1_1_request_interface_af8d364900cb9c10df5487e9fed248568} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!hasPathParameter@{hasPathParameter}}
 \index{hasPathParameter@{hasPathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{hasPathParameter()}{hasPathParameter()}}
@@ -94,7 +94,7 @@ true If the path parameter exists.
 
 false If the path parameter does not exist. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_ab0a45bd990928a450bfd0e50c3e0ef68}\label{class_rest_link_1_1_request_interface_ab0a45bd990928a450bfd0e50c3e0ef68}} 
+\Hypertarget{class_rest_link_1_1_request_interface_ab0a45bd990928a450bfd0e50c3e0ef68}\label{class_rest_link_1_1_request_interface_ab0a45bd990928a450bfd0e50c3e0ef68} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!pathParameter@{pathParameter}}
 \index{pathParameter@{pathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{pathParameter()}{pathParameter()}}
@@ -114,7 +114,7 @@ This function retrieves the path parameter for the given name. If the parameter 
 \begin{DoxyReturn}{Returns}
 The path parameter corresponding to the given name. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a55c639e87779c41a65d8b0a48a734440}\label{class_rest_link_1_1_request_interface_a55c639e87779c41a65d8b0a48a734440}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a55c639e87779c41a65d8b0a48a734440}\label{class_rest_link_1_1_request_interface_a55c639e87779c41a65d8b0a48a734440} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!pathParameterValue@{pathParameterValue}}
 \index{pathParameterValue@{pathParameterValue}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{pathParameterValue()}{pathParameterValue()}}
@@ -134,7 +134,7 @@ This function returns the value associated with the given path parameter name. I
 \begin{DoxyReturn}{Returns}
 The value of the path parameter, or an empty QVariant if not found. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a2460950092d3c2c31d627fb6ec56ba40}\label{class_rest_link_1_1_request_interface_a2460950092d3c2c31d627fb6ec56ba40}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a2460950092d3c2c31d627fb6ec56ba40}\label{class_rest_link_1_1_request_interface_a2460950092d3c2c31d627fb6ec56ba40} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!pathParameterNames@{pathParameterNames}}
 \index{pathParameterNames@{pathParameterNames}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{pathParameterNames()}{pathParameterNames()}}
@@ -149,7 +149,7 @@ This function returns a list of names of all the path parameters in the request.
 \begin{DoxyReturn}{Returns}
 A list of names of path parameters. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a8b10f650c3dc2821a84d294059874ace}\label{class_rest_link_1_1_request_interface_a8b10f650c3dc2821a84d294059874ace}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a8b10f650c3dc2821a84d294059874ace}\label{class_rest_link_1_1_request_interface_a8b10f650c3dc2821a84d294059874ace} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!setPathParameter@{setPathParameter}}
 \index{setPathParameter@{setPathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{setPathParameter()}{setPathParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -168,7 +168,7 @@ This function sets or updates the value of a path parameter in the request. If t
 {\em value} & The new value to set for the path parameter. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_aacab1e2b9d3ba176f03d76477d02034e}\label{class_rest_link_1_1_request_interface_aacab1e2b9d3ba176f03d76477d02034e}} 
+\Hypertarget{class_rest_link_1_1_request_interface_aacab1e2b9d3ba176f03d76477d02034e}\label{class_rest_link_1_1_request_interface_aacab1e2b9d3ba176f03d76477d02034e} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!setPathParameter@{setPathParameter}}
 \index{setPathParameter@{setPathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{setPathParameter()}{setPathParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -185,7 +185,7 @@ This function sets or updates a path parameter using a {\ttfamily Path\+Paramete
 {\em parameter} & The {\ttfamily Path\+Parameter} object containing the name and value. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a7191df764b66b90331b6f28aba05b640}\label{class_rest_link_1_1_request_interface_a7191df764b66b90331b6f28aba05b640}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a7191df764b66b90331b6f28aba05b640}\label{class_rest_link_1_1_request_interface_a7191df764b66b90331b6f28aba05b640} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!unsetPathParameter@{unsetPathParameter}}
 \index{unsetPathParameter@{unsetPathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{unsetPathParameter()}{unsetPathParameter()}}
@@ -202,7 +202,7 @@ This function removes the path parameter with the given name from the request.
 {\em name} & The name of the path parameter to remove. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_abfb60e3abaa4882a9f145a8620cbb16c}\label{class_rest_link_1_1_request_interface_abfb60e3abaa4882a9f145a8620cbb16c}} 
+\Hypertarget{class_rest_link_1_1_request_interface_abfb60e3abaa4882a9f145a8620cbb16c}\label{class_rest_link_1_1_request_interface_abfb60e3abaa4882a9f145a8620cbb16c} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!pathParameters@{pathParameters}}
 \index{pathParameters@{pathParameters}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{pathParameters()}{pathParameters()}}
@@ -217,7 +217,7 @@ This function returns a list of all path parameters in the request.
 \begin{DoxyReturn}{Returns}
 A list of all path parameters. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a2128c12f9908fc6c3562b1d5930cd855}\label{class_rest_link_1_1_request_interface_a2128c12f9908fc6c3562b1d5930cd855}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a2128c12f9908fc6c3562b1d5930cd855}\label{class_rest_link_1_1_request_interface_a2128c12f9908fc6c3562b1d5930cd855} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!setPathParameters@{setPathParameters}}
 \index{setPathParameters@{setPathParameters}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{setPathParameters()}{setPathParameters()}}
@@ -234,7 +234,7 @@ This function sets the list of path parameters to the provided list of parameter
 {\em parameters} & A list of path parameters to set. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_aa1d936036969fccdde4b6a468ccbc86b}\label{class_rest_link_1_1_request_interface_aa1d936036969fccdde4b6a468ccbc86b}} 
+\Hypertarget{class_rest_link_1_1_request_interface_aa1d936036969fccdde4b6a468ccbc86b}\label{class_rest_link_1_1_request_interface_aa1d936036969fccdde4b6a468ccbc86b} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!hasQueryParameter@{hasQueryParameter}}
 \index{hasQueryParameter@{hasQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{hasQueryParameter()}{hasQueryParameter()}}
@@ -256,7 +256,7 @@ true If the query parameter exists.
 
 false If the query parameter does not exist. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a62114c7a8a32108e52efbccdb88b5203}\label{class_rest_link_1_1_request_interface_a62114c7a8a32108e52efbccdb88b5203}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a62114c7a8a32108e52efbccdb88b5203}\label{class_rest_link_1_1_request_interface_a62114c7a8a32108e52efbccdb88b5203} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!queryParameter@{queryParameter}}
 \index{queryParameter@{queryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{queryParameter()}{queryParameter()}}
@@ -276,7 +276,7 @@ This function retrieves the query parameter for the given name. If the parameter
 \begin{DoxyReturn}{Returns}
 The query parameter corresponding to the given name. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a2668210f521e6061359c02998fae8ff8}\label{class_rest_link_1_1_request_interface_a2668210f521e6061359c02998fae8ff8}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a2668210f521e6061359c02998fae8ff8}\label{class_rest_link_1_1_request_interface_a2668210f521e6061359c02998fae8ff8} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!queryParameterValues@{queryParameterValues}}
 \index{queryParameterValues@{queryParameterValues}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{queryParameterValues()}{queryParameterValues()}}
@@ -296,7 +296,7 @@ This function returns a list of values associated with the given query parameter
 \begin{DoxyReturn}{Returns}
 A list of values of the query parameter, or an empty list if not found. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a3689c62b8a099e8560e5d55866c2330b}\label{class_rest_link_1_1_request_interface_a3689c62b8a099e8560e5d55866c2330b}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a3689c62b8a099e8560e5d55866c2330b}\label{class_rest_link_1_1_request_interface_a3689c62b8a099e8560e5d55866c2330b} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!queryParameterNames@{queryParameterNames}}
 \index{queryParameterNames@{queryParameterNames}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{queryParameterNames()}{queryParameterNames()}}
@@ -311,7 +311,7 @@ This function returns a list of names of all the query parameters in the request
 \begin{DoxyReturn}{Returns}
 A list of names of query parameters. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e}\label{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e}} 
+\Hypertarget{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e}\label{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!setQueryParameter@{setQueryParameter}}
 \index{setQueryParameter@{setQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{setQueryParameter()}{setQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -330,7 +330,7 @@ This function sets or updates the value of a query parameter in the request. If 
 {\em value} & The new value to set for the query parameter. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca}\label{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca}\label{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!setQueryParameter@{setQueryParameter}}
 \index{setQueryParameter@{setQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{setQueryParameter()}{setQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -347,7 +347,7 @@ This function sets or updates a query parameter using a {\ttfamily Query\+Parame
 {\em param} & The {\ttfamily Query\+Parameter} object containing the name and value. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0}\label{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0}} 
+\Hypertarget{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0}\label{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!unsetQueryParameter@{unsetQueryParameter}}
 \index{unsetQueryParameter@{unsetQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{unsetQueryParameter()}{unsetQueryParameter()}}
@@ -364,7 +364,7 @@ This function removes the query parameter with the given name from the request.
 {\em name} & The name of the query parameter to remove. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a619a1f098e59b40901c05bead4545957}\label{class_rest_link_1_1_request_interface_a619a1f098e59b40901c05bead4545957}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a619a1f098e59b40901c05bead4545957}\label{class_rest_link_1_1_request_interface_a619a1f098e59b40901c05bead4545957} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!queryParameters@{queryParameters}}
 \index{queryParameters@{queryParameters}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{queryParameters()}{queryParameters()}}
@@ -379,7 +379,7 @@ This function returns a list of all query parameters in the request.
 \begin{DoxyReturn}{Returns}
 A list of all query parameters. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_aaf15c64f5514925a05d581c0103d9935}\label{class_rest_link_1_1_request_interface_aaf15c64f5514925a05d581c0103d9935}} 
+\Hypertarget{class_rest_link_1_1_request_interface_aaf15c64f5514925a05d581c0103d9935}\label{class_rest_link_1_1_request_interface_aaf15c64f5514925a05d581c0103d9935} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!setQueryParameters@{setQueryParameters}}
 \index{setQueryParameters@{setQueryParameters}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{setQueryParameters()}{setQueryParameters()}}
@@ -396,7 +396,7 @@ This function sets the list of query parameters to the provided list of paramete
 {\em parameters} & A list of query parameters to set. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a25436a94d99726ed4cb8cddd6d3e327e}\label{class_rest_link_1_1_request_interface_a25436a94d99726ed4cb8cddd6d3e327e}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a25436a94d99726ed4cb8cddd6d3e327e}\label{class_rest_link_1_1_request_interface_a25436a94d99726ed4cb8cddd6d3e327e} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!hasHeader@{hasHeader}}
 \index{hasHeader@{hasHeader}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{hasHeader()}{hasHeader()}}
@@ -418,7 +418,7 @@ true If the header exists.
 
 false If the header does not exist. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22}\label{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22}\label{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!header@{header}}
 \index{header@{header}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{header()}{header()}}
@@ -438,7 +438,7 @@ This function retrieves the header for the given name. If the header is not foun
 \begin{DoxyReturn}{Returns}
 The header corresponding to the given name. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_ade32ae766379961268379f5d6fd707d7}\label{class_rest_link_1_1_request_interface_ade32ae766379961268379f5d6fd707d7}} 
+\Hypertarget{class_rest_link_1_1_request_interface_ade32ae766379961268379f5d6fd707d7}\label{class_rest_link_1_1_request_interface_ade32ae766379961268379f5d6fd707d7} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!headerValues@{headerValues}}
 \index{headerValues@{headerValues}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{headerValues()}{headerValues()}}
@@ -458,7 +458,7 @@ This function returns a list of values associated with the given header name. If
 \begin{DoxyReturn}{Returns}
 A list of values of the header, or an empty list if not found. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a44151d5025ec43c82f2f1e2c48ef6132}\label{class_rest_link_1_1_request_interface_a44151d5025ec43c82f2f1e2c48ef6132}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a44151d5025ec43c82f2f1e2c48ef6132}\label{class_rest_link_1_1_request_interface_a44151d5025ec43c82f2f1e2c48ef6132} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!headerNames@{headerNames}}
 \index{headerNames@{headerNames}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{headerNames()}{headerNames()}}
@@ -473,7 +473,7 @@ This function returns a list of names of all the headers in the request.
 \begin{DoxyReturn}{Returns}
 A list of names of headers. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a829159f62eee14566b433499fa59fafa}\label{class_rest_link_1_1_request_interface_a829159f62eee14566b433499fa59fafa}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a829159f62eee14566b433499fa59fafa}\label{class_rest_link_1_1_request_interface_a829159f62eee14566b433499fa59fafa} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!setHeader@{setHeader}}
 \index{setHeader@{setHeader}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -492,7 +492,7 @@ This function sets or updates the value of a header in the request. If the heade
 {\em value} & The new value to set for the header. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a8698ed9d2417e56549c349638ead8ebd}\label{class_rest_link_1_1_request_interface_a8698ed9d2417e56549c349638ead8ebd}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a8698ed9d2417e56549c349638ead8ebd}\label{class_rest_link_1_1_request_interface_a8698ed9d2417e56549c349638ead8ebd} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!setHeader@{setHeader}}
 \index{setHeader@{setHeader}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -509,7 +509,7 @@ This function sets or updates a header using a {\ttfamily Header} object.
 {\em header} & The {\ttfamily Header} object containing the name and value. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a5b3710603e7ef336a4027c3dba5290ee}\label{class_rest_link_1_1_request_interface_a5b3710603e7ef336a4027c3dba5290ee}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a5b3710603e7ef336a4027c3dba5290ee}\label{class_rest_link_1_1_request_interface_a5b3710603e7ef336a4027c3dba5290ee} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!unsetHeader@{unsetHeader}}
 \index{unsetHeader@{unsetHeader}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{unsetHeader()}{unsetHeader()}}
@@ -526,7 +526,7 @@ This function removes the header with the given name from the request.
 {\em name} & The name of the header to remove. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}\label{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}} 
+\Hypertarget{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}\label{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!headers@{headers}}
 \index{headers@{headers}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{headers()}{headers()}}
@@ -541,7 +541,7 @@ This function returns a list of all headers in the request.
 \begin{DoxyReturn}{Returns}
 A list of all headers. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd65dcbf93372d1}\label{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd65dcbf93372d1}} 
+\Hypertarget{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd65dcbf93372d1}\label{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd65dcbf93372d1} 
 \index{RestLink::RequestInterface@{RestLink::RequestInterface}!setHeaders@{setHeaders}}
 \index{setHeaders@{setHeaders}!RestLink::RequestInterface@{RestLink::RequestInterface}}
 \doxysubsubsection{\texorpdfstring{setHeaders()}{setHeaders()}}

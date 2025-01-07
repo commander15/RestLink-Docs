@@ -1,11 +1,11 @@
-\hypertarget{class_rest_link_1_1_request_interceptor}{}\doxysection{Rest\+Link\+::Request\+Interceptor Class Reference}
-\label{class_rest_link_1_1_request_interceptor}\index{RestLink::RequestInterceptor@{RestLink::RequestInterceptor}}
+\doxysection{Rest\+Link\+::Request\+Interceptor Class Reference}
+\hypertarget{class_rest_link_1_1_request_interceptor}{}\label{class_rest_link_1_1_request_interceptor}\index{RestLink::RequestInterceptor@{RestLink::RequestInterceptor}}
 
 
 Abstract class for intercepting and modifying HTTP requests before they are sent.  
 
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \mbox{\hyperlink{class_rest_link_1_1_request_interceptor_acd176f77332d4c37bdac094c928b5f13}{intercept}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, Api\+::\+Operation operation)=0
@@ -15,15 +15,15 @@ virtual \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \mbox{\hyperlink
 \doxysubsection{Detailed Description}
 Abstract class for intercepting and modifying HTTP requests before they are sent. 
 
-The \mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} class allows for the modification of HTTP requests before they are executed. By implementing the intercept method, custom logic can be added to modify request headers, body, URL, or any other part of the request. This is particularly useful for adding authentication tokens, modifying headers, or logging requests.
+The \doxylink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor} class allows for the modification of HTTP requests before they are executed. By implementing the intercept method, custom logic can be added to modify request headers, body, URL, or any other part of the request. This is particularly useful for adding authentication tokens, modifying headers, or logging requests.
 
 \begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}}, \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} 
+\doxylink{class_rest_link_1_1_api_base}{Api\+Base}, \doxylink{class_rest_link_1_1_request}{Request} 
 \end{DoxySeeAlso}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_rest_link_1_1_request_interceptor_acd176f77332d4c37bdac094c928b5f13}\label{class_rest_link_1_1_request_interceptor_acd176f77332d4c37bdac094c928b5f13}} 
+\Hypertarget{class_rest_link_1_1_request_interceptor_acd176f77332d4c37bdac094c928b5f13}\label{class_rest_link_1_1_request_interceptor_acd176f77332d4c37bdac094c928b5f13} 
 \index{RestLink::RequestInterceptor@{RestLink::RequestInterceptor}!intercept@{intercept}}
 \index{intercept@{intercept}!RestLink::RequestInterceptor@{RestLink::RequestInterceptor}}
 \doxysubsubsection{\texorpdfstring{intercept()}{intercept()}}

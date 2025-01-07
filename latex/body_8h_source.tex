@@ -1,0 +1,85 @@
+\doxysection{body.\+h}
+\hypertarget{body_8h_source}{}\label{body_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/body.h@{/home/runner/work/RestLink/RestLink/src/lib/body.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_BODY\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_BODY\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RestLink/header.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QtCore/qstring.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QtCore/qbytearray.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QtCore/qjsonvalue.h>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }QHttpMultiPart;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }QIODevice;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }QFile;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ File}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ File(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *fileName);}
+\DoxyCodeLine{00021\ \ \ \ \ File(\textcolor{keyword}{const}\ QString\ \&fileName);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ QFile\ *open()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ QString\ m\_fileName;}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ Body}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ Body();}
+\DoxyCodeLine{00033\ \ \ \ \ Body(QHttpMultiPart\ *multiPart);}
+\DoxyCodeLine{00034\ \ \ \ \ Body(\textcolor{keyword}{const}\ File\ \&file);}
+\DoxyCodeLine{00035\ \ \ \ \ Body(QFile\ *file);}
+\DoxyCodeLine{00036\ \ \ \ \ Body(QIODevice\ *device,\ qint64\ size\ =\ -\/1,\ \textcolor{keyword}{const}\ QByteArray\ \&contentType\ =\ QByteArrayLiteral(\textcolor{stringliteral}{"{}text/plain"{}}));}
+\DoxyCodeLine{00037\ \ \ \ \ Body(\textcolor{keyword}{const}\ QString\ \&text,\ \textcolor{keyword}{const}\ QByteArray\ \&contentType\ =\ QByteArrayLiteral(\textcolor{stringliteral}{"{}text/plain"{}}));}
+\DoxyCodeLine{00038\ \ \ \ \ Body(\textcolor{keyword}{const}\ QByteArray\ \&data,\ \textcolor{keyword}{const}\ QByteArray\ \&contentType\ =\ QByteArrayLiteral(\textcolor{stringliteral}{"{}text/plain"{}}));}
+\DoxyCodeLine{00039\ \ \ \ \ Body(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *data,\ \textcolor{keywordtype}{int}\ size\ =\ -\/1,\ \textcolor{keyword}{const}\ QByteArray\ \&contentType\ =\ QByteArrayLiteral(\textcolor{stringliteral}{"{}text/plain"{}}));}
+\DoxyCodeLine{00040\ \ \ \ \ Body(\textcolor{keyword}{const}\ QJsonObject\ \&\textcolor{keywordtype}{object});}
+\DoxyCodeLine{00041\ \ \ \ \ Body(\textcolor{keyword}{const}\ QJsonArray\ \&array);}
+\DoxyCodeLine{00042\ \ \ \ \ Body(\textcolor{keyword}{const}\ QJsonDocument\ \&doc);}
+\DoxyCodeLine{00043\ \ \ \ \ Body(\textcolor{keyword}{const}\ QVariant\ \&value,\ \textcolor{keywordtype}{int}\ type\ =\ -\/1,\ \textcolor{keyword}{const}\ QByteArray\ \&contentType\ =\ QByteArray());}
+\DoxyCodeLine{00044\ \ \ \ \ Body(\textcolor{keyword}{const}\ Body\ \&other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00045\ \ \ \ \ Body(Body\ \&\&other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00046\ \ \ \ \ \string~Body();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ Body\ \&operator=(\textcolor{keyword}{const}\ Body\ \&other);}
+\DoxyCodeLine{00049\ \ \ \ \ Body\ \&operator=(Body\ \&\&other);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ isMultiPart()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ QHttpMultiPart\ *multiPart()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ isDevice()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \ \ \ \ QIODevice\ *device()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ isData()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ \ \ \ QByteArray\ data()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ HeaderList\ headers()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ setHeaders(\textcolor{keyword}{const}\ HeaderList\ \&headers);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//\ For\ later,\ plan\ to\ create\ a\ plugin\ architecture\ to\ handle\ extra\ content}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{static}\ QByteArray\ generateData(\textcolor{keyword}{const}\ QVariant\ \&data,\ \textcolor{keywordtype}{int}\ type\ =\ -\/1);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{static}\ QList<Header>\ generateHeaders(\textcolor{keyword}{const}\ QVariant\ \&data,\ \textcolor{keywordtype}{int}\ type\ =\ -\/1);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ \ \ QHttpMultiPart\ *m\_multiPart;}
+\DoxyCodeLine{00069\ \ \ \ \ QIODevice\ *m\_device;}
+\DoxyCodeLine{00070\ \ \ \ \ QVariant\ m\_data;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ QByteArray\ m\_type;}
+\DoxyCodeLine{00073\ \ \ \ \ qint64\ m\_length;}
+\DoxyCodeLine{00074\ \ \ \ \ HeaderList\ m\_headers;}
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_BODY\_H}}
+
+\end{DoxyCode}

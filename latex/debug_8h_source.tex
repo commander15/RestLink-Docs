@@ -1,0 +1,21 @@
+\doxysection{debug.\+h}
+\hypertarget{debug_8h_source}{}\label{debug_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/debug.h@{/home/runner/work/RestLink/RestLink/src/lib/debug.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_DEBUG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_DEBUG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtCore/qloggingcategory.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ restlinkDebug()\ \ \ \ qCDebug(restlink).noquote().nospace()}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ restlinkInfo()\ \ \ \ \ qCInfo(restlink).noquote().nospace()}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ restlinkWarning()\ \ qCWarning(restlink).noquote().nospace()}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ restlinkCritical()\ qCCritical(restlink).noquote().nospace()}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ RESTLINK\_EXPORT\ Q\_DECLARE\_LOGGING\_CATEGORY(restlink)}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_DEBUG\_H}}
+
+\end{DoxyCode}
