@@ -1,0 +1,480 @@
+\hypertarget{class_rest_link_1_1_api_base}{}\doxysection{Rest\+Link\+::Api\+Base Class Reference}
+\label{class_rest_link_1_1_api_base}\index{RestLink::ApiBase@{RestLink::ApiBase}}
+
+
+The \mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}} class provides methods for making HTTP requests (HEAD, GET, POST, PUT, PATCH, DELETE) and handling responses.  
+
+
+
+
+Inherits QObject, and \mbox{\hyperlink{class_rest_link_1_1_request_interface}{Rest\+Link\+::\+Request\+Interface}}.
+
+
+
+Inherited by \mbox{\hyperlink{class_rest_link_1_1_api}{Rest\+Link\+::\+Api}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_rest_link_1_1_api_base_a85706408c858ec3854f6c2b18e79b5a4}{$\sim$\+Api\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}}. \end{DoxyCompactList}\item 
+virtual QLocale \mbox{\hyperlink{class_rest_link_1_1_api_base_a3a55e077f89cc11e8bc650c4471997c7}{locale}} () const
+\begin{DoxyCompactList}\small\item\em Returns the api locale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_af7a9838f52f594045fa3359dcb0c0858}{head}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a HEAD request and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ \mbox{\hyperlink{class_rest_link_1_1_api_base_a7d228b925d871e01f4ce213f12a3bd6e}{head}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Makes a HEAD request and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_ae9b10e948ed87ff037286465a01dfcc8}{get}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a GET request and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ \mbox{\hyperlink{class_rest_link_1_1_api_base_a753092a332ae26dac90c15cfb0993d5d}{get}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Makes a GET request and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a042430bc383213c185218dd087f42bc0}{post}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a POST request with a body and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ \mbox{\hyperlink{class_rest_link_1_1_api_base_aeaa13a32e278187e0fb62ca8a4ea24be}{post}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body)
+\begin{DoxyCompactList}\small\item\em Makes a POST request with a body and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_af93144922505fb613f0ec3d3f5cfe152}{put}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a PUT request with a body and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ \mbox{\hyperlink{class_rest_link_1_1_api_base_add35b3db631cb671fe2bf7ce3b0d4f17}{put}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body)
+\begin{DoxyCompactList}\small\item\em Makes a PUT request with a body and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a767e4cad0d8ca700052e47ba78122422}{patch}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a PATCH request with a body and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ \mbox{\hyperlink{class_rest_link_1_1_api_base_aac4f290f2196f107e862371cf74de826}{patch}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body)
+\begin{DoxyCompactList}\small\item\em Makes a PATCH request with a body and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a8cf9d8b4144c6b1ebc9c2b35d45ebbd1}{delete\+Resource}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, std\+::function$<$ Api\+Run\+Callback $>$ callback)
+\begin{DoxyCompactList}\small\item\em Makes a DELETE request and calls the provided callback upon completion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ \mbox{\hyperlink{class_rest_link_1_1_api_base_a84c5ad205dd4dc1ee6a45752bad3f2ee}{delete\+Resource}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Makes a DELETE request and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. \end{DoxyCompactList}\item 
+virtual QString \mbox{\hyperlink{class_rest_link_1_1_api_base_a0682831b71c6f4d60a32a423d946e7a2}{user\+Agent}} () const
+\begin{DoxyCompactList}\small\item\em Returns the user agent string for the API. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} $\ast$ $>$ \mbox{\hyperlink{class_rest_link_1_1_api_base_ab0fa0676d5fdeb53076baf4abfb67ec9}{request\+Interceptors}} () const
+\begin{DoxyCompactList}\small\item\em Returns the list of request interceptors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_af21ac04e37989e896c844a4387dff46b}{add\+Request\+Interceptor}} (\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} $\ast$interceptor)
+\begin{DoxyCompactList}\small\item\em Adds a request interceptor to the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a2191397a2641e9f523f5ee30dcea50f1}{remove\+Request\+Interceptor}} (\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} $\ast$interceptor)
+\begin{DoxyCompactList}\small\item\em Removes a request interceptor from the list. \end{DoxyCompactList}\item 
+QNetwork\+Access\+Manager $\ast$ \mbox{\hyperlink{class_rest_link_1_1_api_base_a5d4524625fa9bbe29a37e3eae2f8d704}{network\+Manager}} () const
+\begin{DoxyCompactList}\small\item\em Returns the network manager used by the \mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a1a2094806701e425f46672c67511cd7c}{set\+Network\+Manager}} (QNetwork\+Access\+Manager $\ast$manager)
+\begin{DoxyCompactList}\small\item\em Sets the network manager for the \mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual QNetwork\+Request \mbox{\hyperlink{class_rest_link_1_1_api_base_aa0a61d3292c3a5c6f0a881c5588022e2}{create\+Network\+Request}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, Operation operation)
+\begin{DoxyCompactList}\small\item\em Creates a network request for the given parameters. \end{DoxyCompactList}\item 
+virtual QNetwork\+Reply $\ast$ \mbox{\hyperlink{class_rest_link_1_1_api_base_acd63deb149fc00db1a24433cce7d2d61}{create\+Network\+Reply}} (const QNetwork\+Request \&request, const Body \&body, Operation operation)
+\begin{DoxyCompactList}\small\item\em Creates a network reply based on the given request, body, and operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}} class provides methods for making HTTP requests (HEAD, GET, POST, PUT, PATCH, DELETE) and handling responses. 
+
+This class encapsulates the functionality for interacting with an API by providing methods for various HTTP operations. It manages request interceptors, constructs network requests, and handles the creation of network replies and responses. The class supports asynchronous communication, allowing the user to pass callbacks for handling responses.
+
+\begin{DoxyNote}{Note}
+This class is must not be used directly, use \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} class instead.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_rest_link_1_1_request}{Request}}, \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}, \mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a85706408c858ec3854f6c2b18e79b5a4}\label{class_rest_link_1_1_api_base_a85706408c858ec3854f6c2b18e79b5a4}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!````~ApiBase@{$\sim$ApiBase}}
+\index{````~ApiBase@{$\sim$ApiBase}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$ApiBase()}{~ApiBase()}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Api\+Base\+::$\sim$\+Api\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for \mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}}. 
+
+Deletes all request interceptors that are managed by \mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a3a55e077f89cc11e8bc650c4471997c7}\label{class_rest_link_1_1_api_base_a3a55e077f89cc11e8bc650c4471997c7}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!locale@{locale}}
+\index{locale@{locale}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{locale()}{locale()}}
+{\footnotesize\ttfamily QLocale Rest\+Link\+::\+Api\+Base\+::locale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the api locale. 
+
+\begin{DoxyReturn}{Returns}
+QLocale representing the api locale.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This locale is used to set ACCEPT-\/\+LANGUAGE header only, if you want to pass it to the API you are using, you must do it manually according to the used API documentation. 
+\end{DoxyNote}
+
+
+Reimplemented in \mbox{\hyperlink{class_rest_link_1_1_api_adc3e7bb7a63e2dd64569d38f9efe7476}{Rest\+Link\+::\+Api}}.
+
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_af7a9838f52f594045fa3359dcb0c0858}\label{class_rest_link_1_1_api_base_af7a9838f52f594045fa3359dcb0c0858}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!head@{head}}
+\index{head@{head}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{head()}{head()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+Base\+::head (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{std\+::function$<$ Api\+Run\+Callback $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Makes a HEAD request and calls the provided callback upon completion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+{\em callback} & The callback function to be invoked once the request completes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a7d228b925d871e01f4ce213f12a3bd6e}\label{class_rest_link_1_1_api_base_a7d228b925d871e01f4ce213f12a3bd6e}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!head@{head}}
+\index{head@{head}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{head()}{head()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ Rest\+Link\+::\+Api\+Base\+::head (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request }\end{DoxyParamCaption})}
+
+
+
+Makes a HEAD request and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object containing the result of the HEAD request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_ae9b10e948ed87ff037286465a01dfcc8}\label{class_rest_link_1_1_api_base_ae9b10e948ed87ff037286465a01dfcc8}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!get@{get}}
+\index{get@{get}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+Base\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{std\+::function$<$ Api\+Run\+Callback $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Makes a GET request and calls the provided callback upon completion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+{\em callback} & The callback function to be invoked once the request completes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a753092a332ae26dac90c15cfb0993d5d}\label{class_rest_link_1_1_api_base_a753092a332ae26dac90c15cfb0993d5d}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!get@{get}}
+\index{get@{get}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ Rest\+Link\+::\+Api\+Base\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request }\end{DoxyParamCaption})}
+
+
+
+Makes a GET request and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object containing the result of the GET request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a042430bc383213c185218dd087f42bc0}\label{class_rest_link_1_1_api_base_a042430bc383213c185218dd087f42bc0}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!post@{post}}
+\index{post@{post}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+Base\+::post (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{const Body \&}]{body,  }\item[{std\+::function$<$ Api\+Run\+Callback $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Makes a POST request with a body and calls the provided callback upon completion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+{\em body} & The Body object containing the data to be sent in the request. \\
+\hline
+{\em callback} & The callback function to be invoked once the request completes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_aeaa13a32e278187e0fb62ca8a4ea24be}\label{class_rest_link_1_1_api_base_aeaa13a32e278187e0fb62ca8a4ea24be}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!post@{post}}
+\index{post@{post}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ Rest\+Link\+::\+Api\+Base\+::post (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{const Body \&}]{body }\end{DoxyParamCaption})}
+
+
+
+Makes a POST request with a body and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+{\em body} & The Body object containing the data to be sent in the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object containing the result of the POST request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_af93144922505fb613f0ec3d3f5cfe152}\label{class_rest_link_1_1_api_base_af93144922505fb613f0ec3d3f5cfe152}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!put@{put}}
+\index{put@{put}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+Base\+::put (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{const Body \&}]{body,  }\item[{std\+::function$<$ Api\+Run\+Callback $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Makes a PUT request with a body and calls the provided callback upon completion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+{\em body} & The Body object containing the data to be sent in the request. \\
+\hline
+{\em callback} & The callback function to be invoked once the request completes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_add35b3db631cb671fe2bf7ce3b0d4f17}\label{class_rest_link_1_1_api_base_add35b3db631cb671fe2bf7ce3b0d4f17}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!put@{put}}
+\index{put@{put}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ Rest\+Link\+::\+Api\+Base\+::put (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{const Body \&}]{body }\end{DoxyParamCaption})}
+
+
+
+Makes a PUT request with a body and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+{\em body} & The Body object containing the data to be sent in the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object containing the result of the PUT request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a767e4cad0d8ca700052e47ba78122422}\label{class_rest_link_1_1_api_base_a767e4cad0d8ca700052e47ba78122422}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!patch@{patch}}
+\index{patch@{patch}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+Base\+::patch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{const Body \&}]{body,  }\item[{std\+::function$<$ Api\+Run\+Callback $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Makes a PATCH request with a body and calls the provided callback upon completion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+{\em body} & The Body object containing the data to be sent in the request. \\
+\hline
+{\em callback} & The callback function to be invoked once the request completes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_aac4f290f2196f107e862371cf74de826}\label{class_rest_link_1_1_api_base_aac4f290f2196f107e862371cf74de826}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!patch@{patch}}
+\index{patch@{patch}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ Rest\+Link\+::\+Api\+Base\+::patch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{const Body \&}]{body }\end{DoxyParamCaption})}
+
+
+
+Makes a PATCH request with a body and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+{\em body} & The Body object containing the data to be sent in the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object containing the result of the PATCH request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a8cf9d8b4144c6b1ebc9c2b35d45ebbd1}\label{class_rest_link_1_1_api_base_a8cf9d8b4144c6b1ebc9c2b35d45ebbd1}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!deleteResource@{deleteResource}}
+\index{deleteResource@{deleteResource}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{deleteResource()}{deleteResource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+Base\+::delete\+Resource (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{std\+::function$<$ Api\+Run\+Callback $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Makes a DELETE request and calls the provided callback upon completion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+{\em callback} & The callback function to be invoked once the request completes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a84c5ad205dd4dc1ee6a45752bad3f2ee}\label{class_rest_link_1_1_api_base_a84c5ad205dd4dc1ee6a45752bad3f2ee}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!deleteResource@{deleteResource}}
+\index{deleteResource@{deleteResource}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{deleteResource()}{deleteResource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} $\ast$ Rest\+Link\+::\+Api\+Base\+::delete\+Resource (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request }\end{DoxyParamCaption})}
+
+
+
+Makes a DELETE request and returns the \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to be sent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_rest_link_1_1_response}{Response}} object containing the result of the DELETE request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a0682831b71c6f4d60a32a423d946e7a2}\label{class_rest_link_1_1_api_base_a0682831b71c6f4d60a32a423d946e7a2}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!userAgent@{userAgent}}
+\index{userAgent@{userAgent}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{userAgent()}{userAgent()}}
+{\footnotesize\ttfamily QString Rest\+Link\+::\+Api\+Base\+::user\+Agent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the user agent string for the API. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the user agent. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_rest_link_1_1_api_a4af630e5fdebfa82c13a0c8e6c6eaa6c}{Rest\+Link\+::\+Api}}.
+
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_ab0fa0676d5fdeb53076baf4abfb67ec9}\label{class_rest_link_1_1_api_base_ab0fa0676d5fdeb53076baf4abfb67ec9}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!requestInterceptors@{requestInterceptors}}
+\index{requestInterceptors@{requestInterceptors}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{requestInterceptors()}{requestInterceptors()}}
+{\footnotesize\ttfamily QList$<$ \mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} $\ast$ $>$ Rest\+Link\+::\+Api\+Base\+::request\+Interceptors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the list of request interceptors. 
+
+\begin{DoxyReturn}{Returns}
+A QList of request interceptors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_af21ac04e37989e896c844a4387dff46b}\label{class_rest_link_1_1_api_base_af21ac04e37989e896c844a4387dff46b}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!addRequestInterceptor@{addRequestInterceptor}}
+\index{addRequestInterceptor@{addRequestInterceptor}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{addRequestInterceptor()}{addRequestInterceptor()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+Base\+::add\+Request\+Interceptor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} $\ast$}]{interceptor }\end{DoxyParamCaption})}
+
+
+
+Adds a request interceptor to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interceptor} & The interceptor to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a2191397a2641e9f523f5ee30dcea50f1}\label{class_rest_link_1_1_api_base_a2191397a2641e9f523f5ee30dcea50f1}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!removeRequestInterceptor@{removeRequestInterceptor}}
+\index{removeRequestInterceptor@{removeRequestInterceptor}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{removeRequestInterceptor()}{removeRequestInterceptor()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+Base\+::remove\+Request\+Interceptor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} $\ast$}]{interceptor }\end{DoxyParamCaption})}
+
+
+
+Removes a request interceptor from the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interceptor} & The interceptor to be removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a5d4524625fa9bbe29a37e3eae2f8d704}\label{class_rest_link_1_1_api_base_a5d4524625fa9bbe29a37e3eae2f8d704}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!networkManager@{networkManager}}
+\index{networkManager@{networkManager}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{networkManager()}{networkManager()}}
+{\footnotesize\ttfamily QNetwork\+Access\+Manager $\ast$ Rest\+Link\+::\+Api\+Base\+::network\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the network manager used by the \mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}} class. 
+
+This function retrieves the current instance of the QNetwork\+Access\+Manager that is used for making network requests.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the QNetwork\+Access\+Manager instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_a1a2094806701e425f46672c67511cd7c}\label{class_rest_link_1_1_api_base_a1a2094806701e425f46672c67511cd7c}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!setNetworkManager@{setNetworkManager}}
+\index{setNetworkManager@{setNetworkManager}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{setNetworkManager()}{setNetworkManager()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+Base\+::set\+Network\+Manager (\begin{DoxyParamCaption}\item[{QNetwork\+Access\+Manager $\ast$}]{manager }\end{DoxyParamCaption})}
+
+
+
+Sets the network manager for the \mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}} class. 
+
+This function allows setting a custom QNetwork\+Access\+Manager instance to be used for network requests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & A pointer to the QNetwork\+Access\+Manager instance to be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_aa0a61d3292c3a5c6f0a881c5588022e2}\label{class_rest_link_1_1_api_base_aa0a61d3292c3a5c6f0a881c5588022e2}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!createNetworkRequest@{createNetworkRequest}}
+\index{createNetworkRequest@{createNetworkRequest}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{createNetworkRequest()}{createNetworkRequest()}}
+{\footnotesize\ttfamily QNetwork\+Request Rest\+Link\+::\+Api\+Base\+::create\+Network\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{req,  }\item[{const Body \&}]{body,  }\item[{Operation}]{operation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates a network request for the given parameters. 
+
+This function constructs a QNetwork\+Request using the provided \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}, Body, and Operation parameters. It merges the provided request with internal settings, applies any request interceptors, constructs the URL with query parameters, and sets necessary headers (such as User-\/\+Agent, Accept-\/\+Encoding, and Accept-\/\+Language). It also configures cache and connection settings before returning the fully-\/constructed network request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & The request object containing information like the endpoint and headers. \\
+\hline
+{\em body} & The body of the request that contains any data or file to be sent. \\
+\hline
+{\em operation} & The operation type (e.\+g., GET, POST, PUT) that specifies the HTTP method.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The fully-\/constructed QNetwork\+Request to be used in the network request. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}{Rest\+Link\+::\+Api}}.
+
+\mbox{\Hypertarget{class_rest_link_1_1_api_base_acd63deb149fc00db1a24433cce7d2d61}\label{class_rest_link_1_1_api_base_acd63deb149fc00db1a24433cce7d2d61}} 
+\index{RestLink::ApiBase@{RestLink::ApiBase}!createNetworkReply@{createNetworkReply}}
+\index{createNetworkReply@{createNetworkReply}!RestLink::ApiBase@{RestLink::ApiBase}}
+\doxysubsubsection{\texorpdfstring{createNetworkReply()}{createNetworkReply()}}
+{\footnotesize\ttfamily QNetwork\+Reply $\ast$ Rest\+Link\+::\+Api\+Base\+::create\+Network\+Reply (\begin{DoxyParamCaption}\item[{const QNetwork\+Request \&}]{request,  }\item[{const Body \&}]{body,  }\item[{Operation}]{operation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates a network reply based on the given request, body, and operation. 
+
+This function uses the provided QNetwork\+Request, Body, and Operation to determine the appropriate network reply to perform the specified HTTP operation. It handles various types of body content (e.\+g., multipart, device, data) and returns a QNetwork\+Reply that corresponds to the operation being executed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The QNetwork\+Request that defines the network request to be made. \\
+\hline
+{\em body} & The body of the request, which may contain data, files, or other content. \\
+\hline
+{\em operation} & The HTTP operation to be performed (e.\+g., GET, POST, PUT, PATCH, DELETE).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the QNetwork\+Reply object representing the network reply for the operation. 
+\end{DoxyReturn}

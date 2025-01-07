@@ -1,0 +1,41 @@
+\hypertarget{class_rest_link_1_1_network_manager}{}\doxysection{Rest\+Link\+::Network\+Manager Class Reference}
+\label{class_rest_link_1_1_network_manager}\index{RestLink::NetworkManager@{RestLink::NetworkManager}}
+
+
+A custom network manager for handling HTTP requests and responses in Rest\+Link.  
+
+
+
+
+Inherits QNetwork\+Access\+Manager.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rest_link_1_1_network_manager_ab8d686f89050e5a29976839c0653a612}{Network\+Manager}} (QObject $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_rest_link_1_1_network_manager}{Network\+Manager}} with a specified parent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A custom network manager for handling HTTP requests and responses in Rest\+Link. 
+
+This class extends QNetwork\+Access\+Manager to provide additional functionality, including custom caching and cookie management, as well as redirect policy control. It is designed to be the core network handling component of Rest\+Link. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_network_manager_ab8d686f89050e5a29976839c0653a612}\label{class_rest_link_1_1_network_manager_ab8d686f89050e5a29976839c0653a612}} 
+\index{RestLink::NetworkManager@{RestLink::NetworkManager}!NetworkManager@{NetworkManager}}
+\index{NetworkManager@{NetworkManager}!RestLink::NetworkManager@{RestLink::NetworkManager}}
+\doxysubsubsection{\texorpdfstring{NetworkManager()}{NetworkManager()}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Network\+Manager\+::\+Network\+Manager (\begin{DoxyParamCaption}\item[{QObject $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \mbox{\hyperlink{class_rest_link_1_1_network_manager}{Network\+Manager}} with a specified parent. 
+
+Initializes the network manager with a default cache and cookie jar. Also sets the redirect policy to Same\+Origin\+Redirect\+Policy to ensure secure handling of redirections within the same origin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent object for this \mbox{\hyperlink{class_rest_link_1_1_network_manager}{Network\+Manager}}. Defaults to nullptr. \\
+\hline
+\end{DoxyParams}

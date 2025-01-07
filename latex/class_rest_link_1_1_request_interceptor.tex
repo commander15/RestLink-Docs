@@ -1,0 +1,49 @@
+\hypertarget{class_rest_link_1_1_request_interceptor}{}\doxysection{Rest\+Link\+::Request\+Interceptor Class Reference}
+\label{class_rest_link_1_1_request_interceptor}\index{RestLink::RequestInterceptor@{RestLink::RequestInterceptor}}
+
+
+Abstract class for intercepting and modifying HTTP requests before they are sent.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \mbox{\hyperlink{class_rest_link_1_1_request_interceptor_acd176f77332d4c37bdac094c928b5f13}{intercept}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, Api\+::\+Operation operation)=0
+\begin{DoxyCompactList}\small\item\em Intercepts and modifies a request before it is sent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for intercepting and modifying HTTP requests before they are sent. 
+
+The \mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} class allows for the modification of HTTP requests before they are executed. By implementing the intercept method, custom logic can be added to modify request headers, body, URL, or any other part of the request. This is particularly useful for adding authentication tokens, modifying headers, or logging requests.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}}, \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interceptor_acd176f77332d4c37bdac094c928b5f13}\label{class_rest_link_1_1_request_interceptor_acd176f77332d4c37bdac094c928b5f13}} 
+\index{RestLink::RequestInterceptor@{RestLink::RequestInterceptor}!intercept@{intercept}}
+\index{intercept@{intercept}!RestLink::RequestInterceptor@{RestLink::RequestInterceptor}}
+\doxysubsubsection{\texorpdfstring{intercept()}{intercept()}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Request\+Interceptor\+::intercept (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{request,  }\item[{const Body \&}]{body,  }\item[{Api\+::\+Operation}]{operation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Intercepts and modifies a request before it is sent. 
+
+This method is called before the HTTP request is sent. It allows for modifications to the request such as altering the URL, adding headers, or changing the request body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The request to be modified. \\
+\hline
+{\em body} & The body of the request. \\
+\hline
+{\em operation} & The HTTP operation being performed (e.\+g., GET, POST, PUT).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified request object that will be sent. 
+\end{DoxyReturn}

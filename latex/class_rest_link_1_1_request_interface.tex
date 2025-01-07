@@ -1,0 +1,560 @@
+\hypertarget{class_rest_link_1_1_request_interface}{}\doxysection{Rest\+Link\+::Request\+Interface Class Reference}
+\label{class_rest_link_1_1_request_interface}\index{RestLink::RequestInterface@{RestLink::RequestInterface}}
+
+
+A class for storing and managing some HTTP request informations (url path and query parameter along with headers).  
+
+
+
+
+Inherited by \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Base}}, and \mbox{\hyperlink{class_rest_link_1_1_request}{Rest\+Link\+::\+Request}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_rest_link_1_1_request_interface_af8d364900cb9c10df5487e9fed248568}{has\+Path\+Parameter}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Checks if a path parameter exists in the request. \end{DoxyCompactList}\item 
+Path\+Parameter \mbox{\hyperlink{class_rest_link_1_1_request_interface_ab0a45bd990928a450bfd0e50c3e0ef68}{path\+Parameter}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves a specific path parameter. \end{DoxyCompactList}\item 
+QVariant \mbox{\hyperlink{class_rest_link_1_1_request_interface_a55c639e87779c41a65d8b0a48a734440}{path\+Parameter\+Value}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves the value of a path parameter. \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_rest_link_1_1_request_interface_a2460950092d3c2c31d627fb6ec56ba40}{path\+Parameter\+Names}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the names of all path parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a8b10f650c3dc2821a84d294059874ace}{set\+Path\+Parameter}} (const QString \&name, const QVariant \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a path parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_aacab1e2b9d3ba176f03d76477d02034e}{set\+Path\+Parameter}} (const Path\+Parameter \&parameter)
+\begin{DoxyCompactList}\small\item\em Sets a path parameter using a {\ttfamily Path\+Parameter} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a7191df764b66b90331b6f28aba05b640}{unset\+Path\+Parameter}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Unsets (removes) a path parameter from the request. \end{DoxyCompactList}\item 
+QList$<$ Path\+Parameter $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_abfb60e3abaa4882a9f145a8620cbb16c}{path\+Parameters}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all path parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a2128c12f9908fc6c3562b1d5930cd855}{set\+Path\+Parameters}} (const QList$<$ Path\+Parameter $>$ \&parameters)
+\begin{DoxyCompactList}\small\item\em Sets all path parameters. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rest_link_1_1_request_interface_aa1d936036969fccdde4b6a468ccbc86b}{has\+Query\+Parameter}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Checks if a query parameter exists in the request. \end{DoxyCompactList}\item 
+Query\+Parameter \mbox{\hyperlink{class_rest_link_1_1_request_interface_a62114c7a8a32108e52efbccdb88b5203}{query\+Parameter}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves a specific query parameter. \end{DoxyCompactList}\item 
+QList$<$ QVariant $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_a2668210f521e6061359c02998fae8ff8}{query\+Parameter\+Values}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves the values of a query parameter. \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_rest_link_1_1_request_interface_a3689c62b8a099e8560e5d55866c2330b}{query\+Parameter\+Names}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the names of all query parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e}{set\+Query\+Parameter}} (const QString \&name, const QVariant \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a query parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca}{set\+Query\+Parameter}} (const Query\+Parameter \&param)
+\begin{DoxyCompactList}\small\item\em Sets a query parameter using a {\ttfamily Query\+Parameter} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0}{unset\+Query\+Parameter}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Unsets (removes) a query parameter from the request. \end{DoxyCompactList}\item 
+QList$<$ Query\+Parameter $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_a619a1f098e59b40901c05bead4545957}{query\+Parameters}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all query parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_aaf15c64f5514925a05d581c0103d9935}{set\+Query\+Parameters}} (const QList$<$ Query\+Parameter $>$ \&parameters)
+\begin{DoxyCompactList}\small\item\em Sets all query parameters. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rest_link_1_1_request_interface_a25436a94d99726ed4cb8cddd6d3e327e}{has\+Header}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Checks if a header exists in the request. \end{DoxyCompactList}\item 
+Header \mbox{\hyperlink{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22}{header}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves a specific header. \end{DoxyCompactList}\item 
+QList$<$ QVariant $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_ade32ae766379961268379f5d6fd707d7}{header\+Values}} (const QString \&name) const
+\begin{DoxyCompactList}\small\item\em Retrieves the values of a header. \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_rest_link_1_1_request_interface_a44151d5025ec43c82f2f1e2c48ef6132}{header\+Names}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the names of all headers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a829159f62eee14566b433499fa59fafa}{set\+Header}} (const QString \&name, const QVariant \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a8698ed9d2417e56549c349638ead8ebd}{set\+Header}} (const Header \&\mbox{\hyperlink{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22}{header}})
+\begin{DoxyCompactList}\small\item\em Sets a header using a {\ttfamily Header} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a5b3710603e7ef336a4027c3dba5290ee}{unset\+Header}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Unsets (removes) a header from the request. \end{DoxyCompactList}\item 
+QList$<$ Header $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}{headers}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all headers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd65dcbf93372d1}{set\+Headers}} (const QList$<$ Header $>$ \&\mbox{\hyperlink{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}{headers}})
+\begin{DoxyCompactList}\small\item\em Sets all headers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for storing and managing some HTTP request informations (url path and query parameter along with headers). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_af8d364900cb9c10df5487e9fed248568}\label{class_rest_link_1_1_request_interface_af8d364900cb9c10df5487e9fed248568}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!hasPathParameter@{hasPathParameter}}
+\index{hasPathParameter@{hasPathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{hasPathParameter()}{hasPathParameter()}}
+{\footnotesize\ttfamily bool Rest\+Link\+::\+Request\+Interface\+::has\+Path\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Checks if a path parameter exists in the request. 
+
+This function checks whether a path parameter with the given name exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the path parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the path parameter exists. 
+
+false If the path parameter does not exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_ab0a45bd990928a450bfd0e50c3e0ef68}\label{class_rest_link_1_1_request_interface_ab0a45bd990928a450bfd0e50c3e0ef68}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!pathParameter@{pathParameter}}
+\index{pathParameter@{pathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{pathParameter()}{pathParameter()}}
+{\footnotesize\ttfamily Path\+Parameter Rest\+Link\+::\+Request\+Interface\+::path\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a specific path parameter. 
+
+This function retrieves the path parameter for the given name. If the parameter is not found, it returns a default-\/constructed {\ttfamily Path\+Parameter}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the path parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The path parameter corresponding to the given name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a55c639e87779c41a65d8b0a48a734440}\label{class_rest_link_1_1_request_interface_a55c639e87779c41a65d8b0a48a734440}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!pathParameterValue@{pathParameterValue}}
+\index{pathParameterValue@{pathParameterValue}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{pathParameterValue()}{pathParameterValue()}}
+{\footnotesize\ttfamily QVariant Rest\+Link\+::\+Request\+Interface\+::path\+Parameter\+Value (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the value of a path parameter. 
+
+This function returns the value associated with the given path parameter name. If the parameter is not found, an empty QVariant is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the path parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the path parameter, or an empty QVariant if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a2460950092d3c2c31d627fb6ec56ba40}\label{class_rest_link_1_1_request_interface_a2460950092d3c2c31d627fb6ec56ba40}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!pathParameterNames@{pathParameterNames}}
+\index{pathParameterNames@{pathParameterNames}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{pathParameterNames()}{pathParameterNames()}}
+{\footnotesize\ttfamily QString\+List Rest\+Link\+::\+Request\+Interface\+::path\+Parameter\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the names of all path parameters. 
+
+This function returns a list of names of all the path parameters in the request.
+
+\begin{DoxyReturn}{Returns}
+A list of names of path parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a8b10f650c3dc2821a84d294059874ace}\label{class_rest_link_1_1_request_interface_a8b10f650c3dc2821a84d294059874ace}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setPathParameter@{setPathParameter}}
+\index{setPathParameter@{setPathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{setPathParameter()}{setPathParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Path\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const QVariant \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of a path parameter. 
+
+This function sets or updates the value of a path parameter in the request. If the parameter does not exist, it is added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the path parameter. \\
+\hline
+{\em value} & The new value to set for the path parameter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_aacab1e2b9d3ba176f03d76477d02034e}\label{class_rest_link_1_1_request_interface_aacab1e2b9d3ba176f03d76477d02034e}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setPathParameter@{setPathParameter}}
+\index{setPathParameter@{setPathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{setPathParameter()}{setPathParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Path\+Parameter (\begin{DoxyParamCaption}\item[{const Path\+Parameter \&}]{parameter }\end{DoxyParamCaption})}
+
+
+
+Sets a path parameter using a {\ttfamily Path\+Parameter} object. 
+
+This function sets or updates a path parameter using a {\ttfamily Path\+Parameter} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & The {\ttfamily Path\+Parameter} object containing the name and value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a7191df764b66b90331b6f28aba05b640}\label{class_rest_link_1_1_request_interface_a7191df764b66b90331b6f28aba05b640}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!unsetPathParameter@{unsetPathParameter}}
+\index{unsetPathParameter@{unsetPathParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{unsetPathParameter()}{unsetPathParameter()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::unset\+Path\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Unsets (removes) a path parameter from the request. 
+
+This function removes the path parameter with the given name from the request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the path parameter to remove. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_abfb60e3abaa4882a9f145a8620cbb16c}\label{class_rest_link_1_1_request_interface_abfb60e3abaa4882a9f145a8620cbb16c}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!pathParameters@{pathParameters}}
+\index{pathParameters@{pathParameters}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{pathParameters()}{pathParameters()}}
+{\footnotesize\ttfamily QList$<$ Path\+Parameter $>$ Rest\+Link\+::\+Request\+Interface\+::path\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves all path parameters. 
+
+This function returns a list of all path parameters in the request.
+
+\begin{DoxyReturn}{Returns}
+A list of all path parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a2128c12f9908fc6c3562b1d5930cd855}\label{class_rest_link_1_1_request_interface_a2128c12f9908fc6c3562b1d5930cd855}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setPathParameters@{setPathParameters}}
+\index{setPathParameters@{setPathParameters}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{setPathParameters()}{setPathParameters()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Path\+Parameters (\begin{DoxyParamCaption}\item[{const QList$<$ Path\+Parameter $>$ \&}]{parameters }\end{DoxyParamCaption})}
+
+
+
+Sets all path parameters. 
+
+This function sets the list of path parameters to the provided list of parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & A list of path parameters to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_aa1d936036969fccdde4b6a468ccbc86b}\label{class_rest_link_1_1_request_interface_aa1d936036969fccdde4b6a468ccbc86b}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!hasQueryParameter@{hasQueryParameter}}
+\index{hasQueryParameter@{hasQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{hasQueryParameter()}{hasQueryParameter()}}
+{\footnotesize\ttfamily bool Rest\+Link\+::\+Request\+Interface\+::has\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Checks if a query parameter exists in the request. 
+
+This function checks whether a query parameter with the given name exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the query parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the query parameter exists. 
+
+false If the query parameter does not exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a62114c7a8a32108e52efbccdb88b5203}\label{class_rest_link_1_1_request_interface_a62114c7a8a32108e52efbccdb88b5203}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!queryParameter@{queryParameter}}
+\index{queryParameter@{queryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{queryParameter()}{queryParameter()}}
+{\footnotesize\ttfamily Query\+Parameter Rest\+Link\+::\+Request\+Interface\+::query\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a specific query parameter. 
+
+This function retrieves the query parameter for the given name. If the parameter is not found, it returns a default-\/constructed {\ttfamily Query\+Parameter}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the query parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The query parameter corresponding to the given name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a2668210f521e6061359c02998fae8ff8}\label{class_rest_link_1_1_request_interface_a2668210f521e6061359c02998fae8ff8}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!queryParameterValues@{queryParameterValues}}
+\index{queryParameterValues@{queryParameterValues}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{queryParameterValues()}{queryParameterValues()}}
+{\footnotesize\ttfamily QList$<$ QVariant $>$ Rest\+Link\+::\+Request\+Interface\+::query\+Parameter\+Values (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the values of a query parameter. 
+
+This function returns a list of values associated with the given query parameter name. If the parameter is not found, an empty list is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the query parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of values of the query parameter, or an empty list if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a3689c62b8a099e8560e5d55866c2330b}\label{class_rest_link_1_1_request_interface_a3689c62b8a099e8560e5d55866c2330b}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!queryParameterNames@{queryParameterNames}}
+\index{queryParameterNames@{queryParameterNames}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{queryParameterNames()}{queryParameterNames()}}
+{\footnotesize\ttfamily QString\+List Rest\+Link\+::\+Request\+Interface\+::query\+Parameter\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the names of all query parameters. 
+
+This function returns a list of names of all the query parameters in the request.
+
+\begin{DoxyReturn}{Returns}
+A list of names of query parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e}\label{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setQueryParameter@{setQueryParameter}}
+\index{setQueryParameter@{setQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{setQueryParameter()}{setQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const QVariant \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of a query parameter. 
+
+This function sets or updates the value of a query parameter in the request. If the parameter does not exist, it is added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the query parameter. \\
+\hline
+{\em value} & The new value to set for the query parameter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca}\label{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setQueryParameter@{setQueryParameter}}
+\index{setQueryParameter@{setQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{setQueryParameter()}{setQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const Query\+Parameter \&}]{param }\end{DoxyParamCaption})}
+
+
+
+Sets a query parameter using a {\ttfamily Query\+Parameter} object. 
+
+This function sets or updates a query parameter using a {\ttfamily Query\+Parameter} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & The {\ttfamily Query\+Parameter} object containing the name and value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0}\label{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!unsetQueryParameter@{unsetQueryParameter}}
+\index{unsetQueryParameter@{unsetQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{unsetQueryParameter()}{unsetQueryParameter()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::unset\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Unsets (removes) a query parameter from the request. 
+
+This function removes the query parameter with the given name from the request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the query parameter to remove. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a619a1f098e59b40901c05bead4545957}\label{class_rest_link_1_1_request_interface_a619a1f098e59b40901c05bead4545957}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!queryParameters@{queryParameters}}
+\index{queryParameters@{queryParameters}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{queryParameters()}{queryParameters()}}
+{\footnotesize\ttfamily QList$<$ Query\+Parameter $>$ Rest\+Link\+::\+Request\+Interface\+::query\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves all query parameters. 
+
+This function returns a list of all query parameters in the request.
+
+\begin{DoxyReturn}{Returns}
+A list of all query parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_aaf15c64f5514925a05d581c0103d9935}\label{class_rest_link_1_1_request_interface_aaf15c64f5514925a05d581c0103d9935}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setQueryParameters@{setQueryParameters}}
+\index{setQueryParameters@{setQueryParameters}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{setQueryParameters()}{setQueryParameters()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Query\+Parameters (\begin{DoxyParamCaption}\item[{const QList$<$ Query\+Parameter $>$ \&}]{parameters }\end{DoxyParamCaption})}
+
+
+
+Sets all query parameters. 
+
+This function sets the list of query parameters to the provided list of parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & A list of query parameters to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a25436a94d99726ed4cb8cddd6d3e327e}\label{class_rest_link_1_1_request_interface_a25436a94d99726ed4cb8cddd6d3e327e}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!hasHeader@{hasHeader}}
+\index{hasHeader@{hasHeader}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{hasHeader()}{hasHeader()}}
+{\footnotesize\ttfamily bool Rest\+Link\+::\+Request\+Interface\+::has\+Header (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Checks if a header exists in the request. 
+
+This function checks whether a header with the given name exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the header. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the header exists. 
+
+false If the header does not exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22}\label{class_rest_link_1_1_request_interface_a02561ec790964bd117efe9a710e43a22}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!header@{header}}
+\index{header@{header}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{header()}{header()}}
+{\footnotesize\ttfamily Header Rest\+Link\+::\+Request\+Interface\+::header (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a specific header. 
+
+This function retrieves the header for the given name. If the header is not found, it returns a default-\/constructed {\ttfamily Header}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the header. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The header corresponding to the given name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_ade32ae766379961268379f5d6fd707d7}\label{class_rest_link_1_1_request_interface_ade32ae766379961268379f5d6fd707d7}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!headerValues@{headerValues}}
+\index{headerValues@{headerValues}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{headerValues()}{headerValues()}}
+{\footnotesize\ttfamily QList$<$ QVariant $>$ Rest\+Link\+::\+Request\+Interface\+::header\+Values (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the values of a header. 
+
+This function returns a list of values associated with the given header name. If the header is not found, an empty list is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the header. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of values of the header, or an empty list if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a44151d5025ec43c82f2f1e2c48ef6132}\label{class_rest_link_1_1_request_interface_a44151d5025ec43c82f2f1e2c48ef6132}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!headerNames@{headerNames}}
+\index{headerNames@{headerNames}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{headerNames()}{headerNames()}}
+{\footnotesize\ttfamily QString\+List Rest\+Link\+::\+Request\+Interface\+::header\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the names of all headers. 
+
+This function returns a list of names of all the headers in the request.
+
+\begin{DoxyReturn}{Returns}
+A list of names of headers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a829159f62eee14566b433499fa59fafa}\label{class_rest_link_1_1_request_interface_a829159f62eee14566b433499fa59fafa}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Header (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const QVariant \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of a header. 
+
+This function sets or updates the value of a header in the request. If the header does not exist, it is added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the header. \\
+\hline
+{\em value} & The new value to set for the header. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a8698ed9d2417e56549c349638ead8ebd}\label{class_rest_link_1_1_request_interface_a8698ed9d2417e56549c349638ead8ebd}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Header (\begin{DoxyParamCaption}\item[{const Header \&}]{header }\end{DoxyParamCaption})}
+
+
+
+Sets a header using a {\ttfamily Header} object. 
+
+This function sets or updates a header using a {\ttfamily Header} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em header} & The {\ttfamily Header} object containing the name and value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a5b3710603e7ef336a4027c3dba5290ee}\label{class_rest_link_1_1_request_interface_a5b3710603e7ef336a4027c3dba5290ee}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!unsetHeader@{unsetHeader}}
+\index{unsetHeader@{unsetHeader}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{unsetHeader()}{unsetHeader()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::unset\+Header (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Unsets (removes) a header from the request. 
+
+This function removes the header with the given name from the request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the header to remove. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}\label{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!headers@{headers}}
+\index{headers@{headers}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{headers()}{headers()}}
+{\footnotesize\ttfamily QList$<$ Header $>$ Rest\+Link\+::\+Request\+Interface\+::headers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves all headers. 
+
+This function returns a list of all headers in the request.
+
+\begin{DoxyReturn}{Returns}
+A list of all headers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd65dcbf93372d1}\label{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd65dcbf93372d1}} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setHeaders@{setHeaders}}
+\index{setHeaders@{setHeaders}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{setHeaders()}{setHeaders()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Headers (\begin{DoxyParamCaption}\item[{const QList$<$ Header $>$ \&}]{headers }\end{DoxyParamCaption})}
+
+
+
+Sets all headers. 
+
+This function sets the list of headers to the provided list of headers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em headers} & A list of headers to set. \\
+\hline
+\end{DoxyParams}

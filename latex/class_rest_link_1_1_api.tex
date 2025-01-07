@@ -1,0 +1,292 @@
+\hypertarget{class_rest_link_1_1_api}{}\doxysection{Rest\+Link\+::Api Class Reference}
+\label{class_rest_link_1_1_api}\index{RestLink::Api@{RestLink::Api}}
+
+
+Represents an API interface that manages configuration, requests, and parameters.  
+
+
+
+
+Inherits \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Base}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rest_link_1_1_api_a0dde35330e4fc2b3067d0a0162dac9f1}{Api}} (QObject $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} object with an optional parent. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_rest_link_1_1_api_a650c6533d2c23851372cbe63eba221e3}{name}} () const
+\begin{DoxyCompactList}\small\item\em Returns the name of the API. \end{DoxyCompactList}\item 
+Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0}{set\+Name}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the API. \end{DoxyCompactList}\item 
+QVersion\+Number \mbox{\hyperlink{class_rest_link_1_1_api_ae53904ec93efece3f491816fcb0c569f}{version}} () const
+\begin{DoxyCompactList}\small\item\em Returns the version of the API. \end{DoxyCompactList}\item 
+Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_api_ad1c7891a661dbaa554e42c4555e64641}{set\+Version}} (const QVersion\+Number \&version)
+\begin{DoxyCompactList}\small\item\em Sets the version of the API. \end{DoxyCompactList}\item 
+QUrl \mbox{\hyperlink{class_rest_link_1_1_api_a73ee1a5b8223b05dd382688376b3d99c}{url}} () const override
+\begin{DoxyCompactList}\small\item\em Returns the URL of the API. \end{DoxyCompactList}\item 
+Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_api_a7fe9134916fa729bd75f87a8dba9587e}{set\+Url}} (const QUrl \&url)
+\begin{DoxyCompactList}\small\item\em Sets the URL of the API. \end{DoxyCompactList}\item 
+QLocale \mbox{\hyperlink{class_rest_link_1_1_api_adc3e7bb7a63e2dd64569d38f9efe7476}{locale}} () const override
+\begin{DoxyCompactList}\small\item\em Returns the api locale. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_rest_link_1_1_api_a4af630e5fdebfa82c13a0c8e6c6eaa6c}{user\+Agent}} () const override
+\begin{DoxyCompactList}\small\item\em Returns the user agent for the API. \end{DoxyCompactList}\item 
+Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_api_aba4ef411220d0f77eb1ab19bfa23e615}{set\+User\+Agent}} (const QString \&agent)
+\begin{DoxyCompactList}\small\item\em Sets the user agent for the API. \end{DoxyCompactList}\item 
+Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_api_a5c6e0e8e9163b7ef0552dda621360159}{configure}} (const QUrl \&url)
+\begin{DoxyCompactList}\small\item\em Configures the API with the given URL. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rest_link_1_1_api_afeb72fa6ad28e2e0abe30c9ff34791eb}{configure}} (const QJson\+Object \&config)
+\begin{DoxyCompactList}\small\item\em Configures the API with the given JSON configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QNetwork\+Request \mbox{\hyperlink{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}{create\+Network\+Request}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, Operation operation) override
+\begin{DoxyCompactList}\small\item\em Creates a network request for the given parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an API interface that manages configuration, requests, and parameters. 
+
+The \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} class is used to interact with a specific API, including managing the API\textquotesingle{}s name, version, URL, and request parameters. It provides methods for setting and retrieving these properties, as well as configuring the API using both direct URLs and JSON configuration objects. The class allows for adding, removing, and managing request parameters. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_api_a0dde35330e4fc2b3067d0a0162dac9f1}\label{class_rest_link_1_1_api_a0dde35330e4fc2b3067d0a0162dac9f1}} 
+\index{RestLink::Api@{RestLink::Api}!Api@{Api}}
+\index{Api@{Api}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{Api()}{Api()}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Api\+::\+Api (\begin{DoxyParamCaption}\item[{QObject $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs an \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} object with an optional parent. 
+
+This constructor initializes the API object, setting the parent if provided. The API object is ready to be configured and used to make requests. The parent object is passed to the QObject constructor, which manages the object\textquotesingle{}s memory and lifecycle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent QObject, or nullptr if no parent is specified. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_api_a650c6533d2c23851372cbe63eba221e3}\label{class_rest_link_1_1_api_a650c6533d2c23851372cbe63eba221e3}} 
+\index{RestLink::Api@{RestLink::Api}!name@{name}}
+\index{name@{name}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily QString Rest\+Link\+::\+Api\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the name of the API. 
+
+This method retrieves the current name of the API as a string. The API name typically represents the identity or label associated with the API.
+
+\begin{DoxyReturn}{Returns}
+A QString containing the name of the API. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0}\label{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0}} 
+\index{RestLink::Api@{RestLink::Api}!setName@{setName}}
+\index{setName@{setName}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+::set\+Name (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Sets the name of the API. 
+
+This method sets a new name for the API. The API name is typically used for identification or labeling purposes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The new name of the API. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_ae53904ec93efece3f491816fcb0c569f}\label{class_rest_link_1_1_api_ae53904ec93efece3f491816fcb0c569f}} 
+\index{RestLink::Api@{RestLink::Api}!version@{version}}
+\index{version@{version}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily QVersion\+Number Rest\+Link\+::\+Api\+::version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the version of the API. 
+
+This method retrieves the current version of the API. The version is represented as an QVersion\+Number and can be used to manage different versions of the API.
+
+\begin{DoxyReturn}{Returns}
+The integer version number of the API. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_ad1c7891a661dbaa554e42c4555e64641}\label{class_rest_link_1_1_api_ad1c7891a661dbaa554e42c4555e64641}} 
+\index{RestLink::Api@{RestLink::Api}!setVersion@{setVersion}}
+\index{setVersion@{setVersion}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{setVersion()}{setVersion()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+::set\+Version (\begin{DoxyParamCaption}\item[{const QVersion\+Number \&}]{version }\end{DoxyParamCaption})}
+
+
+
+Sets the version of the API. 
+
+This method sets a new version number for the API. The version number is typically used to track API updates and compatibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & The new version number for the API. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_a73ee1a5b8223b05dd382688376b3d99c}\label{class_rest_link_1_1_api_a73ee1a5b8223b05dd382688376b3d99c}} 
+\index{RestLink::Api@{RestLink::Api}!url@{url}}
+\index{url@{url}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}}
+{\footnotesize\ttfamily QUrl Rest\+Link\+::\+Api\+::url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the URL of the API. 
+
+This method retrieves the current URL of the API, which is used to define the endpoint for API requests.
+
+\begin{DoxyReturn}{Returns}
+A QUrl representing the API URL. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Base}}.
+
+\mbox{\Hypertarget{class_rest_link_1_1_api_a7fe9134916fa729bd75f87a8dba9587e}\label{class_rest_link_1_1_api_a7fe9134916fa729bd75f87a8dba9587e}} 
+\index{RestLink::Api@{RestLink::Api}!setUrl@{setUrl}}
+\index{setUrl@{setUrl}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{setUrl()}{setUrl()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+::set\+Url (\begin{DoxyParamCaption}\item[{const QUrl \&}]{url }\end{DoxyParamCaption})}
+
+
+
+Sets the URL of the API. 
+
+This method sets a new URL for the API, which will be used for making API requests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The new URL of the API. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_adc3e7bb7a63e2dd64569d38f9efe7476}\label{class_rest_link_1_1_api_adc3e7bb7a63e2dd64569d38f9efe7476}} 
+\index{RestLink::Api@{RestLink::Api}!locale@{locale}}
+\index{locale@{locale}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{locale()}{locale()}}
+{\footnotesize\ttfamily QLocale Rest\+Link\+::\+Api\+::locale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the api locale. 
+
+\begin{DoxyReturn}{Returns}
+QLocale representing the api locale.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This locale is used to set ACCEPT-\/\+LANGUAGE header only, if you want to pass it to the API you are using, you must do it manually according to the used API documentation. 
+\end{DoxyNote}
+
+
+Reimplemented from \mbox{\hyperlink{class_rest_link_1_1_api_base_a3a55e077f89cc11e8bc650c4471997c7}{Rest\+Link\+::\+Api\+Base}}.
+
+\mbox{\Hypertarget{class_rest_link_1_1_api_a4af630e5fdebfa82c13a0c8e6c6eaa6c}\label{class_rest_link_1_1_api_a4af630e5fdebfa82c13a0c8e6c6eaa6c}} 
+\index{RestLink::Api@{RestLink::Api}!userAgent@{userAgent}}
+\index{userAgent@{userAgent}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{userAgent()}{userAgent()}}
+{\footnotesize\ttfamily QString Rest\+Link\+::\+Api\+::user\+Agent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the user agent for the API. 
+
+This method retrieves the current user agent string used for API requests. The user agent identifies the client software making the request.
+
+\begin{DoxyReturn}{Returns}
+A QString representing the user agent for the API. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_rest_link_1_1_api_base_a0682831b71c6f4d60a32a423d946e7a2}{Rest\+Link\+::\+Api\+Base}}.
+
+\mbox{\Hypertarget{class_rest_link_1_1_api_aba4ef411220d0f77eb1ab19bfa23e615}\label{class_rest_link_1_1_api_aba4ef411220d0f77eb1ab19bfa23e615}} 
+\index{RestLink::Api@{RestLink::Api}!setUserAgent@{setUserAgent}}
+\index{setUserAgent@{setUserAgent}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{setUserAgent()}{setUserAgent()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+::set\+User\+Agent (\begin{DoxyParamCaption}\item[{const QString \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Sets the user agent for the API. 
+
+This method sets the user agent string used for API requests. The user agent identifies the client software making the request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & The user agent string to be used for the API. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_a5c6e0e8e9163b7ef0552dda621360159}\label{class_rest_link_1_1_api_a5c6e0e8e9163b7ef0552dda621360159}} 
+\index{RestLink::Api@{RestLink::Api}!configure@{configure}}
+\index{configure@{configure}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Api\+::configure (\begin{DoxyParamCaption}\item[{const QUrl \&}]{url }\end{DoxyParamCaption})}
+
+
+
+Configures the API with the given URL. 
+
+This method configures the API by setting the URL to the given one, which is used for making API requests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The URL to be set for the API. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_api_afeb72fa6ad28e2e0abe30c9ff34791eb}\label{class_rest_link_1_1_api_afeb72fa6ad28e2e0abe30c9ff34791eb}} 
+\index{RestLink::Api@{RestLink::Api}!configure@{configure}}
+\index{configure@{configure}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Rest\+Link\+::\+Api\+::configure (\begin{DoxyParamCaption}\item[{const QJson\+Object \&}]{config }\end{DoxyParamCaption})}
+
+
+
+Configures the API with the given JSON configuration. 
+
+This method configures the API using a JSON object. The configuration can include parameters like the API URL, version, and other settings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & A QJson\+Object containing the configuration data for the API. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the configuration was successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}\label{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}} 
+\index{RestLink::Api@{RestLink::Api}!createNetworkRequest@{createNetworkRequest}}
+\index{createNetworkRequest@{createNetworkRequest}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{createNetworkRequest()}{createNetworkRequest()}}
+{\footnotesize\ttfamily QNetwork\+Request Rest\+Link\+::\+Api\+::create\+Network\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{req,  }\item[{const Body \&}]{body,  }\item[{Operation}]{operation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Creates a network request for the given parameters. 
+
+This function constructs a QNetwork\+Request using the provided \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}, Body, and Operation parameters. It merges the provided request with internal settings, applies any request interceptors, constructs the URL with query parameters, and sets necessary headers (such as User-\/\+Agent, Accept-\/\+Encoding, and Accept-\/\+Language). It also configures cache and connection settings before returning the fully-\/constructed network request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & The request object containing information like the endpoint and headers. \\
+\hline
+{\em body} & The body of the request that contains any data or file to be sent. \\
+\hline
+{\em operation} & The operation type (e.\+g., GET, POST, PUT) that specifies the HTTP method.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The fully-\/constructed QNetwork\+Request to be used in the network request. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_rest_link_1_1_api_base_aa0a61d3292c3a5c6f0a881c5588022e2}{Rest\+Link\+::\+Api\+Base}}.
+

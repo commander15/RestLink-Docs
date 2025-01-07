@@ -1,0 +1,262 @@
+\hypertarget{class_rest_link_1_1_request}{}\doxysection{Rest\+Link\+::Request Class Reference}
+\label{class_rest_link_1_1_request}\index{RestLink::Request@{RestLink::Request}}
+
+
+A class for storing and managing HTTP request information.  
+
+
+
+
+Inherits \mbox{\hyperlink{class_rest_link_1_1_request_interface}{Rest\+Link\+::\+Request\+Interface}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rest_link_1_1_request_ae6fa5c29de906de35fb54a9ecb123769}{Request}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_request_a7baee0189c44e945c57b9942fd82c279}{Request}} (const char $\ast$\mbox{\hyperlink{class_rest_link_1_1_request_a39e8d5cd01da565bc721a93501349adf}{endpoint}})
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object with a specified endpoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_request_a1a2c6bf9354ea049a56767d89ca6104a}{Request}} (const QString \&\mbox{\hyperlink{class_rest_link_1_1_request_a39e8d5cd01da565bc721a93501349adf}{endpoint}})
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object with a specified endpoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_request_a83c180362768dd56e8bdfc2cc63cda18}{Request}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_request_a7170a1515f1d8f8a6373b8dd32d91e82}{Request}} (\mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&\&other)
+\begin{DoxyCompactList}\small\item\em Move constructor for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_request_a689c09f88ff8c0e0bb4e73d09d347b48}{$\sim$\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \& \mbox{\hyperlink{class_rest_link_1_1_request_ac556f2c12cc29508e91dd48ad8bffaa6}{operator=}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \& \mbox{\hyperlink{class_rest_link_1_1_request_a661a5d1fc7dcad0e742334ae99d90233}{operator=}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&\&other)
+\begin{DoxyCompactList}\small\item\em Move assignment operator for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_rest_link_1_1_request_a39e8d5cd01da565bc721a93501349adf}{endpoint}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the API endpoint associated with this request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_a3af73b1df6a3f394487d013855d2e395}{set\+Endpoint}} (const QString \&\mbox{\hyperlink{class_rest_link_1_1_request_a39e8d5cd01da565bc721a93501349adf}{endpoint}})
+\begin{DoxyCompactList}\small\item\em Retrieves the API endpoint associated with this request. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_rest_link_1_1_request_a8d463f4779bd11981443a3e8631a7a4f}{url\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Constructs the URL path for the request based on its parameters and endpoint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_ab5ecfeca1c802d198ef7acc0a4ee9f72}{swap}} (\mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&other)
+\begin{DoxyCompactList}\small\item\em Swaps the contents of this \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} with another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \mbox{\hyperlink{class_rest_link_1_1_request_a4bf1543bb5ecd58bf14feed3ea125434}{merge}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&r1, const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&r2)
+\begin{DoxyCompactList}\small\item\em Merges two \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} objects into a single request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for storing and managing HTTP request information. 
+
+The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} class encapsulates the essential details of an HTTP request, such as the endpoint, HTTP method, headers, query parameters, and more. It provides a convenient way to define and organize API requests before execution using Rest\+Link. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_request_ae6fa5c29de906de35fb54a9ecb123769}\label{class_rest_link_1_1_request_ae6fa5c29de906de35fb54a9ecb123769}} 
+\index{RestLink::Request@{RestLink::Request}!Request@{Request}}
+\index{Request@{Request}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Request\+::\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. 
+
+Initializes an empty \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object. This constructor sets up the object with default values for its members, ensuring a consistent state. \mbox{\Hypertarget{class_rest_link_1_1_request_a7baee0189c44e945c57b9942fd82c279}\label{class_rest_link_1_1_request_a7baee0189c44e945c57b9942fd82c279}} 
+\index{RestLink::Request@{RestLink::Request}!Request@{Request}}
+\index{Request@{Request}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Request\+::\+Request (\begin{DoxyParamCaption}\item[{const char $\ast$}]{endpoint }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object with a specified endpoint. 
+
+This constructor initializes the \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object with the given API endpoint. The endpoint will be used for making requests. Other parameters (such as headers or query parameters) will be empty by default.
+
+
+\begin{DoxyParams}{Parameters}
+{\em endpoint} & The API endpoint as a C-\/style string (const char$\ast$).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+endpoint must not include full path, only the url path relative to the base url provided on \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} object. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_rest_link_1_1_request_a1a2c6bf9354ea049a56767d89ca6104a}\label{class_rest_link_1_1_request_a1a2c6bf9354ea049a56767d89ca6104a}} 
+\index{RestLink::Request@{RestLink::Request}!Request@{Request}}
+\index{Request@{Request}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Request\+::\+Request (\begin{DoxyParamCaption}\item[{const QString \&}]{endpoint }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object with a specified endpoint. 
+
+This constructor initializes the \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object with the given API endpoint. The endpoint will be used for making requests. Other parameters (such as headers or query parameters) will be empty by default.
+
+
+\begin{DoxyParams}{Parameters}
+{\em endpoint} & The API endpoint as a QString.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+endpoint must not include full path, only the url path relative to the base url provided on \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} object. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_rest_link_1_1_request_a83c180362768dd56e8bdfc2cc63cda18}\label{class_rest_link_1_1_request_a83c180362768dd56e8bdfc2cc63cda18}} 
+\index{RestLink::Request@{RestLink::Request}!Request@{Request}}
+\index{Request@{Request}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Request\+::\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. 
+
+Creates a new \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object as a copy of another. All data, including headers, URL, and parameters, are duplicated into the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_a7170a1515f1d8f8a6373b8dd32d91e82}\label{class_rest_link_1_1_request_a7170a1515f1d8f8a6373b8dd32d91e82}} 
+\index{RestLink::Request@{RestLink::Request}!Request@{Request}}
+\index{Request@{Request}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Request\+::\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&\&}]{other }\end{DoxyParamCaption})}
+
+
+
+Move constructor for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. 
+
+Transfers ownership of the data from another \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to this one. The source object is left in a valid but unspecified state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to move from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_a689c09f88ff8c0e0bb4e73d09d347b48}\label{class_rest_link_1_1_request_a689c09f88ff8c0e0bb4e73d09d347b48}} 
+\index{RestLink::Request@{RestLink::Request}!````~Request@{$\sim$Request}}
+\index{````~Request@{$\sim$Request}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{$\sim$Request()}{~Request()}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Request\+::$\sim$\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. 
+
+Cleans up any resources used by the \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object. Ensures all dynamically allocated memory is released. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_request_ac556f2c12cc29508e91dd48ad8bffaa6}\label{class_rest_link_1_1_request_ac556f2c12cc29508e91dd48ad8bffaa6}} 
+\index{RestLink::Request@{RestLink::Request}!operator=@{operator=}}
+\index{operator=@{operator=}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \& Rest\+Link\+::\+Request\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. 
+
+Copies the content of another \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to this one, replacing the existing data. Properly handles self-\/assignment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_a661a5d1fc7dcad0e742334ae99d90233}\label{class_rest_link_1_1_request_a661a5d1fc7dcad0e742334ae99d90233}} 
+\index{RestLink::Request@{RestLink::Request}!operator=@{operator=}}
+\index{operator=@{operator=}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \& Rest\+Link\+::\+Request\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&\&}]{other }\end{DoxyParamCaption})}
+
+
+
+Move assignment operator for \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}. 
+
+Transfers ownership of the data from another \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to this one. The existing data in this object is replaced, and the source object is left in a valid but unspecified state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object to move from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_a39e8d5cd01da565bc721a93501349adf}\label{class_rest_link_1_1_request_a39e8d5cd01da565bc721a93501349adf}} 
+\index{RestLink::Request@{RestLink::Request}!endpoint@{endpoint}}
+\index{endpoint@{endpoint}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{endpoint()}{endpoint()}}
+{\footnotesize\ttfamily QString Rest\+Link\+::\+Request\+::endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the API endpoint associated with this request. 
+
+\begin{DoxyReturn}{Returns}
+The endpoint as a QString. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_a3af73b1df6a3f394487d013855d2e395}\label{class_rest_link_1_1_request_a3af73b1df6a3f394487d013855d2e395}} 
+\index{RestLink::Request@{RestLink::Request}!setEndpoint@{setEndpoint}}
+\index{setEndpoint@{setEndpoint}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{setEndpoint()}{setEndpoint()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+::set\+Endpoint (\begin{DoxyParamCaption}\item[{const QString \&}]{endpoint }\end{DoxyParamCaption})}
+
+
+
+Retrieves the API endpoint associated with this request. 
+
+\begin{DoxyReturn}{Returns}
+The endpoint as a QString. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_a8d463f4779bd11981443a3e8631a7a4f}\label{class_rest_link_1_1_request_a8d463f4779bd11981443a3e8631a7a4f}} 
+\index{RestLink::Request@{RestLink::Request}!urlPath@{urlPath}}
+\index{urlPath@{urlPath}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{urlPath()}{urlPath()}}
+{\footnotesize\ttfamily QString Rest\+Link\+::\+Request\+::url\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Constructs the URL path for the request based on its parameters and endpoint. 
+
+\begin{DoxyReturn}{Returns}
+The constructed URL path as a QString. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rest_link_1_1_request_ab5ecfeca1c802d198ef7acc0a4ee9f72}\label{class_rest_link_1_1_request_ab5ecfeca1c802d198ef7acc0a4ee9f72}} 
+\index{RestLink::Request@{RestLink::Request}!swap@{swap}}
+\index{swap@{swap}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Swaps the contents of this \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} with another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} instance to swap with. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rest_link_1_1_request_a4bf1543bb5ecd58bf14feed3ea125434}\label{class_rest_link_1_1_request_a4bf1543bb5ecd58bf14feed3ea125434}} 
+\index{RestLink::Request@{RestLink::Request}!merge@{merge}}
+\index{merge@{merge}!RestLink::Request@{RestLink::Request}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} Rest\+Link\+::\+Request\+::merge (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{r1,  }\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{r2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Merges two \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} objects into a single request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r1} & The first \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} to merge. \\
+\hline
+{\em r2} & The second \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} to merge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} containing merged properties and parameters. 
+\end{DoxyReturn}

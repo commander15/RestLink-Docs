@@ -1,0 +1,140 @@
+\label{index_md__home_runner_work_RestLink_RestLink_README}%
+\Hypertarget{index_md__home_runner_work_RestLink_RestLink_README}%
+ Rest\+Link is a C++ library designed to facilitate easy integration with RESTful APIs, providing an abstraction layer for making HTTP requests and handling responses. It offers a convenient API to configure, send, and receive data from REST endpoints, with built-\/in support for handling parameters, headers, and error management.\hypertarget{index_autotoc_md1}{}\doxysection{Features}\label{index_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Simplified API integration for RESTful services.
+\item Support for setting API configurations (URL, name, version, etc.).
+\item Parameter management for API requests.
+\item Error handling.
+\item Integration with Qt\textquotesingle{}s network stack for efficient communication.
+\end{DoxyItemize}\hypertarget{index_autotoc_md2}{}\doxysection{Installation}\label{index_autotoc_md2}
+
+\begin{DoxyEnumerate}
+\item Clone the repository\+:
+
+\`{}\`{}\`{}bash git clone \href{https://github.com/commander15/RestLink.git}{\texttt{ https\+://github.\+com/commander15/\+Rest\+Link.\+git}} \`{}\`{}\`{}
+\item Add {\ttfamily Rest\+Link} to your project by including the necessary headers in your CMake file.
+
+\`{}\`{}\`{}cmake include\+\_\+directories(path\+\_\+to\+\_\+\+Rest\+Link) \`{}\`{}\`{}
+\item Link the {\ttfamily Rest\+Link} library with your project.
+
+\`{}\`{}\`{}cmake target\+\_\+link\+\_\+libraries(\+Your\+Project\+Name Rest\+Link\+::\+Rest\+Link) \`{}\`{}\`{}
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md3}{}\doxysection{C++ Example}\label{index_autotoc_md3}
+Below is a simple C++ example demonstrating how to use Rest\+Link to make an API request and handle the response.\hypertarget{index_autotoc_md4}{}\doxysubsection{Example Code (\+C++)}\label{index_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <QCoreApplication>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <QJsonObject>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <RestLink/api.h>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <RestLink/apirequest.h>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <RestLink/apireply.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[])}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    QCoreApplication a(argc, argv);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Initialize RestLink API}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_rest_link_1_1_api}{RestLink::Api}} api;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Set the API name, version and url}}
+\DoxyCodeLine{    api.setApiName(\textcolor{stringliteral}{"{}ExampleAPI"{}});}
+\DoxyCodeLine{    api.setApiVersion(1);}
+\DoxyCodeLine{    api.setApiUrl(QUrl(\textcolor{stringliteral}{"{}https://api.example.com"{}}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Set User-\/Agent}}
+\DoxyCodeLine{    api.\mbox{\hyperlink{class_rest_link_1_1_api_aba4ef411220d0f77eb1ab19bfa23e615}{setUserAgent}}(\textcolor{stringliteral}{"{}MyApp/1.0"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Add API parameters}}
+\DoxyCodeLine{    RestLink::ApiRequestParameter param(\textcolor{stringliteral}{"{}key"{}}, \textcolor{stringliteral}{"{}value"{}});}
+\DoxyCodeLine{    api.addParameter(param);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Create a sample API request}}
+\DoxyCodeLine{    RestLink::ApiRequest request;}
+\DoxyCodeLine{    request.setEndpoint(\textcolor{stringliteral}{"{}/data"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Send the request and process the reply assynchronously when finished}}
+\DoxyCodeLine{    api.\mbox{\hyperlink{class_rest_link_1_1_api_base_ae9b10e948ed87ff037286465a01dfcc8}{get}}(request, [](RestLink::ApiReply *reply) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (reply-\/>isSuccess()) \{}
+\DoxyCodeLine{            auto data = reply-\/>readJsonObject();}
+\DoxyCodeLine{            \textcolor{comment}{// Processing...}}
+\DoxyCodeLine{        \} \textcolor{keywordflow}{else} if (reply-\/>hasNetworkError()) \{}
+\DoxyCodeLine{            \textcolor{comment}{// Handle network error}}
+\DoxyCodeLine{        \} \textcolor{keywordflow}{else} if (!reply-\/>isHttpStatusSuccess()) \{}
+\DoxyCodeLine{            \textcolor{comment}{// Handle HTTP error}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} a.exec();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+In this example\+:
+
+We initialize the Api object and configure it with an endpoint URL, name, version, and user-\/agent. We add a request parameter (key, value). We create an Api\+Request object to set the request endpoint and HTTP method. Finally, the request is sent, and the response is handled asynchronously using a signal.\+In this example\+:
+
+We initialize the Api object and configure it with a base URL, name, version, and user-\/agent. We add a request parameter (key, value). We create an Api\+Request object to set the request endpoint and HTTP method. Finally, the request is sent, and the response is handled asynchronously using a callback.\hypertarget{index_autotoc_md5}{}\doxysection{QML Example}\label{index_autotoc_md5}
+Rest\+Link can also be integrated into QML-\/based applications, making it easy to use API functionality in the user interface. Below is a simple QML example.\hypertarget{index_autotoc_md6}{}\doxysubsection{Example Code (\+QML)}\label{index_autotoc_md6}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{import QtQuick 2.15}
+\DoxyCodeLine{import QtQuick.Controls 2.15}
+\DoxyCodeLine{import RestLink 1.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{ApplicationWindow \{}
+\DoxyCodeLine{    visible: true}
+\DoxyCodeLine{    width: 640}
+\DoxyCodeLine{    height: 480}
+\DoxyCodeLine{    title: "{}RestLink QML Example"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    Api \{}
+\DoxyCodeLine{        id: myApi}
+\DoxyCodeLine{        name: "{}ExampleAPI"{}}
+\DoxyCodeLine{        version: 1}
+\DoxyCodeLine{        url: "{}https://api.example.com"{}}
+\DoxyCodeLine{        userAgent: "{}MyApp/1.0"{}}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        // Adding parameter that must be present on each request}
+\DoxyCodeLine{        ApiRequestParameter \{}
+\DoxyCodeLine{            name: "{}key"{}}
+\DoxyCodeLine{            value: "{}value"{}}
+\DoxyCodeLine{            scope: ApiRequestParameter.UrlQuery}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    ApiRequest \{}
+\DoxyCodeLine{        id: request}
+\DoxyCodeLine{    }
+\DoxyCodeLine{        endpoint: "{}/data"{}}
+\DoxyCodeLine{        api: myApi}
+\DoxyCodeLine{        autoRun: false // if true, request run automaticaly after object construction}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        onFinished: function() \{}
+\DoxyCodeLine{            if (response.success) \{}
+\DoxyCodeLine{                var data = JSON.parse(response.readBody());}
+\DoxyCodeLine{                console.log(data);}
+\DoxyCodeLine{            \} else if (response.networkError !== 0) \{}
+\DoxyCodeLine{                // Handle network error}
+\DoxyCodeLine{                console.log(response.networkErrorString)}
+\DoxyCodeLine{            \} else if (response.httpStatusCode != 200) \{}
+\DoxyCodeLine{                // Handle HTTP error}
+\DoxyCodeLine{                console.log(response.httpReasonPhrase);}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    Button \{}
+\DoxyCodeLine{        text: "{}Send API Request"{}}
+\DoxyCodeLine{        anchors.centerIn: parent}
+\DoxyCodeLine{        onClicked: request.run()}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{index_autotoc_md7}{}\doxysubsection{Key Points in the QML Example\+:}\label{index_autotoc_md7}
+The Api object is configured with the necessary properties such as api\+Url, api\+Name, and api\+Version. The Api\+Request object is configured with the endpoint, api object and auto\+Run disabled to make the request run only after the button press. The on\+Finished signal handles the API response. If the request is successful, it logs the response data; otherwise, it logs the error message. The Button allows triggering the API request.\hypertarget{index_autotoc_md8}{}\doxysection{Contact}\label{index_autotoc_md8}
+For more informations or questions, please reach out to \href{mailto:amadoubenjamain@gmail.com}{\texttt{ amadoubenjamain@gmail.\+com}}. 
