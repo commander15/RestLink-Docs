@@ -313,31 +313,27 @@ The user agent string to be used in API requests.
 
 The \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} class is responsible for creating network requests and managing response data. It supports adding parameters to requests, configuring the API from different sources, and emitting signals for configuration changes and network error events.
 
-\textbackslash{}signal void api\+Name\+Changed(const QString \&name)
+\textbackslash{}signal void Api\+::name\+Changed(const QString \&name)
 
 Emitted when the API name changes.
 
-\textbackslash{}signal void api\+Version\+Changed(int version)
+\textbackslash{}signal void Api\+::version\+Changed(int version)
 
 Emitted when the API version changes.
 
-\textbackslash{}signal void api\+Url\+Changed(const QUrl \&url)
+\textbackslash{}signal void Api\+::url\+Changed(const QUrl \&url)
 
 Emitted when the API URL changes.
 
-\textbackslash{}signal void api\+Parameters\+Changed()
-
-Emitted when the API parameters change.
-
-\textbackslash{}signal void user\+Agent\+Changed(const QString \&agent)
+\textbackslash{}signal void Api\+::user\+Agent\+Changed(const QString \&agent)
 
 Emitted when the user agent changes.
 
-\textbackslash{}signal void configuration\+Completed()
+\textbackslash{}signal void Api\+::configuration\+Completed()
 
 Emitted when the API configuration is completed.
 
-\textbackslash{}signal void configuration\+Failed()
+\textbackslash{}signal void Api\+::configuration\+Failed()
 
 Emitted when the API configuration fails.
 

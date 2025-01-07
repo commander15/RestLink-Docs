@@ -695,19 +695,17 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 <p>The user agent string to be used in API requests. </p>
 <p>The <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> class is responsible for creating network requests and managing response data. It supports adding parameters to requests, configuring the API from different sources, and emitting signals for configuration changes and network error events.</p>
-<p>\signal void apiNameChanged(const QString &amp;name)</p>
+<p>\signal void Api::nameChanged(const QString &amp;name)</p>
 <p>Emitted when the API name changes.</p>
-<p>\signal void apiVersionChanged(int version)</p>
+<p>\signal void Api::versionChanged(int version)</p>
 <p>Emitted when the API version changes.</p>
-<p>\signal void apiUrlChanged(const QUrl &amp;url)</p>
+<p>\signal void Api::urlChanged(const QUrl &amp;url)</p>
 <p>Emitted when the API URL changes.</p>
-<p>\signal void apiParametersChanged()</p>
-<p>Emitted when the API parameters change.</p>
-<p>\signal void userAgentChanged(const QString &amp;agent)</p>
+<p>\signal void Api::userAgentChanged(const QString &amp;agent)</p>
 <p>Emitted when the user agent changes.</p>
-<p>\signal void configurationCompleted()</p>
+<p>\signal void Api::configurationCompleted()</p>
 <p>Emitted when the API configuration is completed.</p>
-<p>\signal void configurationFailed()</p>
+<p>\signal void Api::configurationFailed()</p>
 <p>Emitted when the API configuration fails.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_rest_link_1_1_api_base.html" title="The ApiBase class provides methods for making HTTP requests (HEAD, GET, POST, PUT,...">ApiBase</a>, <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a>, RequestParameter </dd></dl>
 
