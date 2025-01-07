@@ -16,7 +16,7 @@ Inherits \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Bas
 \begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} object with an optional parent. \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_rest_link_1_1_api_a650c6533d2c23851372cbe63eba221e3}{name}} () const
 \begin{DoxyCompactList}\small\item\em Returns the name of the API. \end{DoxyCompactList}\item 
-Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0}{set\+Name}} (const QString \&name)
+Q\+\_\+\+SLOT void \mbox{\hyperlink{class_rest_link_1_1_api_af0e09706bb5f3b3d55bccebdbfb285e0}{set\+Name}} (const QString \&\mbox{\hyperlink{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2}{name}})
 \begin{DoxyCompactList}\small\item\em Sets the name of the API. \end{DoxyCompactList}\item 
 QVersion\+Number \mbox{\hyperlink{class_rest_link_1_1_api_ae53904ec93efece3f491816fcb0c569f}{version}} () const
 \begin{DoxyCompactList}\small\item\em Returns the version of the API. \end{DoxyCompactList}\item 
@@ -41,6 +41,14 @@ bool \mbox{\hyperlink{class_rest_link_1_1_api_afeb72fa6ad28e2e0abe30c9ff34791eb}
 \item 
 QNetwork\+Request \mbox{\hyperlink{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}{create\+Network\+Request}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, Operation operation) override
 \begin{DoxyCompactList}\small\item\em Creates a network request for the given parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2}\label{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2}} 
+QString \mbox{\hyperlink{class_rest_link_1_1_api_ab3a343293a5ff57ee10b2cea3ddceaf2}{name}}
+\begin{DoxyCompactList}\small\item\em The name of the API. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_rest_link_1_1_api_aad8c42de0fc2fd62afdabdf231680d6a}{user\+Agent}}
+\begin{DoxyCompactList}\small\item\em The user agent string to be used in API requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -290,3 +298,49 @@ The fully-\/constructed QNetwork\+Request to be used in the network request.
 
 Reimplemented from \mbox{\hyperlink{class_rest_link_1_1_api_base_aa0a61d3292c3a5c6f0a881c5588022e2}{Rest\+Link\+::\+Api\+Base}}.
 
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_rest_link_1_1_api_aad8c42de0fc2fd62afdabdf231680d6a}\label{class_rest_link_1_1_api_aad8c42de0fc2fd62afdabdf231680d6a}} 
+\index{RestLink::Api@{RestLink::Api}!userAgent@{userAgent}}
+\index{userAgent@{userAgent}!RestLink::Api@{RestLink::Api}}
+\doxysubsubsection{\texorpdfstring{userAgent}{userAgent}}
+{\footnotesize\ttfamily QString Rest\+Link\+::\+Api\+::user\+Agent\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}
+
+
+
+The user agent string to be used in API requests. 
+
+The \mbox{\hyperlink{class_rest_link_1_1_api}{Api}} class is responsible for creating network requests and managing response data. It supports adding parameters to requests, configuring the API from different sources, and emitting signals for configuration changes and network error events.
+
+\textbackslash{}signal void api\+Name\+Changed(const QString \&name)
+
+Emitted when the API name changes.
+
+\textbackslash{}signal void api\+Version\+Changed(int version)
+
+Emitted when the API version changes.
+
+\textbackslash{}signal void api\+Url\+Changed(const QUrl \&url)
+
+Emitted when the API URL changes.
+
+\textbackslash{}signal void api\+Parameters\+Changed()
+
+Emitted when the API parameters change.
+
+\textbackslash{}signal void user\+Agent\+Changed(const QString \&agent)
+
+Emitted when the user agent changes.
+
+\textbackslash{}signal void configuration\+Completed()
+
+Emitted when the API configuration is completed.
+
+\textbackslash{}signal void configuration\+Failed()
+
+Emitted when the API configuration fails.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_rest_link_1_1_api_base}{Api\+Base}}, \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}, Request\+Parameter 
+\end{DoxySeeAlso}

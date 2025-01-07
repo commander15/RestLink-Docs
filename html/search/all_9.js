@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_39',['name',['../class_rest_link_1_1_api.html#a650c6533d2c23851372cbe63eba221e3',1,'RestLink::Api']]],
+  ['name_39',['name',['../class_rest_link_1_1_api.html#ab3a343293a5ff57ee10b2cea3ddceaf2',1,'RestLink::Api::name()'],['../class_rest_link_1_1_api.html#a650c6533d2c23851372cbe63eba221e3',1,'RestLink::Api::name() const']]],
   ['networkerror_40',['networkError',['../class_rest_link_1_1_response.html#a3fd9f301571c07b2daa1d6702bd8579d',1,'RestLink::Response']]],
   ['networkerrorstring_41',['networkErrorString',['../class_rest_link_1_1_response.html#a38d9c0d47627c810e843216443954855',1,'RestLink::Response']]],
   ['networkmanager_42',['NetworkManager',['../class_rest_link_1_1_network_manager.html#ab8d686f89050e5a29976839c0653a612',1,'RestLink::NetworkManager']]],

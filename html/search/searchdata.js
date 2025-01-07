@@ -3,7 +3,8 @@ var indexSectionsWithContent =
   0: "acdeghilmnopqrsuv~",
   1: "acnr",
   2: "acdeghilmnopqrsuv~",
-  3: "r"
+  3: "nu",
+  4: "r"
 };
 
 var indexSectionNames =
@@ -11,7 +12,8 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "functions",
-  3: "pages"
+  3: "properties",
+  4: "pages"
 };
 
 var indexSectionLabels =
@@ -19,6 +21,7 @@ var indexSectionLabels =
   0: "All",
   1: "Classes",
   2: "Functions",
-  3: "Pages"
+  3: "Properties",
+  4: "Pages"
 };
 

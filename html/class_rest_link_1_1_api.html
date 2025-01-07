@@ -70,6 +70,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_rest_link_1_1_api-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RestLink::Api Class Reference</div>  </div>
@@ -89,7 +90,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a650c6533d2c23851372cbe63eba221e3"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api.html#a650c6533d2c23851372cbe63eba221e3">name</a> () const</td></tr>
 <tr class="memdesc:a650c6533d2c23851372cbe63eba221e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the API.  <a href="class_rest_link_1_1_api.html#a650c6533d2c23851372cbe63eba221e3">More...</a><br /></td></tr>
 <tr class="separator:a650c6533d2c23851372cbe63eba221e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0e09706bb5f3b3d55bccebdbfb285e0"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api.html#af0e09706bb5f3b3d55bccebdbfb285e0">setName</a> (const QString &amp;name)</td></tr>
+<tr class="memitem:af0e09706bb5f3b3d55bccebdbfb285e0"><td class="memItemLeft" align="right" valign="top">Q_SLOT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api.html#af0e09706bb5f3b3d55bccebdbfb285e0">setName</a> (const QString &amp;<a class="el" href="class_rest_link_1_1_api.html#ab3a343293a5ff57ee10b2cea3ddceaf2">name</a>)</td></tr>
 <tr class="memdesc:af0e09706bb5f3b3d55bccebdbfb285e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the API.  <a href="class_rest_link_1_1_api.html#af0e09706bb5f3b3d55bccebdbfb285e0">More...</a><br /></td></tr>
 <tr class="separator:af0e09706bb5f3b3d55bccebdbfb285e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae53904ec93efece3f491816fcb0c569f"><td class="memItemLeft" align="right" valign="top">QVersionNumber&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api.html#ae53904ec93efece3f491816fcb0c569f">version</a> () const</td></tr>
@@ -266,6 +267,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:acd63deb149fc00db1a24433cce7d2d61 inherit pro_methods_class_rest_link_1_1_api_base"><td class="memItemLeft" align="right" valign="top">virtual QNetworkReply *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api_base.html#acd63deb149fc00db1a24433cce7d2d61">createNetworkReply</a> (const QNetworkRequest &amp;request, const Body &amp;body, Operation operation)</td></tr>
 <tr class="memdesc:acd63deb149fc00db1a24433cce7d2d61 inherit pro_methods_class_rest_link_1_1_api_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a network reply based on the given request, body, and operation.  <a href="class_rest_link_1_1_api_base.html#acd63deb149fc00db1a24433cce7d2d61">More...</a><br /></td></tr>
 <tr class="separator:acd63deb149fc00db1a24433cce7d2d61 inherit pro_methods_class_rest_link_1_1_api_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ab3a343293a5ff57ee10b2cea3ddceaf2"><td class="memItemLeft" align="right" valign="top"><a id="ab3a343293a5ff57ee10b2cea3ddceaf2"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api.html#ab3a343293a5ff57ee10b2cea3ddceaf2">name</a></td></tr>
+<tr class="memdesc:ab3a343293a5ff57ee10b2cea3ddceaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the API. <br /></td></tr>
+<tr class="separator:ab3a343293a5ff57ee10b2cea3ddceaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad8c42de0fc2fd62afdabdf231680d6a"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api.html#aad8c42de0fc2fd62afdabdf231680d6a">userAgent</a></td></tr>
+<tr class="memdesc:aad8c42de0fc2fd62afdabdf231680d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user agent string to be used in API requests.  <a href="class_rest_link_1_1_api.html#aad8c42de0fc2fd62afdabdf231680d6a">More...</a><br /></td></tr>
+<tr class="separator:aad8c42de0fc2fd62afdabdf231680d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an API interface that manages configuration, requests, and parameters. </p>
@@ -658,6 +669,47 @@ Protected Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The fully-constructed QNetworkRequest to be used in the network request. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_rest_link_1_1_api_base.html#aa0a61d3292c3a5c6f0a881c5588022e2">RestLink::ApiBase</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="aad8c42de0fc2fd62afdabdf231680d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad8c42de0fc2fd62afdabdf231680d6a">&#9670;&nbsp;</a></span>userAgent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString RestLink::Api::userAgent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The user agent string to be used in API requests. </p>
+<p>The <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> class is responsible for creating network requests and managing response data. It supports adding parameters to requests, configuring the API from different sources, and emitting signals for configuration changes and network error events.</p>
+<p>\signal void apiNameChanged(const QString &amp;name)</p>
+<p>Emitted when the API name changes.</p>
+<p>\signal void apiVersionChanged(int version)</p>
+<p>Emitted when the API version changes.</p>
+<p>\signal void apiUrlChanged(const QUrl &amp;url)</p>
+<p>Emitted when the API URL changes.</p>
+<p>\signal void apiParametersChanged()</p>
+<p>Emitted when the API parameters change.</p>
+<p>\signal void userAgentChanged(const QString &amp;agent)</p>
+<p>Emitted when the user agent changes.</p>
+<p>\signal void configurationCompleted()</p>
+<p>Emitted when the API configuration is completed.</p>
+<p>\signal void configurationFailed()</p>
+<p>Emitted when the API configuration fails.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_rest_link_1_1_api_base.html" title="The ApiBase class provides methods for making HTTP requests (HEAD, GET, POST, PUT,...">ApiBase</a>, <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a>, RequestParameter </dd></dl>
 
 </div>
 </div>

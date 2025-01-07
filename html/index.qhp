@@ -33,6 +33,8 @@
                 <section title="configure" ref="class_rest_link_1_1_api.html#a5c6e0e8e9163b7ef0552dda621360159" />
                 <section title="configure" ref="class_rest_link_1_1_api.html#afeb72fa6ad28e2e0abe30c9ff34791eb" />
                 <section title="createNetworkRequest" ref="class_rest_link_1_1_api.html#a2cf586cb080736fa963cf08c5fb8c1d8" />
+                <section title="name" ref="class_rest_link_1_1_api.html#ab3a343293a5ff57ee10b2cea3ddceaf2" />
+                <section title="userAgent" ref="class_rest_link_1_1_api.html#aad8c42de0fc2fd62afdabdf231680d6a" />
               </section>
               <section title="ApiBase" ref="class_rest_link_1_1_api_base.html">
                 <section title="~ApiBase" ref="class_rest_link_1_1_api_base.html#a85706408c858ec3854f6c2b18e79b5a4" />
@@ -171,6 +173,7 @@
           <section title="Class Members" ref="functions.html">
             <section title="All" ref="functions.html" />
             <section title="Functions" ref="functions_func.html" />
+            <section title="Properties" ref="functions_prop.html" />
           </section>
         </section>
       </section>
@@ -236,6 +239,8 @@
       <keyword name="setHeaders" id="RestLink::RequestInterface::setHeaders" ref="class_rest_link_1_1_request_interface.html#a84bd03a13c0ebfdbebd65dcbf93372d1" />
       <keyword name="createNetworkRequest" id="RestLink::Api::createNetworkRequest" ref="class_rest_link_1_1_api.html#a2cf586cb080736fa963cf08c5fb8c1d8" />
       <keyword name="createNetworkReply" id="RestLink::ApiBase::createNetworkReply" ref="class_rest_link_1_1_api_base.html#acd63deb149fc00db1a24433cce7d2d61" />
+      <keyword name="name" id="RestLink::Api::name" ref="class_rest_link_1_1_api.html#ab3a343293a5ff57ee10b2cea3ddceaf2" />
+      <keyword name="userAgent" id="RestLink::Api::userAgent" ref="class_rest_link_1_1_api.html#aad8c42de0fc2fd62afdabdf231680d6a" />
       <keyword name="RestLink::ApiBase" id="RestLink::ApiBase" ref="class_rest_link_1_1_api_base.html" />
       <keyword name="~ApiBase" id="RestLink::ApiBase::~ApiBase" ref="class_rest_link_1_1_api_base.html#a85706408c858ec3854f6c2b18e79b5a4" />
       <keyword name="locale" id="RestLink::ApiBase::locale" ref="class_rest_link_1_1_api_base.html#a3a55e077f89cc11e8bc650c4471997c7" />
@@ -510,6 +515,8 @@
       <file>functions_func.html</file>
       <file>functions_func.html</file>
       <file>functions_func.html</file>
+      <file>functions_prop.html</file>
+      <file>functions_prop.html</file>
     </files>
   </filterSection>
 </QtHelpProject>

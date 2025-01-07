@@ -66,4 +66,5 @@ var menudata={children:[
 {text:"s",url:"functions_func.html#index_s"},
 {text:"u",url:"functions_func.html#index_u"},
 {text:"v",url:"functions_func.html#index_v"},
-{text:"~",url:"functions_func.html#index__7E"}]}]}]}]}
+{text:"~",url:"functions_func.html#index__7E"}]},
+{text:"Properties",url:"functions_prop.html"}]}]}]}
