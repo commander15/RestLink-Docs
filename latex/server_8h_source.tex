@@ -1,0 +1,67 @@
+\doxysection{server.\+h}
+\hypertarget{server_8h_source}{}\label{server_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/server.h@{/home/runner/work/RestLink/RestLink/src/lib/server.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_SERVER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_SERVER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RestLink/requesthandler.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QtCore/qobject.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }ServerPrivate;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ Server\ :\ \textcolor{keyword}{public}\ QObject,\ \textcolor{keyword}{public}\ RequestHandler}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{enum}\ ServerType\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ Synchronous,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ Asynchronous}
+\DoxyCodeLine{00020\ \ \ \ \ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{explicit}\ Server(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00023\ \ \ \ \ Server(ServerType\ type,\ QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~Server();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ isListening()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ listen();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ close();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ error()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ QString\ errorString()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ signals:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ stateChanged(\textcolor{keywordtype}{bool}\ listening);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ errorOccured(\textcolor{keywordtype}{int}\ error);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00038\ \ \ \ \ Server(ServerPrivate\ *d,\ QObject\ *parent);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ init()\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ cleanup()\ =\ 0;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ maintain()\ =\ 0;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ processRequest(ApiBase::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Response\ *response)\ =\ 0;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ Response\ *createResponse(ApiBase::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ setError(\textcolor{keywordtype}{int}\ code,\ \textcolor{keyword}{const}\ QString\ \&str);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ QScopedPointer<ServerPrivate>\ d\_ptr;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ setListening(\textcolor{keywordtype}{bool}\ listening);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ Response\ *sendRequest(ApiBase::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api)\ \textcolor{keyword}{override}\ \textcolor{keyword}{final};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }ServerPrivate;}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_SERVER\_H}}
+
+\end{DoxyCode}

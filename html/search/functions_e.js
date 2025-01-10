@@ -5,7 +5,7 @@ var searchData=
   ['setheaders_2',['setHeaders',['../class_rest_link_1_1_request_interface.html#a84bd03a13c0ebfdbebd65dcbf93372d1',1,'RestLink::RequestInterface']]],
   ['setmaxcachesize_3',['setMaxCacheSize',['../class_rest_link_1_1_cache.html#a2b9a63c2fa50f482680fa1aedb478c91',1,'RestLink::Cache']]],
   ['setname_4',['setName',['../class_rest_link_1_1_api.html#af0e09706bb5f3b3d55bccebdbfb285e0',1,'RestLink::Api']]],
-  ['setnetworkmanager_5',['setNetworkManager',['../class_rest_link_1_1_api_base.html#a1a2094806701e425f46672c67511cd7c',1,'RestLink::ApiBase']]],
+  ['setnetworkmanager_5',['setNetworkManager',['../class_rest_link_1_1_api_base.html#a8e1d108a89597b6d0d0e7e878536a0bd',1,'RestLink::ApiBase']]],
   ['setpathparameter_6',['setpathparameter',['../class_rest_link_1_1_request_interface.html#aacab1e2b9d3ba176f03d76477d02034e',1,'RestLink::RequestInterface::setPathParameter(const PathParameter &amp;parameter)'],['../class_rest_link_1_1_request_interface.html#a8b10f650c3dc2821a84d294059874ace',1,'RestLink::RequestInterface::setPathParameter(const QString &amp;name, const QVariant &amp;value)']]],
   ['setpathparameters_7',['setPathParameters',['../class_rest_link_1_1_request_interface.html#a2128c12f9908fc6c3562b1d5930cd855',1,'RestLink::RequestInterface']]],
   ['setqueryparameter_8',['setqueryparameter',['../class_rest_link_1_1_request_interface.html#ab4b63e650c80371554e2bf233deb069e',1,'RestLink::RequestInterface::setQueryParameter(const QString &amp;name, const QVariant &amp;value)'],['../class_rest_link_1_1_request_interface.html#a1fb669df48026dbe1dfa02ac140093ca',1,'RestLink::RequestInterface::setQueryParameter(const QueryParameter &amp;param)']]],

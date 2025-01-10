@@ -54,14 +54,13 @@
 \DoxyCodeLine{00050\ \ \ \ \ Q\_SIGNAL\ \textcolor{keywordtype}{void}\ configurationFailed();}
 \DoxyCodeLine{00051\ }
 \DoxyCodeLine{00052\ protected:}
-\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *createResponse(const\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ QNetworkReply\ *netReply)\ override;}
-\DoxyCodeLine{00054\ \ \ \ \ QNetworkRequest\ createNetworkRequest(const\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ const\ Body\ \&body,\ Operation\ operation)\ override;}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \ \ \ \ friend\ class\ ApiPrivate;}
-\DoxyCodeLine{00057\ \};}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \}}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_API\_H}}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *send(Operation\ operation,\ const\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ const\ Body\ \&body)\ override;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ friend\ class\ ApiPrivate;}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_API\_H}}
 
 \end{DoxyCode}

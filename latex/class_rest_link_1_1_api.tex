@@ -71,9 +71,9 @@ void \mbox{\hyperlink{class_rest_link_1_1_api_base_af21ac04e37989e896c844a4387df
 \begin{DoxyCompactList}\small\item\em Adds a request interceptor to the list. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_rest_link_1_1_api_base_a2191397a2641e9f523f5ee30dcea50f1}{remove\+Request\+Interceptor}} (\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{Request\+Interceptor}} \texorpdfstring{$\ast$}{*}interceptor)
 \begin{DoxyCompactList}\small\item\em Removes a request interceptor from the list. \end{DoxyCompactList}\item 
-QNetwork\+Access\+Manager \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_a5d4524625fa9bbe29a37e3eae2f8d704}{network\+Manager}} () const
+\mbox{\hyperlink{class_rest_link_1_1_network_manager}{Network\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_a81f5c18d495fb8ddd5ccbf4fccaefa92}{network\+Manager}} () const
 \begin{DoxyCompactList}\small\item\em Returns the network manager used by the \doxylink{class_rest_link_1_1_api_base}{Api\+Base} class. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_rest_link_1_1_api_base_a1a2094806701e425f46672c67511cd7c}{set\+Network\+Manager}} (QNetwork\+Access\+Manager \texorpdfstring{$\ast$}{*}manager)
+void \mbox{\hyperlink{class_rest_link_1_1_api_base_a8e1d108a89597b6d0d0e7e878536a0bd}{set\+Network\+Manager}} (\mbox{\hyperlink{class_rest_link_1_1_network_manager}{Network\+Manager}} \texorpdfstring{$\ast$}{*}manager)
 \begin{DoxyCompactList}\small\item\em Sets the network manager for the \doxylink{class_rest_link_1_1_api_base}{Api\+Base} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_rest_link_1_1_request_interface}{Rest\+Link\+::\+Request\+Interface}}}
 \begin{DoxyCompactItemize}
@@ -132,16 +132,6 @@ QList$<$ Header $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_ac12f
 \begin{DoxyCompactList}\small\item\em Retrieves all headers. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a84bd03a13c0ebfdbebd65dcbf93372d1}{set\+Headers}} (const QList$<$ Header $>$ \&\mbox{\hyperlink{class_rest_link_1_1_request_interface_ac12fa4571256c57fc563e20fd599cd15}{headers}})
 \begin{DoxyCompactList}\small\item\em Sets all headers. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-QNetwork\+Request \mbox{\hyperlink{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}{create\+Network\+Request}} (const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&request, const Body \&body, Operation operation) override
-\begin{DoxyCompactList}\small\item\em Creates a network request for the given parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_rest_link_1_1_api_base}{Rest\+Link\+::\+Api\+Base}}}
-\begin{DoxyCompactItemize}
-\item 
-virtual QNetwork\+Reply \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_rest_link_1_1_api_base_acd63deb149fc00db1a24433cce7d2d61}{create\+Network\+Reply}} (const QNetwork\+Request \&request, const Body \&body, Operation operation)
-\begin{DoxyCompactList}\small\item\em Creates a network reply based on the given request, body, and operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -371,34 +361,6 @@ This method configures the API using a JSON object. The configuration can includ
 \begin{DoxyReturn}{Returns}
 Returns true if the configuration was successful, false otherwise. 
 \end{DoxyReturn}
-\Hypertarget{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8}\label{class_rest_link_1_1_api_a2cf586cb080736fa963cf08c5fb8c1d8} 
-\index{RestLink::Api@{RestLink::Api}!createNetworkRequest@{createNetworkRequest}}
-\index{createNetworkRequest@{createNetworkRequest}!RestLink::Api@{RestLink::Api}}
-\doxysubsubsection{\texorpdfstring{createNetworkRequest()}{createNetworkRequest()}}
-{\footnotesize\ttfamily QNetwork\+Request Rest\+Link\+::\+Api\+::create\+Network\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rest_link_1_1_request}{Request}} \&}]{req,  }\item[{const Body \&}]{body,  }\item[{Operation}]{operation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
-
-
-
-Creates a network request for the given parameters. 
-
-This function constructs a QNetwork\+Request using the provided \doxylink{class_rest_link_1_1_request}{Request}, Body, and Operation parameters. It merges the provided request with internal settings, applies any request interceptors, constructs the URL with query parameters, and sets necessary headers (such as User-\/\+Agent, Accept-\/\+Encoding, and Accept-\/\+Language). It also configures cache and connection settings before returning the fully-\/constructed network request.
-
-
-\begin{DoxyParams}{Parameters}
-{\em req} & The request object containing information like the endpoint and headers. \\
-\hline
-{\em body} & The body of the request that contains any data or file to be sent. \\
-\hline
-{\em operation} & The operation type (e.\+g., GET, POST, PUT) that specifies the HTTP method.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The fully-\/constructed QNetwork\+Request to be used in the network request. 
-\end{DoxyReturn}
-
-
-Reimplemented from \mbox{\hyperlink{class_rest_link_1_1_api_base_aa0a61d3292c3a5c6f0a881c5588022e2}{Rest\+Link\+::\+Api\+Base}}.
-
 
 
 \doxysubsection{Property Documentation}

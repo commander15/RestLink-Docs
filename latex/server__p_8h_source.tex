@@ -1,0 +1,58 @@
+\doxysection{server\+\_\+p.\+h}
+\hypertarget{server__p_8h_source}{}\label{server__p_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/server\_p.h@{/home/runner/work/RestLink/RestLink/src/lib/server\_p.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_SERVER\_P\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_SERVER\_P\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}server.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <RestLink/request.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <RestLink/body.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QtCore/qthread.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QtCore/qqueue.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QtCore/qmutex.h>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }ServerPrivate\ :\ \textcolor{keyword}{public}\ QThread}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{struct\ }PendingRequest\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ Api::Operation\ operation;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ Request\ request;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ Body\ body;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ Response\ *response\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00025\ \ \ \ \ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ ServerPrivate(Server::ServerType\ type,\ Server\ *q);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ processNext();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ Server\ *q\_ptr;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ listening;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ errorCode;}
+\DoxyCodeLine{00036\ \ \ \ \ QString\ errorString;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{const}\ Server::ServerType\ type;}
+\DoxyCodeLine{00039\ \ \ \ \ QQueue<PendingRequest>\ pendingRequests;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ bypassCleanup;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{mutable}\ QMutex\ mutex;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ run()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }Server;}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_SERVER\_P\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,44 @@
+\doxysection{requesthandler.\+h}
+\hypertarget{requesthandler_8h_source}{}\label{requesthandler_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/requesthandler.h@{/home/runner/work/RestLink/RestLink/src/lib/requesthandler.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_REQUESTHANDLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_REQUESTHANDLER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RestLink/api.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ RequestHandler}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~RequestHandler();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ Response\ *head(\textcolor{keyword}{const}\ Request\ \&request,\ Api\ *api);}
+\DoxyCodeLine{00015\ \ \ \ \ Response\ *get(\textcolor{keyword}{const}\ Request\ \&request,\ Api\ *api);}
+\DoxyCodeLine{00016\ \ \ \ \ Response\ *post(\textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api);}
+\DoxyCodeLine{00017\ \ \ \ \ Response\ *put(\textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api);}
+\DoxyCodeLine{00018\ \ \ \ \ Response\ *patch(\textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api);}
+\DoxyCodeLine{00019\ \ \ \ \ Response\ *deleteResource(\textcolor{keyword}{const}\ Request\ \&request,\ Api\ *api);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ Response\ *send(Api::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api);}
+\DoxyCodeLine{00022\ \ \ \ \ Response\ *send(Api::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ ApiBase\ *api);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ QStringList\ supportedSchemes()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ isApiSupported(ApiBase\ *api)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ QUrl\ generateUrl(\textcolor{keyword}{const}\ Request\ \&request,\ ApiBase\ *api)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ Response\ *sendRequest(Api::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api)\ =\ 0;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }ApiBase;}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_REQUESTHANDLER\_H}}
+
+\end{DoxyCode}

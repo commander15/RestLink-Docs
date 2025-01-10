@@ -1,0 +1,49 @@
+\doxysection{sqlserver.\+h}
+\hypertarget{sqlserver_8h_source}{}\label{sqlserver_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/sql/sqlserver.h@{/home/runner/work/RestLink/RestLink/src/lib/sql/sqlserver.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_SQLSERVER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_SQLSERVER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RestLink/server.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QSqlQuery;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }QSqlError;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }ServerResponse;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }SqlServerPrivate;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ SqlServer\ :\ \textcolor{keyword}{public}\ Server}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ SqlServer(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ QStringList\ supportedSchemes()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ init()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ cleanup()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ maintain()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ handleGet(\textcolor{keyword}{const}\ Request\ \&request,\ QSqlQuery\ *query,\ ServerResponse\ *response);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ handlePost(\textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ QSqlQuery\ *query,\ ServerResponse\ *response);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ handlePut(\textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ QSqlQuery\ *query,\ ServerResponse\ *response);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ handlePatch(\textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ QSqlQuery\ *query,\ ServerResponse\ *response);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ handleDelete(\textcolor{keyword}{const}\ Request\ \&request,\ QSqlQuery\ *query,\ ServerResponse\ *response);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ handleError(QSqlQuery\ *query,\ ServerResponse\ *response);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ handleError(\textcolor{keyword}{const}\ QSqlError\ \&error,\ ServerResponse\ *response);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ processRequest(ApiBase::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Response\ *r)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ Response\ *createResponse(ApiBase::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_SQLSERVER\_H}}
+
+\end{DoxyCode}
