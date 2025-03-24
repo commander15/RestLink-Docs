@@ -28,14 +28,11 @@
 \DoxyCodeLine{00024\ \ \ \ \ QNetworkRequest\ generateNetworkRequest(Api::Operation\ operation,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ \mbox{\hyperlink{class_rest_link_1_1_api_base}{ApiBase}}\ *api);}
 \DoxyCodeLine{00025\ \ \ \ \ QNetworkReply\ *generateNetworkReply(Api::Operation\ operation,\ \textcolor{keyword}{const}\ QNetworkRequest\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ \mbox{\hyperlink{class_rest_link_1_1_api_base}{ApiBase}}\ *api);}
 \DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00028\ \ \ \ \ QVector<RequestHandler\ *>\ m\_handlers;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rest_link_1_1_api}{Api}};}
+\DoxyCodeLine{00028\ \};}
 \DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rest_link_1_1_api}{Api}};}
-\DoxyCodeLine{00031\ \};}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \}}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_NETWORKMANAGER\_H}}
+\DoxyCodeLine{00030\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_NETWORKMANAGER\_H}}
 
 \end{DoxyCode}

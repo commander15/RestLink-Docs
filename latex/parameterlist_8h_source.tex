@@ -1,0 +1,183 @@
+\doxysection{parameterlist.\+h}
+\hypertarget{parameterlist_8h_source}{}\label{parameterlist_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/parameterlist.h@{/home/runner/work/RestLink/RestLink/src/lib/parameterlist.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_PARAMETERLIST\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_PARAMETERLIST\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RestLink/parameter.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QtCore/qlist.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QtCore/qvariant.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P\ =\ Parameter>}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ ParameterList\ :\ \textcolor{keyword}{public}\ QList<P>}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{bool}\ contains(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00017\ \ \ \ \ QVariant\ value(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ QVariantList\ values(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ P\ parameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ setParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ setParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariantList\ \&values);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ setParameter(\textcolor{keyword}{const}\ P\ \&param);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ addParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ addParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariantList\ \&values);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ addParameter(\textcolor{keyword}{const}\ P\ \&param);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ removeParameter(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ removeParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ removeParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariantList\ \&values);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ QList<P>\ parameters()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ P\ newParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariantList\ \&values)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{typename}\ QList<P>::ConstIterator\ find(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keywordtype}{bool}\ *found)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{typename}\ QList<P>::Iterator\ find(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keywordtype}{bool}\ *found);}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{bool}\ ParameterList<P>::contains(\textcolor{keyword}{const}\ QString\ \&name)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00044\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ found\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00046\ \ \ \ \ find(name,\ \&found);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordflow}{return}\ found;}
+\DoxyCodeLine{00048\ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00051\ QVariant\ ParameterList<P>::value(\textcolor{keyword}{const}\ QString\ \&name)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00052\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ found\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ find(name,\ \&found);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordflow}{return}\ (found\ \&\&\ !it-\/>values().isEmpty()\ ?\ it-\/>values().first()\ :\ QVariant());}
+\DoxyCodeLine{00056\ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00059\ QVariantList\ ParameterList<P>::values(\textcolor{keyword}{const}\ QString\ \&name)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00060\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{bool}\ found\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ find(name,\ \&found);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordflow}{return}\ (found\ ?\ it-\/>values()\ :\ QVariantList());}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00067\ P\ ParameterList<P>::parameter(\textcolor{keyword}{const}\ QString\ \&name)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00068\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{bool}\ found\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ find(name,\ \&found);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordflow}{return}\ (found\ ?\ *it\ :\ Parameter());}
+\DoxyCodeLine{00072\ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00075\ \textcolor{keywordtype}{void}\ ParameterList<P>::setParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value)}
+\DoxyCodeLine{00076\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ setParameter(newParameter(name,\ \{value\}));}
+\DoxyCodeLine{00078\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ ParameterList<P>::setParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariantList\ \&values)}
+\DoxyCodeLine{00082\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ setParameter(newParameter(name,\ values));}
+\DoxyCodeLine{00084\ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00087\ \textcolor{keywordtype}{void}\ ParameterList<P>::setParameter(\textcolor{keyword}{const}\ P\ \&param)}
+\DoxyCodeLine{00088\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{bool}\ found\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ find(param.name(),\ \&found);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{if}\ (found)}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ it-\/>setValues(param.values());}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ append(param);}
+\DoxyCodeLine{00096\ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00099\ \textcolor{keywordtype}{void}\ ParameterList<P>::addParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value)}
+\DoxyCodeLine{00100\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ addParameter(newParameter(name,\ \{value\}));}
+\DoxyCodeLine{00102\ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00105\ \textcolor{keywordtype}{void}\ ParameterList<P>::addParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariantList\ \&values)}
+\DoxyCodeLine{00106\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ addParameter(newParameter(name,\ values));}
+\DoxyCodeLine{00108\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00111\ \textcolor{keywordtype}{void}\ ParameterList<P>::addParameter(\textcolor{keyword}{const}\ P\ \&param)}
+\DoxyCodeLine{00112\ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{bool}\ found\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ find(param.name(),\ \&found);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordflow}{if}\ (found)}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ it-\/>addValue(param.values());}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ this-\/>append(param);}
+\DoxyCodeLine{00120\ \}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00123\ \textcolor{keywordtype}{void}\ ParameterList<P>::removeParameter(\textcolor{keyword}{const}\ QString\ \&name)}
+\DoxyCodeLine{00124\ \{}
+\DoxyCodeLine{00125\ \ \ \ \ removeParameter(name,\ QVariantList());}
+\DoxyCodeLine{00126\ \}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00129\ \textcolor{keywordtype}{void}\ ParameterList<P>::removeParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value)}
+\DoxyCodeLine{00130\ \{}
+\DoxyCodeLine{00131\ \ \ \ \ removeParameter(name,\ \{\ value\ \});}
+\DoxyCodeLine{00132\ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00135\ \textcolor{keywordtype}{void}\ ParameterList<P>::removeParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariantList\ \&values)}
+\DoxyCodeLine{00136\ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{bool}\ found\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ find(name,\ \&found);}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordflow}{if}\ (found\ \&\&\ (values.isEmpty()\ ||\ it-\/>values()\ ==\ values))}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ this-\/>removeAt(std::distance(this-\/>begin(),\ it));}
+\DoxyCodeLine{00142\ \}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00145\ P\ ParameterList<P>::newParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariantList\ \&values)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00146\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00147\ \ \ \ \ P\ param;}
+\DoxyCodeLine{00148\ \ \ \ \ param.setName(name);}
+\DoxyCodeLine{00149\ \ \ \ \ param.setValues(values);}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordflow}{return}\ param;}
+\DoxyCodeLine{00151\ \}}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00154\ \textcolor{keyword}{typename}\ QList<P>::Iterator\ ParameterList<P>::find(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keywordtype}{bool}\ *found)}
+\DoxyCodeLine{00155\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::find\_if(this-\/>begin(),\ this-\/>end(),\ [\&name](\textcolor{keyword}{const}\ Parameter\ \&param)\ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ param.name()\ ==\ name;}
+\DoxyCodeLine{00158\ \ \ \ \ \});}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ *found\ =\ (it\ !=\ this-\/>end()\ ?\ true\ :\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
+\DoxyCodeLine{00162\ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ P>}
+\DoxyCodeLine{00165\ \textcolor{keyword}{typename}\ QList<P>::ConstIterator\ ParameterList<P>::find(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keywordtype}{bool}\ *found)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00166\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::find\_if(this-\/>begin(),\ this-\/>end(),\ [\&name](\textcolor{keyword}{const}\ Parameter\ \&param)\ \{}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ param.name()\ ==\ name;}
+\DoxyCodeLine{00169\ \ \ \ \ \});}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ *found\ =\ (it\ !=\ this-\/>end()\ ?\ true\ :\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
+\DoxyCodeLine{00173\ \}}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_PARAMETERLIST\_H}}
+
+\end{DoxyCode}

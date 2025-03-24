@@ -39,17 +39,17 @@
 <section title="ApiBase" ref="class_rest_link_1_1_api_base.html">
 <section title="~ApiBase" ref="class_rest_link_1_1_api_base.html#a85706408c858ec3854f6c2b18e79b5a4"/>
 <section title="locale" ref="class_rest_link_1_1_api_base.html#a3a55e077f89cc11e8bc650c4471997c7"/>
-<section title="head" ref="class_rest_link_1_1_api_base.html#af7a9838f52f594045fa3359dcb0c0858"/>
+<section title="head" ref="class_rest_link_1_1_api_base.html#a55af30c40922e42547f47901e6b56c1a"/>
 <section title="head" ref="class_rest_link_1_1_api_base.html#a7d228b925d871e01f4ce213f12a3bd6e"/>
-<section title="get" ref="class_rest_link_1_1_api_base.html#ae9b10e948ed87ff037286465a01dfcc8"/>
+<section title="get" ref="class_rest_link_1_1_api_base.html#a986342385e2e88b628d8740a1da4209e"/>
 <section title="get" ref="class_rest_link_1_1_api_base.html#a753092a332ae26dac90c15cfb0993d5d"/>
-<section title="post" ref="class_rest_link_1_1_api_base.html#a042430bc383213c185218dd087f42bc0"/>
+<section title="post" ref="class_rest_link_1_1_api_base.html#a76cf68429916345a2472040b84a231c9"/>
 <section title="post" ref="class_rest_link_1_1_api_base.html#aeaa13a32e278187e0fb62ca8a4ea24be"/>
-<section title="put" ref="class_rest_link_1_1_api_base.html#af93144922505fb613f0ec3d3f5cfe152"/>
+<section title="put" ref="class_rest_link_1_1_api_base.html#a93676a6f2b3b285c50c789f20eb4f9e4"/>
 <section title="put" ref="class_rest_link_1_1_api_base.html#add35b3db631cb671fe2bf7ce3b0d4f17"/>
-<section title="patch" ref="class_rest_link_1_1_api_base.html#a767e4cad0d8ca700052e47ba78122422"/>
+<section title="patch" ref="class_rest_link_1_1_api_base.html#a3b91f59781cf4f7c63bd1aa10789247e"/>
 <section title="patch" ref="class_rest_link_1_1_api_base.html#aac4f290f2196f107e862371cf74de826"/>
-<section title="deleteResource" ref="class_rest_link_1_1_api_base.html#a8cf9d8b4144c6b1ebc9c2b35d45ebbd1"/>
+<section title="deleteResource" ref="class_rest_link_1_1_api_base.html#a7b75a4b36426b1b3ded6d7ed05840df2"/>
 <section title="deleteResource" ref="class_rest_link_1_1_api_base.html#a84c5ad205dd4dc1ee6a45752bad3f2ee"/>
 <section title="userAgent" ref="class_rest_link_1_1_api_base.html#a0682831b71c6f4d60a32a423d946e7a2"/>
 <section title="requestInterceptors" ref="class_rest_link_1_1_api_base.html#ab0fa0676d5fdeb53076baf4abfb67ec9"/>
@@ -108,9 +108,10 @@
 <section title="queryParameter" ref="class_rest_link_1_1_request_interface.html#a62114c7a8a32108e52efbccdb88b5203"/>
 <section title="queryParameterValues" ref="class_rest_link_1_1_request_interface.html#a2668210f521e6061359c02998fae8ff8"/>
 <section title="queryParameterNames" ref="class_rest_link_1_1_request_interface.html#a3689c62b8a099e8560e5d55866c2330b"/>
-<section title="setQueryParameter" ref="class_rest_link_1_1_request_interface.html#ab4b63e650c80371554e2bf233deb069e"/>
-<section title="setQueryParameter" ref="class_rest_link_1_1_request_interface.html#a1fb669df48026dbe1dfa02ac140093ca"/>
-<section title="unsetQueryParameter" ref="class_rest_link_1_1_request_interface.html#aba421b7a9ed5aa204a71e48bc475c9f0"/>
+<section title="addQueryParameter" ref="class_rest_link_1_1_request_interface.html#a177b271e28c6a34a723259819af160a8"/>
+<section title="addQueryParameter" ref="class_rest_link_1_1_request_interface.html#a8e3259dcebd3b88e250849d632196c0e"/>
+<section title="removeQueryParameter" ref="class_rest_link_1_1_request_interface.html#a95a836ce3cf8c29058c50c33da21d542"/>
+<section title="removeQueryParameter" ref="class_rest_link_1_1_request_interface.html#a2d6fb82039e75db8505ec686da290ea7"/>
 <section title="queryParameters" ref="class_rest_link_1_1_request_interface.html#a619a1f098e59b40901c05bead4545957"/>
 <section title="setQueryParameters" ref="class_rest_link_1_1_request_interface.html#aaf15c64f5514925a05d581c0103d9935"/>
 <section title="hasHeader" ref="class_rest_link_1_1_request_interface.html#a25436a94d99726ed4cb8cddd6d3e327e"/>
@@ -142,7 +143,6 @@
 <section title="readJson" ref="class_rest_link_1_1_response.html#afa86f8cd94fcf5f90e7df7ad93422884"/>
 <section title="readString" ref="class_rest_link_1_1_response.html#a258e564a9d904607a9b1cddf50783be7"/>
 <section title="readBody" ref="class_rest_link_1_1_response.html#a5d591e8e247e374faec22c65af573dd9"/>
-<section title="hasNetworkError" ref="class_rest_link_1_1_response.html#a83809972a1dc9b6154df8216f04b6891"/>
 <section title="networkError" ref="class_rest_link_1_1_response.html#a3fd9f301571c07b2daa1d6702bd8579d"/>
 <section title="networkErrorString" ref="class_rest_link_1_1_response.html#a38d9c0d47627c810e843216443954855"/>
 <section title="networkReply" ref="class_rest_link_1_1_response.html#a935afa1dbaa2e69791c2f520fe18ba6e"/>
@@ -150,6 +150,7 @@
 <section title="httpStatusCode" ref="class_rest_link_1_1_response.html#ae8c064b14260f1d52c700094b61bbb7f"/>
 <section title="httpReasonPhrase" ref="class_rest_link_1_1_response.html#a4fa108b61a1a4ec9421fa4c008a74764"/>
 <section title="headerList" ref="class_rest_link_1_1_response.html#a5e01cfa795230e72de3b05f026bbe8d4"/>
+<section title="hasNetworkError" ref="class_rest_link_1_1_response.html#ae15b13bc08d2f6e5b47994f05d1ee9e0"/>
 </section>
 </section>
 </section>
@@ -185,6 +186,8 @@
 <keyword name="RestLink::RequestInterceptor" id="RestLink::RequestInterceptor_" ref="class_rest_link_1_1_request_interceptor.html"/>
 <keyword name="RestLink::RequestInterface" id="RestLink::RequestInterface_" ref="class_rest_link_1_1_request_interface.html"/>
 <keyword name="RestLink::Response" id="RestLink::Response_" ref="class_rest_link_1_1_response.html"/>
+<keyword name="addQueryParameter(const QString &amp;name, const QVariant &amp;value)" id="RestLink::RequestInterface::addQueryParameter_a177b271e28c6a34a723259819af160a8" ref="class_rest_link_1_1_request_interface.html#a177b271e28c6a34a723259819af160a8"/>
+<keyword name="addQueryParameter(const QueryParameter &amp;param)" id="RestLink::RequestInterface::addQueryParameter_a8e3259dcebd3b88e250849d632196c0e" ref="class_rest_link_1_1_request_interface.html#a8e3259dcebd3b88e250849d632196c0e"/>
 <keyword name="addRequestInterceptor(RequestInterceptor *interceptor)" id="RestLink::ApiBase::addRequestInterceptor_af21ac04e37989e896c844a4387dff46b" ref="class_rest_link_1_1_api_base.html#af21ac04e37989e896c844a4387dff46b"/>
 <keyword name="Api(QObject *parent=nullptr)" id="RestLink::Api::Api_a0dde35330e4fc2b3067d0a0162dac9f1" ref="class_rest_link_1_1_api.html#a0dde35330e4fc2b3067d0a0162dac9f1"/>
 <keyword name="api() const" id="RestLink::Response::api_aa9b0e939dbc4d86bfe25eb9f3e17acdd" ref="class_rest_link_1_1_response.html#aa9b0e939dbc4d86bfe25eb9f3e17acdd"/>
@@ -194,19 +197,19 @@
 <keyword name="configure(const QJsonObject &amp;config)" id="RestLink::Api::configure_afeb72fa6ad28e2e0abe30c9ff34791eb" ref="class_rest_link_1_1_api.html#afeb72fa6ad28e2e0abe30c9ff34791eb"/>
 <keyword name="CookieJar(QObject *parent=nullptr)" id="RestLink::CookieJar::CookieJar_a257b99d077cb3fbf535e248c350ffbb0" ref="class_rest_link_1_1_cookie_jar.html#a257b99d077cb3fbf535e248c350ffbb0"/>
 <keyword name="data(const QUrl &amp;url) override" id="RestLink::Cache::data_a0b963e22d05287c13cdf001be3f14f06" ref="class_rest_link_1_1_cache.html#a0b963e22d05287c13cdf001be3f14f06"/>
-<keyword name="deleteResource(const Request &amp;request, std::function&lt; ApiRunCallback &gt; callback)" id="RestLink::ApiBase::deleteResource_a8cf9d8b4144c6b1ebc9c2b35d45ebbd1" ref="class_rest_link_1_1_api_base.html#a8cf9d8b4144c6b1ebc9c2b35d45ebbd1"/>
+<keyword name="deleteResource(const Request &amp;request, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::deleteResource_a7b75a4b36426b1b3ded6d7ed05840df2" ref="class_rest_link_1_1_api_base.html#a7b75a4b36426b1b3ded6d7ed05840df2"/>
 <keyword name="deleteResource(const Request &amp;request)" id="RestLink::ApiBase::deleteResource_a84c5ad205dd4dc1ee6a45752bad3f2ee" ref="class_rest_link_1_1_api_base.html#a84c5ad205dd4dc1ee6a45752bad3f2ee"/>
 <keyword name="endpoint() const" id="RestLink::Request::endpoint_a39e8d5cd01da565bc721a93501349adf" ref="class_rest_link_1_1_request.html#a39e8d5cd01da565bc721a93501349adf"/>
 <keyword name="endpoint() const" id="RestLink::Response::endpoint_a97425e1415411f3c0113e768baf0970a" ref="class_rest_link_1_1_response.html#a97425e1415411f3c0113e768baf0970a"/>
-<keyword name="get(const Request &amp;request, std::function&lt; ApiRunCallback &gt; callback)" id="RestLink::ApiBase::get_ae9b10e948ed87ff037286465a01dfcc8" ref="class_rest_link_1_1_api_base.html#ae9b10e948ed87ff037286465a01dfcc8"/>
+<keyword name="get(const Request &amp;request, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::get_a986342385e2e88b628d8740a1da4209e" ref="class_rest_link_1_1_api_base.html#a986342385e2e88b628d8740a1da4209e"/>
 <keyword name="get(const Request &amp;request)" id="RestLink::ApiBase::get_a753092a332ae26dac90c15cfb0993d5d" ref="class_rest_link_1_1_api_base.html#a753092a332ae26dac90c15cfb0993d5d"/>
 <keyword name="hasHeader(const QString &amp;name) const" id="RestLink::RequestInterface::hasHeader_a25436a94d99726ed4cb8cddd6d3e327e" ref="class_rest_link_1_1_request_interface.html#a25436a94d99726ed4cb8cddd6d3e327e"/>
 <keyword name="hasHeader(const QByteArray &amp;name) const" id="RestLink::Response::hasHeader_aeba9208198dcc9c87375f00f44a25144" ref="class_rest_link_1_1_response.html#aeba9208198dcc9c87375f00f44a25144"/>
 <keyword name="hasHttpStatusCode() const" id="RestLink::Response::hasHttpStatusCode_a371a229483acf09456797ef91f57f093" ref="class_rest_link_1_1_response.html#a371a229483acf09456797ef91f57f093"/>
-<keyword name="hasNetworkError() const" id="RestLink::Response::hasNetworkError_a83809972a1dc9b6154df8216f04b6891" ref="class_rest_link_1_1_response.html#a83809972a1dc9b6154df8216f04b6891"/>
+<keyword name="hasNetworkError" id="RestLink::Response::hasNetworkError_ae15b13bc08d2f6e5b47994f05d1ee9e0" ref="class_rest_link_1_1_response.html#ae15b13bc08d2f6e5b47994f05d1ee9e0"/>
 <keyword name="hasPathParameter(const QString &amp;name) const" id="RestLink::RequestInterface::hasPathParameter_af8d364900cb9c10df5487e9fed248568" ref="class_rest_link_1_1_request_interface.html#af8d364900cb9c10df5487e9fed248568"/>
 <keyword name="hasQueryParameter(const QString &amp;name) const" id="RestLink::RequestInterface::hasQueryParameter_aa1d936036969fccdde4b6a468ccbc86b" ref="class_rest_link_1_1_request_interface.html#aa1d936036969fccdde4b6a468ccbc86b"/>
-<keyword name="head(const Request &amp;request, std::function&lt; ApiRunCallback &gt; callback)" id="RestLink::ApiBase::head_af7a9838f52f594045fa3359dcb0c0858" ref="class_rest_link_1_1_api_base.html#af7a9838f52f594045fa3359dcb0c0858"/>
+<keyword name="head(const Request &amp;request, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::head_a55af30c40922e42547f47901e6b56c1a" ref="class_rest_link_1_1_api_base.html#a55af30c40922e42547f47901e6b56c1a"/>
 <keyword name="head(const Request &amp;request)" id="RestLink::ApiBase::head_a7d228b925d871e01f4ce213f12a3bd6e" ref="class_rest_link_1_1_api_base.html#a7d228b925d871e01f4ce213f12a3bd6e"/>
 <keyword name="header(const QString &amp;name) const" id="RestLink::RequestInterface::header_a02561ec790964bd117efe9a710e43a22" ref="class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22"/>
 <keyword name="header(const QByteArray &amp;name) const =0" id="RestLink::Response::header_accbcbff700eb89d2f2a38a823ef6ca9f" ref="class_rest_link_1_1_response.html#accbcbff700eb89d2f2a38a823ef6ca9f"/>
@@ -231,23 +234,23 @@
 <keyword name="name() const" id="RestLink::Api::name_a650c6533d2c23851372cbe63eba221e3" ref="class_rest_link_1_1_api.html#a650c6533d2c23851372cbe63eba221e3"/>
 <keyword name="networkError() const" id="RestLink::Response::networkError_a3fd9f301571c07b2daa1d6702bd8579d" ref="class_rest_link_1_1_response.html#a3fd9f301571c07b2daa1d6702bd8579d"/>
 <keyword name="networkErrorString() const" id="RestLink::Response::networkErrorString_a38d9c0d47627c810e843216443954855" ref="class_rest_link_1_1_response.html#a38d9c0d47627c810e843216443954855"/>
-<keyword name="NetworkManager(QObject *parent=nullptr)" id="RestLink::NetworkManager::NetworkManager_ab8d686f89050e5a29976839c0653a612" ref="class_rest_link_1_1_network_manager.html#ab8d686f89050e5a29976839c0653a612"/>
 <keyword name="networkManager() const" id="RestLink::ApiBase::networkManager_a81f5c18d495fb8ddd5ccbf4fccaefa92" ref="class_rest_link_1_1_api_base.html#a81f5c18d495fb8ddd5ccbf4fccaefa92"/>
+<keyword name="NetworkManager(QObject *parent=nullptr)" id="RestLink::NetworkManager::NetworkManager_ab8d686f89050e5a29976839c0653a612" ref="class_rest_link_1_1_network_manager.html#ab8d686f89050e5a29976839c0653a612"/>
 <keyword name="networkReply() const =0" id="RestLink::Response::networkReply_a935afa1dbaa2e69791c2f520fe18ba6e" ref="class_rest_link_1_1_response.html#a935afa1dbaa2e69791c2f520fe18ba6e"/>
 <keyword name="networkRequest() const =0" id="RestLink::Response::networkRequest_afc9955e3a7c4b6761aa365a3247da2d4" ref="class_rest_link_1_1_response.html#afc9955e3a7c4b6761aa365a3247da2d4"/>
 <keyword name="operation" id="RestLink::Response::operation_a8653230d5528fce4bdc3348423d9e231" ref="class_rest_link_1_1_response.html#a8653230d5528fce4bdc3348423d9e231"/>
 <keyword name="operator=(const Request &amp;other)" id="RestLink::Request::operator=_ac556f2c12cc29508e91dd48ad8bffaa6" ref="class_rest_link_1_1_request.html#ac556f2c12cc29508e91dd48ad8bffaa6"/>
 <keyword name="operator=(const Request &amp;&amp;other)" id="RestLink::Request::operator=_a661a5d1fc7dcad0e742334ae99d90233" ref="class_rest_link_1_1_request.html#a661a5d1fc7dcad0e742334ae99d90233"/>
-<keyword name="patch(const Request &amp;request, const Body &amp;body, std::function&lt; ApiRunCallback &gt; callback)" id="RestLink::ApiBase::patch_a767e4cad0d8ca700052e47ba78122422" ref="class_rest_link_1_1_api_base.html#a767e4cad0d8ca700052e47ba78122422"/>
+<keyword name="patch(const Request &amp;request, const Body &amp;body, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::patch_a3b91f59781cf4f7c63bd1aa10789247e" ref="class_rest_link_1_1_api_base.html#a3b91f59781cf4f7c63bd1aa10789247e"/>
 <keyword name="patch(const Request &amp;request, const Body &amp;body)" id="RestLink::ApiBase::patch_aac4f290f2196f107e862371cf74de826" ref="class_rest_link_1_1_api_base.html#aac4f290f2196f107e862371cf74de826"/>
 <keyword name="pathParameter(const QString &amp;name) const" id="RestLink::RequestInterface::pathParameter_ab0a45bd990928a450bfd0e50c3e0ef68" ref="class_rest_link_1_1_request_interface.html#ab0a45bd990928a450bfd0e50c3e0ef68"/>
 <keyword name="pathParameterNames() const" id="RestLink::RequestInterface::pathParameterNames_a2460950092d3c2c31d627fb6ec56ba40" ref="class_rest_link_1_1_request_interface.html#a2460950092d3c2c31d627fb6ec56ba40"/>
 <keyword name="pathParameters() const" id="RestLink::RequestInterface::pathParameters_abfb60e3abaa4882a9f145a8620cbb16c" ref="class_rest_link_1_1_request_interface.html#abfb60e3abaa4882a9f145a8620cbb16c"/>
 <keyword name="pathParameterValue(const QString &amp;name) const" id="RestLink::RequestInterface::pathParameterValue_a55c639e87779c41a65d8b0a48a734440" ref="class_rest_link_1_1_request_interface.html#a55c639e87779c41a65d8b0a48a734440"/>
-<keyword name="post(const Request &amp;request, const Body &amp;body, std::function&lt; ApiRunCallback &gt; callback)" id="RestLink::ApiBase::post_a042430bc383213c185218dd087f42bc0" ref="class_rest_link_1_1_api_base.html#a042430bc383213c185218dd087f42bc0"/>
+<keyword name="post(const Request &amp;request, const Body &amp;body, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::post_a76cf68429916345a2472040b84a231c9" ref="class_rest_link_1_1_api_base.html#a76cf68429916345a2472040b84a231c9"/>
 <keyword name="post(const Request &amp;request, const Body &amp;body)" id="RestLink::ApiBase::post_aeaa13a32e278187e0fb62ca8a4ea24be" ref="class_rest_link_1_1_api_base.html#aeaa13a32e278187e0fb62ca8a4ea24be"/>
 <keyword name="prepare(const QNetworkCacheMetaData &amp;metaData) override" id="RestLink::Cache::prepare_a76db7775bca44e51e17fe865abb9a7cb" ref="class_rest_link_1_1_cache.html#a76db7775bca44e51e17fe865abb9a7cb"/>
-<keyword name="put(const Request &amp;request, const Body &amp;body, std::function&lt; ApiRunCallback &gt; callback)" id="RestLink::ApiBase::put_af93144922505fb613f0ec3d3f5cfe152" ref="class_rest_link_1_1_api_base.html#af93144922505fb613f0ec3d3f5cfe152"/>
+<keyword name="put(const Request &amp;request, const Body &amp;body, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::put_a93676a6f2b3b285c50c789f20eb4f9e4" ref="class_rest_link_1_1_api_base.html#a93676a6f2b3b285c50c789f20eb4f9e4"/>
 <keyword name="put(const Request &amp;request, const Body &amp;body)" id="RestLink::ApiBase::put_add35b3db631cb671fe2bf7ce3b0d4f17" ref="class_rest_link_1_1_api_base.html#add35b3db631cb671fe2bf7ce3b0d4f17"/>
 <keyword name="queryParameter(const QString &amp;name) const" id="RestLink::RequestInterface::queryParameter_a62114c7a8a32108e52efbccdb88b5203" ref="class_rest_link_1_1_request_interface.html#a62114c7a8a32108e52efbccdb88b5203"/>
 <keyword name="queryParameterNames() const" id="RestLink::RequestInterface::queryParameterNames_a3689c62b8a099e8560e5d55866c2330b" ref="class_rest_link_1_1_request_interface.html#a3689c62b8a099e8560e5d55866c2330b"/>
@@ -259,6 +262,8 @@
 <keyword name="readJsonObject(QJsonParseError *error=nullptr)" id="RestLink::Response::readJsonObject_a636414b156e2b33f2969b7600af76249" ref="class_rest_link_1_1_response.html#a636414b156e2b33f2969b7600af76249"/>
 <keyword name="readString()" id="RestLink::Response::readString_a258e564a9d904607a9b1cddf50783be7" ref="class_rest_link_1_1_response.html#a258e564a9d904607a9b1cddf50783be7"/>
 <keyword name="remove(const QUrl &amp;url) override" id="RestLink::Cache::remove_a741efa376bff89664c05dac2514e3b47" ref="class_rest_link_1_1_cache.html#a741efa376bff89664c05dac2514e3b47"/>
+<keyword name="removeQueryParameter(const QString &amp;name)" id="RestLink::RequestInterface::removeQueryParameter_a95a836ce3cf8c29058c50c33da21d542" ref="class_rest_link_1_1_request_interface.html#a95a836ce3cf8c29058c50c33da21d542"/>
+<keyword name="removeQueryParameter(const QString &amp;name, const QVariant &amp;value)" id="RestLink::RequestInterface::removeQueryParameter_a2d6fb82039e75db8505ec686da290ea7" ref="class_rest_link_1_1_request_interface.html#a2d6fb82039e75db8505ec686da290ea7"/>
 <keyword name="removeRequestInterceptor(RequestInterceptor *interceptor)" id="RestLink::ApiBase::removeRequestInterceptor_a2191397a2641e9f523f5ee30dcea50f1" ref="class_rest_link_1_1_api_base.html#a2191397a2641e9f523f5ee30dcea50f1"/>
 <keyword name="Request()" id="RestLink::Request::Request_ae6fa5c29de906de35fb54a9ecb123769" ref="class_rest_link_1_1_request.html#ae6fa5c29de906de35fb54a9ecb123769"/>
 <keyword name="Request(const char *endpoint)" id="RestLink::Request::Request_a7baee0189c44e945c57b9942fd82c279" ref="class_rest_link_1_1_request.html#a7baee0189c44e945c57b9942fd82c279"/>
@@ -277,8 +282,6 @@
 <keyword name="setPathParameter(const QString &amp;name, const QVariant &amp;value)" id="RestLink::RequestInterface::setPathParameter_a8b10f650c3dc2821a84d294059874ace" ref="class_rest_link_1_1_request_interface.html#a8b10f650c3dc2821a84d294059874ace"/>
 <keyword name="setPathParameter(const PathParameter &amp;parameter)" id="RestLink::RequestInterface::setPathParameter_aacab1e2b9d3ba176f03d76477d02034e" ref="class_rest_link_1_1_request_interface.html#aacab1e2b9d3ba176f03d76477d02034e"/>
 <keyword name="setPathParameters(const QList&lt; PathParameter &gt; &amp;parameters)" id="RestLink::RequestInterface::setPathParameters_a2128c12f9908fc6c3562b1d5930cd855" ref="class_rest_link_1_1_request_interface.html#a2128c12f9908fc6c3562b1d5930cd855"/>
-<keyword name="setQueryParameter(const QString &amp;name, const QVariant &amp;value)" id="RestLink::RequestInterface::setQueryParameter_ab4b63e650c80371554e2bf233deb069e" ref="class_rest_link_1_1_request_interface.html#ab4b63e650c80371554e2bf233deb069e"/>
-<keyword name="setQueryParameter(const QueryParameter &amp;param)" id="RestLink::RequestInterface::setQueryParameter_a1fb669df48026dbe1dfa02ac140093ca" ref="class_rest_link_1_1_request_interface.html#a1fb669df48026dbe1dfa02ac140093ca"/>
 <keyword name="setQueryParameters(const QList&lt; QueryParameter &gt; &amp;parameters)" id="RestLink::RequestInterface::setQueryParameters_aaf15c64f5514925a05d581c0103d9935" ref="class_rest_link_1_1_request_interface.html#aaf15c64f5514925a05d581c0103d9935"/>
 <keyword name="setUrl(const QUrl &amp;url)" id="RestLink::Api::setUrl_a7fe9134916fa729bd75f87a8dba9587e" ref="class_rest_link_1_1_api.html#a7fe9134916fa729bd75f87a8dba9587e"/>
 <keyword name="setUserAgent(const QString &amp;agent)" id="RestLink::Api::setUserAgent_aba4ef411220d0f77eb1ab19bfa23e615" ref="class_rest_link_1_1_api.html#aba4ef411220d0f77eb1ab19bfa23e615"/>
@@ -286,7 +289,6 @@
 <keyword name="swap(Request &amp;other)" id="RestLink::Request::swap_ab5ecfeca1c802d198ef7acc0a4ee9f72" ref="class_rest_link_1_1_request.html#ab5ecfeca1c802d198ef7acc0a4ee9f72"/>
 <keyword name="unsetHeader(const QString &amp;name)" id="RestLink::RequestInterface::unsetHeader_a5b3710603e7ef336a4027c3dba5290ee" ref="class_rest_link_1_1_request_interface.html#a5b3710603e7ef336a4027c3dba5290ee"/>
 <keyword name="unsetPathParameter(const QString &amp;name)" id="RestLink::RequestInterface::unsetPathParameter_a7191df764b66b90331b6f28aba05b640" ref="class_rest_link_1_1_request_interface.html#a7191df764b66b90331b6f28aba05b640"/>
-<keyword name="unsetQueryParameter(const QString &amp;name)" id="RestLink::RequestInterface::unsetQueryParameter_aba421b7a9ed5aa204a71e48bc475c9f0" ref="class_rest_link_1_1_request_interface.html#aba421b7a9ed5aa204a71e48bc475c9f0"/>
 <keyword name="updateMetaData(const QNetworkCacheMetaData &amp;metaData) override" id="RestLink::Cache::updateMetaData_ac82cf1e4eed956577f1fc38b80dd192b" ref="class_rest_link_1_1_cache.html#ac82cf1e4eed956577f1fc38b80dd192b"/>
 <keyword name="url() const override" id="RestLink::Api::url_a73ee1a5b8223b05dd382688376b3d99c" ref="class_rest_link_1_1_api.html#a73ee1a5b8223b05dd382688376b3d99c"/>
 <keyword name="url() const" id="RestLink::Response::url_a3967ddaae9ffaa9b272aa897873f5ff5" ref="class_rest_link_1_1_response.html#a3967ddaae9ffaa9b272aa897873f5ff5"/>
@@ -335,7 +337,7 @@
 <file>config_8h_source.html</file>
 <file>cookiejar_8h_source.html</file>
 <file>debug_8h_source.html</file>
-<file>dir_3351cb47c75f15fd37b42d05141c83e3.html</file>
+<file>dir_0b6e5a126c4cb17722136e9aa1505dd5.html</file>
 <file>dir_68267d1309a1af8e8297ef4c3efbcdba.html</file>
 <file>dir_c85d3e3c5052e9ad9ce18c6863244a25.html</file>
 <file>dir_fb3b78d87a096b0ecb66f0e8b243de2e.html</file>
@@ -347,6 +349,7 @@
 <file>functions_prop.html</file>
 <file>global_8h_source.html</file>
 <file>header_8h_source.html</file>
+<file>header__p_8h_source.html</file>
 <file>hierarchy.html</file>
 <file>httputils_8h_source.html</file>
 <file>index.html</file>
@@ -362,7 +365,13 @@
 <file>networkresponse_8h_source.html</file>
 <file>networkresponse__p_8h_source.html</file>
 <file>open.png</file>
+<file>parameter_8h_source.html</file>
+<file>parameter__p_8h_source.html</file>
+<file>parameterlist_8h_source.html</file>
 <file>pathparameter_8h_source.html</file>
+<file>pathparameter__p_8h_source.html</file>
+<file>plugin_8h_source.html</file>
+<file>plugin__p_8h_source.html</file>
 <file>queryparameter_8h_source.html</file>
 <file>queryparameter__p_8h_source.html</file>
 <file>request_8h_source.html</file>
@@ -435,9 +444,6 @@
 <file>serverresponse__p_8h_source.html</file>
 <file>splitbar.png</file>
 <file>splitbard.png</file>
-<file>sqlserver_8h_source.html</file>
-<file>sqlserver__p_8h_source.html</file>
-<file>sqlutils_8h_source.html</file>
 <file>sync_off.png</file>
 <file>sync_on.png</file>
 <file>tab_a.png</file>

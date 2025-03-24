@@ -5,27 +5,21 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_QUERYPARAMETER\_P\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_QUERYPARAMETER\_P\_H}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}queryparameter.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/private/parameter\_p.h>}}
 \DoxyCodeLine{00005\ }
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtCore/qvariant.h>}}
 \DoxyCodeLine{00007\ }
 \DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }RestLink\ \{}
 \DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }QueryParameterData\ :\ \textcolor{keyword}{public}\ QSharedData}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }QueryParameterData\ :\ \textcolor{keyword}{public}\ ParameterData}
 \DoxyCodeLine{00011\ \{}
 \DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{static}\ QString\ validateName(\textcolor{keyword}{const}\ QString\ \&name);}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ QVariantList\ validateValues(\textcolor{keyword}{const}\ QVariantList\ \&values);}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ QueryParameter::ParameterFlags\ validateFlags(QueryParameter::ParameterFlags\ flags);}
+\DoxyCodeLine{00013\ \ \ \ \ Parameter::Type\ type()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ Parameter::QueryParameterType;\ \}}
+\DoxyCodeLine{00015\ \};}
 \DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \ \ \ \ QString\ name;}
-\DoxyCodeLine{00018\ \ \ \ \ QVariantList\ values;}
-\DoxyCodeLine{00019\ \ \ \ \ QueryParameter::ParameterFlags\ flags;}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ enabled\ =\ \textcolor{keyword}{true};}
-\DoxyCodeLine{00021\ \};}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \}}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_QUERYPARAMETER\_P\_H}}
+\DoxyCodeLine{00017\ \}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_QUERYPARAMETER\_P\_H}}
 
 \end{DoxyCode}

@@ -52,8 +52,6 @@ QString \mbox{\hyperlink{class_rest_link_1_1_response_a258e564a9d904607a9b1cddf5
 \begin{DoxyCompactList}\small\item\em Reads the response body as a QString. \end{DoxyCompactList}\item 
 virtual Q\+\_\+\+INVOKABLE QByte\+Array \mbox{\hyperlink{class_rest_link_1_1_response_a5d591e8e247e374faec22c65af573dd9}{read\+Body}} ()=0
 \begin{DoxyCompactList}\small\item\em Reads the raw response body as a QByte\+Array. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_rest_link_1_1_response_a83809972a1dc9b6154df8216f04b6891}{has\+Network\+Error}} () const
-\begin{DoxyCompactList}\small\item\em Checks if a network error occurred during the request. \end{DoxyCompactList}\item 
 virtual int \mbox{\hyperlink{class_rest_link_1_1_response_a3fd9f301571c07b2daa1d6702bd8579d}{network\+Error}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the network error code. \end{DoxyCompactList}\item 
 virtual QString \mbox{\hyperlink{class_rest_link_1_1_response_a38d9c0d47627c810e843216443954855}{network\+Error\+String}} () const
@@ -70,7 +68,9 @@ int \mbox{\hyperlink{class_rest_link_1_1_response_ae8c064b14260f1d52c700094b61bb
 QString \mbox{\hyperlink{class_rest_link_1_1_response_a4fa108b61a1a4ec9421fa4c008a74764}{http\+Reason\+Phrase}}
 \begin{DoxyCompactList}\small\item\em Retrieves the HTTP reason phrase of the response. \end{DoxyCompactList}\item 
 QByte\+Array\+List \mbox{\hyperlink{class_rest_link_1_1_response_a5e01cfa795230e72de3b05f026bbe8d4}{header\+List}}
-\begin{DoxyCompactList}\small\item\em Retrieves a list of all headers in the response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retrieves a list of all headers in the response. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rest_link_1_1_response_ae15b13bc08d2f6e5b47994f05d1ee9e0}{has\+Network\+Error}}
+\begin{DoxyCompactList}\small\item\em Checks if a network error occurred during the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -340,19 +340,6 @@ Reads the raw response body as a QByte\+Array.
 \begin{DoxyReturn}{Returns}
 The response body as a QByte\+Array. 
 \end{DoxyReturn}
-\Hypertarget{class_rest_link_1_1_response_a83809972a1dc9b6154df8216f04b6891}\label{class_rest_link_1_1_response_a83809972a1dc9b6154df8216f04b6891} 
-\index{RestLink::Response@{RestLink::Response}!hasNetworkError@{hasNetworkError}}
-\index{hasNetworkError@{hasNetworkError}!RestLink::Response@{RestLink::Response}}
-\doxysubsubsection{\texorpdfstring{hasNetworkError()}{hasNetworkError()}}
-{\footnotesize\ttfamily Rest\+Link\+::\+Response\+::has\+Network\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Checks if a network error occurred during the request. 
-
-\begin{DoxyReturn}{Returns}
-{\ttfamily true} if a network error occurred, otherwise {\ttfamily false}. 
-\end{DoxyReturn}
 \Hypertarget{class_rest_link_1_1_response_a3fd9f301571c07b2daa1d6702bd8579d}\label{class_rest_link_1_1_response_a3fd9f301571c07b2daa1d6702bd8579d} 
 \index{RestLink::Response@{RestLink::Response}!networkError@{networkError}}
 \index{networkError@{networkError}!RestLink::Response@{RestLink::Response}}
@@ -446,4 +433,17 @@ Retrieves a list of all headers in the response.
 
 \begin{DoxyReturn}{Returns}
 A QByte\+Array\+List containing the header names. 
+\end{DoxyReturn}
+\Hypertarget{class_rest_link_1_1_response_ae15b13bc08d2f6e5b47994f05d1ee9e0}\label{class_rest_link_1_1_response_ae15b13bc08d2f6e5b47994f05d1ee9e0} 
+\index{RestLink::Response@{RestLink::Response}!hasNetworkError@{hasNetworkError}}
+\index{hasNetworkError@{hasNetworkError}!RestLink::Response@{RestLink::Response}}
+\doxysubsubsection{\texorpdfstring{hasNetworkError}{hasNetworkError}}
+{\footnotesize\ttfamily Rest\+Link\+::\+Response\+::has\+Network\+Error\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Checks if a network error occurred during the request. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if a network error occurred, otherwise {\ttfamily false}. 
 \end{DoxyReturn}

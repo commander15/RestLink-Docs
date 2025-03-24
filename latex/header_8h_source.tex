@@ -6,53 +6,34 @@
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_HEADER\_H}}
 \DoxyCodeLine{00003\ }
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtCore/qstring.h>}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QtCore/qbytearray.h>}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QtCore/qvariant.h>}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QtCore/qdatetime.h>}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }RestLink\ \{}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ Header}
-\DoxyCodeLine{00014\ \{}
-\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00016\ \ \ \ \ Header();}
-\DoxyCodeLine{00017\ \ \ \ \ Header(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
-\DoxyCodeLine{00018\ \ \ \ \ Header(\textcolor{keyword}{const}\ Header\ \&other)\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00019\ \ \ \ \ Header(Header\ \&\&other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RestLink/parameter.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <RestLink/parameterlist.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }HeaderData;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ Header\ :\ \textcolor{keyword}{public}\ Parameter}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ Header();}
+\DoxyCodeLine{00015\ \ \ \ \ Header(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00016\ \ \ \ \ Header(\textcolor{keyword}{const}\ Header\ \&other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ \ \ \ \ Header(Header\ \&\&other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ Header\ \&operator=(\textcolor{keyword}{const}\ Header\ \&other);}
 \DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \ \ Header\ \&operator=(\textcolor{keyword}{const}\ Header\ \&other);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ Header\ fromJsonObject(\textcolor{keyword}{const}\ QJsonObject\ \&\textcolor{keywordtype}{object});}
 \DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ QString\ name()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ setName(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00023\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00024\ \ \ \ \ Header(\textcolor{keyword}{const}\ QSharedDataPointer<ParameterData>\ \&d);}
 \DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ QVariant\ value()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ setValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }Parameter;}
+\DoxyCodeLine{00027\ \};}
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasValue(\textcolor{keyword}{const}\ QVariant\ \&value)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ addValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ removeValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00029\ \textcolor{keyword}{typedef}\ ParameterList<Header>\ HeaderList;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \}}
 \DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ QVariantList\ values()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ setValues(\textcolor{keyword}{const}\ QVariantList\ \&values);}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ isEnabled()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ setEnabled(\textcolor{keywordtype}{bool}\ enabled\ =\ \textcolor{keyword}{true});}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ Header\ fromJsonObject(\textcolor{keyword}{const}\ QJsonObject\ \&\textcolor{keywordtype}{object});}
-\DoxyCodeLine{00040\ \ \ \ \ QJsonObject\ toJsonObject()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00043\ \ \ \ \ QString\ m\_name;}
-\DoxyCodeLine{00044\ \ \ \ \ QVariantList\ m\_values;}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_enabled;}
-\DoxyCodeLine{00046\ \};}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \textcolor{keyword}{typedef}\ QList<Header>\ HeaderList;}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \}}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_HEADER\_H}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_HEADER\_H}}
 
 \end{DoxyCode}

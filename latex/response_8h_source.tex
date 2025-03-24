@@ -31,82 +31,84 @@
 \DoxyCodeLine{00027\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{bool}\ running\ READ\ isRunning\ NOTIFY\ finished)}
 \DoxyCodeLine{00028\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{bool}\ finished\ READ\ isFinished\ NOTIFY\ finished)}
 \DoxyCodeLine{00029\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{bool}\ success\ READ\ isSuccess\ NOTIFY\ finished)}
-\DoxyCodeLine{00030\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{int}\ httpStatusCode\ READ\ httpStatusCode\ NOTIFY\ finished)}
-\DoxyCodeLine{00031\ \ \ \ \ Q\_PROPERTY(QString\ httpReasonPhrase\ READ\ httpReasonPhrase\ NOTIFY\ finished)}
-\DoxyCodeLine{00032\ \ \ \ \ Q\_PROPERTY(QByteArrayList\ headerList\ READ\ headerList\ NOTIFY\ finished)}
-\DoxyCodeLine{00033\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{int}\ networkError\ READ\ networkError\ NOTIFY\ networkErrorOccured)}
-\DoxyCodeLine{00034\ \ \ \ \ Q\_PROPERTY(QString\ networkErrorString\ READ\ networkErrorString\ NOTIFY\ networkErrorOccured)}
-\DoxyCodeLine{00035\ \ \ \ \ Q\_PROPERTY(QByteArray\ body\ READ\ body\ NOTIFY\ finished)}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ public:}
-\DoxyCodeLine{00038\ \ \ \ \ virtual\ \string~\mbox{\hyperlink{class_rest_link_1_1_response}{Response}}();}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \ \ QString\ endpoint()\ const;}
-\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ request()\ const;}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ virtual\ \mbox{\hyperlink{class_rest_link_1_1_api}{Api}}::Operation\ operation()\ const\ =\ 0;}
-\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_api}{Api}}\ *api()\ const;}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \ \ \ \ QUrl\ url()\ const;}
-\DoxyCodeLine{00047\ \ \ \ \ virtual\ QNetworkRequest\ networkRequest()\ const\ =\ 0;}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ inline\ \textcolor{keywordtype}{bool}\ isRunning()\textcolor{keyword}{\ const}}
-\DoxyCodeLine{00050\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ !isFinished();\ \}}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_rest_link_1_1_response_a2cb282e8dec3a124231a1ca26ff05743}{isFinished}}()\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_rest_link_1_1_response_a39f27ad6d47e9eb178abe88a0ad9f898}{isSuccess}}()\textcolor{keyword}{\ const}}
-\DoxyCodeLine{00054\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ !hasNetworkError()\ \&\&\ isHttpStatusSuccess();\ \}}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ isHttpStatusSuccess()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasHttpStatusCode()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ httpStatusCode()\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ httpReasonPhrase()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ hasHeader(\textcolor{keyword}{const}\ QByteArray\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00062\ \ \ \ \ Q\_INVOKABLE\ \textcolor{keyword}{virtual}\ QByteArray\ \mbox{\hyperlink{class_rest_link_1_1_response_accbcbff700eb89d2f2a38a823ef6ca9f}{header}}(\textcolor{keyword}{const}\ QByteArray\ \&name)\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ QByteArrayList\ headerList()\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00064\ }
-\DoxyCodeLine{00065\ \ \ \ \ QJsonObject\ readJsonObject(QJsonParseError\ *error\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00066\ \ \ \ \ QJsonArray\ readJsonArray(QJsonParseError\ *error\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{virtual}\ QJsonValue\ readJson(QJsonParseError\ *error\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00068\ \ \ \ \ QString\ readString();}
-\DoxyCodeLine{00069\ \ \ \ \ Q\_INVOKABLE\ \textcolor{keyword}{virtual}\ QByteArray\ \mbox{\hyperlink{class_rest_link_1_1_response_a5d591e8e247e374faec22c65af573dd9}{readBody}}()\ =\ 0;}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_rest_link_1_1_response_a83809972a1dc9b6154df8216f04b6891}{hasNetworkError}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ networkError()\ !=\ 0;\ \}}
-\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ networkError()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ networkErrorString()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{virtual}\ QNetworkReply\ *\mbox{\hyperlink{class_rest_link_1_1_response_a935afa1dbaa2e69791c2f520fe18ba6e}{networkReply}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{bool}\ hasHttpStatusCode\ READ\ hasHttpStatusCode\ NOTIFY\ finished)}
+\DoxyCodeLine{00031\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{int}\ httpStatusCode\ READ\ httpStatusCode\ NOTIFY\ finished)}
+\DoxyCodeLine{00032\ \ \ \ \ Q\_PROPERTY(QString\ httpReasonPhrase\ READ\ httpReasonPhrase\ NOTIFY\ finished)}
+\DoxyCodeLine{00033\ \ \ \ \ Q\_PROPERTY(QByteArrayList\ headerList\ READ\ headerList\ NOTIFY\ finished)}
+\DoxyCodeLine{00034\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{bool}\ hasNetworkError\ READ\ hasNetworkError\ NOTIFY\ finished)}
+\DoxyCodeLine{00035\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{int}\ networkError\ READ\ networkError\ NOTIFY\ networkErrorOccured)}
+\DoxyCodeLine{00036\ \ \ \ \ Q\_PROPERTY(QString\ networkErrorString\ READ\ networkErrorString\ NOTIFY\ networkErrorOccured)}
+\DoxyCodeLine{00037\ \ \ \ \ Q\_PROPERTY(QByteArray\ body\ READ\ body\ NOTIFY\ finished)}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ public:}
+\DoxyCodeLine{00040\ \ \ \ \ virtual\ \string~\mbox{\hyperlink{class_rest_link_1_1_response}{Response}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ QString\ endpoint()\ const;}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ request()\ const;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ virtual\ \mbox{\hyperlink{class_rest_link_1_1_api}{Api}}::Operation\ operation()\ const\ =\ 0;}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_api}{Api}}\ *api()\ const;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ QUrl\ url()\ const;}
+\DoxyCodeLine{00049\ \ \ \ \ virtual\ QNetworkRequest\ networkRequest()\ const\ =\ 0;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ inline\ \textcolor{keywordtype}{bool}\ isRunning()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00052\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ !isFinished();\ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_rest_link_1_1_response_a2cb282e8dec3a124231a1ca26ff05743}{isFinished}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_rest_link_1_1_response_a39f27ad6d47e9eb178abe88a0ad9f898}{isSuccess}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00056\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ !hasNetworkError()\ \&\&\ isHttpStatusSuccess();\ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ isHttpStatusSuccess()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasHttpStatusCode()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ httpStatusCode()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ httpReasonPhrase()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ hasHeader(\textcolor{keyword}{const}\ QByteArray\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ \ \ \ \ Q\_INVOKABLE\ \textcolor{keyword}{virtual}\ QByteArray\ \mbox{\hyperlink{class_rest_link_1_1_response_accbcbff700eb89d2f2a38a823ef6ca9f}{header}}(\textcolor{keyword}{const}\ QByteArray\ \&name)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{virtual}\ QByteArrayList\ headerList()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ QJsonObject\ readJsonObject(QJsonParseError\ *error\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00068\ \ \ \ \ QJsonArray\ readJsonArray(QJsonParseError\ *error\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{virtual}\ QJsonValue\ readJson(QJsonParseError\ *error\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00070\ \ \ \ \ QString\ readString();}
+\DoxyCodeLine{00071\ \ \ \ \ Q\_INVOKABLE\ \textcolor{keyword}{virtual}\ QByteArray\ \mbox{\hyperlink{class_rest_link_1_1_response_a5d591e8e247e374faec22c65af573dd9}{readBody}}()\ =\ 0;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ hasNetworkError()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ networkError()\ !=\ 0;\ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ networkError()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ networkErrorString()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00076\ }
-\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *create(QNetworkReply\ *reply,\ QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{virtual}\ QNetworkReply\ *\mbox{\hyperlink{class_rest_link_1_1_response_a935afa1dbaa2e69791c2f520fe18ba6e}{networkReply}}()\ \textcolor{keyword}{const}\ =\ 0;}
 \DoxyCodeLine{00078\ }
-\DoxyCodeLine{00079\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}(ResponsePrivate\ *d,\ \mbox{\hyperlink{class_rest_link_1_1_api}{Api}}\ *api);}
-\DoxyCodeLine{00081\ }
-\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ setRequest(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request);}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *create(QNetworkReply\ *reply,\ QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}(ResponsePrivate\ *d,\ \mbox{\hyperlink{class_rest_link_1_1_api}{Api}}\ *api);}
 \DoxyCodeLine{00083\ }
-\DoxyCodeLine{00084\ \ \ \ \ QByteArray\ body();}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ setRequest(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request);}
 \DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \ \ \ \ QScopedPointer<ResponsePrivate>\ d\_ptr;}
+\DoxyCodeLine{00086\ \ \ \ \ QByteArray\ body();}
 \DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \textcolor{keyword}{public}\ slots:}
-\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ ignoreSslErrors();}
-\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ abort()\ =\ 0;}
-\DoxyCodeLine{00091\ }
-\DoxyCodeLine{00092\ signals:}
-\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ downloadProgress(qint64\ bytesReceived,\ qint64\ bytesTotal);}
-\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ uploadProgress(qint64\ bytesSent,\ qint64\ bytesTotal);}
-\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ networkErrorOccured(\textcolor{keywordtype}{int}\ error);}
-\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ readyRead();}
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ finished();}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ sslErrorsOccured(\textcolor{keyword}{const}\ QList<QSslError>\ \&errors);}
+\DoxyCodeLine{00088\ \ \ \ \ QScopedPointer<ResponsePrivate>\ d\_ptr;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ ignoreSslErrors();}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ abort()\ =\ 0;}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ signals:}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ downloadProgress(qint64\ bytesReceived,\ qint64\ bytesTotal);}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ uploadProgress(qint64\ bytesSent,\ qint64\ bytesTotal);}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ networkErrorOccured(\textcolor{keywordtype}{int}\ error);}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ readyRead();}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ finished();}
 \DoxyCodeLine{00100\ }
-\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }RequestHandler;}
-\DoxyCodeLine{00102\ \};}
-\DoxyCodeLine{00103\ }
-\DoxyCodeLine{00104\ \}}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ sslErrorsOccured(\textcolor{keyword}{const}\ QList<QSslError>\ \&errors);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }RequestHandler;}
+\DoxyCodeLine{00104\ \};}
 \DoxyCodeLine{00105\ }
-\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_RESPONSE\_H}}
+\DoxyCodeLine{00106\ \}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_RESPONSE\_H}}
 
 \end{DoxyCode}

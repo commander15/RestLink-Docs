@@ -33,47 +33,48 @@
 \DoxyCodeLine{00029\ \ \ \ \ QueryParameter\ queryParameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00030\ \ \ \ \ QList<QVariant>\ queryParameterValues(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00031\ \ \ \ \ QStringList\ queryParameterNames()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ setQueryParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ setQueryParameter(\textcolor{keyword}{const}\ QueryParameter\ \&param);}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ unsetQueryParameter(\textcolor{keyword}{const}\ QString\ \&name);}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ QList<QueryParameter>\ queryParameters()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ setQueryParameters(\textcolor{keyword}{const}\ QList<QueryParameter>\ \&parameters);}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasHeader(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00040\ \ \ \ \ Header\ header(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00041\ \ \ \ \ QList<QVariant>\ headerValues(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00042\ \ \ \ \ QStringList\ headerNames()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ setHeader(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ setHeader(\textcolor{keyword}{const}\ Header\ \&header);}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ unsetHeader(\textcolor{keyword}{const}\ QString\ \&name);}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ QList<Header>\ headers()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ setHeaders(\textcolor{keyword}{const}\ QList<Header>\ \&headers);}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ QList<PathParameter>\ *constPathParameters()\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ QList<PathParameter>\ *mutablePathParameters()\ =\ 0;}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ QList<QueryParameter>\ *constQueryParameters()\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ QList<QueryParameter>\ *mutableQueryParameters()\ =\ 0;}
-\DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ QList<Header>\ *constHeaders()\ \textcolor{keyword}{const}\ =\ 0;}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{virtual}\ QList<Header>\ *mutableHeaders()\ =\ 0;}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00061\ \ \ \ \ QList<PathParameter>::const\_iterator\ findPathParameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00062\ \ \ \ \ QList<PathParameter>::iterator\ findPathParameter(\textcolor{keyword}{const}\ QString\ \&name);}
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00064\ \ \ \ \ QList<QueryParameter>::const\_iterator\ findQueryParameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00065\ \ \ \ \ QList<QueryParameter>::iterator\ findQueryParameter(\textcolor{keyword}{const}\ QString\ \&name);}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00067\ \ \ \ \ QList<Header>::const\_iterator\ findHeader(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00068\ \ \ \ \ QList<Header>::iterator\ findHeader(\textcolor{keyword}{const}\ QString\ \&name);}
-\DoxyCodeLine{00069\ \};}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00071\ \}}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ REQUESTINTERFACE\_H}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ addQueryParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ addQueryParameter(\textcolor{keyword}{const}\ QueryParameter\ \&param);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ removeQueryParameter(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ removeQueryParameter(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ QList<QueryParameter>\ queryParameters()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ setQueryParameters(\textcolor{keyword}{const}\ QList<QueryParameter>\ \&parameters);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasHeader(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ Header\ header(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ QList<QVariant>\ headerValues(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \ \ QStringList\ headerNames()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ setHeader(\textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ setHeader(\textcolor{keyword}{const}\ Header\ \&header);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ unsetHeader(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ QList<Header>\ headers()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ setHeaders(\textcolor{keyword}{const}\ QList<Header>\ \&headers);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ QList<PathParameter>\ *constPathParameters()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{virtual}\ QList<PathParameter>\ *mutablePathParameters()\ =\ 0;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ QList<QueryParameter>\ *constQueryParameters()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{virtual}\ QList<QueryParameter>\ *mutableQueryParameters()\ =\ 0;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ QList<Header>\ *constHeaders()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ QList<Header>\ *mutableHeaders()\ =\ 0;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ QList<PathParameter>::const\_iterator\ findPathParameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ \ \ \ \ QList<PathParameter>::iterator\ findPathParameter(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ QList<QueryParameter>::const\_iterator\ findQueryParameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ QList<QueryParameter>::iterator\ findQueryParameter(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ QList<Header>::const\_iterator\ findHeader(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ \ \ \ \ QList<Header>::iterator\ findHeader(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ REQUESTINTERFACE\_H}}
 
 \end{DoxyCode}

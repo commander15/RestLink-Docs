@@ -1,0 +1,57 @@
+\doxysection{parameter\+\_\+p.\+h}
+\hypertarget{parameter__p_8h_source}{}\label{parameter__p_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/parameter\_p.h@{/home/runner/work/RestLink/RestLink/src/lib/parameter\_p.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_PARAMETER\_P\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_PARAMETER\_P\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}parameter.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtCore/qshareddata.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QtCore/qvariant.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }ParameterData\ :\ \textcolor{keyword}{public}\ QSharedData}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ QString\ name;}
+\DoxyCodeLine{00015\ \ \ \ \ QVariantList\ values;}
+\DoxyCodeLine{00016\ \ \ \ \ Parameter::Flags\ flags;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ validateName(\textcolor{keyword}{const}\ QString\ \&name)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ name;\ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ QVariant\ validateValue(\textcolor{keyword}{const}\ QVariant\ \&value)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ value;\ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ QVariantList\ validateValues(\textcolor{keyword}{const}\ QVariantList\ \&values)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ QVariantList\ validatedValues;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ QVariant\ \&value\ :\ values)\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QVariant\ validatedValue\ =\ validateValue(value);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (validatedValue.isValid())}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ validatedValues.append(validatedValue);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ validatedValues;}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ Parameter::Flags\ validateFlags(Parameter::Flags\ flags)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00036\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (flags.testFlag(Parameter::Authentication)\ \&\&\ !flags.testFlag(Parameter::Secret))}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ flags.setFlag(Parameter::Secret);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ flags;}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ isValid()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00043\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ !name.isEmpty()\ \&\&\ !values.isEmpty();\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ Parameter::Type\ type()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00046\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ Parameter::BaseType;\ \}}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_PARAMETER\_P\_H}}
+
+\end{DoxyCode}

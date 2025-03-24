@@ -16,7 +16,7 @@
 \DoxyCodeLine{00012\ }
 \DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }RestLink\ \{}
 \DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }ServerPrivate\ :\ \textcolor{keyword}{public}\ QThread}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ ServerPrivate\ :\ \textcolor{keyword}{public}\ QThread}
 \DoxyCodeLine{00016\ \{}
 \DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
 \DoxyCodeLine{00018\ }
@@ -39,20 +39,22 @@
 \DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ errorCode;}
 \DoxyCodeLine{00036\ \ \ \ \ QString\ errorString;}
 \DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{const}\ Server::ServerType\ type;}
-\DoxyCodeLine{00039\ \ \ \ \ QQueue<PendingRequest>\ pendingRequests;}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ bypassCleanup;}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{mutable}\ QMutex\ mutex;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ autoStart;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{const}\ Server::ServerType\ type;}
+\DoxyCodeLine{00041\ \ \ \ \ QQueue<PendingRequest>\ pendingRequests;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ bypassCleanup;}
 \DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ run()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }Server;}
-\DoxyCodeLine{00048\ \};}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{mutable}\ QMutex\ mutex;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ run()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }Server;}
+\DoxyCodeLine{00050\ \};}
 \DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_SERVER\_P\_H}}
+\DoxyCodeLine{00052\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_SERVER\_P\_H}}
 
 \end{DoxyCode}

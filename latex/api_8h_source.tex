@@ -18,11 +18,11 @@
 \DoxyCodeLine{00014\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ \mbox{\hyperlink{class_rest_link_1_1_api}{Api}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_rest_link_1_1_api_base}{ApiBase}}}
 \DoxyCodeLine{00015\ \{}
 \DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00017\ \ \ \ \ Q\_PROPERTY(QString\ name\ READ\ name\ WRITE\ setName\ NOTIFY\ nameChanged\ FINAL)}
-\DoxyCodeLine{00018\ \ \ \ \ Q\_PROPERTY(QVersionNumber\ version\ READ\ version\ WRITE\ setVersion\ NOTIFY\ versionChanged\ FINAL)}
-\DoxyCodeLine{00019\ \ \ \ \ Q\_PROPERTY(QUrl\ url\ READ\ url\ WRITE\ setUrl\ NOTIFY\ urlChanged\ FINAL)}
-\DoxyCodeLine{00020\ \ \ \ \ Q\_PROPERTY(QLocale\ locale\ READ\ locale\ WRITE\ setLocale\ NOTIFY\ localeChanged\ FINAL)}
-\DoxyCodeLine{00021\ \ \ \ \ Q\_PROPERTY(QString\ userAgent\ READ\ userAgent\ WRITE\ setUserAgent\ NOTIFY\ userAgentChanged\ FINAL)}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_PROPERTY(QString\ name\ READ\ name\ WRITE\ setName\ NOTIFY\ nameChanged)}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_PROPERTY(QString\ version\ READ\ versionString\ WRITE\ setVersionString\ NOTIFY\ versionChanged)}
+\DoxyCodeLine{00019\ \ \ \ \ Q\_PROPERTY(QUrl\ url\ READ\ url\ WRITE\ setUrl\ NOTIFY\ urlChanged)}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_PROPERTY(QLocale\ locale\ READ\ locale\ WRITE\ setLocale\ NOTIFY\ localeChanged)}
+\DoxyCodeLine{00021\ \ \ \ \ Q\_PROPERTY(QString\ userAgent\ READ\ userAgent\ WRITE\ setUserAgent\ NOTIFY\ userAgentChanged)}
 \DoxyCodeLine{00022\ }
 \DoxyCodeLine{00023\ public:}
 \DoxyCodeLine{00024\ \ \ \ \ explicit\ \mbox{\hyperlink{class_rest_link_1_1_api}{Api}}(QObject\ *parent\ =\ \textcolor{keywordtype}{nullptr});}
@@ -34,7 +34,7 @@
 \DoxyCodeLine{00030\ }
 \DoxyCodeLine{00031\ \ \ \ \ QVersionNumber\ version()\ const;}
 \DoxyCodeLine{00032\ \ \ \ \ Q\_SLOT\ \textcolor{keywordtype}{void}\ setVersion(const\ QVersionNumber\ \&version);}
-\DoxyCodeLine{00033\ \ \ \ \ Q\_SIGNAL\ \textcolor{keywordtype}{void}\ versionChanged(const\ QVersionNumber\ \&version);}
+\DoxyCodeLine{00033\ \ \ \ \ Q\_SIGNAL\ \textcolor{keywordtype}{void}\ versionChanged();}
 \DoxyCodeLine{00034\ }
 \DoxyCodeLine{00035\ \ \ \ \ QUrl\ url()\ const\ override;}
 \DoxyCodeLine{00036\ \ \ \ \ Q\_SLOT\ \textcolor{keywordtype}{void}\ setUrl(const\ QUrl\ \&url);}
@@ -53,14 +53,20 @@
 \DoxyCodeLine{00049\ \ \ \ \ Q\_SIGNAL\ \textcolor{keywordtype}{void}\ configurationCompleted();}
 \DoxyCodeLine{00050\ \ \ \ \ Q\_SIGNAL\ \textcolor{keywordtype}{void}\ configurationFailed();}
 \DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ protected:}
-\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *send(Operation\ operation,\ const\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ const\ Body\ \&body)\ override;}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \ \ \ \ friend\ class\ ApiPrivate;}
-\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *send(Operation\ operation,\ const\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ const\ Body\ \&body)\ override;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ private:}
+\DoxyCodeLine{00055\ \ \ \ \ inline\ QString\ versionString()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00056\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ version().toString();\ \}}
 \DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \}}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_API\_H}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ setVersionString(\textcolor{keyword}{const}\ QString\ \&version)}
+\DoxyCodeLine{00059\ \ \ \ \ \{\ setVersion(QVersionNumber::fromString(version));\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }ApiPrivate;}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_API\_H}}
 
 \end{DoxyCode}

@@ -28,17 +28,22 @@
 \DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ QStringList\ supportedSchemes()\ \textcolor{keyword}{const}\ =\ 0;}
 \DoxyCodeLine{00025\ }
 \DoxyCodeLine{00026\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ isApiSupported(ApiBase\ *api)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ QUrl\ generateUrl(\textcolor{keyword}{const}\ Request\ \&request,\ ApiBase\ *api)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ Response\ *sendRequest(Api::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api)\ =\ 0;}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }ApiBase;}
-\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{enum}\ UrlContext\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ LogContext,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ RequestContext}
+\DoxyCodeLine{00030\ \ \ \ \ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ isApiSupported(ApiBase\ *api)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ QUrl\ generateUrl(\textcolor{keyword}{const}\ Request\ \&request,\ ApiBase\ *api,\ UrlContext\ context)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ Response\ *sendRequest(Api::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api)\ =\ 0;}
 \DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_REQUESTHANDLER\_H}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }ApiBase;}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_REQUESTHANDLER\_H}}
 
 \end{DoxyCode}

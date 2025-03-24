@@ -38,12 +38,14 @@ QList$<$ QVariant $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_a26
 \begin{DoxyCompactList}\small\item\em Retrieves the values of a query parameter. \end{DoxyCompactList}\item 
 QString\+List \mbox{\hyperlink{class_rest_link_1_1_request_interface_a3689c62b8a099e8560e5d55866c2330b}{query\+Parameter\+Names}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the names of all query parameters. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e}{set\+Query\+Parameter}} (const QString \&name, const QVariant \&value)
-\begin{DoxyCompactList}\small\item\em Sets the value of a query parameter. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca}{set\+Query\+Parameter}} (const Query\+Parameter \&param)
-\begin{DoxyCompactList}\small\item\em Sets a query parameter using a {\ttfamily Query\+Parameter} object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0}{unset\+Query\+Parameter}} (const QString \&name)
-\begin{DoxyCompactList}\small\item\em Unsets (removes) a query parameter from the request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a177b271e28c6a34a723259819af160a8}{add\+Query\+Parameter}} (const QString \&name, const QVariant \&value)
+\begin{DoxyCompactList}\small\item\em Add the value of a query parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a8e3259dcebd3b88e250849d632196c0e}{add\+Query\+Parameter}} (const Query\+Parameter \&param)
+\begin{DoxyCompactList}\small\item\em Add query parameter using a {\ttfamily Query\+Parameter} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a95a836ce3cf8c29058c50c33da21d542}{remove\+Query\+Parameter}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Removes a query parameter from the request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_link_1_1_request_interface_a2d6fb82039e75db8505ec686da290ea7}{remove\+Query\+Parameter}} (const QString \&name, const QVariant \&value)
+\begin{DoxyCompactList}\small\item\em Removes a query parameter from the request. \end{DoxyCompactList}\item 
 QList$<$ Query\+Parameter $>$ \mbox{\hyperlink{class_rest_link_1_1_request_interface_a619a1f098e59b40901c05bead4545957}{query\+Parameters}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves all query parameters. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_rest_link_1_1_request_interface_aaf15c64f5514925a05d581c0103d9935}{set\+Query\+Parameters}} (const QList$<$ Query\+Parameter $>$ \&parameters)
@@ -311,15 +313,15 @@ This function returns a list of names of all the query parameters in the request
 \begin{DoxyReturn}{Returns}
 A list of names of query parameters. 
 \end{DoxyReturn}
-\Hypertarget{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e}\label{class_rest_link_1_1_request_interface_ab4b63e650c80371554e2bf233deb069e} 
-\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setQueryParameter@{setQueryParameter}}
-\index{setQueryParameter@{setQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
-\doxysubsubsection{\texorpdfstring{setQueryParameter()}{setQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const QVariant \&}]{value }\end{DoxyParamCaption})}
+\Hypertarget{class_rest_link_1_1_request_interface_a177b271e28c6a34a723259819af160a8}\label{class_rest_link_1_1_request_interface_a177b271e28c6a34a723259819af160a8} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!addQueryParameter@{addQueryParameter}}
+\index{addQueryParameter@{addQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{addQueryParameter()}{addQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::add\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const QVariant \&}]{value }\end{DoxyParamCaption})}
 
 
 
-Sets the value of a query parameter. 
+Add the value of a query parameter. 
 
 This function sets or updates the value of a query parameter in the request. If the parameter does not exist, it is added.
 
@@ -330,15 +332,15 @@ This function sets or updates the value of a query parameter in the request. If 
 {\em value} & The new value to set for the query parameter. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca}\label{class_rest_link_1_1_request_interface_a1fb669df48026dbe1dfa02ac140093ca} 
-\index{RestLink::RequestInterface@{RestLink::RequestInterface}!setQueryParameter@{setQueryParameter}}
-\index{setQueryParameter@{setQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
-\doxysubsubsection{\texorpdfstring{setQueryParameter()}{setQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::set\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const Query\+Parameter \&}]{param }\end{DoxyParamCaption})}
+\Hypertarget{class_rest_link_1_1_request_interface_a8e3259dcebd3b88e250849d632196c0e}\label{class_rest_link_1_1_request_interface_a8e3259dcebd3b88e250849d632196c0e} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!addQueryParameter@{addQueryParameter}}
+\index{addQueryParameter@{addQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{addQueryParameter()}{addQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::add\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const Query\+Parameter \&}]{param }\end{DoxyParamCaption})}
 
 
 
-Sets a query parameter using a {\ttfamily Query\+Parameter} object. 
+Add query parameter using a {\ttfamily Query\+Parameter} object. 
 
 This function sets or updates a query parameter using a {\ttfamily Query\+Parameter} object.
 
@@ -347,17 +349,34 @@ This function sets or updates a query parameter using a {\ttfamily Query\+Parame
 {\em param} & The {\ttfamily Query\+Parameter} object containing the name and value. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0}\label{class_rest_link_1_1_request_interface_aba421b7a9ed5aa204a71e48bc475c9f0} 
-\index{RestLink::RequestInterface@{RestLink::RequestInterface}!unsetQueryParameter@{unsetQueryParameter}}
-\index{unsetQueryParameter@{unsetQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
-\doxysubsubsection{\texorpdfstring{unsetQueryParameter()}{unsetQueryParameter()}}
-{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::unset\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption})}
+\Hypertarget{class_rest_link_1_1_request_interface_a95a836ce3cf8c29058c50c33da21d542}\label{class_rest_link_1_1_request_interface_a95a836ce3cf8c29058c50c33da21d542} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!removeQueryParameter@{removeQueryParameter}}
+\index{removeQueryParameter@{removeQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{removeQueryParameter()}{removeQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::remove\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption})}
 
 
 
-Unsets (removes) a query parameter from the request. 
+Removes a query parameter from the request. 
 
 This function removes the query parameter with the given name from the request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the query parameter to remove. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rest_link_1_1_request_interface_a2d6fb82039e75db8505ec686da290ea7}\label{class_rest_link_1_1_request_interface_a2d6fb82039e75db8505ec686da290ea7} 
+\index{RestLink::RequestInterface@{RestLink::RequestInterface}!removeQueryParameter@{removeQueryParameter}}
+\index{removeQueryParameter@{removeQueryParameter}!RestLink::RequestInterface@{RestLink::RequestInterface}}
+\doxysubsubsection{\texorpdfstring{removeQueryParameter()}{removeQueryParameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Rest\+Link\+::\+Request\+Interface\+::remove\+Query\+Parameter (\begin{DoxyParamCaption}\item[{const QString \&}]{name,  }\item[{const QVariant \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Removes a query parameter from the request. 
+
+This function removes the value on the query parameter if it exists.
 
 
 \begin{DoxyParams}{Parameters}

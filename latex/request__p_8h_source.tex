@@ -5,36 +5,40 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_REQUEST\_P\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_REQUEST\_P\_H}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/queryparameter.h>}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <RestLink/pathparameter.h>}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <RestLink/header.h>}}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QtCore/qlist.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}request.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <RestLink/queryparameter.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <RestLink/pathparameter.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <RestLink/header.h>}}
 \DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QtCore/qlist.h>}}
 \DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }RequestData\ :\ \textcolor{keyword}{public}\ QSharedData}
-\DoxyCodeLine{00013\ \{}
-\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ QString\ validateEndpoint(\textcolor{keyword}{const}\ QString\ \&input);}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \ \ \ \ QList<PathParameter>::const\_iterator\ findPathParameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00018\ \ \ \ \ QList<PathParameter>::iterator\ findPathParameter(\textcolor{keyword}{const}\ QString\ \&name);}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ QList<QueryParameter>::const\_iterator\ findQueryParameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00021\ \ \ \ \ QList<QueryParameter>::iterator\ findQueryParameter(\textcolor{keyword}{const}\ QString\ \&name);}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ QList<Header>::const\_iterator\ findHeader(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00024\ \ \ \ \ QList<Header>::iterator\ findHeader(\textcolor{keyword}{const}\ QString\ \&name);}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ QString\ endpoint;}
-\DoxyCodeLine{00027\ \ \ \ \ QList<PathParameter>\ pathParameters;}
-\DoxyCodeLine{00028\ \ \ \ \ QList<QueryParameter>\ queryParameters;}
-\DoxyCodeLine{00029\ \ \ \ \ QList<Header>\ headers;}
-\DoxyCodeLine{00030\ \};}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \}}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_REQUEST\_P\_H}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }RequestData\ :\ \textcolor{keyword}{public}\ QSharedData}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ QString\ validateEndpoint(\textcolor{keyword}{const}\ QString\ \&input);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ QList<PathParameter>::const\_iterator\ findPathParameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ QList<PathParameter>::iterator\ findPathParameter(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ QList<QueryParameter>::const\_iterator\ findQueryParameter(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \ \ \ \ QList<QueryParameter>::iterator\ findQueryParameter(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ QList<Header>::const\_iterator\ findHeader(\textcolor{keyword}{const}\ QString\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ QList<Header>::iterator\ findHeader(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ QString\ endpoint;}
+\DoxyCodeLine{00029\ \ \ \ \ QList<PathParameter>\ pathParameters;}
+\DoxyCodeLine{00030\ \ \ \ \ QList<QueryParameter>\ queryParameters;}
+\DoxyCodeLine{00031\ \ \ \ \ QList<Header>\ headers;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ RequestProcessing\ processing;}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_REQUEST\_P\_H}}
 
 \end{DoxyCode}

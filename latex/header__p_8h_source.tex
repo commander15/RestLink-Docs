@@ -1,0 +1,23 @@
+\doxysection{header\+\_\+p.\+h}
+\hypertarget{header__p_8h_source}{}\label{header__p_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/header\_p.h@{/home/runner/work/RestLink/RestLink/src/lib/header\_p.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_HEADER\_P\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_HEADER\_P\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/private/parameter\_p.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }HeaderData\ :\ \textcolor{keyword}{public}\ ParameterData}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ Parameter::Type\ type()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ Parameter::HeaderType;\ \}}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_HEADER\_P\_H}}
+
+\end{DoxyCode}

@@ -133,7 +133,7 @@ Example Code (C++)</h2>
 <div class="line">    request.setEndpoint(<span class="stringliteral">&quot;/data&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Send the request and process the reply assynchronously when finished</span></div>
-<div class="line">    api.<a class="code hl_function" href="class_rest_link_1_1_api_base.html#ae9b10e948ed87ff037286465a01dfcc8">get</a>(request, [](RestLink::ApiReply *reply) {</div>
+<div class="line">    api.<a class="code hl_function" href="class_rest_link_1_1_api_base.html#a986342385e2e88b628d8740a1da4209e">get</a>(request, [](RestLink::ApiReply *reply) {</div>
 <div class="line">        <span class="keywordflow">if</span> (reply-&gt;isSuccess()) {</div>
 <div class="line">            auto data = reply-&gt;readJsonObject();</div>
 <div class="line">            <span class="comment">// Processing...</span></div>
@@ -146,7 +146,7 @@ Example Code (C++)</h2>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> a.exec();</div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_rest_link_1_1_api_base_html_ae9b10e948ed87ff037286465a01dfcc8"><div class="ttname"><a href="class_rest_link_1_1_api_base.html#ae9b10e948ed87ff037286465a01dfcc8">RestLink::ApiBase::get</a></div><div class="ttdeci">void get(const Request &amp;request, std::function&lt; ApiRunCallback &gt; callback)</div><div class="ttdoc">Makes a GET request and calls the provided callback upon completion.</div><div class="ttdef"><b>Definition</b> apibase.cpp:87</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_html_a986342385e2e88b628d8740a1da4209e"><div class="ttname"><a href="class_rest_link_1_1_api_base.html#a986342385e2e88b628d8740a1da4209e">RestLink::ApiBase::get</a></div><div class="ttdeci">void get(const Request &amp;request, const ApiRunCallback &amp;callback)</div><div class="ttdoc">Makes a GET request and calls the provided callback upon completion.</div><div class="ttdef"><b>Definition</b> apibase.cpp:83</div></div>
 <div class="ttc" id="aclass_rest_link_1_1_api_html"><div class="ttname"><a href="class_rest_link_1_1_api.html">RestLink::Api</a></div><div class="ttdoc">Represents an API interface that manages configuration, requests, and parameters.</div><div class="ttdef"><b>Definition</b> api.h:15</div></div>
 <div class="ttc" id="aclass_rest_link_1_1_api_html_aba4ef411220d0f77eb1ab19bfa23e615"><div class="ttname"><a href="class_rest_link_1_1_api.html#aba4ef411220d0f77eb1ab19bfa23e615">RestLink::Api::setUserAgent</a></div><div class="ttdeci">Q_SLOT void setUserAgent(const QString &amp;agent)</div><div class="ttdoc">Sets the user agent for the API.</div><div class="ttdef"><b>Definition</b> api.cpp:201</div></div>
 </div><!-- fragment --><p>In this example:</p>

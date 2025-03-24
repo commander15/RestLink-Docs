@@ -47,21 +47,20 @@
 \DoxyCodeLine{00043\ }
 \DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ processRequest(ApiBase::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Response\ *response)\ =\ 0;}
 \DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ Response\ *createResponse(ApiBase::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api);}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ setError(\textcolor{keywordtype}{int}\ code,\ \textcolor{keyword}{const}\ QString\ \&str);}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ QScopedPointer<ServerPrivate>\ d\_ptr;}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ setListening(\textcolor{keywordtype}{bool}\ listening);}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ \ \ \ \ Response\ *sendRequest(ApiBase::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api)\ \textcolor{keyword}{override}\ \textcolor{keyword}{final};}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }ServerPrivate;}
-\DoxyCodeLine{00057\ \};}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_SERVER\_H}}
+\DoxyCodeLine{00046\ \ \ \ \ Response\ *sendRequest(ApiBase::Operation\ operation,\ \textcolor{keyword}{const}\ Request\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ Api\ *api)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ setError(\textcolor{keywordtype}{int}\ code,\ \textcolor{keyword}{const}\ QString\ \&str);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ QScopedPointer<ServerPrivate>\ d\_ptr;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ setListening(\textcolor{keywordtype}{bool}\ listening);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }ServerPrivate;}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_SERVER\_H}}
 
 \end{DoxyCode}

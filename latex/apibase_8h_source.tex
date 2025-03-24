@@ -10,87 +10,89 @@
 \DoxyCodeLine{00006\ }
 \DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QtCore/qobject.h>}}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <functional>}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }Request;}
-\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }Body;}
-\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }Response;}
-\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }RequestInterceptor;}
-\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }NetworkManager;}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ void(ApiRunCallback)(Response\ *);}
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }Request;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }Body;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }Response;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }RequestInterceptor;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }NetworkManager;}
 \DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }ApiBasePrivate;}
-\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ \mbox{\hyperlink{class_rest_link_1_1_api_base}{ApiBase}}\ :\ \textcolor{keyword}{public}\ QObject,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_rest_link_1_1_request_interface}{RequestInterface}}}
-\DoxyCodeLine{00021\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{enum}\ Operation\ \{}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ HeadOperation,}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ GetOperation,}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ PostOperation,}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ PutOperation,}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ PatchOperation,}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ DeleteOperation,}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ UnknownOperation\ =\ -\/1}
-\DoxyCodeLine{00034\ \ \ \ \ \};}
-\DoxyCodeLine{00035\ \ \ \ \ Q\_ENUM(Operation)}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_rest_link_1_1_api_base}{\string~ApiBase}}();}
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ std::function<void(Response\ *)>\ ApiRunCallback;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }ApiBasePrivate;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ \mbox{\hyperlink{class_rest_link_1_1_api_base}{ApiBase}}\ :\ \textcolor{keyword}{public}\ QObject,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_rest_link_1_1_request_interface}{RequestInterface}}}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{enum}\ Operation\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ HeadOperation,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ GetOperation,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ PostOperation,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ PutOperation,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ PatchOperation,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ DeleteOperation,}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ UnknownOperation\ =\ -\/1}
+\DoxyCodeLine{00036\ \ \ \ \ \};}
+\DoxyCodeLine{00037\ \ \ \ \ Q\_ENUM(Operation)}
 \DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ QUrl\ url()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_rest_link_1_1_api_base}{\string~ApiBase}}();}
 \DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ QLocale\ locale()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ QUrl\ url()\ \textcolor{keyword}{const}\ =\ 0;}
 \DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ head(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ std::function<ApiRunCallback>\ callback);}
-\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *head(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request);}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ get(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ std::function<ApiRunCallback>\ callback);}
-\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *get(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request);}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ post(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ std::function<ApiRunCallback>\ callback);}
-\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *post(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body);}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ put(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ std::function<ApiRunCallback>\ callback);}
-\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *put(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body);}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ patch(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ std::function<ApiRunCallback>\ callback);}
-\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *patch(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body);}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteResource(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ std::function<ApiRunCallback>\ callback);}
-\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *deleteResource(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request);}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ userAgent()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ QLocale\ locale()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ head(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ ApiRunCallback\ \&callback);}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *head(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ get(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ ApiRunCallback\ \&callback);}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *get(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ post(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ \textcolor{keyword}{const}\ ApiRunCallback\ \&callback);}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *post(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ put(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ \textcolor{keyword}{const}\ ApiRunCallback\ \&callback);}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *put(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ patch(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body,\ \textcolor{keyword}{const}\ ApiRunCallback\ \&callback);}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *patch(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteResource(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ ApiRunCallback\ \&callback);}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *deleteResource(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request);}
 \DoxyCodeLine{00062\ }
-\DoxyCodeLine{00063\ \ \ \ \ QList<RequestInterceptor\ *>\ requestInterceptors()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ addRequestInterceptor(\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{RequestInterceptor}}\ *interceptor);}
-\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ removeRequestInterceptor(\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{RequestInterceptor}}\ *interceptor);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *send(Operation\ operation,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ userAgent()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00066\ }
-\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_network_manager}{NetworkManager}}\ *networkManager()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ setNetworkManager(\mbox{\hyperlink{class_rest_link_1_1_network_manager}{NetworkManager}}\ *manager);}
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00070\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_api_base}{ApiBase}}(ApiBasePrivate\ *d,\ QObject\ *parent);}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_rest_link_1_1_response}{Response}}\ *send(Operation\ operation,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_rest_link_1_1_request}{Request}}\ \&request,\ \textcolor{keyword}{const}\ Body\ \&body);}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ \ \ \ \ QScopedPointer<ApiBasePrivate>\ d\_ptr;}
+\DoxyCodeLine{00067\ \ \ \ \ QList<RequestInterceptor\ *>\ requestInterceptors()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ addRequestInterceptor(\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{RequestInterceptor}}\ *interceptor);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ removeRequestInterceptor(\mbox{\hyperlink{class_rest_link_1_1_request_interceptor}{RequestInterceptor}}\ *interceptor);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_network_manager}{NetworkManager}}\ *networkManager()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ setNetworkManager(\mbox{\hyperlink{class_rest_link_1_1_network_manager}{NetworkManager}}\ *manager);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_rest_link_1_1_api_base}{ApiBase}}(ApiBasePrivate\ *d,\ QObject\ *parent);}
 \DoxyCodeLine{00076\ }
-\DoxyCodeLine{00077\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{const}\ QList<PathParameter>\ *constPathParameters()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00079\ \ \ \ \ QList<PathParameter>\ *mutablePathParameters()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{const}\ QList<QueryParameter>\ *constQueryParameters()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00081\ \ \ \ \ QList<QueryParameter>\ *mutableQueryParameters()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{const}\ QList<Header>\ *constHeaders()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00083\ \ \ \ \ QList<Header>\ *mutableHeaders()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00084\ }
-\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }ApiBasePrivate;}
-\DoxyCodeLine{00086\ \};}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \}}
+\DoxyCodeLine{00077\ \ \ \ \ QScopedPointer<ApiBasePrivate>\ d\_ptr;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{const}\ QList<PathParameter>\ *constPathParameters()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00081\ \ \ \ \ QList<PathParameter>\ *mutablePathParameters()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{const}\ QList<QueryParameter>\ *constQueryParameters()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00083\ \ \ \ \ QList<QueryParameter>\ *mutableQueryParameters()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{const}\ QList<Header>\ *constHeaders()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00085\ \ \ \ \ QList<Header>\ *mutableHeaders()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }ApiBasePrivate;}
+\DoxyCodeLine{00088\ \};}
 \DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_APIBASE\_H}}
+\DoxyCodeLine{00090\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_APIBASE\_H}}
 
 \end{DoxyCode}

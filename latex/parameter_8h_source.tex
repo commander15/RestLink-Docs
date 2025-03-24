@@ -1,0 +1,98 @@
+\doxysection{parameter.\+h}
+\hypertarget{parameter_8h_source}{}\label{parameter_8h_source}\index{/home/runner/work/RestLink/RestLink/src/lib/parameter.h@{/home/runner/work/RestLink/RestLink/src/lib/parameter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTLINK\_PARAMETER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTLINK\_PARAMETER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <RestLink/global.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtCore/qshareddata.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QtCore/qlist.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }QJsonObject;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }RestLink\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }PathParameter;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }QueryParameter;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }Header;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }ParameterData;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }RESTLINK\_EXPORT\ Parameter}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{enum}\ Flag\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ NoFlag\ =\ 0x0,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ Authentication\ =\ 0x1,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ Secret\ =\ 0x2,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ Locale\ =\ 0x4}
+\DoxyCodeLine{00026\ \ \ \ \ \};}
+\DoxyCodeLine{00027\ \ \ \ \ Q\_DECLARE\_FLAGS(Flags,\ Flag)}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{enum}\ Type\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ BaseType,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ PathParameterType,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ QueryParameterType,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ HeaderType}
+\DoxyCodeLine{00034\ \ \ \ \ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ Parameter();}
+\DoxyCodeLine{00037\ \ \ \ \ Parameter(\textcolor{keyword}{const}\ Parameter\ \&other);}
+\DoxyCodeLine{00038\ \ \ \ \ Parameter(Parameter\ \&\&other);}
+\DoxyCodeLine{00039\ \ \ \ \ \string~Parameter();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ Parameter\ \&operator=(\textcolor{keyword}{const}\ Parameter\ \&other);}
+\DoxyCodeLine{00042\ \ \ \ \ Parameter\ \&operator=(Parameter\ \&\&other);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ QString\ name()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ setName(\textcolor{keyword}{const}\ QString\ \&name);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ QVariant\ value()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ setValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasValue(\textcolor{keyword}{const}\ QVariant\ \&value)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ addValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ removeValue(\textcolor{keyword}{const}\ QVariant\ \&value);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ QList<QVariant>\ values()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ setValues(\textcolor{keyword}{const}\ QList<QVariant>\ \&values);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasFlag(Flag\ flag)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ \ \ \ Flags\ flags()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ setFlag(Flag\ flag,\ \textcolor{keywordtype}{bool}\ on\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ setFlags(\textcolor{keyword}{const}\ Flags\ \&flags);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//bool\ isPathParameter()\ const;}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//bool\ isQueryParameter()\ const;}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{comment}{//bool\ isHeader()\ const;}}
+\DoxyCodeLine{00065\ \ \ \ \ Type\ type()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ isValid()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ PathParameter\ toPathParameter()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ \ \ \ \ QueryParameter\ toQueryParameter()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ \ \ \ \ Header\ toHeader()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ QJsonObject\ toJsonObject()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{static}\ Parameter\ fromJsonObject(\textcolor{keyword}{const}\ QJsonObject\ \&\textcolor{keywordtype}{object},\ Type\ type);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{static}\ Parameter\ merge(\textcolor{keyword}{const}\ Parameter\ \&p1,\ \textcolor{keyword}{const}\ Parameter\ \&p2);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ Parameter\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ Parameter\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00082\ \ \ \ \ Parameter(ParameterData\ *d);}
+\DoxyCodeLine{00083\ \ \ \ \ Parameter(\textcolor{keyword}{const}\ QSharedDataPointer<ParameterData>\ \&data);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ dataFromJsonObject(ParameterData\ *data,\ \textcolor{keyword}{const}\ QJsonObject\ \&\textcolor{keywordtype}{object});}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ QSharedDataPointer<ParameterData>\ d\_ptr;}
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \}\ \textcolor{comment}{//\ namespace\ RestLink}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTLINK\_PARAMETER\_H}}
+
+\end{DoxyCode}
