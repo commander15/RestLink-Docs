@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['unsetheader_0',['unsetHeader',['../class_rest_link_1_1_request_interface.html#a5b3710603e7ef336a4027c3dba5290ee',1,'RestLink::RequestInterface']]],
-  ['unsetpathparameter_1',['unsetPathParameter',['../class_rest_link_1_1_request_interface.html#a7191df764b66b90331b6f28aba05b640',1,'RestLink::RequestInterface']]],
-  ['updatemetadata_2',['updateMetaData',['../class_rest_link_1_1_cache.html#ac82cf1e4eed956577f1fc38b80dd192b',1,'RestLink::Cache']]],
-  ['url_3',['url',['../class_rest_link_1_1_api.html#a73ee1a5b8223b05dd382688376b3d99c',1,'RestLink::Api::url()'],['../class_rest_link_1_1_response.html#a3967ddaae9ffaa9b272aa897873f5ff5',1,'RestLink::Response::url()']]],
-  ['urlpath_4',['urlPath',['../class_rest_link_1_1_request.html#a8d463f4779bd11981443a3e8631a7a4f',1,'RestLink::Request']]],
-  ['useragent_5',['useragent',['../class_rest_link_1_1_api.html#a4af630e5fdebfa82c13a0c8e6c6eaa6c',1,'RestLink::Api::userAgent()'],['../class_rest_link_1_1_api_base.html#a0682831b71c6f4d60a32a423d946e7a2',1,'RestLink::ApiBase::userAgent()']]]
+  ['queryparameter_0',['queryparameter',['../class_rest_link_1_1_query_parameter.html#a3bbebcee3c40af369d0bdfbc496c5578',1,'RestLink::QueryParameter::QueryParameter()'],['../class_rest_link_1_1_query_parameter.html#a80da6eb191097b6f1f21167913dc179f',1,'RestLink::QueryParameter::QueryParameter(const QString &amp;name, const QVariant &amp;value)'],['../class_rest_link_1_1_query_parameter.html#a7ac11c0aba2ddfe699b1dbf24f8c0286',1,'RestLink::QueryParameter::QueryParameter(const QueryParameter &amp;other)'],['../class_rest_link_1_1_query_parameter.html#a107dcdbcdc3d8f9283342282f630fe45',1,'RestLink::QueryParameter::QueryParameter(const QSharedDataPointer&lt; ParameterData &gt; &amp;d)'],['../class_rest_link_1_1_request_interface.html#a62114c7a8a32108e52efbccdb88b5203',1,'RestLink::RequestInterface::queryParameter(const QString &amp;name) const']]],
+  ['queryparameternames_1',['queryParameterNames',['../class_rest_link_1_1_request_interface.html#a3689c62b8a099e8560e5d55866c2330b',1,'RestLink::RequestInterface']]],
+  ['queryparameters_2',['queryParameters',['../class_rest_link_1_1_request_interface.html#a619a1f098e59b40901c05bead4545957',1,'RestLink::RequestInterface']]],
+  ['queryparametervalues_3',['queryParameterValues',['../class_rest_link_1_1_request_interface.html#a2668210f521e6061359c02998fae8ff8',1,'RestLink::RequestInterface']]]
 ];

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -70,11 +70,12 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">RestLink </div></div>
+  <div class="headertitle"><div class="title"><a class="el" href="namespace_rest_link.html">RestLink</a> </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2_rest_link_2_rest_link_2_r_e_a_d_m_e"></a> RestLink is a C++ library designed to facilitate easy integration with RESTful APIs, providing an abstraction layer for making HTTP requests and handling responses. It offers a convenient API to configure, send, and receive data from REST endpoints, with built-in support for handling parameters, headers, and error management.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<div class="textblock"><p><a class="anchor" id="md__2home_2commander_2_projects_2_rest_link_2_r_e_a_d_m_e"></a> <img src="./docs/logo.png" alt="RestLink" class="inline"/></p>
+<p><a class="el" href="namespace_rest_link.html">RestLink</a> is a C++ library designed to facilitate easy integration with RESTful APIs, providing an abstraction layer for making HTTP requests and handling responses. It offers a convenient API to configure, send, and receive data from REST endpoints, with built-in support for handling parameters, headers, and error management.</p>
+<h1><a class="anchor" id="features"></a>
 Features</h1>
 <ul>
 <li>Simplified API integration for RESTful services.</li>
@@ -83,141 +84,370 @@ Features</h1>
 <li>Error handling.</li>
 <li>Integration with Qt's network stack for efficient communication.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="installation"></a>
 Installation</h1>
 <ol type="1">
 <li><p class="startli">Clone the repository:</p>
 <div class="fragment"><div class="line">git clone https://github.com/commander15/RestLink.git</div>
 </div><!-- fragment --></li>
-<li><p class="startli">Add <code>RestLink</code> to your project by including the necessary headers in your CMake file.</p>
+<li><p class="startli">Add <code><a class="el" href="namespace_rest_link.html">RestLink</a></code> to your project by including the necessary headers in your CMake file.</p>
 <div class="fragment"><div class="line">include_directories(path_to_RestLink)</div>
 </div><!-- fragment --></li>
-<li><p class="startli">Link the <code>RestLink</code> library with your project.</p>
+<li><p class="startli">Link the <code><a class="el" href="namespace_rest_link.html">RestLink</a></code> library with your project.</p>
 <div class="fragment"><div class="line">target_link_libraries(YourProjectName RestLink::RestLink)</div>
 </div><!-- fragment --></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<hr  />
+<h1><a class="anchor" id="c-example"></a>
 C++ Example</h1>
-<p>Below is a simple C++ example demonstrating how to use RestLink to make an API request and handle the response.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<p>Below is a simple C++ example demonstrating how to use <a class="el" href="namespace_rest_link.html">RestLink</a> to make an API request and handle the response.</p>
+<h2><a class="anchor" id="example-code-c"></a>
 Example Code (C++)</h2>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;QCoreApplication&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<p><a href="./examples/tmdb-desktop/main.cpp">View Source</a></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;QtCore/qcoreapplication.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QtCore/qloggingcategory.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QtCore/qdir.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QtCore/qfile.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QtCore/qtimer.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;QtCore/qstandardpaths.h&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;RestLink/api.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;RestLink/apirequest.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;RestLink/apireply.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;RestLink/restlink.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_rest_link.html">RestLink</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> runRequest(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <a class="code hl_class" href="class_rest_link_1_1_api.html">Api</a> *api)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// We will save all responses on your Desktop folder, TMDB sub folder</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">static</span> QDir folder(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation) + <span class="charliteral">&#39;/&#39;</span> + api-&gt;<a class="code hl_property" href="class_rest_link_1_1_api.html#ab3a343293a5ff57ee10b2cea3ddceaf2">name</a>());</div>
+<div class="line">    <span class="keywordflow">if</span> (!folder.exists())</div>
+<div class="line">        folder.mkpath(<span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    QString url = request.<a class="code hl_function" href="class_rest_link_1_1_request.html#a8d463f4779bd11981443a3e8631a7a4f">urlPath</a>();</div>
+<div class="line">    <span class="keywordflow">if</span> (url.count(<span class="charliteral">&#39;/&#39;</span>) &gt; 1)</div>
+<div class="line">        folder.mkpath(url.section(<span class="stringliteral">&quot;/&quot;</span>, 1, -2));</div>
+<div class="line"> </div>
+<div class="line">    QFile *file = <span class="keyword">new</span> QFile(folder.path() + url + <span class="stringliteral">&quot;.json&quot;</span>, api);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Pretty assync handling alert !</span></div>
+<div class="line">    api-&gt;<a class="code hl_function" href="class_rest_link_1_1_api_base.html#a986342385e2e88b628d8740a1da4209e">get</a>(request, [file, api](<a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *reply) {</div>
+<div class="line">        <span class="comment">// Here application output will tell you all what is happening</span></div>
+<div class="line">        <span class="comment">// (errors included)</span></div>
+<div class="line"> </div>
+<div class="line">        QTextStream out(stdout);</div>
+<div class="line">        out &lt;&lt; reply-&gt;<a class="code hl_property" href="class_rest_link_1_1_response.html#a5940e0a5cc630326a7bf326b4a9ae86e">endpoint</a>() &lt;&lt; <span class="stringliteral">&quot; =&gt; &quot;</span>;</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span> (reply-&gt;<a class="code hl_function" href="class_rest_link_1_1_response.html#a39f27ad6d47e9eb178abe88a0ad9f898">isSuccess</a>()) {</div>
+<div class="line">            <span class="keyword">const</span> QByteArray data = reply-&gt;<a class="code hl_function" href="class_rest_link_1_1_response_base.html#a8ab9a78235652bd1857b14734712d210">readBody</a>();</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">if</span> (file-&gt;open(QIODevice::WriteOnly|QIODevice::Text)) {</div>
+<div class="line">                file-&gt;write(data);</div>
+<div class="line">                file-&gt;flush();</div>
+<div class="line">                file-&gt;close();</div>
+<div class="line">                file-&gt;deleteLater();</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            <span class="comment">// Download completed !</span></div>
+<div class="line">            out &lt;&lt; data.size() &lt;&lt; <span class="stringliteral">&quot; byte(s) downloaded&quot;</span> &lt;&lt; Qt::endl;</div>
+<div class="line">        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!reply-&gt;<a class="code hl_property" href="class_rest_link_1_1_response.html#a5da1163c6d4170ea7179faac42e86694">hasHttpStatusCode</a>()) {</div>
+<div class="line">            <span class="comment">// Logging this HTTP error</span></div>
+<div class="line">            out &lt;&lt; <span class="stringliteral">&quot;HTTP &quot;</span> &lt;&lt; reply-&gt;<a class="code hl_property" href="class_rest_link_1_1_response.html#ae8c064b14260f1d52c700094b61bbb7f">httpStatusCode</a>() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; reply-&gt;<a class="code hl_property" href="class_rest_link_1_1_response.html#a4fa108b61a1a4ec9421fa4c008a74764">httpReasonPhrase</a>() &lt;&lt; Qt::endl;</div>
+<div class="line">        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (reply-&gt;<a class="code hl_property" href="class_rest_link_1_1_response.html#ae15b13bc08d2f6e5b47994f05d1ee9e0">hasNetworkError</a>()) {</div>
+<div class="line">            <span class="comment">// Logging this network error</span></div>
+<div class="line">            out &lt;&lt; <span class="stringliteral">&quot;Network error &quot;</span> &lt;&lt; reply-&gt;<a class="code hl_property" href="class_rest_link_1_1_response.html#ab980aeceaecc9f99c701704426c0b6e4">networkError</a>() &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; reply-&gt;<a class="code hl_property" href="class_rest_link_1_1_response.html#af0f116d98b0d513cf55b50db1ab25d0c">networkErrorString</a>() &lt;&lt; Qt::endl;</div>
+<div class="line">        } <span class="keywordflow">else</span> {</div>
+<div class="line">            <span class="comment">// Logging this ... wait, we don&#39;t known what happened &lt; 1% of time ;)</span></div>
+<div class="line">            out &lt;&lt; <span class="stringliteral">&quot;Oops ! - something weired happened&quot;</span> &lt;&lt; Qt::endl;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Let&#39;s count before quit !</span></div>
+<div class="line">        <span class="comment">// 3, 2, 1, ... bye bye !</span></div>
+<div class="line">        <span class="keywordtype">int</span> count = api-&gt;property(<span class="stringliteral">&quot;count&quot;</span>).toInt() - 1;</div>
+<div class="line">        <span class="keywordflow">if</span> (count == 0)</div>
+<div class="line">            qApp-&gt;quit();</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">            api-&gt;setProperty(<span class="stringliteral">&quot;count&quot;</span>, count);</div>
+<div class="line">    });</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> run(<a class="code hl_class" href="class_rest_link_1_1_api.html">Api</a> *api)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// We prepare some requests in a list</span></div>
+<div class="line"> </div>
+<div class="line">    QList&lt;Request&gt; requests;</div>
+<div class="line">    requests.append(<span class="stringliteral">&quot;/configuration&quot;</span>); <span class="comment">// geeky things</span></div>
+<div class="line">    requests.append(<span class="stringliteral">&quot;/discover/movie&quot;</span>); <span class="comment">// movie discovery</span></div>
+<div class="line">    requests.append(<span class="stringliteral">&quot;/discover/tv&quot;</span>); <span class="comment">// tv discovery</span></div>
+<div class="line"> </div>
+<div class="line">    {</div>
+<div class="line">        <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> request(<span class="stringliteral">&quot;/search/company&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// We are seaching Marvel Studios, let&#39;s go from Marvel to have more results</span></div>
+<div class="line">        request.<a class="code hl_function" href="class_rest_link_1_1_request_interface.html#a177b271e28c6a34a723259819af160a8">addQueryParameter</a>(<span class="stringliteral">&quot;query&quot;</span>, <span class="stringliteral">&quot;Marvel&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">        requests.append(request);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    {</div>
+<div class="line">        <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> request(<span class="stringliteral">&quot;/movie/{movie_id}&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Do you like Marvel Venom movie ?</span></div>
+<div class="line">        request.<a class="code hl_function" href="class_rest_link_1_1_request_interface.html#a8b10f650c3dc2821a84d294059874ace">setPathParameter</a>(<span class="stringliteral">&quot;movie_id&quot;</span>, 335983);</div>
+<div class="line"> </div>
+<div class="line">        requests.append(request);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// We run them all</span></div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request : std::as_const(requests))</div>
+<div class="line">        runRequest(request, api);</div>
+<div class="line"> </div>
+<div class="line">    api-&gt;setProperty(<span class="stringliteral">&quot;count&quot;</span>, requests.size());</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>Interceptor : <span class="keyword">public</span> <a class="code hl_class" href="class_rest_link_1_1_request_interceptor.html">RequestInterceptor</a></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> intercept(<a class="code hl_enumeration" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RequestHandler::Method</a> method, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_body.html">Body</a> &amp;body)<span class="keyword"> override</span></div>
+<div class="line"><span class="keyword">    </span>{</div>
+<div class="line">        <span class="comment">// Just a showcase</span></div>
+<div class="line">        <span class="keywordflow">return</span> request;</div>
+<div class="line">    }</div>
+<div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line">{</div>
-<div class="line">    QCoreApplication a(argc, argv);</div>
+<div class="line">    QCoreApplication app(argc, argv);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Initialize RestLink API</span></div>
-<div class="line">    <a class="code hl_class" href="class_rest_link_1_1_api.html">RestLink::Api</a> api;</div>
+<div class="line">    QLoggingCategory::setFilterRules(<span class="stringliteral">&quot;restlink.info=true&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Set the API name, version and url</span></div>
-<div class="line">    api.setApiName(<span class="stringliteral">&quot;ExampleAPI&quot;</span>);</div>
-<div class="line">    api.setApiVersion(1);</div>
-<div class="line">    api.setApiUrl(QUrl(<span class="stringliteral">&quot;https://api.example.com&quot;</span>));</div>
+<div class="line">    <a class="code hl_class" href="class_rest_link_1_1_api.html">Api</a> api;</div>
+<div class="line">    api.<a class="code hl_function" href="class_rest_link_1_1_api.html#af0e09706bb5f3b3d55bccebdbfb285e0">setName</a>(<span class="stringliteral">&quot;TMDB&quot;</span>); <span class="comment">// Optional</span></div>
+<div class="line">    api.<a class="code hl_function" href="class_rest_link_1_1_api.html#ad1c7891a661dbaa554e42c4555e64641">setVersion</a>(QVersionNumber(3)); <span class="comment">// Optional</span></div>
+<div class="line">    api.<a class="code hl_function" href="class_rest_link_1_1_api.html#a7fe9134916fa729bd75f87a8dba9587e">setUrl</a>(QUrl(<span class="stringliteral">&quot;http://api.themoviedb.org/3&quot;</span>)); <span class="comment">// Mandatory</span></div>
+<div class="line">    api.<a class="code hl_function" href="class_rest_link_1_1_api.html#a2514a1760a7c27e628b75b4fdf757183">setBearerToken</a>(TMDB_BEARER_TOKEN); <span class="comment">// Mandatory if you want to Avoid HTTP - Forbidden :)</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Set User-Agent</span></div>
-<div class="line">    api.<a class="code hl_function" href="class_rest_link_1_1_api.html#aba4ef411220d0f77eb1ab19bfa23e615">setUserAgent</a>(<span class="stringliteral">&quot;MyApp/1.0&quot;</span>);</div>
+<div class="line">    <span class="comment">// Just to showcase the thing</span></div>
+<div class="line">    Interceptor interceptor;</div>
+<div class="line">    api.<a class="code hl_function" href="class_rest_link_1_1_api_base.html#af21ac04e37989e896c844a4387dff46b">addRequestInterceptor</a>(&amp;interceptor);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Add API parameters</span></div>
-<div class="line">    RestLink::ApiRequestParameter param(<span class="stringliteral">&quot;key&quot;</span>, <span class="stringliteral">&quot;value&quot;</span>);</div>
-<div class="line">    api.addParameter(param);</div>
+<div class="line">    <span class="comment">// Let&#39;s go !</span></div>
+<div class="line">    run(&amp;api);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Create a sample API request</span></div>
-<div class="line">    RestLink::ApiRequest request;</div>
-<div class="line">    request.setEndpoint(<span class="stringliteral">&quot;/data&quot;</span>);</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// Send the request and process the reply assynchronously when finished</span></div>
-<div class="line">    api.<a class="code hl_function" href="class_rest_link_1_1_api_base.html#a986342385e2e88b628d8740a1da4209e">get</a>(request, [](RestLink::ApiReply *reply) {</div>
-<div class="line">        <span class="keywordflow">if</span> (reply-&gt;isSuccess()) {</div>
-<div class="line">            auto data = reply-&gt;readJsonObject();</div>
-<div class="line">            <span class="comment">// Processing...</span></div>
-<div class="line">        } <span class="keywordflow">else</span> if (reply-&gt;hasNetworkError()) {</div>
-<div class="line">            <span class="comment">// Handle network error</span></div>
-<div class="line">        } <span class="keywordflow">else</span> if (!reply-&gt;isHttpStatusSuccess()) {</div>
-<div class="line">            <span class="comment">// Handle HTTP error</span></div>
-<div class="line">        }</div>
-<div class="line">    });</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">return</span> a.exec();</div>
+<div class="line">    <span class="keywordflow">return</span> app.exec();</div>
 <div class="line">}</div>
 <div class="ttc" id="aclass_rest_link_1_1_api_base_html_a986342385e2e88b628d8740a1da4209e"><div class="ttname"><a href="class_rest_link_1_1_api_base.html#a986342385e2e88b628d8740a1da4209e">RestLink::ApiBase::get</a></div><div class="ttdeci">void get(const Request &amp;request, const ApiRunCallback &amp;callback)</div><div class="ttdoc">Makes a GET request and calls the provided callback upon completion.</div><div class="ttdef"><b>Definition</b> apibase.cpp:83</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_html_af21ac04e37989e896c844a4387dff46b"><div class="ttname"><a href="class_rest_link_1_1_api_base.html#af21ac04e37989e896c844a4387dff46b">RestLink::ApiBase::addRequestInterceptor</a></div><div class="ttdeci">void addRequestInterceptor(RequestInterceptor *interceptor)</div><div class="ttdoc">Adds a request interceptor to the list.</div><div class="ttdef"><b>Definition</b> apibase.cpp:243</div></div>
 <div class="ttc" id="aclass_rest_link_1_1_api_html"><div class="ttname"><a href="class_rest_link_1_1_api.html">RestLink::Api</a></div><div class="ttdoc">Represents an API interface that manages configuration, requests, and parameters.</div><div class="ttdef"><b>Definition</b> api.h:15</div></div>
-<div class="ttc" id="aclass_rest_link_1_1_api_html_aba4ef411220d0f77eb1ab19bfa23e615"><div class="ttname"><a href="class_rest_link_1_1_api.html#aba4ef411220d0f77eb1ab19bfa23e615">RestLink::Api::setUserAgent</a></div><div class="ttdeci">Q_SLOT void setUserAgent(const QString &amp;agent)</div><div class="ttdoc">Sets the user agent for the API.</div><div class="ttdef"><b>Definition</b> api.cpp:201</div></div>
-</div><!-- fragment --><p>In this example:</p>
-<p>We initialize the Api object and configure it with an endpoint URL, name, version, and user-agent. We add a request parameter (key, value). We create an ApiRequest object to set the request endpoint and HTTP method. Finally, the request is sent, and the response is handled asynchronously using a signal.In this example:</p>
-<p>We initialize the Api object and configure it with a base URL, name, version, and user-agent. We add a request parameter (key, value). We create an ApiRequest object to set the request endpoint and HTTP method. Finally, the request is sent, and the response is handled asynchronously using a callback.</p>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<div class="ttc" id="aclass_rest_link_1_1_api_html_a2514a1760a7c27e628b75b4fdf757183"><div class="ttname"><a href="class_rest_link_1_1_api.html#a2514a1760a7c27e628b75b4fdf757183">RestLink::Api::setBearerToken</a></div><div class="ttdeci">Q_SLOT void setBearerToken(const QString &amp;token)</div><div class="ttdef"><b>Definition</b> api.cpp:188</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_html_a7fe9134916fa729bd75f87a8dba9587e"><div class="ttname"><a href="class_rest_link_1_1_api.html#a7fe9134916fa729bd75f87a8dba9587e">RestLink::Api::setUrl</a></div><div class="ttdeci">Q_SLOT void setUrl(const QUrl &amp;url)</div><div class="ttdoc">Sets the URL of the API.</div><div class="ttdef"><b>Definition</b> api.cpp:156</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_html_ab3a343293a5ff57ee10b2cea3ddceaf2"><div class="ttname"><a href="class_rest_link_1_1_api.html#ab3a343293a5ff57ee10b2cea3ddceaf2">RestLink::Api::name</a></div><div class="ttdeci">QString name</div><div class="ttdoc">The name of the API.</div><div class="ttdef"><b>Definition</b> api.h:17</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_html_ad1c7891a661dbaa554e42c4555e64641"><div class="ttname"><a href="class_rest_link_1_1_api.html#ad1c7891a661dbaa554e42c4555e64641">RestLink::Api::setVersion</a></div><div class="ttdeci">Q_SLOT void setVersion(const QVersionNumber &amp;version)</div><div class="ttdoc">Sets the version of the API.</div><div class="ttdef"><b>Definition</b> api.cpp:127</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_html_af0e09706bb5f3b3d55bccebdbfb285e0"><div class="ttname"><a href="class_rest_link_1_1_api.html#af0e09706bb5f3b3d55bccebdbfb285e0">RestLink::Api::setName</a></div><div class="ttdeci">Q_SLOT void setName(const QString &amp;name)</div><div class="ttdoc">Sets the name of the API.</div><div class="ttdef"><b>Definition</b> api.cpp:98</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_body_html"><div class="ttname"><a href="class_rest_link_1_1_body.html">RestLink::Body</a></div><div class="ttdoc">Represents the body of an HTTP request.</div><div class="ttdef"><b>Definition</b> body.h:27</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a165ab084b5fdf72c59f8b2a14890b28c"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RestLink::RequestHandler::Method</a></div><div class="ttdeci">Method</div><div class="ttdoc">Defines supported HTTP methods for handling outgoing requests.</div><div class="ttdef"><b>Definition</b> requesthandler.h:19</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html"><div class="ttname"><a href="class_rest_link_1_1_request.html">RestLink::Request</a></div><div class="ttdoc">A class for storing and managing HTTP request information.</div><div class="ttdef"><b>Definition</b> request.h:25</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html_a8d463f4779bd11981443a3e8631a7a4f"><div class="ttname"><a href="class_rest_link_1_1_request.html#a8d463f4779bd11981443a3e8631a7a4f">RestLink::Request::urlPath</a></div><div class="ttdeci">QString urlPath() const</div><div class="ttdoc">Constructs the URL path for the request based on its parameters and endpoint.</div><div class="ttdef"><b>Definition</b> request.cpp:288</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_interceptor_html"><div class="ttname"><a href="class_rest_link_1_1_request_interceptor.html">RestLink::RequestInterceptor</a></div><div class="ttdoc">Abstract class for intercepting and modifying HTTP requests before they are sent.</div><div class="ttdef"><b>Definition</b> requestinterceptor.h:12</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_interface_html_a177b271e28c6a34a723259819af160a8"><div class="ttname"><a href="class_rest_link_1_1_request_interface.html#a177b271e28c6a34a723259819af160a8">RestLink::RequestInterface::addQueryParameter</a></div><div class="ttdeci">void addQueryParameter(const QString &amp;name, const QVariant &amp;value)</div><div class="ttdoc">Add the value of a query parameter.</div><div class="ttdef"><b>Definition</b> requestinterface.cpp:215</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_interface_html_a8b10f650c3dc2821a84d294059874ace"><div class="ttname"><a href="class_rest_link_1_1_request_interface.html#a8b10f650c3dc2821a84d294059874ace">RestLink::RequestInterface::setPathParameter</a></div><div class="ttdeci">void setPathParameter(const QString &amp;name, const QVariant &amp;value)</div><div class="ttdoc">Sets the value of a path parameter.</div><div class="ttdef"><b>Definition</b> requestinterface.cpp:87</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_base_html_a8ab9a78235652bd1857b14734712d210"><div class="ttname"><a href="class_rest_link_1_1_response_base.html#a8ab9a78235652bd1857b14734712d210">RestLink::ResponseBase::readBody</a></div><div class="ttdeci">virtual QByteArray readBody()</div><div class="ttdoc">Reads the raw response body as a QByteArray.</div><div class="ttdef"><b>Definition</b> responsebase.cpp:146</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html"><div class="ttname"><a href="class_rest_link_1_1_response.html">RestLink::Response</a></div><div class="ttdoc">Represents a response to an API request in the RestLink framework.</div><div class="ttdef"><b>Definition</b> response.h:23</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html_a39f27ad6d47e9eb178abe88a0ad9f898"><div class="ttname"><a href="class_rest_link_1_1_response.html#a39f27ad6d47e9eb178abe88a0ad9f898">RestLink::Response::isSuccess</a></div><div class="ttdeci">bool isSuccess() const</div><div class="ttdoc">Checks if the request was successful.</div><div class="ttdef"><b>Definition</b> response.h:56</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html_a4fa108b61a1a4ec9421fa4c008a74764"><div class="ttname"><a href="class_rest_link_1_1_response.html#a4fa108b61a1a4ec9421fa4c008a74764">RestLink::Response::httpReasonPhrase</a></div><div class="ttdeci">QString httpReasonPhrase</div><div class="ttdoc">Retrieves the HTTP reason phrase of the response.</div><div class="ttdef"><b>Definition</b> response.h:33</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html_a5940e0a5cc630326a7bf326b4a9ae86e"><div class="ttname"><a href="class_rest_link_1_1_response.html#a5940e0a5cc630326a7bf326b4a9ae86e">RestLink::Response::endpoint</a></div><div class="ttdeci">QString endpoint</div><div class="ttdef"><b>Definition</b> response.h:25</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html_a5da1163c6d4170ea7179faac42e86694"><div class="ttname"><a href="class_rest_link_1_1_response.html#a5da1163c6d4170ea7179faac42e86694">RestLink::Response::hasHttpStatusCode</a></div><div class="ttdeci">bool hasHttpStatusCode</div><div class="ttdef"><b>Definition</b> response.h:31</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html_ab980aeceaecc9f99c701704426c0b6e4"><div class="ttname"><a href="class_rest_link_1_1_response.html#ab980aeceaecc9f99c701704426c0b6e4">RestLink::Response::networkError</a></div><div class="ttdeci">int networkError</div><div class="ttdef"><b>Definition</b> response.h:36</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html_ae15b13bc08d2f6e5b47994f05d1ee9e0"><div class="ttname"><a href="class_rest_link_1_1_response.html#ae15b13bc08d2f6e5b47994f05d1ee9e0">RestLink::Response::hasNetworkError</a></div><div class="ttdeci">bool hasNetworkError</div><div class="ttdoc">Checks if a network error occurred during the request.</div><div class="ttdef"><b>Definition</b> response.h:35</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html_ae8c064b14260f1d52c700094b61bbb7f"><div class="ttname"><a href="class_rest_link_1_1_response.html#ae8c064b14260f1d52c700094b61bbb7f">RestLink::Response::httpStatusCode</a></div><div class="ttdeci">int httpStatusCode</div><div class="ttdoc">Retrieves the HTTP status code of the response.</div><div class="ttdef"><b>Definition</b> response.h:32</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html_af0f116d98b0d513cf55b50db1ab25d0c"><div class="ttname"><a href="class_rest_link_1_1_response.html#af0f116d98b0d513cf55b50db1ab25d0c">RestLink::Response::networkErrorString</a></div><div class="ttdeci">QString networkErrorString</div><div class="ttdef"><b>Definition</b> response.h:37</div></div>
+<div class="ttc" id="anamespace_rest_link_html"><div class="ttname"><a href="namespace_rest_link.html">RestLink</a></div><div class="ttdef"><b>Definition</b> api.cpp:17</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="in-this-example"></a>
+In this example:</h2>
+<ul>
+<li>We create and configure an <code>Api</code> instance with base URL and bearer token.</li>
+<li>Multiple <code>Request</code> objects are prepared and customized with parameters or path variables.</li>
+<li>Each request is executed using <code>api-&gt;get(...)</code> with a lambda callback handling success and error cases.</li>
+<li>JSON responses are saved into files under the Desktop directory.</li>
+</ul>
+<h4><a class="anchor" id="this-example-can-be-found-on-examplestmdb-desktop"></a>
+This example can be found on: examples/tmdb-desktop</h4>
+<hr  />
+<h1><a class="anchor" id="qml-example"></a>
 QML Example</h1>
-<p>RestLink can also be integrated into QML-based applications, making it easy to use API functionality in the user interface. Below is a simple QML example.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<p><a href="./examples/tmdb/Main.qml">View source</a></p>
+<p><a class="el" href="namespace_rest_link.html">RestLink</a> can also be integrated into QML-based applications, making it easy to use API functionality in the user interface. Below is a simple QML example.</p>
+<h2><a class="anchor" id="example-code-qml"></a>
 Example Code (QML)</h2>
-<div class="fragment"><div class="line">import QtQuick 2.15</div>
-<div class="line">import QtQuick.Controls 2.15</div>
-<div class="line">import RestLink 1.0</div>
+<div class="fragment"><div class="line">import QtQuick 2.14</div>
+<div class="line">import QtQuick.Controls 2.14</div>
+<div class="line">import QtQuick.Layouts 1.14</div>
+<div class="line"> </div>
+<div class="line">import RestLink 2.0</div>
+<div class="line"> </div>
+<div class="line">// Let&#39;s test RestLink in QML using TMDB API</div>
 <div class="line"> </div>
 <div class="line">ApplicationWindow {</div>
-<div class="line">    visible: true</div>
-<div class="line">    width: 640</div>
-<div class="line">    height: 480</div>
-<div class="line">    title: &quot;RestLink QML Example&quot;</div>
+<div class="line">    id: win</div>
 <div class="line"> </div>
-<div class="line">    Api {</div>
-<div class="line">        id: myApi</div>
-<div class="line">        name: &quot;ExampleAPI&quot;</div>
-<div class="line">        version: 1</div>
-<div class="line">        url: &quot;https://api.example.com&quot;</div>
-<div class="line">        userAgent: &quot;MyApp/1.0&quot;</div>
-<div class="line">        </div>
-<div class="line">        // Adding parameter that must be present on each request</div>
-<div class="line">        ApiRequestParameter {</div>
-<div class="line">            name: &quot;key&quot;</div>
-<div class="line">            value: &quot;value&quot;</div>
-<div class="line">            scope: ApiRequestParameter.UrlQuery</div>
-<div class="line">        }</div>
+<div class="line">    // If okay, TMDB V3 is our window title</div>
+<div class="line">    title: tmdb.name + &quot; V&quot; + tmdb.version</div>
+<div class="line"> </div>
+<div class="line">    // Mobile like !</div>
+<div class="line">    width: 320</div>
+<div class="line">    height: 640</div>
+<div class="line"> </div>
+<div class="line">    // Be visible :)</div>
+<div class="line">    visible: true</div>
+<div class="line"> </div>
+<div class="line">    header: TextField {</div>
+<div class="line">        id: query</div>
+<div class="line"> </div>
+<div class="line">        text: &quot;Halo&quot;</div>
+<div class="line">        placeholderText: &quot;Query...&quot;</div>
+<div class="line"> </div>
+<div class="line">        // Run request with the new query on return</div>
+<div class="line">        onAccepted: request.run()</div>
 <div class="line">    }</div>
-<div class="line">    </div>
-<div class="line">    ApiRequest {</div>
+<div class="line"> </div>
+<div class="line">    ListView {</div>
+<div class="line">        id: view</div>
+<div class="line"> </div>
+<div class="line">        delegate: MediaDelegate {</div>
+<div class="line">            readonly property var media: model</div>
+<div class="line"> </div>
+<div class="line">            // Yeah, i&#39;m lazy, just followed TDMB API documentation ;)</div>
+<div class="line">            poster: (modelData.poster_path ? modelData.poster_path : &quot;&quot;)</div>
+<div class="line">            title: (modelData.title ? modelData.title : modelData.name)</div>
+<div class="line">            overview: (modelData.overview ? modelData.overview : &quot;&quot;)</div>
+<div class="line">            popularity: (modelData.popularity ? modelData.popularity : 0.0)</div>
+<div class="line">            year: 2025 // Something is wrong here</div>
+<div class="line"> </div>
+<div class="line">            accentColor: &quot;pink&quot;</div>
+<div class="line">            width: ListView.view.width</div>
+<div class="line">            height: 96</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        spacing: 5</div>
+<div class="line"> </div>
+<div class="line">        anchors.fill: parent</div>
+<div class="line">        anchors.margins: 9</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    Request {</div>
 <div class="line">        id: request</div>
-<div class="line">    </div>
-<div class="line">        endpoint: &quot;/data&quot;</div>
-<div class="line">        api: myApi</div>
-<div class="line">        autoRun: false // if true, request run automaticaly after object construction</div>
-<div class="line">        </div>
+<div class="line"> </div>
+<div class="line">        // Just to mention, it&#39;s already the default</div>
+<div class="line">        method: Request.Get // Http method</div>
+<div class="line"> </div>
+<div class="line">        // Documentation on: https://developer.themoviedb.org</div>
+<div class="line">        endpoint: &quot;/search/multi&quot;</div>
+<div class="line"> </div>
+<div class="line">        // Don&#39;t forget it !</div>
+<div class="line">        api: tmdb</div>
+<div class="line"> </div>
+<div class="line">        RequestParameter {</div>
+<div class="line">            name: &quot;query&quot;</div>
+<div class="line">            value: query.text</div>
+<div class="line"> </div>
+<div class="line">            // Just to mention, it&#39;s already the default</div>
+<div class="line">            type: RequestParameter.UrlQuery</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        // We just log the full request Url</div>
+<div class="line">        // We do it here cause response object got created just before this signal has been emitted</div>
+<div class="line">        onStarted: console.log(response.url)</div>
+<div class="line"> </div>
+<div class="line">        // Let&#39;s understand what server said !</div>
 <div class="line">        onFinished: function() {</div>
 <div class="line">            if (response.success) {</div>
-<div class="line">                var data = JSON.parse(response.readBody());</div>
-<div class="line">                console.log(data);</div>
-<div class="line">            } else if (response.networkError !== 0) {</div>
-<div class="line">                // Handle network error</div>
-<div class="line">                console.log(response.networkErrorString)</div>
-<div class="line">            } else if (response.httpStatusCode != 200) {</div>
-<div class="line">                // Handle HTTP error</div>
-<div class="line">                console.log(response.httpReasonPhrase);</div>
+<div class="line">                // Parsing JSON</div>
+<div class="line">                var json = JSON.parse(response.body);</div>
+<div class="line"> </div>
+<div class="line">                // Filling view with JSON response</div>
+<div class="line">                view.model = json.results;</div>
+<div class="line"> </div>
+<div class="line">                // Checking compression header, have you built RestLink with ZLIB ?</div>
+<div class="line">                // gzip and defalte supported without manual intervention</div>
+<div class="line">                console.log(&quot;Compression: &quot; + response.header(&#39;Content-Encoding&#39;));</div>
+<div class="line">            } else if (response.hasHttpStatusCode) {</div>
+<div class="line">                // Logging HTTP error</div>
+<div class="line">                console.log(&quot;HTTP &quot; + response.httpStatusCode + &#39; &#39; + response.httpReasonPhrase);</div>
+<div class="line">            } else if (response.hasNetworkError) {</div>
+<div class="line">                // Logging network error</div>
+<div class="line">                console.log(&quot;Network Error &quot; + response.networkError + &#39; &#39; + response.networkErrorString);</div>
+<div class="line">            } else {</div>
+<div class="line">                // Logging unknown error</div>
+<div class="line">                console.log(&quot;Unknown error occured&quot;);</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    Button {</div>
-<div class="line">        text: &quot;Send API Request&quot;</div>
-<div class="line">        anchors.centerIn: parent</div>
-<div class="line">        onClicked: request.run()</div>
+<div class="line">    Api {</div>
+<div class="line">        id: tmdb</div>
+<div class="line"> </div>
+<div class="line">        name: &quot;TMDB&quot; // Optional</div>
+<div class="line">        version: &quot;3&quot; // Optional, yeah it&#39;s a string</div>
+<div class="line">        url: &quot;https://api.themoviedb.org/3&quot; // Mandatory</div>
+<div class="line"> </div>
+<div class="line">        // This will automatically add the Authorization header for you,</div>
+<div class="line">        // just put your Bearer token without &#39;Bearer&#39; prefix</div>
+<div class="line">        // You can set the token in CMake cache variable of the same name so no need to</div>
+<div class="line">        // change something here directly, that will avoid some problems with versioning tools</div>
+<div class="line">        bearerToken: TMDB_BEARER_TOKEN</div>
+<div class="line"> </div>
+<div class="line">        // By default, system locale used, but we switch to US English okay ?</div>
+<div class="line">        locale: Qt.locale(&quot;en_US&quot;)</div>
+<div class="line"> </div>
+<div class="line">        // As a lazy man, i don&#39;t want to add these parameters on each requests</div>
+<div class="line">        // so i add them here for reuse.</div>
+<div class="line"> </div>
+<div class="line">        ApiParameter {</div>
+<div class="line">            name: &quot;language&quot;</div>
+<div class="line"> </div>
+<div class="line">            // value is used as format, this will use the locale Api property to generate language code</div>
+<div class="line">            // format examples: &#39;.&#39; for en, &#39;-&#39; for en-US and &#39;_&#39; for en_US</div>
+<div class="line">            value: &quot;.&quot; // Here en will be generated is locale is en_US, TMDB API requirement</div>
+<div class="line"> </div>
+<div class="line">            // Correspond to the RestLink::Parameter::Locale flag</div>
+<div class="line">            locale: true // Makes the value of this property as language code taken from Api locale property</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        ApiParameter {</div>
+<div class="line">            name: &quot;adult&quot;</div>
+<div class="line">            value: false // i&#39;m a child :)</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        ApiParameter {</div>
+<div class="line">            name: &quot;Authorization&quot;</div>
+<div class="line">            value: &quot;Bearer ...&quot;</div>
+<div class="line"> </div>
+<div class="line">            // By default, the parameter is a url query parameter, we don&#39;t want this</div>
+<div class="line">            type: ApiParameter.Header // Yes, it&#39;s a header !</div>
+<div class="line"> </div>
+<div class="line">            // We don&#39;t need it so we disable without removing, nice euh ?</div>
+<div class="line">            enabled: false // finally we don&#39;t need this since Api already manages it</div>
+<div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
-Key Points in the QML Example:</h2>
-<p>The Api object is configured with the necessary properties such as apiUrl, apiName, and apiVersion. The ApiRequest object is configured with the endpoint, api object and autoRun disabled to make the request run only after the button press. The onFinished signal handles the API response. If the request is successful, it logs the response data; otherwise, it logs the error message. The Button allows triggering the API request.</p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<div class="line"> </div>
+<div class="line">// Written with ♥️ by Amadou Wanie Benjamain !</div>
+</div><!-- fragment --><h3><a class="anchor" id="in-this-example-1"></a>
+In this example:</h3>
+<ul>
+<li>An <code>Api</code> object is configured with TMDB base URL and bearer token.</li>
+<li>A <code>Request</code> object is created and bound to the <code>Api</code>, with a <code>query</code> parameter dynamically updated from a <code>TextField</code>.</li>
+<li>On pressing "Enter", the request is sent using <code>request.run()</code>.</li>
+<li>On success, the JSON response is parsed and displayed in a <code>ListView</code> using a <code>MediaDelegate</code>.</li>
+<li>Errors are logged to the console, including HTTP errors, network errors, and unknown cases.</li>
+</ul>
+<h4><a class="anchor" id="this-example-can-be-found-on-examplestmdb"></a>
+This example can be found on: examples/tmdb</h4>
+<h1><a class="anchor" id="documentation"></a>
 Documentation</h1>
-<p>The full RestLink documentation is available here: <a href="https://commander15.github.io/RestLink-Docs">https://commander15.github.io/RestLink-Docs</a></p>
-<h1><a class="anchor" id="autotoc_md9"></a>
-Contact</h1>
-<p>For more informations or questions, please reach out to <a href="#" onclick="location.href='mai'+'lto:'+'ama'+'do'+'ube'+'nj'+'ama'+'in'+'@gm'+'ai'+'l.c'+'om'; return false;">amado<span class="obfuscator">.nosp@m.</span>uben<span class="obfuscator">.nosp@m.</span>jamai<span class="obfuscator">.nosp@m.</span>n@gm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a>. </p>
+<p>The full <a class="el" href="namespace_rest_link.html">RestLink</a> documentation is available here: <a href="https://commander15.github.io/RestLink-Docs">https://commander15.github.io/RestLink-Docs</a></p>
+<hr  />
+<h3><a class="anchor" id="made-with-️-by-amadou-wanie-benjamain-"></a>
+Made with ♥️ by Amadou Wanie Benjamain !</h3>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

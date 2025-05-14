@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RestLink: /home/runner/work/RestLink/RestLink/src/lib/api_p.h Source File</title>
+<title>RestLink: /home/commander/Projects/RestLink/src/lib/api_p.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -91,43 +91,73 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;apibase_p.h&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>RestLink {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_rest_link.html">RestLink</a> {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>ApiPrivate : <span class="keyword">public</span> ApiBasePrivate</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_rest_link_1_1_api_private.html">ApiPrivate</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_rest_link_1_1_api_base_private.html">ApiBasePrivate</a></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">enum</span> ParameterContext {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        UrlContext,</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        HeaderContext</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    };</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#a6e05fb7cedcc2bfa76e776a95df3a124">   15</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_rest_link_1_1_api_private.html#a6e05fb7cedcc2bfa76e776a95df3a124">ParameterContext</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#a6e05fb7cedcc2bfa76e776a95df3a124a371f53299a1f45ead27e3f2e59f3413f">   16</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_api_private.html#a6e05fb7cedcc2bfa76e776a95df3a124a371f53299a1f45ead27e3f2e59f3413f">UrlContext</a>,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_api_private.html#a6e05fb7cedcc2bfa76e776a95df3a124a5389042a5f121a5dcf63cc6d2785633c">HeaderContext</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#a6e05fb7cedcc2bfa76e776a95df3a124a5389042a5f121a5dcf63cc6d2785633c">   18</a></span>    };</div>
+</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    ApiPrivate(Api *qq);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="class_rest_link_1_1_api_private.html">ApiPrivate</a>(<a class="code hl_class" href="class_rest_link_1_1_api.html">Api</a> *qq);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> hasRemoteRequest(<span class="keyword">const</span> Request &amp;request) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Request remoteRequest(<span class="keyword">const</span> Request &amp;request) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    QByteArray remoteRequestData(<span class="keyword">const</span> Request &amp;request) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rest_link_1_1_api_private.html#a93368e9b9711741e1ff2ad7330e896a1">hasRemoteRequest</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> <a class="code hl_function" href="class_rest_link_1_1_api_private.html#abeac0cb1be2723303a73df7fe4c8fbc1">remoteRequest</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    QByteArray <a class="code hl_function" href="class_rest_link_1_1_api_private.html#abbad679fa6da2411528c29ea893457fd">remoteRequestData</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Api *q;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#ae4aae480eefbb3b2f3e80101a9da5b6e">   26</a></span>    <a class="code hl_class" href="class_rest_link_1_1_api.html">Api</a> *<a class="code hl_variable" href="class_rest_link_1_1_api_private.html#ae4aae480eefbb3b2f3e80101a9da5b6e">q</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    QString name;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    QVersionNumber version;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    QUrl url;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#a7d15230101afbef7ddf97fed8eac493b">   28</a></span>    QString <a class="code hl_variable" href="class_rest_link_1_1_api_private.html#a7d15230101afbef7ddf97fed8eac493b">name</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#afb0a2c835e0b60ba3cc2266f25f36a73">   29</a></span>    QVersionNumber <a class="code hl_variable" href="class_rest_link_1_1_api_private.html#afb0a2c835e0b60ba3cc2266f25f36a73">version</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#af6d00731dfaae52db6a211f9f8126165">   30</a></span>    QUrl <a class="code hl_variable" href="class_rest_link_1_1_api_private.html#af6d00731dfaae52db6a211f9f8126165">url</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    QLocale locale;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    QString userAgent;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#a8f8da8ea5f8f7bf5a54033c485e1fa43">   32</a></span>    QLocale <a class="code hl_variable" href="class_rest_link_1_1_api_private.html#a8f8da8ea5f8f7bf5a54033c485e1fa43">locale</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#a96afbd2b1f422e7449a9e526aa8ac1c0">   33</a></span>    QString <a class="code hl_variable" href="class_rest_link_1_1_api_private.html#a96afbd2b1f422e7449a9e526aa8ac1c0">bearerToken</a>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">struct </span>RemoteRequest {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        Request request;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        QByteArray data;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    };</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    QVector&lt;RemoteRequest&gt; remoteRequests;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#adafe8f99566fc4a3287aa0b90ef026b0">   35</a></span>    QString <a class="code hl_variable" href="class_rest_link_1_1_api_private.html#adafe8f99566fc4a3287aa0b90ef026b0">userAgent</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_rest_link_1_1_api_private_1_1_remote_request.html">   37</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_rest_link_1_1_api_private_1_1_remote_request.html">RemoteRequest</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_rest_link_1_1_api_private_1_1_remote_request.html#a257fd347dbd56769ce25ee67f235832f">   38</a></span>        <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> <a class="code hl_variable" href="struct_rest_link_1_1_api_private_1_1_remote_request.html#a257fd347dbd56769ce25ee67f235832f">request</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_rest_link_1_1_api_private_1_1_remote_request.html#a14f2a8745e25973f8d55039e196f97b0">   39</a></span>        QByteArray <a class="code hl_variable" href="struct_rest_link_1_1_api_private_1_1_remote_request.html#a14f2a8745e25973f8d55039e196f97b0">data</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    };</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_private.html#aeb95ebad10a38d341766fdff6909f5f0">   42</a></span>    QVector&lt;RemoteRequest&gt; <a class="code hl_variable" href="class_rest_link_1_1_api_private.html#aeb95ebad10a38d341766fdff6909f5f0">remoteRequests</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_API_P_H</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_API_P_H</span></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_private_html"><div class="ttname"><a href="class_rest_link_1_1_api_base_private.html">RestLink::ApiBasePrivate</a></div><div class="ttdef"><b>Definition</b> apibase_p.h:14</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_html"><div class="ttname"><a href="class_rest_link_1_1_api.html">RestLink::Api</a></div><div class="ttdoc">Represents an API interface that manages configuration, requests, and parameters.</div><div class="ttdef"><b>Definition</b> api.h:15</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html"><div class="ttname"><a href="class_rest_link_1_1_api_private.html">RestLink::ApiPrivate</a></div><div class="ttdef"><b>Definition</b> api_p.h:13</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_a6e05fb7cedcc2bfa76e776a95df3a124"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#a6e05fb7cedcc2bfa76e776a95df3a124">RestLink::ApiPrivate::ParameterContext</a></div><div class="ttdeci">ParameterContext</div><div class="ttdef"><b>Definition</b> api_p.h:15</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_a6e05fb7cedcc2bfa76e776a95df3a124a371f53299a1f45ead27e3f2e59f3413f"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#a6e05fb7cedcc2bfa76e776a95df3a124a371f53299a1f45ead27e3f2e59f3413f">RestLink::ApiPrivate::UrlContext</a></div><div class="ttdeci">@ UrlContext</div><div class="ttdef"><b>Definition</b> api_p.h:16</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_a6e05fb7cedcc2bfa76e776a95df3a124a5389042a5f121a5dcf63cc6d2785633c"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#a6e05fb7cedcc2bfa76e776a95df3a124a5389042a5f121a5dcf63cc6d2785633c">RestLink::ApiPrivate::HeaderContext</a></div><div class="ttdeci">@ HeaderContext</div><div class="ttdef"><b>Definition</b> api_p.h:17</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_a7d15230101afbef7ddf97fed8eac493b"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#a7d15230101afbef7ddf97fed8eac493b">RestLink::ApiPrivate::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition</b> api_p.h:28</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_a8f8da8ea5f8f7bf5a54033c485e1fa43"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#a8f8da8ea5f8f7bf5a54033c485e1fa43">RestLink::ApiPrivate::locale</a></div><div class="ttdeci">QLocale locale</div><div class="ttdef"><b>Definition</b> api_p.h:32</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_a93368e9b9711741e1ff2ad7330e896a1"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#a93368e9b9711741e1ff2ad7330e896a1">RestLink::ApiPrivate::hasRemoteRequest</a></div><div class="ttdeci">bool hasRemoteRequest(const Request &amp;request) const</div><div class="ttdef"><b>Definition</b> api.cpp:333</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_a96afbd2b1f422e7449a9e526aa8ac1c0"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#a96afbd2b1f422e7449a9e526aa8ac1c0">RestLink::ApiPrivate::bearerToken</a></div><div class="ttdeci">QString bearerToken</div><div class="ttdef"><b>Definition</b> api_p.h:33</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_abbad679fa6da2411528c29ea893457fd"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#abbad679fa6da2411528c29ea893457fd">RestLink::ApiPrivate::remoteRequestData</a></div><div class="ttdeci">QByteArray remoteRequestData(const Request &amp;request) const</div><div class="ttdef"><b>Definition</b> api.cpp:354</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_abeac0cb1be2723303a73df7fe4c8fbc1"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#abeac0cb1be2723303a73df7fe4c8fbc1">RestLink::ApiPrivate::remoteRequest</a></div><div class="ttdeci">Request remoteRequest(const Request &amp;request) const</div><div class="ttdef"><b>Definition</b> api.cpp:342</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_adafe8f99566fc4a3287aa0b90ef026b0"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#adafe8f99566fc4a3287aa0b90ef026b0">RestLink::ApiPrivate::userAgent</a></div><div class="ttdeci">QString userAgent</div><div class="ttdef"><b>Definition</b> api_p.h:35</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_ae4aae480eefbb3b2f3e80101a9da5b6e"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#ae4aae480eefbb3b2f3e80101a9da5b6e">RestLink::ApiPrivate::q</a></div><div class="ttdeci">Api * q</div><div class="ttdef"><b>Definition</b> api_p.h:26</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_aeb95ebad10a38d341766fdff6909f5f0"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#aeb95ebad10a38d341766fdff6909f5f0">RestLink::ApiPrivate::remoteRequests</a></div><div class="ttdeci">QVector&lt; RemoteRequest &gt; remoteRequests</div><div class="ttdef"><b>Definition</b> api_p.h:42</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_af6d00731dfaae52db6a211f9f8126165"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#af6d00731dfaae52db6a211f9f8126165">RestLink::ApiPrivate::url</a></div><div class="ttdeci">QUrl url</div><div class="ttdef"><b>Definition</b> api_p.h:30</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_private_html_afb0a2c835e0b60ba3cc2266f25f36a73"><div class="ttname"><a href="class_rest_link_1_1_api_private.html#afb0a2c835e0b60ba3cc2266f25f36a73">RestLink::ApiPrivate::version</a></div><div class="ttdeci">QVersionNumber version</div><div class="ttdef"><b>Definition</b> api_p.h:29</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html"><div class="ttname"><a href="class_rest_link_1_1_request.html">RestLink::Request</a></div><div class="ttdoc">A class for storing and managing HTTP request information.</div><div class="ttdef"><b>Definition</b> request.h:25</div></div>
+<div class="ttc" id="anamespace_rest_link_html"><div class="ttname"><a href="namespace_rest_link.html">RestLink</a></div><div class="ttdef"><b>Definition</b> api.cpp:17</div></div>
+<div class="ttc" id="astruct_rest_link_1_1_api_private_1_1_remote_request_html"><div class="ttname"><a href="struct_rest_link_1_1_api_private_1_1_remote_request.html">RestLink::ApiPrivate::RemoteRequest</a></div><div class="ttdef"><b>Definition</b> api_p.h:37</div></div>
+<div class="ttc" id="astruct_rest_link_1_1_api_private_1_1_remote_request_html_a14f2a8745e25973f8d55039e196f97b0"><div class="ttname"><a href="struct_rest_link_1_1_api_private_1_1_remote_request.html#a14f2a8745e25973f8d55039e196f97b0">RestLink::ApiPrivate::RemoteRequest::data</a></div><div class="ttdeci">QByteArray data</div><div class="ttdef"><b>Definition</b> api_p.h:39</div></div>
+<div class="ttc" id="astruct_rest_link_1_1_api_private_1_1_remote_request_html_a257fd347dbd56769ce25ee67f235832f"><div class="ttname"><a href="struct_rest_link_1_1_api_private_1_1_remote_request.html#a257fd347dbd56769ce25ee67f235832f">RestLink::ApiPrivate::RemoteRequest::request</a></div><div class="ttdeci">Request request</div><div class="ttdef"><b>Definition</b> api_p.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

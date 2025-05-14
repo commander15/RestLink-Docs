@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['hasheader_0',['hasheader',['../class_rest_link_1_1_request_interface.html#a25436a94d99726ed4cb8cddd6d3e327e',1,'RestLink::RequestInterface::hasHeader()'],['../class_rest_link_1_1_response.html#aeba9208198dcc9c87375f00f44a25144',1,'RestLink::Response::hasHeader(const QByteArray &amp;name) const']]],
-  ['hashttpstatuscode_1',['hasHttpStatusCode',['../class_rest_link_1_1_response.html#a371a229483acf09456797ef91f57f093',1,'RestLink::Response']]],
-  ['haspathparameter_2',['hasPathParameter',['../class_rest_link_1_1_request_interface.html#af8d364900cb9c10df5487e9fed248568',1,'RestLink::RequestInterface']]],
-  ['hasqueryparameter_3',['hasQueryParameter',['../class_rest_link_1_1_request_interface.html#aa1d936036969fccdde4b6a468ccbc86b',1,'RestLink::RequestInterface']]],
-  ['head_4',['head',['../class_rest_link_1_1_api_base.html#a55af30c40922e42547f47901e6b56c1a',1,'RestLink::ApiBase::head(const Request &amp;request, const ApiRunCallback &amp;callback)'],['../class_rest_link_1_1_api_base.html#a7d228b925d871e01f4ce213f12a3bd6e',1,'RestLink::ApiBase::head(const Request &amp;request)']]],
-  ['header_5',['header',['../class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22',1,'RestLink::RequestInterface::header()'],['../class_rest_link_1_1_response.html#accbcbff700eb89d2f2a38a823ef6ca9f',1,'RestLink::Response::header()']]],
-  ['headernames_6',['headerNames',['../class_rest_link_1_1_request_interface.html#a44151d5025ec43c82f2f1e2c48ef6132',1,'RestLink::RequestInterface']]],
-  ['headers_7',['headers',['../class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15',1,'RestLink::RequestInterface']]],
-  ['headervalues_8',['headerValues',['../class_rest_link_1_1_request_interface.html#ade32ae766379961268379f5d6fd707d7',1,'RestLink::RequestInterface']]]
+  ['file_0',['file',['../class_rest_link_1_1_file.html#aebb3dfb94d291669ca76f090d6a42bcc',1,'RestLink::File::File(const char *fileName)'],['../class_rest_link_1_1_file.html#ac01f1f56ab44f76fbbdcd7fb1428cd68',1,'RestLink::File::File(const QString &amp;fileName)'],['../class_rest_link_1_1_file.html#ac02b3f7ee5e0710644303c2a35882c89',1,'RestLink::File::File(const File &amp;other)=default']]],
+  ['findcontroller_1',['findController',['../class_rest_link_1_1_server.html#ae7dda679969a98c6c13e94e64ac6700f',1,'RestLink::Server']]],
+  ['finished_2',['finished',['../class_rest_link_1_1_response.html#ad826efbff4cfd9af2084a5f4bcc9c522',1,'RestLink::Response']]],
+  ['flags_3',['flags',['../class_rest_link_1_1_parameter.html#a370e313e84b4a6a6b04820c7ed11191e',1,'RestLink::Parameter']]],
+  ['fromjsonbject_4',['fromJsonbject',['../class_rest_link_1_1_request.html#a1988787ca63d8e48342e06fb0d048af5',1,'RestLink::Request']]],
+  ['fromjsonobject_5',['fromjsonobject',['../class_rest_link_1_1_header.html#a74707c1fbf122009f4c145aabd3c7ca5',1,'RestLink::Header::fromJsonObject()'],['../class_rest_link_1_1_parameter.html#aa2622d548a572189d31b11a7b78581a7',1,'RestLink::Parameter::fromJsonObject()'],['../class_rest_link_1_1_path_parameter.html#a37dc928eb1adc56af534d9fbc28db43b',1,'RestLink::PathParameter::fromJsonObject()'],['../class_rest_link_1_1_query_parameter.html#af27c2704f81e0c4ea44977ee5cf47f0b',1,'RestLink::QueryParameter::fromJsonObject()']]]
 ];

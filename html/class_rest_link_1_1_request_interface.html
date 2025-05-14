@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -70,12 +70,13 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>RestLink</b></li><li class="navelem"><a class="el" href="class_rest_link_1_1_request_interface.html">RequestInterface</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_rest_link.html">RestLink</a></li><li class="navelem"><a class="el" href="class_rest_link_1_1_request_interface.html">RequestInterface</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_rest_link_1_1_request_interface-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RestLink::RequestInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -84,6 +85,8 @@ $(function() {
 <p>A class for storing and managing some HTTP request informations (url path and query parameter along with headers).  
  <a href="class_rest_link_1_1_request_interface.html#details">More...</a></p>
 
+<p><code>#include &lt;<a class="el" href="requestinterface_8h_source.html">requestinterface.h</a>&gt;</code></p>
+
 <p>Inherited by <a class="el" href="class_rest_link_1_1_api_base.html">RestLink::ApiBase</a>, and <a class="el" href="class_rest_link_1_1_request.html">RestLink::Request</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -91,7 +94,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8d364900cb9c10df5487e9fed248568" id="r_af8d364900cb9c10df5487e9fed248568"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#af8d364900cb9c10df5487e9fed248568">hasPathParameter</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:af8d364900cb9c10df5487e9fed248568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a path parameter exists in the request.  <br /></td></tr>
 <tr class="separator:af8d364900cb9c10df5487e9fed248568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0a45bd990928a450bfd0e50c3e0ef68" id="r_ab0a45bd990928a450bfd0e50c3e0ef68"><td class="memItemLeft" align="right" valign="top">PathParameter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ab0a45bd990928a450bfd0e50c3e0ef68">pathParameter</a> (const QString &amp;name) const</td></tr>
+<tr class="memitem:ab0a45bd990928a450bfd0e50c3e0ef68" id="r_ab0a45bd990928a450bfd0e50c3e0ef68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ab0a45bd990928a450bfd0e50c3e0ef68">pathParameter</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:ab0a45bd990928a450bfd0e50c3e0ef68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a specific path parameter.  <br /></td></tr>
 <tr class="separator:ab0a45bd990928a450bfd0e50c3e0ef68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c639e87779c41a65d8b0a48a734440" id="r_a55c639e87779c41a65d8b0a48a734440"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a55c639e87779c41a65d8b0a48a734440">pathParameterValue</a> (const QString &amp;name) const</td></tr>
@@ -103,22 +106,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b10f650c3dc2821a84d294059874ace" id="r_a8b10f650c3dc2821a84d294059874ace"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8b10f650c3dc2821a84d294059874ace">setPathParameter</a> (const QString &amp;name, const QVariant &amp;value)</td></tr>
 <tr class="memdesc:a8b10f650c3dc2821a84d294059874ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a path parameter.  <br /></td></tr>
 <tr class="separator:a8b10f650c3dc2821a84d294059874ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacab1e2b9d3ba176f03d76477d02034e" id="r_aacab1e2b9d3ba176f03d76477d02034e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aacab1e2b9d3ba176f03d76477d02034e">setPathParameter</a> (const PathParameter &amp;parameter)</td></tr>
-<tr class="memdesc:aacab1e2b9d3ba176f03d76477d02034e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a path parameter using a <code>PathParameter</code> object.  <br /></td></tr>
+<tr class="memitem:aacab1e2b9d3ba176f03d76477d02034e" id="r_aacab1e2b9d3ba176f03d76477d02034e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aacab1e2b9d3ba176f03d76477d02034e">setPathParameter</a> (const <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &amp;parameter)</td></tr>
+<tr class="memdesc:aacab1e2b9d3ba176f03d76477d02034e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a path parameter using a <code><a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a></code> object.  <br /></td></tr>
 <tr class="separator:aacab1e2b9d3ba176f03d76477d02034e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7191df764b66b90331b6f28aba05b640" id="r_a7191df764b66b90331b6f28aba05b640"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a7191df764b66b90331b6f28aba05b640">unsetPathParameter</a> (const QString &amp;name)</td></tr>
 <tr class="memdesc:a7191df764b66b90331b6f28aba05b640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsets (removes) a path parameter from the request.  <br /></td></tr>
 <tr class="separator:a7191df764b66b90331b6f28aba05b640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb60e3abaa4882a9f145a8620cbb16c" id="r_abfb60e3abaa4882a9f145a8620cbb16c"><td class="memItemLeft" align="right" valign="top">QList&lt; PathParameter &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#abfb60e3abaa4882a9f145a8620cbb16c">pathParameters</a> () const</td></tr>
+<tr class="memitem:abfb60e3abaa4882a9f145a8620cbb16c" id="r_abfb60e3abaa4882a9f145a8620cbb16c"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#abfb60e3abaa4882a9f145a8620cbb16c">pathParameters</a> () const</td></tr>
 <tr class="memdesc:abfb60e3abaa4882a9f145a8620cbb16c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all path parameters.  <br /></td></tr>
 <tr class="separator:abfb60e3abaa4882a9f145a8620cbb16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2128c12f9908fc6c3562b1d5930cd855" id="r_a2128c12f9908fc6c3562b1d5930cd855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a2128c12f9908fc6c3562b1d5930cd855">setPathParameters</a> (const QList&lt; PathParameter &gt; &amp;parameters)</td></tr>
+<tr class="memitem:a2128c12f9908fc6c3562b1d5930cd855" id="r_a2128c12f9908fc6c3562b1d5930cd855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a2128c12f9908fc6c3562b1d5930cd855">setPathParameters</a> (const QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt; &amp;parameters)</td></tr>
 <tr class="memdesc:a2128c12f9908fc6c3562b1d5930cd855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all path parameters.  <br /></td></tr>
 <tr class="separator:a2128c12f9908fc6c3562b1d5930cd855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1d936036969fccdde4b6a468ccbc86b" id="r_aa1d936036969fccdde4b6a468ccbc86b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aa1d936036969fccdde4b6a468ccbc86b">hasQueryParameter</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:aa1d936036969fccdde4b6a468ccbc86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter exists in the request.  <br /></td></tr>
 <tr class="separator:aa1d936036969fccdde4b6a468ccbc86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62114c7a8a32108e52efbccdb88b5203" id="r_a62114c7a8a32108e52efbccdb88b5203"><td class="memItemLeft" align="right" valign="top">QueryParameter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a62114c7a8a32108e52efbccdb88b5203">queryParameter</a> (const QString &amp;name) const</td></tr>
+<tr class="memitem:a62114c7a8a32108e52efbccdb88b5203" id="r_a62114c7a8a32108e52efbccdb88b5203"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a62114c7a8a32108e52efbccdb88b5203">queryParameter</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:a62114c7a8a32108e52efbccdb88b5203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a specific query parameter.  <br /></td></tr>
 <tr class="separator:a62114c7a8a32108e52efbccdb88b5203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2668210f521e6061359c02998fae8ff8" id="r_a2668210f521e6061359c02998fae8ff8"><td class="memItemLeft" align="right" valign="top">QList&lt; QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a2668210f521e6061359c02998fae8ff8">queryParameterValues</a> (const QString &amp;name) const</td></tr>
@@ -130,8 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a177b271e28c6a34a723259819af160a8" id="r_a177b271e28c6a34a723259819af160a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a177b271e28c6a34a723259819af160a8">addQueryParameter</a> (const QString &amp;name, const QVariant &amp;value)</td></tr>
 <tr class="memdesc:a177b271e28c6a34a723259819af160a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the value of a query parameter.  <br /></td></tr>
 <tr class="separator:a177b271e28c6a34a723259819af160a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e3259dcebd3b88e250849d632196c0e" id="r_a8e3259dcebd3b88e250849d632196c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8e3259dcebd3b88e250849d632196c0e">addQueryParameter</a> (const QueryParameter &amp;param)</td></tr>
-<tr class="memdesc:a8e3259dcebd3b88e250849d632196c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add query parameter using a <code>QueryParameter</code> object.  <br /></td></tr>
+<tr class="memitem:a8e3259dcebd3b88e250849d632196c0e" id="r_a8e3259dcebd3b88e250849d632196c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8e3259dcebd3b88e250849d632196c0e">addQueryParameter</a> (const <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &amp;param)</td></tr>
+<tr class="memdesc:a8e3259dcebd3b88e250849d632196c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add query parameter using a <code><a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a></code> object.  <br /></td></tr>
 <tr class="separator:a8e3259dcebd3b88e250849d632196c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a836ce3cf8c29058c50c33da21d542" id="r_a95a836ce3cf8c29058c50c33da21d542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a95a836ce3cf8c29058c50c33da21d542">removeQueryParameter</a> (const QString &amp;name)</td></tr>
 <tr class="memdesc:a95a836ce3cf8c29058c50c33da21d542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a query parameter from the request.  <br /></td></tr>
@@ -139,16 +142,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d6fb82039e75db8505ec686da290ea7" id="r_a2d6fb82039e75db8505ec686da290ea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a2d6fb82039e75db8505ec686da290ea7">removeQueryParameter</a> (const QString &amp;name, const QVariant &amp;value)</td></tr>
 <tr class="memdesc:a2d6fb82039e75db8505ec686da290ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a query parameter from the request.  <br /></td></tr>
 <tr class="separator:a2d6fb82039e75db8505ec686da290ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a619a1f098e59b40901c05bead4545957" id="r_a619a1f098e59b40901c05bead4545957"><td class="memItemLeft" align="right" valign="top">QList&lt; QueryParameter &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a619a1f098e59b40901c05bead4545957">queryParameters</a> () const</td></tr>
+<tr class="memitem:a619a1f098e59b40901c05bead4545957" id="r_a619a1f098e59b40901c05bead4545957"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a619a1f098e59b40901c05bead4545957">queryParameters</a> () const</td></tr>
 <tr class="memdesc:a619a1f098e59b40901c05bead4545957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all query parameters.  <br /></td></tr>
 <tr class="separator:a619a1f098e59b40901c05bead4545957"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf15c64f5514925a05d581c0103d9935" id="r_aaf15c64f5514925a05d581c0103d9935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aaf15c64f5514925a05d581c0103d9935">setQueryParameters</a> (const QList&lt; QueryParameter &gt; &amp;parameters)</td></tr>
+<tr class="memitem:aaf15c64f5514925a05d581c0103d9935" id="r_aaf15c64f5514925a05d581c0103d9935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aaf15c64f5514925a05d581c0103d9935">setQueryParameters</a> (const QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt; &amp;parameters)</td></tr>
 <tr class="memdesc:aaf15c64f5514925a05d581c0103d9935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all query parameters.  <br /></td></tr>
 <tr class="separator:aaf15c64f5514925a05d581c0103d9935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25436a94d99726ed4cb8cddd6d3e327e" id="r_a25436a94d99726ed4cb8cddd6d3e327e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a25436a94d99726ed4cb8cddd6d3e327e">hasHeader</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:a25436a94d99726ed4cb8cddd6d3e327e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a header exists in the request.  <br /></td></tr>
 <tr class="separator:a25436a94d99726ed4cb8cddd6d3e327e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02561ec790964bd117efe9a710e43a22" id="r_a02561ec790964bd117efe9a710e43a22"><td class="memItemLeft" align="right" valign="top">Header&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22">header</a> (const QString &amp;name) const</td></tr>
+<tr class="memitem:a02561ec790964bd117efe9a710e43a22" id="r_a02561ec790964bd117efe9a710e43a22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_header.html">Header</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22">header</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:a02561ec790964bd117efe9a710e43a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a specific header.  <br /></td></tr>
 <tr class="separator:a02561ec790964bd117efe9a710e43a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade32ae766379961268379f5d6fd707d7" id="r_ade32ae766379961268379f5d6fd707d7"><td class="memItemLeft" align="right" valign="top">QList&lt; QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ade32ae766379961268379f5d6fd707d7">headerValues</a> (const QString &amp;name) const</td></tr>
@@ -160,18 +163,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a829159f62eee14566b433499fa59fafa" id="r_a829159f62eee14566b433499fa59fafa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a829159f62eee14566b433499fa59fafa">setHeader</a> (const QString &amp;name, const QVariant &amp;value)</td></tr>
 <tr class="memdesc:a829159f62eee14566b433499fa59fafa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a header.  <br /></td></tr>
 <tr class="separator:a829159f62eee14566b433499fa59fafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8698ed9d2417e56549c349638ead8ebd" id="r_a8698ed9d2417e56549c349638ead8ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8698ed9d2417e56549c349638ead8ebd">setHeader</a> (const Header &amp;<a class="el" href="class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22">header</a>)</td></tr>
-<tr class="memdesc:a8698ed9d2417e56549c349638ead8ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a header using a <code>Header</code> object.  <br /></td></tr>
+<tr class="memitem:a8698ed9d2417e56549c349638ead8ebd" id="r_a8698ed9d2417e56549c349638ead8ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8698ed9d2417e56549c349638ead8ebd">setHeader</a> (const <a class="el" href="class_rest_link_1_1_header.html">Header</a> &amp;<a class="el" href="class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22">header</a>)</td></tr>
+<tr class="memdesc:a8698ed9d2417e56549c349638ead8ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a header using a <code><a class="el" href="class_rest_link_1_1_header.html">Header</a></code> object.  <br /></td></tr>
 <tr class="separator:a8698ed9d2417e56549c349638ead8ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b3710603e7ef336a4027c3dba5290ee" id="r_a5b3710603e7ef336a4027c3dba5290ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a5b3710603e7ef336a4027c3dba5290ee">unsetHeader</a> (const QString &amp;name)</td></tr>
 <tr class="memdesc:a5b3710603e7ef336a4027c3dba5290ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsets (removes) a header from the request.  <br /></td></tr>
 <tr class="separator:a5b3710603e7ef336a4027c3dba5290ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac12fa4571256c57fc563e20fd599cd15" id="r_ac12fa4571256c57fc563e20fd599cd15"><td class="memItemLeft" align="right" valign="top">QList&lt; Header &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15">headers</a> () const</td></tr>
+<tr class="memitem:ac12fa4571256c57fc563e20fd599cd15" id="r_ac12fa4571256c57fc563e20fd599cd15"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15">headers</a> () const</td></tr>
 <tr class="memdesc:ac12fa4571256c57fc563e20fd599cd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all headers.  <br /></td></tr>
 <tr class="separator:ac12fa4571256c57fc563e20fd599cd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84bd03a13c0ebfdbebd65dcbf93372d1" id="r_a84bd03a13c0ebfdbebd65dcbf93372d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a84bd03a13c0ebfdbebd65dcbf93372d1">setHeaders</a> (const QList&lt; Header &gt; &amp;<a class="el" href="class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15">headers</a>)</td></tr>
+<tr class="memitem:a84bd03a13c0ebfdbebd65dcbf93372d1" id="r_a84bd03a13c0ebfdbebd65dcbf93372d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a84bd03a13c0ebfdbebd65dcbf93372d1">setHeaders</a> (const QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt; &amp;<a class="el" href="class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15">headers</a>)</td></tr>
 <tr class="memdesc:a84bd03a13c0ebfdbebd65dcbf93372d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all headers.  <br /></td></tr>
 <tr class="separator:a84bd03a13c0ebfdbebd65dcbf93372d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aee73404e857fcaa6e37491e049343e8e" id="r_aee73404e857fcaa6e37491e049343e8e"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aee73404e857fcaa6e37491e049343e8e">constPathParameters</a> () const =0</td></tr>
+<tr class="separator:aee73404e857fcaa6e37491e049343e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e04dd0db32a3980ec787d94bfc12e7b" id="r_a9e04dd0db32a3980ec787d94bfc12e7b"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a9e04dd0db32a3980ec787d94bfc12e7b">mutablePathParameters</a> ()=0</td></tr>
+<tr class="separator:a9e04dd0db32a3980ec787d94bfc12e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1481a8c927a0d17c310e46a5b6db66b0" id="r_a1481a8c927a0d17c310e46a5b6db66b0"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a1481a8c927a0d17c310e46a5b6db66b0">constQueryParameters</a> () const =0</td></tr>
+<tr class="separator:a1481a8c927a0d17c310e46a5b6db66b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83c8fe21a6ac0e1b907b354e639f619" id="r_ad83c8fe21a6ac0e1b907b354e639f619"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ad83c8fe21a6ac0e1b907b354e639f619">mutableQueryParameters</a> ()=0</td></tr>
+<tr class="separator:ad83c8fe21a6ac0e1b907b354e639f619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de74923b20951492a6d08a48175d705" id="r_a3de74923b20951492a6d08a48175d705"><td class="memItemLeft" align="right" valign="top">virtual const QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a3de74923b20951492a6d08a48175d705">constHeaders</a> () const =0</td></tr>
+<tr class="separator:a3de74923b20951492a6d08a48175d705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f085819e99c76a5857936f92dca5d4d" id="r_a1f085819e99c76a5857936f92dca5d4d"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a1f085819e99c76a5857936f92dca5d4d">mutableHeaders</a> ()=0</td></tr>
+<tr class="separator:a1f085819e99c76a5857936f92dca5d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for storing and managing some HTTP request informations (url path and query parameter along with headers). </p>
@@ -213,7 +231,7 @@ false If the path parameter does not exist. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PathParameter RestLink::RequestInterface::pathParameter </td>
+          <td class="memname"><a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> RestLink::RequestInterface::pathParameter </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -223,7 +241,7 @@ false If the path parameter does not exist. </dd></dl>
 </div><div class="memdoc">
 
 <p>Retrieves a specific path parameter. </p>
-<p>This function retrieves the path parameter for the given name. If the parameter is not found, it returns a default-constructed <code>PathParameter</code>.</p>
+<p>This function retrieves the path parameter for the given name. If the parameter is not found, it returns a default-constructed <code><a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the path parameter. </td></tr>
@@ -330,18 +348,18 @@ false If the path parameter does not exist. </dd></dl>
         <tr>
           <td class="memname">void RestLink::RequestInterface::setPathParameter </td>
           <td>(</td>
-          <td class="paramtype">const PathParameter &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &amp;&#160;</td>
           <td class="paramname"><em>parameter</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets a path parameter using a <code>PathParameter</code> object. </p>
-<p>This function sets or updates a path parameter using a <code>PathParameter</code> object.</p>
+<p>Sets a path parameter using a <code><a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a></code> object. </p>
+<p>This function sets or updates a path parameter using a <code><a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a></code> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameter</td><td>The <code>PathParameter</code> object containing the name and value. </td></tr>
+    <tr><td class="paramname">parameter</td><td>The <code><a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a></code> object containing the name and value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -382,7 +400,7 @@ false If the path parameter does not exist. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QList&lt; PathParameter &gt; RestLink::RequestInterface::pathParameters </td>
+          <td class="memname">QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt; RestLink::RequestInterface::pathParameters </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -405,7 +423,7 @@ false If the path parameter does not exist. </dd></dl>
         <tr>
           <td class="memname">void RestLink::RequestInterface::setPathParameters </td>
           <td>(</td>
-          <td class="paramtype">const QList&lt; PathParameter &gt; &amp;&#160;</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>parameters</em></td><td>)</td>
           <td></td>
         </tr>
@@ -460,7 +478,7 @@ false If the query parameter does not exist. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QueryParameter RestLink::RequestInterface::queryParameter </td>
+          <td class="memname"><a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> RestLink::RequestInterface::queryParameter </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -470,7 +488,7 @@ false If the query parameter does not exist. </dd></dl>
 </div><div class="memdoc">
 
 <p>Retrieves a specific query parameter. </p>
-<p>This function retrieves the query parameter for the given name. If the parameter is not found, it returns a default-constructed <code>QueryParameter</code>.</p>
+<p>This function retrieves the query parameter for the given name. If the parameter is not found, it returns a default-constructed <code><a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the query parameter. </td></tr>
@@ -577,18 +595,18 @@ false If the query parameter does not exist. </dd></dl>
         <tr>
           <td class="memname">void RestLink::RequestInterface::addQueryParameter </td>
           <td>(</td>
-          <td class="paramtype">const QueryParameter &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &amp;&#160;</td>
           <td class="paramname"><em>param</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add query parameter using a <code>QueryParameter</code> object. </p>
-<p>This function sets or updates a query parameter using a <code>QueryParameter</code> object.</p>
+<p>Add query parameter using a <code><a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a></code> object. </p>
+<p>This function sets or updates a query parameter using a <code><a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a></code> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">param</td><td>The <code>QueryParameter</code> object containing the name and value. </td></tr>
+    <tr><td class="paramname">param</td><td>The <code><a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a></code> object containing the name and value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -666,7 +684,7 @@ false If the query parameter does not exist. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QList&lt; QueryParameter &gt; RestLink::RequestInterface::queryParameters </td>
+          <td class="memname">QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt; RestLink::RequestInterface::queryParameters </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -689,7 +707,7 @@ false If the query parameter does not exist. </dd></dl>
         <tr>
           <td class="memname">void RestLink::RequestInterface::setQueryParameters </td>
           <td>(</td>
-          <td class="paramtype">const QList&lt; QueryParameter &gt; &amp;&#160;</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>parameters</em></td><td>)</td>
           <td></td>
         </tr>
@@ -744,7 +762,7 @@ false If the header does not exist. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Header RestLink::RequestInterface::header </td>
+          <td class="memname"><a class="el" href="class_rest_link_1_1_header.html">Header</a> RestLink::RequestInterface::header </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -754,7 +772,7 @@ false If the header does not exist. </dd></dl>
 </div><div class="memdoc">
 
 <p>Retrieves a specific header. </p>
-<p>This function retrieves the header for the given name. If the header is not found, it returns a default-constructed <code>Header</code>.</p>
+<p>This function retrieves the header for the given name. If the header is not found, it returns a default-constructed <code><a class="el" href="class_rest_link_1_1_header.html">Header</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the header. </td></tr>
@@ -861,18 +879,18 @@ false If the header does not exist. </dd></dl>
         <tr>
           <td class="memname">void RestLink::RequestInterface::setHeader </td>
           <td>(</td>
-          <td class="paramtype">const Header &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_rest_link_1_1_header.html">Header</a> &amp;&#160;</td>
           <td class="paramname"><em>header</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets a header using a <code>Header</code> object. </p>
-<p>This function sets or updates a header using a <code>Header</code> object.</p>
+<p>Sets a header using a <code><a class="el" href="class_rest_link_1_1_header.html">Header</a></code> object. </p>
+<p>This function sets or updates a header using a <code><a class="el" href="class_rest_link_1_1_header.html">Header</a></code> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">header</td><td>The <code>Header</code> object containing the name and value. </td></tr>
+    <tr><td class="paramname">header</td><td>The <code><a class="el" href="class_rest_link_1_1_header.html">Header</a></code> object containing the name and value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -913,7 +931,7 @@ false If the header does not exist. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QList&lt; Header &gt; RestLink::RequestInterface::headers </td>
+          <td class="memname">QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt; RestLink::RequestInterface::headers </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -936,7 +954,7 @@ false If the header does not exist. </dd></dl>
         <tr>
           <td class="memname">void RestLink::RequestInterface::setHeaders </td>
           <td>(</td>
-          <td class="paramtype">const QList&lt; Header &gt; &amp;&#160;</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>headers</em></td><td>)</td>
           <td></td>
         </tr>
@@ -951,6 +969,156 @@ false If the header does not exist. </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aee73404e857fcaa6e37491e049343e8e" name="aee73404e857fcaa6e37491e049343e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee73404e857fcaa6e37491e049343e8e">&#9670;&#160;</a></span>constPathParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt; * RestLink::RequestInterface::constPathParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e04dd0db32a3980ec787d94bfc12e7b" name="a9e04dd0db32a3980ec787d94bfc12e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e04dd0db32a3980ec787d94bfc12e7b">&#9670;&#160;</a></span>mutablePathParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt; * RestLink::RequestInterface::mutablePathParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1481a8c927a0d17c310e46a5b6db66b0" name="a1481a8c927a0d17c310e46a5b6db66b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1481a8c927a0d17c310e46a5b6db66b0">&#9670;&#160;</a></span>constQueryParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt; * RestLink::RequestInterface::constQueryParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad83c8fe21a6ac0e1b907b354e639f619" name="ad83c8fe21a6ac0e1b907b354e639f619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83c8fe21a6ac0e1b907b354e639f619">&#9670;&#160;</a></span>mutableQueryParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt; * RestLink::RequestInterface::mutableQueryParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3de74923b20951492a6d08a48175d705" name="a3de74923b20951492a6d08a48175d705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de74923b20951492a6d08a48175d705">&#9670;&#160;</a></span>constHeaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt; * RestLink::RequestInterface::constHeaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f085819e99c76a5857936f92dca5d4d" name="a1f085819e99c76a5857936f92dca5d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f085819e99c76a5857936f92dca5d4d">&#9670;&#160;</a></span>mutableHeaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt; * RestLink::RequestInterface::mutableHeaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

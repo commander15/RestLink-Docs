@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RestLink: /home/runner/work/RestLink/RestLink/src/lib/queryparameter_p.h Source File</title>
+<title>RestLink: /home/commander/Projects/RestLink/src/lib/queryparameter_p.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -89,18 +89,35 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QtCore/qvariant.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>RestLink {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_rest_link.html">RestLink</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>QueryParameterData : <span class="keyword">public</span> ParameterData</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_query_parameter_data.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_rest_link_1_1_query_parameter_data.html">QueryParameterData</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_rest_link_1_1_parameter_data.html">ParameterData</a></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    Parameter::Type type()<span class="keyword"> const override</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> Parameter::QueryParameterType; }</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_QUERYPARAMETER_P_H</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_query_parameter_data.html#a303d62cad39d084c2d0b5109652ab7ee">   13</a></span>    <a class="code hl_enumeration" href="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37">Parameter::Type</a> <a class="code hl_function" href="class_rest_link_1_1_query_parameter_data.html#a303d62cad39d084c2d0b5109652ab7ee">type</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37a3d6aad15a7a0c251e104f87e920cd075">Parameter::QueryParameterType</a>; }</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// Query must have at least one value</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_query_parameter_data.html#a555b64442b003aeb53e1648cb1690c31">   17</a></span>    QVariant <a class="code hl_function" href="class_rest_link_1_1_query_parameter_data.html#a555b64442b003aeb53e1648cb1690c31">validateValue</a>(<span class="keyword">const</span> QVariant &amp;value)<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> value.isNull() ? QString() : value; }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_QUERYPARAMETER_P_H</span></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html">RestLink::ParameterData</a></div><div class="ttdef"><b>Definition</b> parameter_p.h:12</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_html_adc7ade54226f71d8dd4f3b00e2bd4e37"><div class="ttname"><a href="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37">RestLink::Parameter::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition</b> parameter.h:32</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_html_adc7ade54226f71d8dd4f3b00e2bd4e37a3d6aad15a7a0c251e104f87e920cd075"><div class="ttname"><a href="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37a3d6aad15a7a0c251e104f87e920cd075">RestLink::Parameter::QueryParameterType</a></div><div class="ttdeci">@ QueryParameterType</div><div class="ttdef"><b>Definition</b> parameter.h:35</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_query_parameter_data_html"><div class="ttname"><a href="class_rest_link_1_1_query_parameter_data.html">RestLink::QueryParameterData</a></div><div class="ttdef"><b>Definition</b> queryparameter_p.h:11</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_query_parameter_data_html_a303d62cad39d084c2d0b5109652ab7ee"><div class="ttname"><a href="class_rest_link_1_1_query_parameter_data.html#a303d62cad39d084c2d0b5109652ab7ee">RestLink::QueryParameterData::type</a></div><div class="ttdeci">Parameter::Type type() const override</div><div class="ttdef"><b>Definition</b> queryparameter_p.h:13</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_query_parameter_data_html_a555b64442b003aeb53e1648cb1690c31"><div class="ttname"><a href="class_rest_link_1_1_query_parameter_data.html#a555b64442b003aeb53e1648cb1690c31">RestLink::QueryParameterData::validateValue</a></div><div class="ttdeci">QVariant validateValue(const QVariant &amp;value) const override</div><div class="ttdef"><b>Definition</b> queryparameter_p.h:17</div></div>
+<div class="ttc" id="anamespace_rest_link_html"><div class="ttname"><a href="namespace_rest_link.html">RestLink</a></div><div class="ttdef"><b>Definition</b> api.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

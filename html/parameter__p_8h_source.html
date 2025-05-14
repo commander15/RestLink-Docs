@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RestLink: /home/runner/work/RestLink/RestLink/src/lib/parameter_p.h Source File</title>
+<title>RestLink: /home/commander/Projects/RestLink/src/lib/parameter_p.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -90,49 +90,78 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QtCore/qshareddata.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QtCore/qvariant.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>RestLink {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_rest_link.html">RestLink</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>ParameterData : <span class="keyword">public</span> QSharedData</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_rest_link_1_1_parameter_data.html">ParameterData</a> : <span class="keyword">public</span> QSharedData</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    QString name;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    QVariantList values;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Parameter::Flags flags;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html#a5ae718383b4619540c1cdfad6186e1e5">   14</a></span>    QString <a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a5ae718383b4619540c1cdfad6186e1e5">name</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html#ad3bbd124b145c5857be26edfab57b411">   15</a></span>    QVariantList <a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#ad3bbd124b145c5857be26edfab57b411">values</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html#a8073c41db22e54b82b86e6f17d655f52">   16</a></span>    Parameter::Flags <a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a8073c41db22e54b82b86e6f17d655f52">flags</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">virtual</span> QString validateName(<span class="keyword">const</span> QString &amp;name)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> name; }</div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html#a0021b3efc966748fba84cf0bcca261f5">   18</a></span>    <span class="keyword">virtual</span> QString <a class="code hl_function" href="class_rest_link_1_1_parameter_data.html#a0021b3efc966748fba84cf0bcca261f5">validateName</a>(<span class="keyword">const</span> QString &amp;<a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a5ae718383b4619540c1cdfad6186e1e5">name</a>)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a5ae718383b4619540c1cdfad6186e1e5">name</a>; }</div>
+</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">virtual</span> QVariant validateValue(<span class="keyword">const</span> QVariant &amp;value)<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html#a4ae86cb3fda5727c2c3089dd0753b373">   21</a></span>    <span class="keyword">virtual</span> QVariant <a class="code hl_function" href="class_rest_link_1_1_parameter_data.html#a4ae86cb3fda5727c2c3089dd0753b373">validateValue</a>(<span class="keyword">const</span> QVariant &amp;value)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> value; }</div>
+</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    QVariantList validateValues(<span class="keyword">const</span> QVariantList &amp;values)<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html#a1f8578e1b4db37a33b2ba8c673fdfbab">   24</a></span>    QVariantList <a class="code hl_function" href="class_rest_link_1_1_parameter_data.html#a1f8578e1b4db37a33b2ba8c673fdfbab">validateValues</a>(<span class="keyword">const</span> QVariantList &amp;<a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#ad3bbd124b145c5857be26edfab57b411">values</a>)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        QVariantList validatedValues;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> QVariant &amp;value : values) {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keyword">const</span> QVariant validatedValue = validateValue(value);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> QVariant &amp;value : <a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#ad3bbd124b145c5857be26edfab57b411">values</a>) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keyword">const</span> QVariant validatedValue = <a class="code hl_function" href="class_rest_link_1_1_parameter_data.html#a4ae86cb3fda5727c2c3089dd0753b373">validateValue</a>(value);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">if</span> (validatedValue.isValid())</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                validatedValues.append(validatedValue);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> validatedValues;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    Parameter::Flags validateFlags(Parameter::Flags flags)<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html#a32a7074c79c2db86dfd9c99792b2df1a">   35</a></span>    Parameter::Flags <a class="code hl_function" href="class_rest_link_1_1_parameter_data.html#a32a7074c79c2db86dfd9c99792b2df1a">validateFlags</a>(Parameter::Flags <a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a8073c41db22e54b82b86e6f17d655f52">flags</a>)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span> (flags.testFlag(Parameter::Authentication) &amp;&amp; !flags.testFlag(Parameter::Secret))</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            flags.setFlag(Parameter::Secret);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> flags;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a8073c41db22e54b82b86e6f17d655f52">flags</a>.testFlag(<a class="code hl_enumvalue" href="class_rest_link_1_1_parameter.html#a9df60b48a85ed0c7e00d2992ea7ebd36ab7cce0f8ff3bffff4783c106e956790e">Parameter::Authentication</a>) &amp;&amp; !<a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a8073c41db22e54b82b86e6f17d655f52">flags</a>.testFlag(<a class="code hl_enumvalue" href="class_rest_link_1_1_parameter.html#a9df60b48a85ed0c7e00d2992ea7ebd36ab16f79474821196c89721e2c8110d682">Parameter::Secret</a>))</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a8073c41db22e54b82b86e6f17d655f52">flags</a>.setFlag(<a class="code hl_enumvalue" href="class_rest_link_1_1_parameter.html#a9df60b48a85ed0c7e00d2992ea7ebd36ab16f79474821196c89721e2c8110d682">Parameter::Secret</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a8073c41db22e54b82b86e6f17d655f52">flags</a>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isValid()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> !name.isEmpty() &amp;&amp; !values.isEmpty(); }</div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html#ad3b147438d6889d3f46dbcedcdb1187f">   42</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rest_link_1_1_parameter_data.html#ad3b147438d6889d3f46dbcedcdb1187f">isValid</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> !<a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#a5ae718383b4619540c1cdfad6186e1e5">name</a>.isEmpty() &amp;&amp; !<a class="code hl_variable" href="class_rest_link_1_1_parameter_data.html#ad3bbd124b145c5857be26edfab57b411">values</a>.isEmpty(); }</div>
+</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">virtual</span> Parameter::Type type()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> Parameter::BaseType; }</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_parameter_data.html#a55e26fca66f53241e1cea6c10786188b">   45</a></span>    <span class="keyword">virtual</span> <a class="code hl_enumeration" href="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37">Parameter::Type</a> <a class="code hl_function" href="class_rest_link_1_1_parameter_data.html#a55e26fca66f53241e1cea6c10786188b">type</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37ab91a795d512c462a5f1c93f32353ebcc">Parameter::BaseType</a>; }</div>
+</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>} <span class="comment">// namespace RestLink</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_PARAMETER_P_H</span></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html">RestLink::ParameterData</a></div><div class="ttdef"><b>Definition</b> parameter_p.h:12</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html_a0021b3efc966748fba84cf0bcca261f5"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html#a0021b3efc966748fba84cf0bcca261f5">RestLink::ParameterData::validateName</a></div><div class="ttdeci">virtual QString validateName(const QString &amp;name) const</div><div class="ttdef"><b>Definition</b> parameter_p.h:18</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html_a1f8578e1b4db37a33b2ba8c673fdfbab"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html#a1f8578e1b4db37a33b2ba8c673fdfbab">RestLink::ParameterData::validateValues</a></div><div class="ttdeci">QVariantList validateValues(const QVariantList &amp;values) const</div><div class="ttdef"><b>Definition</b> parameter_p.h:24</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html_a32a7074c79c2db86dfd9c99792b2df1a"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html#a32a7074c79c2db86dfd9c99792b2df1a">RestLink::ParameterData::validateFlags</a></div><div class="ttdeci">Parameter::Flags validateFlags(Parameter::Flags flags) const</div><div class="ttdef"><b>Definition</b> parameter_p.h:35</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html_a4ae86cb3fda5727c2c3089dd0753b373"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html#a4ae86cb3fda5727c2c3089dd0753b373">RestLink::ParameterData::validateValue</a></div><div class="ttdeci">virtual QVariant validateValue(const QVariant &amp;value) const</div><div class="ttdef"><b>Definition</b> parameter_p.h:21</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html_a55e26fca66f53241e1cea6c10786188b"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html#a55e26fca66f53241e1cea6c10786188b">RestLink::ParameterData::type</a></div><div class="ttdeci">virtual Parameter::Type type() const</div><div class="ttdef"><b>Definition</b> parameter_p.h:45</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html_a5ae718383b4619540c1cdfad6186e1e5"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html#a5ae718383b4619540c1cdfad6186e1e5">RestLink::ParameterData::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition</b> parameter_p.h:14</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html_a8073c41db22e54b82b86e6f17d655f52"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html#a8073c41db22e54b82b86e6f17d655f52">RestLink::ParameterData::flags</a></div><div class="ttdeci">Parameter::Flags flags</div><div class="ttdef"><b>Definition</b> parameter_p.h:16</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html_ad3b147438d6889d3f46dbcedcdb1187f"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html#ad3b147438d6889d3f46dbcedcdb1187f">RestLink::ParameterData::isValid</a></div><div class="ttdeci">virtual bool isValid() const</div><div class="ttdef"><b>Definition</b> parameter_p.h:42</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_data_html_ad3bbd124b145c5857be26edfab57b411"><div class="ttname"><a href="class_rest_link_1_1_parameter_data.html#ad3bbd124b145c5857be26edfab57b411">RestLink::ParameterData::values</a></div><div class="ttdeci">QVariantList values</div><div class="ttdef"><b>Definition</b> parameter_p.h:15</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_html_a9df60b48a85ed0c7e00d2992ea7ebd36ab16f79474821196c89721e2c8110d682"><div class="ttname"><a href="class_rest_link_1_1_parameter.html#a9df60b48a85ed0c7e00d2992ea7ebd36ab16f79474821196c89721e2c8110d682">RestLink::Parameter::Secret</a></div><div class="ttdeci">@ Secret</div><div class="ttdef"><b>Definition</b> parameter.h:26</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_html_a9df60b48a85ed0c7e00d2992ea7ebd36ab7cce0f8ff3bffff4783c106e956790e"><div class="ttname"><a href="class_rest_link_1_1_parameter.html#a9df60b48a85ed0c7e00d2992ea7ebd36ab7cce0f8ff3bffff4783c106e956790e">RestLink::Parameter::Authentication</a></div><div class="ttdeci">@ Authentication</div><div class="ttdef"><b>Definition</b> parameter.h:25</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_html_adc7ade54226f71d8dd4f3b00e2bd4e37"><div class="ttname"><a href="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37">RestLink::Parameter::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition</b> parameter.h:32</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_parameter_html_adc7ade54226f71d8dd4f3b00e2bd4e37ab91a795d512c462a5f1c93f32353ebcc"><div class="ttname"><a href="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37ab91a795d512c462a5f1c93f32353ebcc">RestLink::Parameter::BaseType</a></div><div class="ttdeci">@ BaseType</div><div class="ttdef"><b>Definition</b> parameter.h:33</div></div>
+<div class="ttc" id="anamespace_rest_link_html"><div class="ttname"><a href="namespace_rest_link.html">RestLink</a></div><div class="ttdef"><b>Definition</b> api.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

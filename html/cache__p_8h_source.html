@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RestLink: /home/runner/work/RestLink/RestLink/src/lib/network/cache_p.h Source File</title>
+<title>RestLink: /home/commander/Projects/RestLink/src/lib/network/cache_p.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -89,28 +89,38 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QtNetwork/qnetworkdiskcache.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>RestLink {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_rest_link.html">RestLink</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>CachePrivate : <span class="keyword">public</span> QNetworkDiskCache</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_cache_private.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_rest_link_1_1_cache_private.html">CachePrivate</a> : <span class="keyword">public</span> QNetworkDiskCache</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    Q_OBJECT</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    CachePrivate(Cache *qq);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="class_rest_link_1_1_cache_private.html">CachePrivate</a>(<a class="code hl_class" href="class_rest_link_1_1_cache.html">Cache</a> *qq);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    QNetworkCacheMetaData cacheMetaData(QNetworkCacheMetaData metaData) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    QUrl cacheUrl(QUrl url) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    QNetworkCacheMetaData <a class="code hl_function" href="class_rest_link_1_1_cache_private.html#a75120559191ae3bffbb32198e6e218f2">cacheMetaData</a>(QNetworkCacheMetaData metaData) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    QUrl <a class="code hl_function" href="class_rest_link_1_1_cache_private.html#adf80e8df8181d8b82488427f4fdf8065">cacheUrl</a>(QUrl url) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    QIODevice *prepare(<span class="keyword">const</span> QNetworkCacheMetaData &amp;metaData) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    QIODevice *<a class="code hl_function" href="class_rest_link_1_1_cache_private.html#a36be59493cb4154e8269335b84c8662b">prepare</a>(<span class="keyword">const</span> QNetworkCacheMetaData &amp;metaData) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> QString generateCacheDir(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> QString <a class="code hl_function" href="class_rest_link_1_1_cache_private.html#a20f95beced27858a4750f98ecc1de3ff">generateCacheDir</a>(<span class="keyword">const</span> QString &amp;name);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Cache *q;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_cache_private.html#a07f35e5eb777824bd8c477ff457d6fff">   24</a></span>    <a class="code hl_class" href="class_rest_link_1_1_cache.html">Cache</a> *<a class="code hl_variable" href="class_rest_link_1_1_cache_private.html#a07f35e5eb777824bd8c477ff457d6fff">q</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_CACHE_P_H</span></div>
+<div class="ttc" id="aclass_rest_link_1_1_cache_html"><div class="ttname"><a href="class_rest_link_1_1_cache.html">RestLink::Cache</a></div><div class="ttdoc">A custom network cache implementation for RestLink.</div><div class="ttdef"><b>Definition</b> cache.h:12</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_cache_private_html"><div class="ttname"><a href="class_rest_link_1_1_cache_private.html">RestLink::CachePrivate</a></div><div class="ttdef"><b>Definition</b> cache_p.h:11</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_cache_private_html_a07f35e5eb777824bd8c477ff457d6fff"><div class="ttname"><a href="class_rest_link_1_1_cache_private.html#a07f35e5eb777824bd8c477ff457d6fff">RestLink::CachePrivate::q</a></div><div class="ttdeci">Cache * q</div><div class="ttdef"><b>Definition</b> cache_p.h:24</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_cache_private_html_a20f95beced27858a4750f98ecc1de3ff"><div class="ttname"><a href="class_rest_link_1_1_cache_private.html#a20f95beced27858a4750f98ecc1de3ff">RestLink::CachePrivate::generateCacheDir</a></div><div class="ttdeci">static QString generateCacheDir(const QString &amp;name)</div><div class="ttdef"><b>Definition</b> cache.cpp:184</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_cache_private_html_a36be59493cb4154e8269335b84c8662b"><div class="ttname"><a href="class_rest_link_1_1_cache_private.html#a36be59493cb4154e8269335b84c8662b">RestLink::CachePrivate::prepare</a></div><div class="ttdeci">QIODevice * prepare(const QNetworkCacheMetaData &amp;metaData) override</div><div class="ttdef"><b>Definition</b> cache.cpp:190</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_cache_private_html_a75120559191ae3bffbb32198e6e218f2"><div class="ttname"><a href="class_rest_link_1_1_cache_private.html#a75120559191ae3bffbb32198e6e218f2">RestLink::CachePrivate::cacheMetaData</a></div><div class="ttdeci">QNetworkCacheMetaData cacheMetaData(QNetworkCacheMetaData metaData) const</div><div class="ttdef"><b>Definition</b> cache.cpp:169</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_cache_private_html_adf80e8df8181d8b82488427f4fdf8065"><div class="ttname"><a href="class_rest_link_1_1_cache_private.html#adf80e8df8181d8b82488427f4fdf8065">RestLink::CachePrivate::cacheUrl</a></div><div class="ttdeci">QUrl cacheUrl(QUrl url) const</div><div class="ttdef"><b>Definition</b> cache.cpp:176</div></div>
+<div class="ttc" id="anamespace_rest_link_html"><div class="ttname"><a href="namespace_rest_link.html">RestLink</a></div><div class="ttdef"><b>Definition</b> api.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

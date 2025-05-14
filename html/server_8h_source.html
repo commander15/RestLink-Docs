@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RestLink: /home/runner/work/RestLink/RestLink/src/lib/server.h Source File</title>
+<title>RestLink: /home/commander/Projects/RestLink/src/lib/server/server.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_dd8369ac01888559ff22cc7524970144.html">server</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -87,61 +87,96 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;RestLink/global.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;RestLink/requesthandler.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QtCore/qobject.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;RestLink/serverrequest.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;RestLink/serverresponse.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>RestLink {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QtCore/qobject.h&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>ServerPrivate;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>RESTLINK_EXPORT Server : <span class="keyword">public</span> QObject, <span class="keyword">public</span> RequestHandler</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    Q_OBJECT</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">enum</span> ServerType {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        Synchronous,</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        Asynchronous</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    };</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">explicit</span> Server(QObject *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Server(ServerType type, QObject *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">virtual</span> ~Server();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_rest_link.html">RestLink</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>AbstractController;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>ServerPrivate;</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html">   16</a></span><span class="keyword">class </span>RESTLINK_EXPORT <a class="code hl_class" href="class_rest_link_1_1_server.html">Server</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code hl_class" href="class_rest_link_1_1_request_handler.html">RequestHandler</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Q_OBJECT</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#afb2b18ba38dbb66eb8b3ae0c417cb21e">   21</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_rest_link_1_1_server.html#afb2b18ba38dbb66eb8b3ae0c417cb21e">ServerType</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#afb2b18ba38dbb66eb8b3ae0c417cb21ea794332af0bea444e8f19cf18b8911569">   22</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_server.html#afb2b18ba38dbb66eb8b3ae0c417cb21ea794332af0bea444e8f19cf18b8911569">Synchronous</a>,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        Asynchronous</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#afb2b18ba38dbb66eb8b3ae0c417cb21eaf1c68e7b539c720a71a12f15f3dd51cb">   24</a></span>    };</div>
+</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">bool</span> isListening() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> listen();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> close();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="class_rest_link_1_1_server.html">Server</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="class_rest_link_1_1_server.html">Server</a>(ServerType type, QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_rest_link_1_1_server.html">~Server</a>();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">int</span> error() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    QString errorString() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>signals:</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> stateChanged(<span class="keywordtype">bool</span> listening);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> errorOccured(<span class="keywordtype">int</span> error);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Server(ServerPrivate *d, QObject *parent);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> init() = 0;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> cleanup() = 0;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> maintain() = 0;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> processRequest(ApiBase::Operation operation, <span class="keyword">const</span> Request &amp;request, <span class="keyword">const</span> Body &amp;body, Response *response) = 0;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">virtual</span> Response *createResponse(ApiBase::Operation operation, <span class="keyword">const</span> Request &amp;request, <span class="keyword">const</span> Body &amp;body, Api *api);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    Response *sendRequest(ApiBase::Operation operation, <span class="keyword">const</span> Request &amp;request, <span class="keyword">const</span> Body &amp;body, Api *api) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> setError(<span class="keywordtype">int</span> code, <span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">bool</span> isListening() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> listen();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> close();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    QJsonObject configuration() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">int</span> error() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    QString errorString() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> registerController(<a class="code hl_class" href="class_rest_link_1_1_abstract_controller.html">AbstractController</a> *controller);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    HandlerType handlerType() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>signals:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#a981f29f882de4d25360d6d5cc6ba18f0">   44</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_rest_link_1_1_server.html#a981f29f882de4d25360d6d5cc6ba18f0">stateChanged</a>(<span class="keywordtype">bool</span> listening);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#a09ea7db7664bad271d0f04c97765d4fb">   45</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_rest_link_1_1_server.html#a09ea7db7664bad271d0f04c97765d4fb">errorOccured</a>(<span class="keywordtype">int</span> error);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="class_rest_link_1_1_server.html">Server</a>(ServerPrivate *d, QObject *parent);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    QScopedPointer&lt;ServerPrivate&gt; d_ptr;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> setListening(<span class="keywordtype">bool</span> listening);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">friend</span> <span class="keyword">class </span>ServerPrivate;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#a64520f9e6f250d4fd789a6b8523aec88">   50</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rest_link_1_1_server.html#a64520f9e6f250d4fd789a6b8523aec88">init</a>() = 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#a8dbf5d6a7a1a2adf807d31783c2a02b4">   51</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_rest_link_1_1_server.html#a8dbf5d6a7a1a2adf807d31783c2a02b4">cleanup</a>() = 0;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#a6a40e2bfe7d5aa19e7acd4459e16ef1c">   52</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_rest_link_1_1_server.html#a6a40e2bfe7d5aa19e7acd4459e16ef1c">maintain</a>() = 0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="class_rest_link_1_1_server_response.html">ServerResponse</a> *sendRequest(<a class="code hl_enumeration" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">Method</a> method, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_body.html">Body</a> &amp;body) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> processInternalRequest(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_server_request.html">ServerRequest</a> &amp;request, <a class="code hl_class" href="class_rest_link_1_1_server_response.html">ServerResponse</a> *response);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> processRequest(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_server_request.html">ServerRequest</a> &amp;request, <a class="code hl_class" href="class_rest_link_1_1_server_response.html">ServerResponse</a> *response);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace RestLink</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_SERVER_H</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_rest_link_1_1_abstract_controller.html">AbstractController</a> *findController(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_server_request.html">ServerRequest</a> &amp;request) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> prepareController(<a class="code hl_class" href="class_rest_link_1_1_abstract_controller.html">AbstractController</a> *controller, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_server_request.html">ServerRequest</a> &amp;request, <a class="code hl_class" href="class_rest_link_1_1_server_response.html">ServerResponse</a> *response);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> setError(<span class="keywordtype">int</span> code, <span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#a83350e04dae9a21ea82348f1acb742d6">   63</a></span>    QScopedPointer&lt;ServerPrivate&gt; <a class="code hl_variable" href="class_rest_link_1_1_server.html#a83350e04dae9a21ea82348f1acb742d6">d_ptr</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> setListening(<span class="keywordtype">bool</span> listening);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#a10e22a6c04ccab4769ff16e441473fae">   68</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span>ServerPrivate;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_server.html#ac74606765019f5ec34211a9091ee7527">   69</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span>ResourceHandler;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <span class="comment">// namespace RestLink</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_SERVER_H</span></div>
+<div class="ttc" id="aclass_rest_link_1_1_abstract_controller_html"><div class="ttname"><a href="class_rest_link_1_1_abstract_controller.html">RestLink::AbstractController</a></div><div class="ttdoc">Defines the base interface for all server-side controllers.</div><div class="ttdef"><b>Definition</b> resourcecontroller.h:13</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_body_html"><div class="ttname"><a href="class_rest_link_1_1_body.html">RestLink::Body</a></div><div class="ttdoc">Represents the body of an HTTP request.</div><div class="ttdef"><b>Definition</b> body.h:27</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html">RestLink::RequestHandler</a></div><div class="ttdoc">The RequestHandler class defines an abstract base for sending HTTP-like requests.</div><div class="ttdef"><b>Definition</b> requesthandler.h:17</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a165ab084b5fdf72c59f8b2a14890b28c"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RestLink::RequestHandler::Method</a></div><div class="ttdeci">Method</div><div class="ttdoc">Defines supported HTTP methods for handling outgoing requests.</div><div class="ttdef"><b>Definition</b> requesthandler.h:19</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html"><div class="ttname"><a href="class_rest_link_1_1_request.html">RestLink::Request</a></div><div class="ttdoc">A class for storing and managing HTTP request information.</div><div class="ttdef"><b>Definition</b> request.h:25</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_html"><div class="ttname"><a href="class_rest_link_1_1_server.html">RestLink::Server</a></div><div class="ttdef"><b>Definition</b> server.h:17</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_html_a09ea7db7664bad271d0f04c97765d4fb"><div class="ttname"><a href="class_rest_link_1_1_server.html#a09ea7db7664bad271d0f04c97765d4fb">RestLink::Server::errorOccured</a></div><div class="ttdeci">void errorOccured(int error)</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_html_a64520f9e6f250d4fd789a6b8523aec88"><div class="ttname"><a href="class_rest_link_1_1_server.html#a64520f9e6f250d4fd789a6b8523aec88">RestLink::Server::init</a></div><div class="ttdeci">virtual bool init()=0</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_html_a6a40e2bfe7d5aa19e7acd4459e16ef1c"><div class="ttname"><a href="class_rest_link_1_1_server.html#a6a40e2bfe7d5aa19e7acd4459e16ef1c">RestLink::Server::maintain</a></div><div class="ttdeci">virtual bool maintain()=0</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_html_a83350e04dae9a21ea82348f1acb742d6"><div class="ttname"><a href="class_rest_link_1_1_server.html#a83350e04dae9a21ea82348f1acb742d6">RestLink::Server::d_ptr</a></div><div class="ttdeci">QScopedPointer&lt; ServerPrivate &gt; d_ptr</div><div class="ttdef"><b>Definition</b> server.h:63</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_html_a8dbf5d6a7a1a2adf807d31783c2a02b4"><div class="ttname"><a href="class_rest_link_1_1_server.html#a8dbf5d6a7a1a2adf807d31783c2a02b4">RestLink::Server::cleanup</a></div><div class="ttdeci">virtual void cleanup()=0</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_html_a981f29f882de4d25360d6d5cc6ba18f0"><div class="ttname"><a href="class_rest_link_1_1_server.html#a981f29f882de4d25360d6d5cc6ba18f0">RestLink::Server::stateChanged</a></div><div class="ttdeci">void stateChanged(bool listening)</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_html_afb2b18ba38dbb66eb8b3ae0c417cb21e"><div class="ttname"><a href="class_rest_link_1_1_server.html#afb2b18ba38dbb66eb8b3ae0c417cb21e">RestLink::Server::ServerType</a></div><div class="ttdeci">ServerType</div><div class="ttdef"><b>Definition</b> server.h:21</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_html_afb2b18ba38dbb66eb8b3ae0c417cb21ea794332af0bea444e8f19cf18b8911569"><div class="ttname"><a href="class_rest_link_1_1_server.html#afb2b18ba38dbb66eb8b3ae0c417cb21ea794332af0bea444e8f19cf18b8911569">RestLink::Server::Synchronous</a></div><div class="ttdeci">@ Synchronous</div><div class="ttdef"><b>Definition</b> server.h:22</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_request_html"><div class="ttname"><a href="class_rest_link_1_1_server_request.html">RestLink::ServerRequest</a></div><div class="ttdef"><b>Definition</b> serverrequest.h:13</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_response_html"><div class="ttname"><a href="class_rest_link_1_1_server_response.html">RestLink::ServerResponse</a></div><div class="ttdef"><b>Definition</b> serverresponse.h:12</div></div>
+<div class="ttc" id="anamespace_rest_link_html"><div class="ttname"><a href="namespace_rest_link.html">RestLink</a></div><div class="ttdef"><b>Definition</b> api.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

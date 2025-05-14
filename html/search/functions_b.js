@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['patch_0',['patch',['../class_rest_link_1_1_api_base.html#a3b91f59781cf4f7c63bd1aa10789247e',1,'RestLink::ApiBase::patch(const Request &amp;request, const Body &amp;body, const ApiRunCallback &amp;callback)'],['../class_rest_link_1_1_api_base.html#aac4f290f2196f107e862371cf74de826',1,'RestLink::ApiBase::patch(const Request &amp;request, const Body &amp;body)']]],
-  ['pathparameter_1',['pathParameter',['../class_rest_link_1_1_request_interface.html#ab0a45bd990928a450bfd0e50c3e0ef68',1,'RestLink::RequestInterface']]],
-  ['pathparameternames_2',['pathParameterNames',['../class_rest_link_1_1_request_interface.html#a2460950092d3c2c31d627fb6ec56ba40',1,'RestLink::RequestInterface']]],
-  ['pathparameters_3',['pathParameters',['../class_rest_link_1_1_request_interface.html#abfb60e3abaa4882a9f145a8620cbb16c',1,'RestLink::RequestInterface']]],
-  ['pathparametervalue_4',['pathParameterValue',['../class_rest_link_1_1_request_interface.html#a55c639e87779c41a65d8b0a48a734440',1,'RestLink::RequestInterface']]],
-  ['post_5',['post',['../class_rest_link_1_1_api_base.html#a76cf68429916345a2472040b84a231c9',1,'RestLink::ApiBase::post(const Request &amp;request, const Body &amp;body, const ApiRunCallback &amp;callback)'],['../class_rest_link_1_1_api_base.html#aeaa13a32e278187e0fb62ca8a4ea24be',1,'RestLink::ApiBase::post(const Request &amp;request, const Body &amp;body)']]],
-  ['prepare_6',['prepare',['../class_rest_link_1_1_cache.html#a76db7775bca44e51e17fe865abb9a7cb',1,'RestLink::Cache']]],
-  ['put_7',['put',['../class_rest_link_1_1_api_base.html#a93676a6f2b3b285c50c789f20eb4f9e4',1,'RestLink::ApiBase::put(const Request &amp;request, const Body &amp;body, const ApiRunCallback &amp;callback)'],['../class_rest_link_1_1_api_base.html#add35b3db631cb671fe2bf7ce3b0d4f17',1,'RestLink::ApiBase::put(const Request &amp;request, const Body &amp;body)']]]
+  ['maintain_0',['maintain',['../class_rest_link_1_1_server.html#a6a40e2bfe7d5aa19e7acd4459e16ef1c',1,'RestLink::Server']]],
+  ['maxcachesize_1',['maxCacheSize',['../class_rest_link_1_1_cache.html#ae34167c789864fd0e41128005fdb6fbe',1,'RestLink::Cache']]],
+  ['maxcachesizechanged_2',['maxCacheSizeChanged',['../class_rest_link_1_1_cache.html#ac48b74e8556122758787b7faf5b0b6d2',1,'RestLink::Cache']]],
+  ['merge_3',['merge',['../class_rest_link_1_1_parameter.html#ad5a47b6b0f201dd31eadefa8709fcf83',1,'RestLink::Parameter::merge()'],['../class_rest_link_1_1_request.html#a4bf1543bb5ecd58bf14feed3ea125434',1,'RestLink::Request::merge()']]],
+  ['metadata_4',['metadata',['../class_rest_link_1_1_cache.html#a27646a4fb9edead55904d4218af4f99e',1,'RestLink::Cache::metaData()'],['../class_rest_link_1_1_plugin.html#a90dda6ccd29fe44a22365f4b88b3a18e',1,'RestLink::Plugin::metaData()']]],
+  ['method_5',['method',['../class_rest_link_1_1_network_response.html#ac3af7e4598a6755628cb63897d3c02df',1,'RestLink::NetworkResponse::method()'],['../class_rest_link_1_1_response.html#a9bda87491c3434ee982d17f96965dac7',1,'RestLink::Response::method()'],['../class_rest_link_1_1_server_request.html#ac4ece74403b1bc172583db45df0c8810',1,'RestLink::ServerRequest::method()'],['../class_rest_link_1_1_server_response.html#ac1c8b6784fa75278081d2e81ebc74549',1,'RestLink::ServerResponse::method()']]],
+  ['multipart_6',['multiPart',['../class_rest_link_1_1_body.html#a71ec63b5fc586c7dea540e9e1d02487e',1,'RestLink::Body']]],
+  ['mutableheaders_7',['mutableHeaders',['../class_rest_link_1_1_request_interface.html#a1f085819e99c76a5857936f92dca5d4d',1,'RestLink::RequestInterface']]],
+  ['mutablepathparameters_8',['mutablePathParameters',['../class_rest_link_1_1_request_interface.html#a9e04dd0db32a3980ec787d94bfc12e7b',1,'RestLink::RequestInterface']]],
+  ['mutablequeryparameters_9',['mutableQueryParameters',['../class_rest_link_1_1_request_interface.html#ad83c8fe21a6ac0e1b907b354e639f619',1,'RestLink::RequestInterface']]]
 ];

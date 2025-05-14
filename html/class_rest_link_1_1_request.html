@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -70,13 +70,16 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>RestLink</b></li><li class="navelem"><a class="el" href="class_rest_link_1_1_request.html">Request</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_rest_link.html">RestLink</a></li><li class="navelem"><a class="el" href="class_rest_link_1_1_request.html">Request</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_rest_link_1_1_request-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RestLink::Request Class Reference</div></div>
 </div><!--header-->
@@ -85,8 +88,26 @@ $(function() {
 <p>A class for storing and managing HTTP request information.  
  <a href="class_rest_link_1_1_request.html#details">More...</a></p>
 
+<p><code>#include &lt;<a class="el" href="request_8h_source.html">request.h</a>&gt;</code></p>
+
 <p>Inherits <a class="el" href="class_rest_link_1_1_request_interface.html">RestLink::RequestInterface</a>.</p>
+
+<p>Inherited by <a class="el" href="class_rest_link_1_1_server_request.html">RestLink::ServerRequest</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af1d6d3bd73bf63548a2d74820eb46d11" id="r_af1d6d3bd73bf63548a2d74820eb46d11"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">Attribute</a> { <a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11a5069fd3a349a2eea735a9477eeb3d565">CacheLoadControlAttribute</a>
+, <a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11adb0d113aa44e0379575de1bdfd11dfe7">CacheSaveControlAttribute</a>
+, <a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11ae0e92e6e0beab8ce1003c2337e143ab9">CompressionAllowedAttribute</a>
+ }</td></tr>
+<tr class="memdesc:af1d6d3bd73bf63548a2d74820eb46d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines configurable attributes that influence request behavior.  <a href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">More...</a><br /></td></tr>
+<tr class="separator:af1d6d3bd73bf63548a2d74820eb46d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806a10e6928933cbf75e46dd98308ede" id="r_a806a10e6928933cbf75e46dd98308ede"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308ede">UrlType</a> { <a class="el" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09">PublicUrl</a>
+, <a class="el" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea3c5baa9695cb1eaa2e649baa20c062dd">SecretUrl</a>
+ }</td></tr>
+<tr class="memdesc:a806a10e6928933cbf75e46dd98308ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the type of URL associated with the request.  <a href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308ede">More...</a><br /></td></tr>
+<tr class="separator:a806a10e6928933cbf75e46dd98308ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6fa5c29de906de35fb54a9ecb123769" id="r_ae6fa5c29de906de35fb54a9ecb123769"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#ae6fa5c29de906de35fb54a9ecb123769">Request</a> ()</td></tr>
@@ -98,13 +119,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a2c6bf9354ea049a56767d89ca6104a" id="r_a1a2c6bf9354ea049a56767d89ca6104a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a1a2c6bf9354ea049a56767d89ca6104a">Request</a> (const QString &amp;<a class="el" href="class_rest_link_1_1_request.html#a39e8d5cd01da565bc721a93501349adf">endpoint</a>)</td></tr>
 <tr class="memdesc:a1a2c6bf9354ea049a56767d89ca6104a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> object with a specified endpoint.  <br /></td></tr>
 <tr class="separator:a1a2c6bf9354ea049a56767d89ca6104a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b22ce111db405f67db4bf48a87e3603" id="r_a1b22ce111db405f67db4bf48a87e3603"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a1b22ce111db405f67db4bf48a87e3603">Request</a> (const QUrl &amp;<a class="el" href="class_rest_link_1_1_request.html#aaa1d429a3626276d24ac6335d3f08670">url</a>)</td></tr>
+<tr class="memdesc:a1b22ce111db405f67db4bf48a87e3603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> object with a specified URL.  <br /></td></tr>
+<tr class="separator:a1b22ce111db405f67db4bf48a87e3603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d48d75950367863984c6994c691c9a" id="r_a88d48d75950367863984c6994c691c9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a88d48d75950367863984c6994c691c9a">Request</a> (const <a class="el" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a> &amp;<a class="el" href="class_rest_link_1_1_request.html#ad471bfa13a6d2677907ff82caf8024aa">processing</a>)</td></tr>
+<tr class="separator:a88d48d75950367863984c6994c691c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83c180362768dd56e8bdfc2cc63cda18" id="r_a83c180362768dd56e8bdfc2cc63cda18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a83c180362768dd56e8bdfc2cc63cda18">Request</a> (const <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;other)</td></tr>
 <tr class="memdesc:a83c180362768dd56e8bdfc2cc63cda18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a>.  <br /></td></tr>
 <tr class="separator:a83c180362768dd56e8bdfc2cc63cda18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7170a1515f1d8f8a6373b8dd32d91e82" id="r_a7170a1515f1d8f8a6373b8dd32d91e82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a7170a1515f1d8f8a6373b8dd32d91e82">Request</a> (<a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;&amp;other)</td></tr>
 <tr class="memdesc:a7170a1515f1d8f8a6373b8dd32d91e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor for <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a>.  <br /></td></tr>
 <tr class="separator:a7170a1515f1d8f8a6373b8dd32d91e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a689c09f88ff8c0e0bb4e73d09d347b48" id="r_a689c09f88ff8c0e0bb4e73d09d347b48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a689c09f88ff8c0e0bb4e73d09d347b48">~Request</a> ()</td></tr>
+<tr class="memitem:a689c09f88ff8c0e0bb4e73d09d347b48" id="r_a689c09f88ff8c0e0bb4e73d09d347b48"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a689c09f88ff8c0e0bb4e73d09d347b48">~Request</a> ()</td></tr>
 <tr class="memdesc:a689c09f88ff8c0e0bb4e73d09d347b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a>.  <br /></td></tr>
 <tr class="separator:a689c09f88ff8c0e0bb4e73d09d347b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac556f2c12cc29508e91dd48ad8bffaa6" id="r_ac556f2c12cc29508e91dd48ad8bffaa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#ac556f2c12cc29508e91dd48ad8bffaa6">operator=</a> (const <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;other)</td></tr>
@@ -117,11 +143,50 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a39e8d5cd01da565bc721a93501349adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the API endpoint associated with this request.  <br /></td></tr>
 <tr class="separator:a39e8d5cd01da565bc721a93501349adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3af73b1df6a3f394487d013855d2e395" id="r_a3af73b1df6a3f394487d013855d2e395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a3af73b1df6a3f394487d013855d2e395">setEndpoint</a> (const QString &amp;<a class="el" href="class_rest_link_1_1_request.html#a39e8d5cd01da565bc721a93501349adf">endpoint</a>)</td></tr>
-<tr class="memdesc:a3af73b1df6a3f394487d013855d2e395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the API endpoint associated with this request.  <br /></td></tr>
+<tr class="memdesc:a3af73b1df6a3f394487d013855d2e395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the API endpoint associated with this request.  <br /></td></tr>
 <tr class="separator:a3af73b1df6a3f394487d013855d2e395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa451475c8e1785035efdd2de872b7280" id="r_aa451475c8e1785035efdd2de872b7280"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#aa451475c8e1785035efdd2de872b7280">baseUrl</a> () const</td></tr>
+<tr class="memdesc:aa451475c8e1785035efdd2de872b7280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the API base url associated with this request.  <br /></td></tr>
+<tr class="separator:aa451475c8e1785035efdd2de872b7280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc56e38b472b5d9050f9c74382071fb" id="r_abfc56e38b472b5d9050f9c74382071fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#abfc56e38b472b5d9050f9c74382071fb">setBaseUrl</a> (const QUrl &amp;<a class="el" href="class_rest_link_1_1_request.html#aaa1d429a3626276d24ac6335d3f08670">url</a>)</td></tr>
+<tr class="memdesc:abfc56e38b472b5d9050f9c74382071fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the API base url associated with this request.  <br /></td></tr>
+<tr class="separator:abfc56e38b472b5d9050f9c74382071fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1d429a3626276d24ac6335d3f08670" id="r_aaa1d429a3626276d24ac6335d3f08670"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#aaa1d429a3626276d24ac6335d3f08670">url</a> (<a class="el" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308ede">UrlType</a> type=<a class="el" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea3c5baa9695cb1eaa2e649baa20c062dd">SecretUrl</a>) const</td></tr>
+<tr class="memdesc:aaa1d429a3626276d24ac6335d3f08670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the full URL for the request.  <br /></td></tr>
+<tr class="separator:aaa1d429a3626276d24ac6335d3f08670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d463f4779bd11981443a3e8631a7a4f" id="r_a8d463f4779bd11981443a3e8631a7a4f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a8d463f4779bd11981443a3e8631a7a4f">urlPath</a> () const</td></tr>
 <tr class="memdesc:a8d463f4779bd11981443a3e8631a7a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the URL path for the request based on its parameters and endpoint.  <br /></td></tr>
 <tr class="separator:a8d463f4779bd11981443a3e8631a7a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc7f2f63dedaa39845adca04a97b8cf" id="r_aacc7f2f63dedaa39845adca04a97b8cf"><td class="memItemLeft" align="right" valign="top">QHttpHeaders&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#aacc7f2f63dedaa39845adca04a97b8cf">httpHeaders</a> () const</td></tr>
+<tr class="memdesc:aacc7f2f63dedaa39845adca04a97b8cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the corresponding http headers for the request.  <br /></td></tr>
+<tr class="separator:aacc7f2f63dedaa39845adca04a97b8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa229ffa0dd87957023432404defb9664" id="r_aa229ffa0dd87957023432404defb9664"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#aa229ffa0dd87957023432404defb9664">attribute</a> (<a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">Attribute</a> attribute) const</td></tr>
+<tr class="memdesc:aa229ffa0dd87957023432404defb9664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the attribute associated with the code code.  <br /></td></tr>
+<tr class="separator:aa229ffa0dd87957023432404defb9664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cff468ad991cea721e17538c62f7d30" id="r_a5cff468ad991cea721e17538c62f7d30"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a5cff468ad991cea721e17538c62f7d30">attribute</a> (<a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">Attribute</a> attribute, const QVariant &amp;defaultValue) const</td></tr>
+<tr class="memdesc:a5cff468ad991cea721e17538c62f7d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the attribute associated with the code code. Return defaultValue if the attribute has not been set.  <br /></td></tr>
+<tr class="separator:a5cff468ad991cea721e17538c62f7d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c300afcf73187beb95d253f4abb5e5" id="r_a25c300afcf73187beb95d253f4abb5e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a25c300afcf73187beb95d253f4abb5e5">setAttribute</a> (<a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">Attribute</a> <a class="el" href="class_rest_link_1_1_request.html#aa229ffa0dd87957023432404defb9664">attribute</a>, const QVariant &amp;value)</td></tr>
+<tr class="memdesc:a25c300afcf73187beb95d253f4abb5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set attribute value to the provided one.  <br /></td></tr>
+<tr class="separator:a25c300afcf73187beb95d253f4abb5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad471bfa13a6d2677907ff82caf8024aa" id="r_ad471bfa13a6d2677907ff82caf8024aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#ad471bfa13a6d2677907ff82caf8024aa">processing</a> () const</td></tr>
+<tr class="separator:ad471bfa13a6d2677907ff82caf8024aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedafd951117f434dc21706dbaa8518db" id="r_aedafd951117f434dc21706dbaa8518db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#aedafd951117f434dc21706dbaa8518db">setProcessing</a> (<a class="el" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a> <a class="el" href="class_rest_link_1_1_request.html#ad471bfa13a6d2677907ff82caf8024aa">processing</a>)</td></tr>
+<tr class="separator:aedafd951117f434dc21706dbaa8518db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd648a08c39a8ece363f5a5e0fc3953" id="r_aefd648a08c39a8ece363f5a5e0fc3953"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_abstract_controller.html">AbstractController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#aefd648a08c39a8ece363f5a5e0fc3953">controller</a> () const</td></tr>
+<tr class="memdesc:aefd648a08c39a8ece363f5a5e0fc3953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the controller associated with the request.  <br /></td></tr>
+<tr class="separator:aefd648a08c39a8ece363f5a5e0fc3953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe860c7a183b2b86f5d0cb3d7c0454df" id="r_afe860c7a183b2b86f5d0cb3d7c0454df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#afe860c7a183b2b86f5d0cb3d7c0454df">setController</a> (<a class="el" href="class_rest_link_1_1_abstract_controller.html">AbstractController</a> *<a class="el" href="class_rest_link_1_1_request.html#aefd648a08c39a8ece363f5a5e0fc3953">controller</a>)</td></tr>
+<tr class="memdesc:afe860c7a183b2b86f5d0cb3d7c0454df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a controller to the request.  <br /></td></tr>
+<tr class="separator:afe860c7a183b2b86f5d0cb3d7c0454df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041428352e3bc8a83a3979bf4447bf5d" id="r_a041428352e3bc8a83a3979bf4447bf5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_api.html">Api</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a041428352e3bc8a83a3979bf4447bf5d">api</a> () const</td></tr>
+<tr class="memdesc:a041428352e3bc8a83a3979bf4447bf5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> associated to this request  <br /></td></tr>
+<tr class="separator:a041428352e3bc8a83a3979bf4447bf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d4a1cf501e1055dd0756be15c27169" id="r_a21d4a1cf501e1055dd0756be15c27169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a21d4a1cf501e1055dd0756be15c27169">setApi</a> (<a class="el" href="class_rest_link_1_1_api.html">Api</a> *<a class="el" href="class_rest_link_1_1_request.html#a041428352e3bc8a83a3979bf4447bf5d">api</a>)</td></tr>
+<tr class="memdesc:a21d4a1cf501e1055dd0756be15c27169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate an <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> to this request.  <br /></td></tr>
+<tr class="separator:a21d4a1cf501e1055dd0756be15c27169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af479f7e6d10398e8dbeda66ef2089db1" id="r_af479f7e6d10398e8dbeda66ef2089db1"><td class="memItemLeft" align="right" valign="top">QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#af479f7e6d10398e8dbeda66ef2089db1">toJsonObject</a> () const</td></tr>
+<tr class="separator:af479f7e6d10398e8dbeda66ef2089db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5ecfeca1c802d198ef7acc0a4ee9f72" id="r_ab5ecfeca1c802d198ef7acc0a4ee9f72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#ab5ecfeca1c802d198ef7acc0a4ee9f72">swap</a> (<a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;other)</td></tr>
 <tr class="memdesc:ab5ecfeca1c802d198ef7acc0a4ee9f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the contents of this <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> with another.  <br /></td></tr>
 <tr class="separator:ab5ecfeca1c802d198ef7acc0a4ee9f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +194,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8d364900cb9c10df5487e9fed248568 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_af8d364900cb9c10df5487e9fed248568"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#af8d364900cb9c10df5487e9fed248568">hasPathParameter</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:af8d364900cb9c10df5487e9fed248568 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a path parameter exists in the request.  <br /></td></tr>
 <tr class="separator:af8d364900cb9c10df5487e9fed248568 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0a45bd990928a450bfd0e50c3e0ef68 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_ab0a45bd990928a450bfd0e50c3e0ef68"><td class="memItemLeft" align="right" valign="top">PathParameter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ab0a45bd990928a450bfd0e50c3e0ef68">pathParameter</a> (const QString &amp;name) const</td></tr>
+<tr class="memitem:ab0a45bd990928a450bfd0e50c3e0ef68 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_ab0a45bd990928a450bfd0e50c3e0ef68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ab0a45bd990928a450bfd0e50c3e0ef68">pathParameter</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:ab0a45bd990928a450bfd0e50c3e0ef68 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a specific path parameter.  <br /></td></tr>
 <tr class="separator:ab0a45bd990928a450bfd0e50c3e0ef68 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c639e87779c41a65d8b0a48a734440 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a55c639e87779c41a65d8b0a48a734440"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a55c639e87779c41a65d8b0a48a734440">pathParameterValue</a> (const QString &amp;name) const</td></tr>
@@ -141,22 +206,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b10f650c3dc2821a84d294059874ace inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a8b10f650c3dc2821a84d294059874ace"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8b10f650c3dc2821a84d294059874ace">setPathParameter</a> (const QString &amp;name, const QVariant &amp;value)</td></tr>
 <tr class="memdesc:a8b10f650c3dc2821a84d294059874ace inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a path parameter.  <br /></td></tr>
 <tr class="separator:a8b10f650c3dc2821a84d294059874ace inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacab1e2b9d3ba176f03d76477d02034e inherit pub_methods_class_rest_link_1_1_request_interface" id="r_aacab1e2b9d3ba176f03d76477d02034e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aacab1e2b9d3ba176f03d76477d02034e">setPathParameter</a> (const PathParameter &amp;parameter)</td></tr>
-<tr class="memdesc:aacab1e2b9d3ba176f03d76477d02034e inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a path parameter using a <code>PathParameter</code> object.  <br /></td></tr>
+<tr class="memitem:aacab1e2b9d3ba176f03d76477d02034e inherit pub_methods_class_rest_link_1_1_request_interface" id="r_aacab1e2b9d3ba176f03d76477d02034e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aacab1e2b9d3ba176f03d76477d02034e">setPathParameter</a> (const <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &amp;parameter)</td></tr>
+<tr class="memdesc:aacab1e2b9d3ba176f03d76477d02034e inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a path parameter using a <code><a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a></code> object.  <br /></td></tr>
 <tr class="separator:aacab1e2b9d3ba176f03d76477d02034e inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7191df764b66b90331b6f28aba05b640 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a7191df764b66b90331b6f28aba05b640"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a7191df764b66b90331b6f28aba05b640">unsetPathParameter</a> (const QString &amp;name)</td></tr>
 <tr class="memdesc:a7191df764b66b90331b6f28aba05b640 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsets (removes) a path parameter from the request.  <br /></td></tr>
 <tr class="separator:a7191df764b66b90331b6f28aba05b640 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb60e3abaa4882a9f145a8620cbb16c inherit pub_methods_class_rest_link_1_1_request_interface" id="r_abfb60e3abaa4882a9f145a8620cbb16c"><td class="memItemLeft" align="right" valign="top">QList&lt; PathParameter &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#abfb60e3abaa4882a9f145a8620cbb16c">pathParameters</a> () const</td></tr>
+<tr class="memitem:abfb60e3abaa4882a9f145a8620cbb16c inherit pub_methods_class_rest_link_1_1_request_interface" id="r_abfb60e3abaa4882a9f145a8620cbb16c"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#abfb60e3abaa4882a9f145a8620cbb16c">pathParameters</a> () const</td></tr>
 <tr class="memdesc:abfb60e3abaa4882a9f145a8620cbb16c inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all path parameters.  <br /></td></tr>
 <tr class="separator:abfb60e3abaa4882a9f145a8620cbb16c inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2128c12f9908fc6c3562b1d5930cd855 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a2128c12f9908fc6c3562b1d5930cd855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a2128c12f9908fc6c3562b1d5930cd855">setPathParameters</a> (const QList&lt; PathParameter &gt; &amp;parameters)</td></tr>
+<tr class="memitem:a2128c12f9908fc6c3562b1d5930cd855 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a2128c12f9908fc6c3562b1d5930cd855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a2128c12f9908fc6c3562b1d5930cd855">setPathParameters</a> (const QList&lt; <a class="el" href="class_rest_link_1_1_path_parameter.html">PathParameter</a> &gt; &amp;parameters)</td></tr>
 <tr class="memdesc:a2128c12f9908fc6c3562b1d5930cd855 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all path parameters.  <br /></td></tr>
 <tr class="separator:a2128c12f9908fc6c3562b1d5930cd855 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1d936036969fccdde4b6a468ccbc86b inherit pub_methods_class_rest_link_1_1_request_interface" id="r_aa1d936036969fccdde4b6a468ccbc86b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aa1d936036969fccdde4b6a468ccbc86b">hasQueryParameter</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:aa1d936036969fccdde4b6a468ccbc86b inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter exists in the request.  <br /></td></tr>
 <tr class="separator:aa1d936036969fccdde4b6a468ccbc86b inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62114c7a8a32108e52efbccdb88b5203 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a62114c7a8a32108e52efbccdb88b5203"><td class="memItemLeft" align="right" valign="top">QueryParameter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a62114c7a8a32108e52efbccdb88b5203">queryParameter</a> (const QString &amp;name) const</td></tr>
+<tr class="memitem:a62114c7a8a32108e52efbccdb88b5203 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a62114c7a8a32108e52efbccdb88b5203"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a62114c7a8a32108e52efbccdb88b5203">queryParameter</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:a62114c7a8a32108e52efbccdb88b5203 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a specific query parameter.  <br /></td></tr>
 <tr class="separator:a62114c7a8a32108e52efbccdb88b5203 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2668210f521e6061359c02998fae8ff8 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a2668210f521e6061359c02998fae8ff8"><td class="memItemLeft" align="right" valign="top">QList&lt; QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a2668210f521e6061359c02998fae8ff8">queryParameterValues</a> (const QString &amp;name) const</td></tr>
@@ -168,8 +233,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a177b271e28c6a34a723259819af160a8 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a177b271e28c6a34a723259819af160a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a177b271e28c6a34a723259819af160a8">addQueryParameter</a> (const QString &amp;name, const QVariant &amp;value)</td></tr>
 <tr class="memdesc:a177b271e28c6a34a723259819af160a8 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the value of a query parameter.  <br /></td></tr>
 <tr class="separator:a177b271e28c6a34a723259819af160a8 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e3259dcebd3b88e250849d632196c0e inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a8e3259dcebd3b88e250849d632196c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8e3259dcebd3b88e250849d632196c0e">addQueryParameter</a> (const QueryParameter &amp;param)</td></tr>
-<tr class="memdesc:a8e3259dcebd3b88e250849d632196c0e inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add query parameter using a <code>QueryParameter</code> object.  <br /></td></tr>
+<tr class="memitem:a8e3259dcebd3b88e250849d632196c0e inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a8e3259dcebd3b88e250849d632196c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8e3259dcebd3b88e250849d632196c0e">addQueryParameter</a> (const <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &amp;param)</td></tr>
+<tr class="memdesc:a8e3259dcebd3b88e250849d632196c0e inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add query parameter using a <code><a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a></code> object.  <br /></td></tr>
 <tr class="separator:a8e3259dcebd3b88e250849d632196c0e inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a836ce3cf8c29058c50c33da21d542 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a95a836ce3cf8c29058c50c33da21d542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a95a836ce3cf8c29058c50c33da21d542">removeQueryParameter</a> (const QString &amp;name)</td></tr>
 <tr class="memdesc:a95a836ce3cf8c29058c50c33da21d542 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a query parameter from the request.  <br /></td></tr>
@@ -177,16 +242,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d6fb82039e75db8505ec686da290ea7 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a2d6fb82039e75db8505ec686da290ea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a2d6fb82039e75db8505ec686da290ea7">removeQueryParameter</a> (const QString &amp;name, const QVariant &amp;value)</td></tr>
 <tr class="memdesc:a2d6fb82039e75db8505ec686da290ea7 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a query parameter from the request.  <br /></td></tr>
 <tr class="separator:a2d6fb82039e75db8505ec686da290ea7 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a619a1f098e59b40901c05bead4545957 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a619a1f098e59b40901c05bead4545957"><td class="memItemLeft" align="right" valign="top">QList&lt; QueryParameter &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a619a1f098e59b40901c05bead4545957">queryParameters</a> () const</td></tr>
+<tr class="memitem:a619a1f098e59b40901c05bead4545957 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a619a1f098e59b40901c05bead4545957"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a619a1f098e59b40901c05bead4545957">queryParameters</a> () const</td></tr>
 <tr class="memdesc:a619a1f098e59b40901c05bead4545957 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all query parameters.  <br /></td></tr>
 <tr class="separator:a619a1f098e59b40901c05bead4545957 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf15c64f5514925a05d581c0103d9935 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_aaf15c64f5514925a05d581c0103d9935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aaf15c64f5514925a05d581c0103d9935">setQueryParameters</a> (const QList&lt; QueryParameter &gt; &amp;parameters)</td></tr>
+<tr class="memitem:aaf15c64f5514925a05d581c0103d9935 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_aaf15c64f5514925a05d581c0103d9935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#aaf15c64f5514925a05d581c0103d9935">setQueryParameters</a> (const QList&lt; <a class="el" href="class_rest_link_1_1_query_parameter.html">QueryParameter</a> &gt; &amp;parameters)</td></tr>
 <tr class="memdesc:aaf15c64f5514925a05d581c0103d9935 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all query parameters.  <br /></td></tr>
 <tr class="separator:aaf15c64f5514925a05d581c0103d9935 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25436a94d99726ed4cb8cddd6d3e327e inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a25436a94d99726ed4cb8cddd6d3e327e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a25436a94d99726ed4cb8cddd6d3e327e">hasHeader</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:a25436a94d99726ed4cb8cddd6d3e327e inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a header exists in the request.  <br /></td></tr>
 <tr class="separator:a25436a94d99726ed4cb8cddd6d3e327e inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02561ec790964bd117efe9a710e43a22 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a02561ec790964bd117efe9a710e43a22"><td class="memItemLeft" align="right" valign="top">Header&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22">header</a> (const QString &amp;name) const</td></tr>
+<tr class="memitem:a02561ec790964bd117efe9a710e43a22 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a02561ec790964bd117efe9a710e43a22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_header.html">Header</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22">header</a> (const QString &amp;name) const</td></tr>
 <tr class="memdesc:a02561ec790964bd117efe9a710e43a22 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a specific header.  <br /></td></tr>
 <tr class="separator:a02561ec790964bd117efe9a710e43a22 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade32ae766379961268379f5d6fd707d7 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_ade32ae766379961268379f5d6fd707d7"><td class="memItemLeft" align="right" valign="top">QList&lt; QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ade32ae766379961268379f5d6fd707d7">headerValues</a> (const QString &amp;name) const</td></tr>
@@ -198,31 +263,92 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a829159f62eee14566b433499fa59fafa inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a829159f62eee14566b433499fa59fafa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a829159f62eee14566b433499fa59fafa">setHeader</a> (const QString &amp;name, const QVariant &amp;value)</td></tr>
 <tr class="memdesc:a829159f62eee14566b433499fa59fafa inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a header.  <br /></td></tr>
 <tr class="separator:a829159f62eee14566b433499fa59fafa inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8698ed9d2417e56549c349638ead8ebd inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a8698ed9d2417e56549c349638ead8ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8698ed9d2417e56549c349638ead8ebd">setHeader</a> (const Header &amp;<a class="el" href="class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22">header</a>)</td></tr>
-<tr class="memdesc:a8698ed9d2417e56549c349638ead8ebd inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a header using a <code>Header</code> object.  <br /></td></tr>
+<tr class="memitem:a8698ed9d2417e56549c349638ead8ebd inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a8698ed9d2417e56549c349638ead8ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a8698ed9d2417e56549c349638ead8ebd">setHeader</a> (const <a class="el" href="class_rest_link_1_1_header.html">Header</a> &amp;<a class="el" href="class_rest_link_1_1_request_interface.html#a02561ec790964bd117efe9a710e43a22">header</a>)</td></tr>
+<tr class="memdesc:a8698ed9d2417e56549c349638ead8ebd inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a header using a <code><a class="el" href="class_rest_link_1_1_header.html">Header</a></code> object.  <br /></td></tr>
 <tr class="separator:a8698ed9d2417e56549c349638ead8ebd inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b3710603e7ef336a4027c3dba5290ee inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a5b3710603e7ef336a4027c3dba5290ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a5b3710603e7ef336a4027c3dba5290ee">unsetHeader</a> (const QString &amp;name)</td></tr>
 <tr class="memdesc:a5b3710603e7ef336a4027c3dba5290ee inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsets (removes) a header from the request.  <br /></td></tr>
 <tr class="separator:a5b3710603e7ef336a4027c3dba5290ee inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac12fa4571256c57fc563e20fd599cd15 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_ac12fa4571256c57fc563e20fd599cd15"><td class="memItemLeft" align="right" valign="top">QList&lt; Header &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15">headers</a> () const</td></tr>
+<tr class="memitem:ac12fa4571256c57fc563e20fd599cd15 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_ac12fa4571256c57fc563e20fd599cd15"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15">headers</a> () const</td></tr>
 <tr class="memdesc:ac12fa4571256c57fc563e20fd599cd15 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all headers.  <br /></td></tr>
 <tr class="separator:ac12fa4571256c57fc563e20fd599cd15 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84bd03a13c0ebfdbebd65dcbf93372d1 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a84bd03a13c0ebfdbebd65dcbf93372d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a84bd03a13c0ebfdbebd65dcbf93372d1">setHeaders</a> (const QList&lt; Header &gt; &amp;<a class="el" href="class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15">headers</a>)</td></tr>
+<tr class="memitem:a84bd03a13c0ebfdbebd65dcbf93372d1 inherit pub_methods_class_rest_link_1_1_request_interface" id="r_a84bd03a13c0ebfdbebd65dcbf93372d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interface.html#a84bd03a13c0ebfdbebd65dcbf93372d1">setHeaders</a> (const QList&lt; <a class="el" href="class_rest_link_1_1_header.html">Header</a> &gt; &amp;<a class="el" href="class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15">headers</a>)</td></tr>
 <tr class="memdesc:a84bd03a13c0ebfdbebd65dcbf93372d1 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all headers.  <br /></td></tr>
 <tr class="separator:a84bd03a13c0ebfdbebd65dcbf93372d1 inherit pub_methods_class_rest_link_1_1_request_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1988787ca63d8e48342e06fb0d048af5" id="r_a1988787ca63d8e48342e06fb0d048af5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_rest_link_1_1_request.html">Request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a1988787ca63d8e48342e06fb0d048af5">fromJsonbject</a> (const QJsonObject &amp;object)</td></tr>
+<tr class="separator:a1988787ca63d8e48342e06fb0d048af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf1543bb5ecd58bf14feed3ea125434" id="r_a4bf1543bb5ecd58bf14feed3ea125434"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_rest_link_1_1_request.html">Request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a4bf1543bb5ecd58bf14feed3ea125434">merge</a> (const <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;r1, const <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;r2)</td></tr>
 <tr class="memdesc:a4bf1543bb5ecd58bf14feed3ea125434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges two <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> objects into a single request.  <br /></td></tr>
 <tr class="separator:a4bf1543bb5ecd58bf14feed3ea125434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5eca4c4c54f478b345b592d5bb7b1dfb" id="r_a5eca4c4c54f478b345b592d5bb7b1dfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a5eca4c4c54f478b345b592d5bb7b1dfb">Request</a> (RequestPrivate *d)</td></tr>
+<tr class="separator:a5eca4c4c54f478b345b592d5bb7b1dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a66d3f96b8d09b72cab8b980f84d3fad1" id="r_a66d3f96b8d09b72cab8b980f84d3fad1"><td class="memItemLeft" align="right" valign="top">QSharedDataPointer&lt; RequestPrivate &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request.html#a66d3f96b8d09b72cab8b980f84d3fad1">d_ptr</a></td></tr>
+<tr class="separator:a66d3f96b8d09b72cab8b980f84d3fad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for storing and managing HTTP request information. </p>
-<p>The <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> class encapsulates the essential details of an HTTP request, such as the endpoint, HTTP method, headers, query parameters, and more. It provides a convenient way to define and organize API requests before execution using RestLink. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>The <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> class encapsulates the essential details of an HTTP request, such as the endpoint, HTTP method, headers, query parameters, and more. It provides a convenient way to define and organize API requests before execution using <a class="el" href="namespace_rest_link.html">RestLink</a>. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="af1d6d3bd73bf63548a2d74820eb46d11" name="af1d6d3bd73bf63548a2d74820eb46d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d6d3bd73bf63548a2d74820eb46d11">&#9670;&#160;</a></span>Attribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">RestLink::Request::Attribute</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines configurable attributes that influence request behavior. </p>
+<p>These attributes control how the request interacts with caching and compression mechanisms. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af1d6d3bd73bf63548a2d74820eb46d11a5069fd3a349a2eea735a9477eeb3d565" name="af1d6d3bd73bf63548a2d74820eb46d11a5069fd3a349a2eea735a9477eeb3d565"></a>CacheLoadControlAttribute&#160;</td><td class="fielddoc"><p>Controls whether loading from cache is allowed when executing the request. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af1d6d3bd73bf63548a2d74820eb46d11adb0d113aa44e0379575de1bdfd11dfe7" name="af1d6d3bd73bf63548a2d74820eb46d11adb0d113aa44e0379575de1bdfd11dfe7"></a>CacheSaveControlAttribute&#160;</td><td class="fielddoc"><p>Controls whether the response of the request should be stored in cache. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af1d6d3bd73bf63548a2d74820eb46d11ae0e92e6e0beab8ce1003c2337e143ab9" name="af1d6d3bd73bf63548a2d74820eb46d11ae0e92e6e0beab8ce1003c2337e143ab9"></a>CompressionAllowedAttribute&#160;</td><td class="fielddoc"><p>Indicates whether the request supports receiving compressed responses. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a806a10e6928933cbf75e46dd98308ede" name="a806a10e6928933cbf75e46dd98308ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806a10e6928933cbf75e46dd98308ede">&#9670;&#160;</a></span>UrlType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308ede">RestLink::Request::UrlType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the type of URL associated with the request. </p>
+<p>These types help differentiate between publicly accessible URLs and those containing sensitive data. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09" name="a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09"></a>PublicUrl&#160;</td><td class="fielddoc"><p>A URL intended for general or non-sensitive access. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a806a10e6928933cbf75e46dd98308edea3c5baa9695cb1eaa2e649baa20c062dd" name="a806a10e6928933cbf75e46dd98308edea3c5baa9695cb1eaa2e649baa20c062dd"></a>SecretUrl&#160;</td><td class="fielddoc"><p>A URL that may contain confidential or authentication-related information. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae6fa5c29de906de35fb54a9ecb123769" name="ae6fa5c29de906de35fb54a9ecb123769"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6fa5c29de906de35fb54a9ecb123769">&#9670;&#160;</a></span>Request() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fa5c29de906de35fb54a9ecb123769">&#9670;&#160;</a></span>Request() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +368,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7baee0189c44e945c57b9942fd82c279" name="a7baee0189c44e945c57b9942fd82c279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7baee0189c44e945c57b9942fd82c279">&#9670;&#160;</a></span>Request() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7baee0189c44e945c57b9942fd82c279">&#9670;&#160;</a></span>Request() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,7 +396,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1a2c6bf9354ea049a56767d89ca6104a" name="a1a2c6bf9354ea049a56767d89ca6104a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a2c6bf9354ea049a56767d89ca6104a">&#9670;&#160;</a></span>Request() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2c6bf9354ea049a56767d89ca6104a">&#9670;&#160;</a></span>Request() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,8 +423,54 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1b22ce111db405f67db4bf48a87e3603" name="a1b22ce111db405f67db4bf48a87e3603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b22ce111db405f67db4bf48a87e3603">&#9670;&#160;</a></span>Request() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RestLink::Request::Request </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> object with a specified URL. </p>
+<p>This constructor initialize the <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> object with the given URL. The url must be include the scheme i.e starting with http/https.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>The url as a QUrl.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The provided url will be used as the base url, you can then launch the request directly on a <a class="el" href="class_rest_link_1_1_request_handler.html" title="The RequestHandler class defines an abstract base for sending HTTP-like requests.">RequestHandler</a> without an <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> object. </dd></dl>
+
+</div>
+</div>
+<a id="a88d48d75950367863984c6994c691c9a" name="a88d48d75950367863984c6994c691c9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d48d75950367863984c6994c691c9a">&#9670;&#160;</a></span>Request() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RestLink::Request::Request </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a> &amp;&#160;</td>
+          <td class="paramname"><em>processing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a83c180362768dd56e8bdfc2cc63cda18" name="a83c180362768dd56e8bdfc2cc63cda18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83c180362768dd56e8bdfc2cc63cda18">&#9670;&#160;</a></span>Request() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c180362768dd56e8bdfc2cc63cda18">&#9670;&#160;</a></span>Request() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +497,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7170a1515f1d8f8a6373b8dd32d91e82" name="a7170a1515f1d8f8a6373b8dd32d91e82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7170a1515f1d8f8a6373b8dd32d91e82">&#9670;&#160;</a></span>Request() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7170a1515f1d8f8a6373b8dd32d91e82">&#9670;&#160;</a></span>Request() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,6 +528,9 @@ Static Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RestLink::Request::~Request </td>
@@ -364,10 +539,41 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Destructor for <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a>. </p>
 <p>Cleans up any resources used by the <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> object. Ensures all dynamically allocated memory is released. </p>
+
+</div>
+</div>
+<a id="a5eca4c4c54f478b345b592d5bb7b1dfb" name="a5eca4c4c54f478b345b592d5bb7b1dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eca4c4c54f478b345b592d5bb7b1dfb">&#9670;&#160;</a></span>Request() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RestLink::Request::Request </td>
+          <td>(</td>
+          <td class="paramtype">RequestPrivate *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -464,8 +670,87 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the API endpoint associated with this request. </p>
-<dl class="section return"><dt>Returns</dt><dd>The endpoint as a QString. </dd></dl>
+<p>Set the API endpoint associated with this request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>The endpoint as a QString. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa451475c8e1785035efdd2de872b7280" name="aa451475c8e1785035efdd2de872b7280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa451475c8e1785035efdd2de872b7280">&#9670;&#160;</a></span>baseUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl RestLink::Request::baseUrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the API base url associated with this request. </p>
+<dl class="section return"><dt>Returns</dt><dd>The base url as a QUrl. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If not base url has been explicitly set or is invalid, this method return the base url of the associated <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> if it has been set. </dd></dl>
+
+</div>
+</div>
+<a id="abfc56e38b472b5d9050f9c74382071fb" name="abfc56e38b472b5d9050f9c74382071fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfc56e38b472b5d9050f9c74382071fb">&#9670;&#160;</a></span>setBaseUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RestLink::Request::setBaseUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the API base url associated with this request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>The new base url </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa1d429a3626276d24ac6335d3f08670" name="aaa1d429a3626276d24ac6335d3f08670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa1d429a3626276d24ac6335d3f08670">&#9670;&#160;</a></span>url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUrl RestLink::Request::url </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308ede">UrlType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea3c5baa9695cb1eaa2e649baa20c062dd">SecretUrl</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct the full URL for the request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The url type to return. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The URL as a QUrl. </dd></dl>
 
 </div>
 </div>
@@ -486,6 +771,298 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Constructs the URL path for the request based on its parameters and endpoint. </p>
 <dl class="section return"><dt>Returns</dt><dd>The constructed URL path as a QString. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aacc7f2f63dedaa39845adca04a97b8cf" name="aacc7f2f63dedaa39845adca04a97b8cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc7f2f63dedaa39845adca04a97b8cf">&#9670;&#160;</a></span>httpHeaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHttpHeaders RestLink::Request::httpHeaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the corresponding http headers for the request. </p>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding http headers for the request. </dd></dl>
+
+</div>
+</div>
+<a id="aa229ffa0dd87957023432404defb9664" name="aa229ffa0dd87957023432404defb9664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa229ffa0dd87957023432404defb9664">&#9670;&#160;</a></span>attribute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant RestLink::Request::attribute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">Attribute</a>&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the attribute associated with the code code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>The attribute for which we want value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The attribute value as a QVariant </dd></dl>
+
+</div>
+</div>
+<a id="a5cff468ad991cea721e17538c62f7d30" name="a5cff468ad991cea721e17538c62f7d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cff468ad991cea721e17538c62f7d30">&#9670;&#160;</a></span>attribute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant RestLink::Request::attribute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">Attribute</a>&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariant &amp;&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the attribute associated with the code code. Return defaultValue if the attribute has not been set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>The attribute for which we want value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The attribute value as a QVariant </dd></dl>
+
+</div>
+</div>
+<a id="a25c300afcf73187beb95d253f4abb5e5" name="a25c300afcf73187beb95d253f4abb5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25c300afcf73187beb95d253f4abb5e5">&#9670;&#160;</a></span>setAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RestLink::Request::setAttribute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">Attribute</a>&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariant &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set attribute value to the provided one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>The attribute for which value must ve set. </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the attribute to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad471bfa13a6d2677907ff82caf8024aa" name="ad471bfa13a6d2677907ff82caf8024aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad471bfa13a6d2677907ff82caf8024aa">&#9670;&#160;</a></span>processing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a> RestLink::Request::processing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedafd951117f434dc21706dbaa8518db" name="aedafd951117f434dc21706dbaa8518db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedafd951117f434dc21706dbaa8518db">&#9670;&#160;</a></span>setProcessing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RestLink::Request::setProcessing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a>&#160;</td>
+          <td class="paramname"><em>processing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefd648a08c39a8ece363f5a5e0fc3953" name="aefd648a08c39a8ece363f5a5e0fc3953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd648a08c39a8ece363f5a5e0fc3953">&#9670;&#160;</a></span>controller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rest_link_1_1_abstract_controller.html">AbstractController</a> * RestLink::Request::controller </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the controller associated with the request. </p>
+
+</div>
+</div>
+<a id="afe860c7a183b2b86f5d0cb3d7c0454df" name="afe860c7a183b2b86f5d0cb3d7c0454df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe860c7a183b2b86f5d0cb3d7c0454df">&#9670;&#160;</a></span>setController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RestLink::Request::setController </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_abstract_controller.html">AbstractController</a> *&#160;</td>
+          <td class="paramname"><em>controller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Associate a controller to the request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td>The controller to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The controller will be used to process the request in meantime except if it's used with a special <a class="el" href="namespace_rest_link.html">RestLink</a> endpoint such as /restlink/register-controller. </dd></dl>
+
+</div>
+</div>
+<a id="a041428352e3bc8a83a3979bf4447bf5d" name="a041428352e3bc8a83a3979bf4447bf5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041428352e3bc8a83a3979bf4447bf5d">&#9670;&#160;</a></span>api()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rest_link_1_1_api.html">Api</a> * RestLink::Request::api </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> associated to this request </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a21d4a1cf501e1055dd0756be15c27169" name="a21d4a1cf501e1055dd0756be15c27169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d4a1cf501e1055dd0756be15c27169">&#9670;&#160;</a></span>setApi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RestLink::Request::setApi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_api.html">Api</a> *&#160;</td>
+          <td class="paramname"><em>api</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Associate an <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> to this request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">api</td><td>The <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> to associate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af479f7e6d10398e8dbeda66ef2089db1" name="af479f7e6d10398e8dbeda66ef2089db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af479f7e6d10398e8dbeda66ef2089db1">&#9670;&#160;</a></span>toJsonObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJsonObject RestLink::Request::toJsonObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1988787ca63d8e48342e06fb0d048af5" name="a1988787ca63d8e48342e06fb0d048af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1988787ca63d8e48342e06fb0d048af5">&#9670;&#160;</a></span>fromJsonbject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rest_link_1_1_request.html">Request</a> RestLink::Request::fromJsonbject </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonObject &amp;&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -558,6 +1135,29 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> containing merged properties and parameters. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a66d3f96b8d09b72cab8b980f84d3fad1" name="a66d3f96b8d09b72cab8b980f84d3fad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d3f96b8d09b72cab8b980f84d3fad1">&#9670;&#160;</a></span>d_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSharedDataPointer&lt;RequestPrivate&gt; RestLink::Request::d_ptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

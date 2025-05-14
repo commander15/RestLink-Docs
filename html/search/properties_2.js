@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operation_0',['operation',['../class_rest_link_1_1_response.html#a8653230d5528fce4bdc3348423d9e231',1,'RestLink::Response']]]
+  ['finished_0',['finished',['../class_rest_link_1_1_response.html#aafa13bc71ea8555c3cb1d5e89fde359a',1,'RestLink::Response']]]
 ];

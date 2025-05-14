@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RestLink: /home/runner/work/RestLink/RestLink/src/lib/apibase_p.h Source File</title>
+<title>RestLink: /home/commander/Projects/RestLink/src/lib/apibase_p.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -90,30 +90,44 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;RestLink/request.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;RestLink/requestinterceptor.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>RestLink {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;RestLink/private/request_p.h&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>ApiBasePrivate</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    ApiBasePrivate(ApiBase *q);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    NetworkManager *networkManager() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> setNetworkManager(NetworkManager *manager);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_rest_link.html">RestLink</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_base_private.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_rest_link_1_1_api_base_private.html">ApiBasePrivate</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_rest_link_1_1_request_private.html">RequestPrivate</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="class_rest_link_1_1_api_base_private.html">ApiBasePrivate</a>(<a class="code hl_class" href="class_rest_link_1_1_api_base.html">ApiBase</a> *q);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="class_rest_link_1_1_api_base_private.html#a2c9ed353d4451725d8817d522ac1d615">~ApiBasePrivate</a>();</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">static</span> QByteArray httpVerbFromOperation(<span class="keywordtype">int</span> op);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ApiBase *q_ptr;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Request internalRequest;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    QVector&lt;RequestInterceptor *&gt; requestInterceptors;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">mutable</span> NetworkManager *m_networkManager;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_APIBASE_P_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="class_rest_link_1_1_network_manager.html">NetworkManager</a> *<a class="code hl_function" href="class_rest_link_1_1_api_base_private.html#a4272f46d1ae6b04c3a3c91fa1f96a4a4">networkManager</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_rest_link_1_1_api_base_private.html#a50e83561572a0b6dd0196f1976d77bcd">setNetworkManager</a>(<a class="code hl_class" href="class_rest_link_1_1_network_manager.html">NetworkManager</a> *manager);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_base_private.html#a2938ffeebe859e2bc415797235a09f16">   22</a></span>    <a class="code hl_class" href="class_rest_link_1_1_api_base.html">ApiBase</a> *<a class="code hl_variable" href="class_rest_link_1_1_api_base_private.html#a2938ffeebe859e2bc415797235a09f16">q_ptr</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_base_private.html#a3e03d5f491ef99d71060058702b2336a">   24</a></span>    <a class="code hl_class" href="class_rest_link_1_1_request_private.html">RequestPrivate</a> *<a class="code hl_variable" href="class_rest_link_1_1_api_base_private.html#a3e03d5f491ef99d71060058702b2336a">internalRequestData</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_api_base_private.html#a1ee21de7bf2688a8a8128c91308c54da">   25</a></span>    QVector&lt;RequestInterceptor *&gt; <a class="code hl_variable" href="class_rest_link_1_1_api_base_private.html#a1ee21de7bf2688a8a8128c91308c54da">requestInterceptors</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">mutable</span> <a class="code hl_class" href="class_rest_link_1_1_network_manager.html">NetworkManager</a> *m_networkManager;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_APIBASE_P_H</span></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_html"><div class="ttname"><a href="class_rest_link_1_1_api_base.html">RestLink::ApiBase</a></div><div class="ttdoc">The ApiBase class provides methods for making HTTP requests (HEAD, GET, POST, PUT,...</div><div class="ttdef"><b>Definition</b> apibase.h:24</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_private_html"><div class="ttname"><a href="class_rest_link_1_1_api_base_private.html">RestLink::ApiBasePrivate</a></div><div class="ttdef"><b>Definition</b> apibase_p.h:14</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_private_html_a1ee21de7bf2688a8a8128c91308c54da"><div class="ttname"><a href="class_rest_link_1_1_api_base_private.html#a1ee21de7bf2688a8a8128c91308c54da">RestLink::ApiBasePrivate::requestInterceptors</a></div><div class="ttdeci">QVector&lt; RequestInterceptor * &gt; requestInterceptors</div><div class="ttdef"><b>Definition</b> apibase_p.h:25</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_private_html_a2938ffeebe859e2bc415797235a09f16"><div class="ttname"><a href="class_rest_link_1_1_api_base_private.html#a2938ffeebe859e2bc415797235a09f16">RestLink::ApiBasePrivate::q_ptr</a></div><div class="ttdeci">ApiBase * q_ptr</div><div class="ttdef"><b>Definition</b> apibase_p.h:22</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_private_html_a2c9ed353d4451725d8817d522ac1d615"><div class="ttname"><a href="class_rest_link_1_1_api_base_private.html#a2c9ed353d4451725d8817d522ac1d615">RestLink::ApiBasePrivate::~ApiBasePrivate</a></div><div class="ttdeci">~ApiBasePrivate()</div><div class="ttdef"><b>Definition</b> apibase.cpp:321</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_private_html_a3e03d5f491ef99d71060058702b2336a"><div class="ttname"><a href="class_rest_link_1_1_api_base_private.html#a3e03d5f491ef99d71060058702b2336a">RestLink::ApiBasePrivate::internalRequestData</a></div><div class="ttdeci">RequestPrivate * internalRequestData</div><div class="ttdef"><b>Definition</b> apibase_p.h:24</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_private_html_a4272f46d1ae6b04c3a3c91fa1f96a4a4"><div class="ttname"><a href="class_rest_link_1_1_api_base_private.html#a4272f46d1ae6b04c3a3c91fa1f96a4a4">RestLink::ApiBasePrivate::networkManager</a></div><div class="ttdeci">NetworkManager * networkManager() const</div><div class="ttdef"><b>Definition</b> apibase.cpp:327</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_private_html_a50e83561572a0b6dd0196f1976d77bcd"><div class="ttname"><a href="class_rest_link_1_1_api_base_private.html#a50e83561572a0b6dd0196f1976d77bcd">RestLink::ApiBasePrivate::setNetworkManager</a></div><div class="ttdeci">void setNetworkManager(NetworkManager *manager)</div><div class="ttdef"><b>Definition</b> apibase.cpp:334</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_network_manager_html"><div class="ttname"><a href="class_rest_link_1_1_network_manager.html">RestLink::NetworkManager</a></div><div class="ttdoc">A custom network manager for handling HTTP requests and responses in RestLink.</div><div class="ttdef"><b>Definition</b> networkmanager.h:13</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_private_html"><div class="ttname"><a href="class_rest_link_1_1_request_private.html">RestLink::RequestPrivate</a></div><div class="ttdef"><b>Definition</b> request_p.h:16</div></div>
+<div class="ttc" id="anamespace_rest_link_html"><div class="ttname"><a href="namespace_rest_link.html">RestLink</a></div><div class="ttdef"><b>Definition</b> api.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

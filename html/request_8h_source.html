@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RestLink: /home/runner/work/RestLink/RestLink/src/lib/request.h Source File</title>
+<title>RestLink: /home/commander/Projects/RestLink/src/lib/request.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -92,68 +92,121 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QtCore/qmetatype.h&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>QJsonObject;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>RestLink {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span>Request;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>Body;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span>Response;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">typedef</span> std::function&lt;void(<span class="keyword">const</span> Request &amp;, <span class="keyword">const</span> Body &amp;, <span class="keywordtype">void</span> *, Response *)&gt; RequestProcessing;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span>RequestData;</div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html">   21</a></span><span class="keyword">class </span>RESTLINK_EXPORT <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_rest_link_1_1_request_interface.html">RequestInterface</a></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *endpoint);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<span class="keyword">const</span> QString &amp;endpoint);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<span class="keyword">const</span> RequestProcessing &amp;processing);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;other);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;&amp;other);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">~Request</a>();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;other);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;&amp;other);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    QString endpoint() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> setEndpoint(<span class="keyword">const</span> QString &amp;endpoint);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    QString urlPath() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    RequestProcessing processing() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> setProcessing(RequestProcessing processing);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    QJsonObject toJsonObject() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> fromJsonbject(<span class="keyword">const</span> QJsonObject &amp;<span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> swap(<a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;other);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> merge(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;r1, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;r2);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> QList&lt;PathParameter&gt; *constPathParameters() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    QList&lt;PathParameter&gt; *mutablePathParameters() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> QList&lt;QueryParameter&gt; *constQueryParameters() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    QList&lt;QueryParameter&gt; *mutableQueryParameters() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> QList&lt;Header&gt; *constHeaders() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    QList&lt;Header&gt; *mutableHeaders() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    QSharedDataPointer&lt;RequestData&gt; d_ptr;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_rest_link_1_1_api_base.html">ApiBase</a>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>QHttpHeaders;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_rest_link.html">RestLink</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>Request;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span>Body;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span>Response;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>Api;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span>AbstractController;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">   21</a></span><span class="keyword">typedef</span> std::function&lt;void(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_body.html">Body</a> &amp;, <span class="keywordtype">void</span> *, <a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *)&gt; <a class="code hl_typedef" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">class </span>RequestPrivate;</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html">   24</a></span><span class="keyword">class </span>RESTLINK_EXPORT <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_rest_link_1_1_request_interface.html">RequestInterface</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">   27</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">Attribute</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11a5069fd3a349a2eea735a9477eeb3d565">   28</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11a5069fd3a349a2eea735a9477eeb3d565">CacheLoadControlAttribute</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11adb0d113aa44e0379575de1bdfd11dfe7">   29</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11adb0d113aa44e0379575de1bdfd11dfe7">CacheSaveControlAttribute</a>,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        CompressionAllowedAttribute</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11ae0e92e6e0beab8ce1003c2337e143ab9">   31</a></span>    };</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308ede">   33</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308ede">UrlType</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09">   34</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09">PublicUrl</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        SecretUrl</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea3c5baa9695cb1eaa2e649baa20c062dd">   36</a></span>    };</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *endpoint);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<span class="keyword">const</span> QString &amp;endpoint);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<span class="keyword">const</span> QUrl &amp;url);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a> &amp;processing);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;other);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(<a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;&amp;other);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">~Request</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;other);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;&amp;other);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    QString endpoint() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> setEndpoint(<span class="keyword">const</span> QString &amp;endpoint);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    QUrl baseUrl() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> setBaseUrl(<span class="keyword">const</span> QUrl &amp;url);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    QUrl url(UrlType type = SecretUrl) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    QString urlPath() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    QHttpHeaders httpHeaders() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    QVariant attribute(Attribute attribute) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    QVariant attribute(Attribute attribute, <span class="keyword">const</span> QVariant &amp;defaultValue) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> setAttribute(Attribute attribute, <span class="keyword">const</span> QVariant &amp;value);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_rest_link_1_1_request.html">RestLink::Request</a>)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_REQUEST_H</span></div>
-<div class="ttc" id="aclass_rest_link_1_1_api_base_html"><div class="ttname"><a href="class_rest_link_1_1_api_base.html">RestLink::ApiBase</a></div><div class="ttdoc">The ApiBase class provides methods for making HTTP requests (HEAD, GET, POST, PUT,...</div><div class="ttdef"><b>Definition</b> apibase.h:23</div></div>
-<div class="ttc" id="aclass_rest_link_1_1_request_html"><div class="ttname"><a href="class_rest_link_1_1_request.html">RestLink::Request</a></div><div class="ttdoc">A class for storing and managing HTTP request information.</div><div class="ttdef"><b>Definition</b> request.h:22</div></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_typedef" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a> processing() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> setProcessing(<a class="code hl_typedef" href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RequestProcessing</a> processing);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_class" href="class_rest_link_1_1_abstract_controller.html">AbstractController</a> *controller() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> setController(<a class="code hl_class" href="class_rest_link_1_1_abstract_controller.html">AbstractController</a> *controller);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_class" href="class_rest_link_1_1_api.html">Api</a> *api() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> setApi(<a class="code hl_class" href="class_rest_link_1_1_api.html">Api</a> *api);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    QJsonObject toJsonObject() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> fromJsonbject(<span class="keyword">const</span> QJsonObject &amp;<span class="keywordtype">object</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> swap(<a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;other);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> merge(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;r1, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;r2);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a>(RequestPrivate *d);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#a66d3f96b8d09b72cab8b980f84d3fad1">   84</a></span>    QSharedDataPointer&lt;RequestPrivate&gt; <a class="code hl_variable" href="class_rest_link_1_1_request.html#a66d3f96b8d09b72cab8b980f84d3fad1">d_ptr</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">const</span> QList&lt;PathParameter&gt; *constPathParameters() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    QList&lt;PathParameter&gt; *mutablePathParameters() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">const</span> QList&lt;QueryParameter&gt; *constQueryParameters() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    QList&lt;QueryParameter&gt; *mutableQueryParameters() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">const</span> QList&lt;Header&gt; *constHeaders() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    QList&lt;Header&gt; *mutableHeaders() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#adca85e5b4404ecc9ed3fc29600bf84af">   94</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_rest_link_1_1_api_base.html">ApiBase</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#a1f45b14d517f25b1c55c57861c1ecef6">   95</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_rest_link_1_1_api.html">Api</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request.html#a0d171f28a77dd0096201591f25e09278">   96</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_rest_link_1_1_server_request.html">ServerRequest</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_rest_link_1_1_request.html">RestLink::Request</a>)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_REQUEST_H</span></div>
+<div class="ttc" id="aclass_rest_link_1_1_abstract_controller_html"><div class="ttname"><a href="class_rest_link_1_1_abstract_controller.html">RestLink::AbstractController</a></div><div class="ttdoc">Defines the base interface for all server-side controllers.</div><div class="ttdef"><b>Definition</b> resourcecontroller.h:13</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_base_html"><div class="ttname"><a href="class_rest_link_1_1_api_base.html">RestLink::ApiBase</a></div><div class="ttdoc">The ApiBase class provides methods for making HTTP requests (HEAD, GET, POST, PUT,...</div><div class="ttdef"><b>Definition</b> apibase.h:24</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_api_html"><div class="ttname"><a href="class_rest_link_1_1_api.html">RestLink::Api</a></div><div class="ttdoc">Represents an API interface that manages configuration, requests, and parameters.</div><div class="ttdef"><b>Definition</b> api.h:15</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_body_html"><div class="ttname"><a href="class_rest_link_1_1_body.html">RestLink::Body</a></div><div class="ttdoc">Represents the body of an HTTP request.</div><div class="ttdef"><b>Definition</b> body.h:27</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html"><div class="ttname"><a href="class_rest_link_1_1_request.html">RestLink::Request</a></div><div class="ttdoc">A class for storing and managing HTTP request information.</div><div class="ttdef"><b>Definition</b> request.h:25</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html_a66d3f96b8d09b72cab8b980f84d3fad1"><div class="ttname"><a href="class_rest_link_1_1_request.html#a66d3f96b8d09b72cab8b980f84d3fad1">RestLink::Request::d_ptr</a></div><div class="ttdeci">QSharedDataPointer&lt; RequestPrivate &gt; d_ptr</div><div class="ttdef"><b>Definition</b> request.h:84</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html_a806a10e6928933cbf75e46dd98308ede"><div class="ttname"><a href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308ede">RestLink::Request::UrlType</a></div><div class="ttdeci">UrlType</div><div class="ttdoc">Defines the type of URL associated with the request.</div><div class="ttdef"><b>Definition</b> request.h:33</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html_a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09"><div class="ttname"><a href="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09">RestLink::Request::PublicUrl</a></div><div class="ttdeci">@ PublicUrl</div><div class="ttdef"><b>Definition</b> request.h:34</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html_af1d6d3bd73bf63548a2d74820eb46d11"><div class="ttname"><a href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11">RestLink::Request::Attribute</a></div><div class="ttdeci">Attribute</div><div class="ttdoc">Defines configurable attributes that influence request behavior.</div><div class="ttdef"><b>Definition</b> request.h:27</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html_af1d6d3bd73bf63548a2d74820eb46d11a5069fd3a349a2eea735a9477eeb3d565"><div class="ttname"><a href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11a5069fd3a349a2eea735a9477eeb3d565">RestLink::Request::CacheLoadControlAttribute</a></div><div class="ttdeci">@ CacheLoadControlAttribute</div><div class="ttdef"><b>Definition</b> request.h:28</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html_af1d6d3bd73bf63548a2d74820eb46d11adb0d113aa44e0379575de1bdfd11dfe7"><div class="ttname"><a href="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11adb0d113aa44e0379575de1bdfd11dfe7">RestLink::Request::CacheSaveControlAttribute</a></div><div class="ttdeci">@ CacheSaveControlAttribute</div><div class="ttdef"><b>Definition</b> request.h:29</div></div>
 <div class="ttc" id="aclass_rest_link_1_1_request_interface_html"><div class="ttname"><a href="class_rest_link_1_1_request_interface.html">RestLink::RequestInterface</a></div><div class="ttdoc">A class for storing and managing some HTTP request informations (url path and query parameter along w...</div><div class="ttdef"><b>Definition</b> requestinterface.h:15</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html"><div class="ttname"><a href="class_rest_link_1_1_response.html">RestLink::Response</a></div><div class="ttdoc">Represents a response to an API request in the RestLink framework.</div><div class="ttdef"><b>Definition</b> response.h:23</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_server_request_html"><div class="ttname"><a href="class_rest_link_1_1_server_request.html">RestLink::ServerRequest</a></div><div class="ttdef"><b>Definition</b> serverrequest.h:13</div></div>
+<div class="ttc" id="anamespace_rest_link_html"><div class="ttname"><a href="namespace_rest_link.html">RestLink</a></div><div class="ttdef"><b>Definition</b> api.cpp:17</div></div>
+<div class="ttc" id="anamespace_rest_link_html_a60bdde981841ab98f8b124e4089648a9"><div class="ttname"><a href="namespace_rest_link.html#a60bdde981841ab98f8b124e4089648a9">RestLink::RequestProcessing</a></div><div class="ttdeci">std::function&lt; void(const Request &amp;, const Body &amp;, void *, Response *)&gt; RequestProcessing</div><div class="ttdef"><b>Definition</b> request.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

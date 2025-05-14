@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RestLink: /home/runner/work/RestLink/RestLink/src/lib/requesthandler.h Source File</title>
+<title>RestLink: /home/commander/Projects/RestLink/src/lib/requesthandler.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RestLink<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">RestLink<span id="projectnumber">&#160;2.2.0</span>
    </div>
    <div id="projectbrief">Powerfull Rest Client for Qt</div>
   </td>
@@ -86,45 +86,94 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define RESTLINK_REQUESTHANDLER_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;RestLink/global.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;RestLink/api.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>RestLink {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span>RESTLINK_EXPORT RequestHandler</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">virtual</span> ~RequestHandler();</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    Response *head(<span class="keyword">const</span> Request &amp;request, Api *api);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    Response *get(<span class="keyword">const</span> Request &amp;request, Api *api);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Response *post(<span class="keyword">const</span> Request &amp;request, <span class="keyword">const</span> Body &amp;body, Api *api);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    Response *put(<span class="keyword">const</span> Request &amp;request, <span class="keyword">const</span> Body &amp;body, Api *api);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Response *patch(<span class="keyword">const</span> Request &amp;request, <span class="keyword">const</span> Body &amp;body, Api *api);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Response *deleteResource(<span class="keyword">const</span> Request &amp;request, Api *api);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    Response *send(Api::Operation operation, <span class="keyword">const</span> Request &amp;request, <span class="keyword">const</span> Body &amp;body, Api *api);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    Response *send(Api::Operation operation, <span class="keyword">const</span> Request &amp;request, <span class="keyword">const</span> Body &amp;body, ApiBase *api);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">virtual</span> QStringList supportedSchemes() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">enum</span> UrlContext {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        LogContext,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        RequestContext</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    };</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">bool</span> isApiSupported(ApiBase *api) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QtCore/qscopedpointer.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_rest_link.html">RestLink</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>Request;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>Body;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>Response;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>RequestInterceptor;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>RequestHandlerPrivate;</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html">   16</a></span><span class="keyword">class </span>RESTLINK_EXPORT <a class="code hl_class" href="class_rest_link_1_1_request_handler.html">RequestHandler</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">   19</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">Method</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647">   20</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647">HeadMethod</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7">   21</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7">GetMethod</a>,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8">   22</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8">PostMethod</a>,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955">   23</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955">PutMethod</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6">   24</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6">PatchMethod</a>,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3">   25</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3">DeleteMethod</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        UnknownMethod = -1</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28cae5fd416b1be239ea8ec3903dd3936f1a">   28</a></span>    };</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69">   30</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69">HandlerType</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58">   31</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58">NetworkManager</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10">   32</a></span>        <a class="code hl_enumvalue" href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10">ServerHandler</a>,</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    QUrl generateUrl(<span class="keyword">const</span> Request &amp;request, ApiBase *api, UrlContext context) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">virtual</span> Response *sendRequest(Api::Operation operation, <span class="keyword">const</span> Request &amp;request, <span class="keyword">const</span> Body &amp;body, Api *api) = 0;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">friend</span> <span class="keyword">class </span>ApiBase;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        UnknownHandler = -1</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a5cbaf439a047d82643484a7084352145">   35</a></span>    };</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_rest_link_1_1_request_handler.html">~RequestHandler</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">virtual</span> QString handlerName() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <span class="comment">// namespace RestLink</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_REQUESTHANDLER_H</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *head(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *get(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *post(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_body.html">Body</a> &amp;body);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *put(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_body.html">Body</a> &amp;body);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *patch(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_body.html">Body</a> &amp;body);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *deleteResource(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *send(Method method, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_body.html">Body</a> &amp;body);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    QList&lt;RequestInterceptor *&gt; requestInterceptors() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> addRequestInterceptor(<a class="code hl_class" href="class_rest_link_1_1_request_interceptor.html">RequestInterceptor</a> *interceptor);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> removeRequestInterceptor(<a class="code hl_class" href="class_rest_link_1_1_request_interceptor.html">RequestInterceptor</a> *interceptor);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a7776c7e9a6cef2623deafc0e9d20b618">   53</a></span>    <span class="keyword">virtual</span> QStringList <a class="code hl_function" href="class_rest_link_1_1_request_handler.html#a7776c7e9a6cef2623deafc0e9d20b618">supportedSchemes</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a166ae3d84d55211d476ead71268da29a">   54</a></span>    <span class="keyword">virtual</span> <a class="code hl_enumeration" href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69">HandlerType</a> <a class="code hl_function" href="class_rest_link_1_1_request_handler.html#a166ae3d84d55211d476ead71268da29a">handlerType</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">bool</span> isRequestSupported(<span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> initResponse(<a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *response, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <a class="code hl_enumeration" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">Method</a> method);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a4bbd39becc2279452fe3b3db53658901">   59</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_rest_link_1_1_response.html">Response</a> *<a class="code hl_function" href="class_rest_link_1_1_request_handler.html#a4bbd39becc2279452fe3b3db53658901">sendRequest</a>(<a class="code hl_enumeration" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">Method</a> method, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <span class="keyword">const</span> <a class="code hl_class" href="class_rest_link_1_1_body.html">Body</a> &amp;body) = 0;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_rest_link_1_1_request_handler.html#a87e4a85c2c0a62c37cb87a0166895382">   61</a></span>    QScopedPointer&lt;RequestHandlerPrivate&gt; <a class="code hl_variable" href="class_rest_link_1_1_request_handler.html#a87e4a85c2c0a62c37cb87a0166895382">d_ptr</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>} <span class="comment">// namespace RestLink</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif </span><span class="comment">// RESTLINK_REQUESTHANDLER_H</span></div>
+<div class="ttc" id="aclass_rest_link_1_1_body_html"><div class="ttname"><a href="class_rest_link_1_1_body.html">RestLink::Body</a></div><div class="ttdoc">Represents the body of an HTTP request.</div><div class="ttdef"><b>Definition</b> body.h:27</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html">RestLink::RequestHandler</a></div><div class="ttdoc">The RequestHandler class defines an abstract base for sending HTTP-like requests.</div><div class="ttdef"><b>Definition</b> requesthandler.h:17</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a165ab084b5fdf72c59f8b2a14890b28c"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RestLink::RequestHandler::Method</a></div><div class="ttdeci">Method</div><div class="ttdoc">Defines supported HTTP methods for handling outgoing requests.</div><div class="ttdef"><b>Definition</b> requesthandler.h:19</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647">RestLink::RequestHandler::HeadMethod</a></div><div class="ttdeci">@ HeadMethod</div><div class="ttdef"><b>Definition</b> requesthandler.h:20</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7">RestLink::RequestHandler::GetMethod</a></div><div class="ttdeci">@ GetMethod</div><div class="ttdef"><b>Definition</b> requesthandler.h:21</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6">RestLink::RequestHandler::PatchMethod</a></div><div class="ttdeci">@ PatchMethod</div><div class="ttdef"><b>Definition</b> requesthandler.h:24</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955">RestLink::RequestHandler::PutMethod</a></div><div class="ttdeci">@ PutMethod</div><div class="ttdef"><b>Definition</b> requesthandler.h:23</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8">RestLink::RequestHandler::PostMethod</a></div><div class="ttdeci">@ PostMethod</div><div class="ttdef"><b>Definition</b> requesthandler.h:22</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3">RestLink::RequestHandler::DeleteMethod</a></div><div class="ttdeci">@ DeleteMethod</div><div class="ttdef"><b>Definition</b> requesthandler.h:25</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a166ae3d84d55211d476ead71268da29a"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a166ae3d84d55211d476ead71268da29a">RestLink::RequestHandler::handlerType</a></div><div class="ttdeci">virtual HandlerType handlerType() const =0</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a4bbd39becc2279452fe3b3db53658901"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a4bbd39becc2279452fe3b3db53658901">RestLink::RequestHandler::sendRequest</a></div><div class="ttdeci">virtual Response * sendRequest(Method method, const Request &amp;request, const Body &amp;body)=0</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a7776c7e9a6cef2623deafc0e9d20b618"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a7776c7e9a6cef2623deafc0e9d20b618">RestLink::RequestHandler::supportedSchemes</a></div><div class="ttdeci">virtual QStringList supportedSchemes() const =0</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_a87e4a85c2c0a62c37cb87a0166895382"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#a87e4a85c2c0a62c37cb87a0166895382">RestLink::RequestHandler::d_ptr</a></div><div class="ttdeci">QScopedPointer&lt; RequestHandlerPrivate &gt; d_ptr</div><div class="ttdef"><b>Definition</b> requesthandler.h:61</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_adb1babe9fe47ce421b3616c66a34ae69"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69">RestLink::RequestHandler::HandlerType</a></div><div class="ttdeci">HandlerType</div><div class="ttdoc">Describes the type of request handler being used.</div><div class="ttdef"><b>Definition</b> requesthandler.h:30</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58">RestLink::RequestHandler::NetworkManager</a></div><div class="ttdeci">@ NetworkManager</div><div class="ttdef"><b>Definition</b> requesthandler.h:31</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_handler_html_adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10"><div class="ttname"><a href="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10">RestLink::RequestHandler::ServerHandler</a></div><div class="ttdeci">@ ServerHandler</div><div class="ttdef"><b>Definition</b> requesthandler.h:32</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_html"><div class="ttname"><a href="class_rest_link_1_1_request.html">RestLink::Request</a></div><div class="ttdoc">A class for storing and managing HTTP request information.</div><div class="ttdef"><b>Definition</b> request.h:25</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_request_interceptor_html"><div class="ttname"><a href="class_rest_link_1_1_request_interceptor.html">RestLink::RequestInterceptor</a></div><div class="ttdoc">Abstract class for intercepting and modifying HTTP requests before they are sent.</div><div class="ttdef"><b>Definition</b> requestinterceptor.h:12</div></div>
+<div class="ttc" id="aclass_rest_link_1_1_response_html"><div class="ttname"><a href="class_rest_link_1_1_response.html">RestLink::Response</a></div><div class="ttdoc">Represents a response to an API request in the RestLink framework.</div><div class="ttdef"><b>Definition</b> response.h:23</div></div>
+<div class="ttc" id="anamespace_rest_link_html"><div class="ttname"><a href="namespace_rest_link.html">RestLink</a></div><div class="ttdef"><b>Definition</b> api.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
