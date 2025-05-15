@@ -81,9 +81,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="requestinterceptor_8h_source.html">requestinterceptor.h</a>&gt;</code></p>
+<p>Helper class to create a simple logger for <a class="el" href="namespace_rest_link.html">RestLink</a> requests.  
+ <a href="class_rest_link_1_1_log_request_interceptor.html#details">More...</a></p>
 
-<p>Inherits <a class="el" href="class_rest_link_1_1_request_interceptor.html">RestLink::RequestInterceptor</a>.</p>
+<p><code>#include &lt;<a class="el" href="abstractrequestinterceptor_8h_source.html">abstractrequestinterceptor.h</a>&gt;</code></p>
+
+<p>Inherits <a class="el" href="class_rest_link_1_1_abstract_request_interceptor.html">RestLink::AbstractRequestInterceptor</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -94,16 +97,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2bb03198de5d2b4cd53f96300a006e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the interceptor using an existing QLoggingCategory pointer.  <br /></td></tr>
 <tr class="separator:a2bb03198de5d2b4cd53f96300a006e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abef823c388bde597aa68d8432a8297dc" id="r_abef823c388bde597aa68d8432a8297dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_log_request_interceptor.html#abef823c388bde597aa68d8432a8297dc">~LogRequestInterceptor</a> ()</td></tr>
-<tr class="memdesc:abef823c388bde597aa68d8432a8297dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="class_rest_link_1_1_log_request_interceptor.html">LogRequestInterceptor</a>. Deletes the QLoggingCategory if it was created by this interceptor.  <br /></td></tr>
+<tr class="memdesc:abef823c388bde597aa68d8432a8297dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="class_rest_link_1_1_log_request_interceptor.html" title="Helper class to create a simple logger for RestLink requests.">LogRequestInterceptor</a>. Deletes the QLoggingCategory if it was created by this interceptor.  <br /></td></tr>
 <tr class="separator:abef823c388bde597aa68d8432a8297dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e9f3ef2b4ee7daf0bd6779688d502d5" id="r_a5e9f3ef2b4ee7daf0bd6779688d502d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_request.html">Request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_log_request_interceptor.html#a5e9f3ef2b4ee7daf0bd6779688d502d5">intercept</a> (<a class="el" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RequestHandler::Method</a> method, const <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;request, const <a class="el" href="class_rest_link_1_1_body.html">Body</a> &amp;body) override</td></tr>
-<tr class="memdesc:a5e9f3ef2b4ee7daf0bd6779688d502d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intercepts an incoming request and logs it.  <br /></td></tr>
-<tr class="separator:a5e9f3ef2b4ee7daf0bd6779688d502d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_rest_link_1_1_request_interceptor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_rest_link_1_1_request_interceptor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_rest_link_1_1_request_interceptor.html">RestLink::RequestInterceptor</a></td></tr>
-<tr class="memitem:a0faa10593637a27e3ab5537f32c88882 inherit pub_methods_class_rest_link_1_1_request_interceptor" id="r_a0faa10593637a27e3ab5537f32c88882"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_request_interceptor.html#a0faa10593637a27e3ab5537f32c88882">~RequestInterceptor</a> ()=default</td></tr>
-<tr class="separator:a0faa10593637a27e3ab5537f32c88882 inherit pub_methods_class_rest_link_1_1_request_interceptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e4217951592c8eb6e3ecf468d1a65d" id="r_aa4e4217951592c8eb6e3ecf468d1a65d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_log_request_interceptor.html#aa4e4217951592c8eb6e3ecf468d1a65d">intercept</a> (<a class="el" href="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850">AbstractRequestHandler::Method</a> method, <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;request, <a class="el" href="class_rest_link_1_1_body.html">Body</a> &amp;body) override</td></tr>
+<tr class="memdesc:aa4e4217951592c8eb6e3ecf468d1a65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the HTTP method and request URL.  <br /></td></tr>
+<tr class="separator:aa4e4217951592c8eb6e3ecf468d1a65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_rest_link_1_1_abstract_request_interceptor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_rest_link_1_1_abstract_request_interceptor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_rest_link_1_1_abstract_request_interceptor.html">RestLink::AbstractRequestInterceptor</a></td></tr>
+<tr class="memitem:ab61d569c2130a994b3e38239ab146620 inherit pub_methods_class_rest_link_1_1_abstract_request_interceptor" id="r_ab61d569c2130a994b3e38239ab146620"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_abstract_request_interceptor.html#ab61d569c2130a994b3e38239ab146620">~AbstractRequestInterceptor</a> ()=default</td></tr>
+<tr class="separator:ab61d569c2130a994b3e38239ab146620 inherit pub_methods_class_rest_link_1_1_abstract_request_interceptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Helper class to create a simple logger for <a class="el" href="namespace_rest_link.html">RestLink</a> requests. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9916c5454f44a7df78c5c367930f7d69" name="a9916c5454f44a7df78c5c367930f7d69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9916c5454f44a7df78c5c367930f7d69">&#9670;&#160;</a></span>LogRequestInterceptor() <span class="overload">[1/2]</span></h2>
 
@@ -182,13 +187,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destructor for <a class="el" href="class_rest_link_1_1_log_request_interceptor.html">LogRequestInterceptor</a>. Deletes the QLoggingCategory if it was created by this interceptor. </p>
+<p>Destructor for <a class="el" href="class_rest_link_1_1_log_request_interceptor.html" title="Helper class to create a simple logger for RestLink requests.">LogRequestInterceptor</a>. Deletes the QLoggingCategory if it was created by this interceptor. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5e9f3ef2b4ee7daf0bd6779688d502d5" name="a5e9f3ef2b4ee7daf0bd6779688d502d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e9f3ef2b4ee7daf0bd6779688d502d5">&#9670;&#160;</a></span>intercept()</h2>
+<a id="aa4e4217951592c8eb6e3ecf468d1a65d" name="aa4e4217951592c8eb6e3ecf468d1a65d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e4217951592c8eb6e3ecf468d1a65d">&#9670;&#160;</a></span>intercept()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,21 +202,21 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_rest_link_1_1_request.html">Request</a> RestLink::LogRequestInterceptor::intercept </td>
+          <td class="memname">void RestLink::LogRequestInterceptor::intercept </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RequestHandler::Method</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850">AbstractRequestHandler::Method</a>&#160;</td>
           <td class="paramname"><em>method</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;&#160;</td>
           <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_rest_link_1_1_body.html">Body</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_body.html">Body</a> &amp;&#160;</td>
           <td class="paramname"><em>body</em>&#160;</td>
         </tr>
         <tr>
@@ -227,19 +232,18 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Intercepts an incoming request and logs it. </p>
-<p>the request is logged with format: HTTP_VERB url (without secrets such as API key, never). e.g. GET</p>
+<p>Logs the HTTP method and request URL. </p>
+<p>Sensitive data such as api tokens will never be shown.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">method</td><td>The HTTP method of the request. </td></tr>
-    <tr><td class="paramname">request</td><td>The incoming request data. </td></tr>
-    <tr><td class="paramname">body</td><td>The body of the request. </td></tr>
+    <tr><td class="paramname">method</td><td>HTTP method used. </td></tr>
+    <tr><td class="paramname">request</td><td><a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> to log. </td></tr>
+    <tr><td class="paramname">body</td><td><a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a> body. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The original request, unmodified. </dd></dl>
 
-<p>Implements <a class="el" href="class_rest_link_1_1_request_interceptor.html#a9eb40bfa9fcdf74ded9ff64adc13c3d4">RestLink::RequestInterceptor</a>.</p>
+<p>Implements <a class="el" href="class_rest_link_1_1_abstract_request_interceptor.html#ac0a24d942085bf402c388589de188767">RestLink::AbstractRequestInterceptor</a>.</p>
 
 </div>
 </div>

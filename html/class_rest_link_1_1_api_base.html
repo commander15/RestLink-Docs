@@ -138,20 +138,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a84c5ad205dd4dc1ee6a45752bad3f2ee" id="r_a84c5ad205dd4dc1ee6a45752bad3f2ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_response.html">Response</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api_base.html#a84c5ad205dd4dc1ee6a45752bad3f2ee">deleteResource</a> (const <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;request)</td></tr>
 <tr class="memdesc:a84c5ad205dd4dc1ee6a45752bad3f2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a DELETE request and returns the <a class="el" href="class_rest_link_1_1_response.html" title="Represents a response to an API request in the RestLink framework.">Response</a> object.  <br /></td></tr>
 <tr class="separator:a84c5ad205dd4dc1ee6a45752bad3f2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ace50ab47ea112b0988d030f8c8ac20" id="r_a0ace50ab47ea112b0988d030f8c8ac20"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rest_link_1_1_response.html">Response</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api_base.html#a0ace50ab47ea112b0988d030f8c8ac20">send</a> (<a class="el" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RequestHandler::Method</a> method, const <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;request, const <a class="el" href="class_rest_link_1_1_body.html">Body</a> &amp;body)</td></tr>
-<tr class="separator:a0ace50ab47ea112b0988d030f8c8ac20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c44e0a3db1d3b65d74c2f9ed92830f5" id="r_a7c44e0a3db1d3b65d74c2f9ed92830f5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rest_link_1_1_response.html">Response</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api_base.html#a7c44e0a3db1d3b65d74c2f9ed92830f5">send</a> (<a class="el" href="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850">AbstractRequestHandler::Method</a> method, const <a class="el" href="class_rest_link_1_1_request.html">Request</a> &amp;request, const <a class="el" href="class_rest_link_1_1_body.html">Body</a> &amp;body)</td></tr>
+<tr class="separator:a7c44e0a3db1d3b65d74c2f9ed92830f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0682831b71c6f4d60a32a423d946e7a2" id="r_a0682831b71c6f4d60a32a423d946e7a2"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api_base.html#a0682831b71c6f4d60a32a423d946e7a2">userAgent</a> () const</td></tr>
 <tr class="memdesc:a0682831b71c6f4d60a32a423d946e7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the user agent string for the API.  <br /></td></tr>
 <tr class="separator:a0682831b71c6f4d60a32a423d946e7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0fa0676d5fdeb53076baf4abfb67ec9" id="r_ab0fa0676d5fdeb53076baf4abfb67ec9"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_rest_link_1_1_request_interceptor.html">RequestInterceptor</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api_base.html#ab0fa0676d5fdeb53076baf4abfb67ec9">requestInterceptors</a> () const</td></tr>
-<tr class="memdesc:ab0fa0676d5fdeb53076baf4abfb67ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of request interceptors.  <br /></td></tr>
-<tr class="separator:ab0fa0676d5fdeb53076baf4abfb67ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af21ac04e37989e896c844a4387dff46b" id="r_af21ac04e37989e896c844a4387dff46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api_base.html#af21ac04e37989e896c844a4387dff46b">addRequestInterceptor</a> (<a class="el" href="class_rest_link_1_1_request_interceptor.html">RequestInterceptor</a> *interceptor)</td></tr>
-<tr class="memdesc:af21ac04e37989e896c844a4387dff46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a request interceptor to the list.  <br /></td></tr>
-<tr class="separator:af21ac04e37989e896c844a4387dff46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2191397a2641e9f523f5ee30dcea50f1" id="r_a2191397a2641e9f523f5ee30dcea50f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api_base.html#a2191397a2641e9f523f5ee30dcea50f1">removeRequestInterceptor</a> (<a class="el" href="class_rest_link_1_1_request_interceptor.html">RequestInterceptor</a> *interceptor)</td></tr>
-<tr class="memdesc:a2191397a2641e9f523f5ee30dcea50f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a request interceptor from the list.  <br /></td></tr>
-<tr class="separator:a2191397a2641e9f523f5ee30dcea50f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f5c18d495fb8ddd5ccbf4fccaefa92" id="r_a81f5c18d495fb8ddd5ccbf4fccaefa92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rest_link_1_1_network_manager.html">NetworkManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_api_base.html#a81f5c18d495fb8ddd5ccbf4fccaefa92">networkManager</a> () const</td></tr>
 <tr class="memdesc:a81f5c18d495fb8ddd5ccbf4fccaefa92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the network manager used by the <a class="el" href="class_rest_link_1_1_api_base.html" title="The ApiBase class provides methods for making HTTP requests (HEAD, GET, POST, PUT,...">ApiBase</a> class.  <br /></td></tr>
 <tr class="separator:a81f5c18d495fb8ddd5ccbf4fccaefa92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,7 +249,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="class_rest_link_1_1_api_base.html" title="The ApiBase class provides methods for making HTTP requests (HEAD, GET, POST, PUT,...">ApiBase</a> class provides methods for making HTTP requests (HEAD, GET, POST, PUT, PATCH, DELETE) and handling responses. </p>
 <p>This class encapsulates the functionality for interacting with an API by providing methods for various HTTP methods. It manages request interceptors, constructs network requests, and handles the creation of network replies and responses. The class supports asynchronous communication, allowing the user to pass callbacks for handling responses.</p>
 <dl class="section note"><dt>Note</dt><dd>This class must not be used directly, use <a class="el" href="class_rest_link_1_1_api.html" title="Represents an API interface that manages configuration, requests, and parameters.">Api</a> class instead.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a>, <a class="el" href="class_rest_link_1_1_response.html" title="Represents a response to an API request in the RestLink framework.">Response</a>, <a class="el" href="class_rest_link_1_1_request_interceptor.html" title="Abstract class for intercepting and modifying HTTP requests before they are sent.">RequestInterceptor</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_rest_link_1_1_request.html" title="A class for storing and managing HTTP request information.">Request</a>, <a class="el" href="class_rest_link_1_1_response.html" title="Represents a response to an API request in the RestLink framework.">Response</a>, RequestInterceptor </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a85706408c858ec3854f6c2b18e79b5a4" name="a85706408c858ec3854f6c2b18e79b5a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85706408c858ec3854f6c2b18e79b5a4">&#9670;&#160;</a></span>~ApiBase()</h2>
@@ -820,8 +811,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ace50ab47ea112b0988d030f8c8ac20" name="a0ace50ab47ea112b0988d030f8c8ac20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ace50ab47ea112b0988d030f8c8ac20">&#9670;&#160;</a></span>send()</h2>
+<a id="a7c44e0a3db1d3b65d74c2f9ed92830f5" name="a7c44e0a3db1d3b65d74c2f9ed92830f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c44e0a3db1d3b65d74c2f9ed92830f5">&#9670;&#160;</a></span>send()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,7 +823,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="class_rest_link_1_1_response.html">Response</a> * RestLink::ApiBase::send </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RequestHandler::Method</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850">AbstractRequestHandler::Method</a>&#160;</td>
           <td class="paramname"><em>method</em>, </td>
         </tr>
         <tr>
@@ -860,7 +851,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_rest_link_1_1_api.html#af62f4f4f6c7895f45204ad220478f9eb">RestLink::Api</a>.</p>
+<p>Reimplemented in <a class="el" href="class_rest_link_1_1_api.html#a162007c3be9a6e6379f772c46c211851">RestLink::Api</a>.</p>
 
 </div>
 </div>
@@ -891,78 +882,6 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the user agent. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_rest_link_1_1_api.html#a4af630e5fdebfa82c13a0c8e6c6eaa6c">RestLink::Api</a>.</p>
-
-</div>
-</div>
-<a id="ab0fa0676d5fdeb53076baf4abfb67ec9" name="ab0fa0676d5fdeb53076baf4abfb67ec9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0fa0676d5fdeb53076baf4abfb67ec9">&#9670;&#160;</a></span>requestInterceptors()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QList&lt; <a class="el" href="class_rest_link_1_1_request_interceptor.html">RequestInterceptor</a> * &gt; RestLink::ApiBase::requestInterceptors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the list of request interceptors. </p>
-<dl class="section return"><dt>Returns</dt><dd>A QList of request interceptors. </dd></dl>
-
-</div>
-</div>
-<a id="af21ac04e37989e896c844a4387dff46b" name="af21ac04e37989e896c844a4387dff46b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af21ac04e37989e896c844a4387dff46b">&#9670;&#160;</a></span>addRequestInterceptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RestLink::ApiBase::addRequestInterceptor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request_interceptor.html">RequestInterceptor</a> *&#160;</td>
-          <td class="paramname"><em>interceptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adds a request interceptor to the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">interceptor</td><td>The interceptor to be added. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2191397a2641e9f523f5ee30dcea50f1" name="a2191397a2641e9f523f5ee30dcea50f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2191397a2641e9f523f5ee30dcea50f1">&#9670;&#160;</a></span>removeRequestInterceptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RestLink::ApiBase::removeRequestInterceptor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request_interceptor.html">RequestInterceptor</a> *&#160;</td>
-          <td class="paramname"><em>interceptor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes a request interceptor from the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">interceptor</td><td>The interceptor to be removed. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

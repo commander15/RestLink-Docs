@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getmethod_0',['GetMethod',['../class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7',1,'RestLink::RequestHandler']]]
+  ['getmethod_0',['GetMethod',['../class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a4c63bcce1c8401f718232b806ef2ebbd',1,'RestLink::AbstractRequestHandler']]]
 ];

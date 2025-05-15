@@ -37,6 +37,45 @@
 <section title="dataSource" ref="class_rest_link_1_1_abstract_controller.html#acacb825b98b8f0556233d0612abdc241"/>
 <section title="setDataSource" ref="class_rest_link_1_1_abstract_controller.html#a1b20a548b45cb4544c92433b993d4f79"/>
 </section>
+<section title="AbstractRequestHandler" ref="class_rest_link_1_1_abstract_request_handler.html">
+<section title="Method" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850">
+<section title="HeadMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a6c1effcdaeca52aa02df3b83d836756e"/>
+<section title="GetMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a4c63bcce1c8401f718232b806ef2ebbd"/>
+<section title="PostMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a7f144639049565db412a1700cc408dbf"/>
+<section title="PutMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a35ba17a6aa317b91435138f89a044c36"/>
+<section title="PatchMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a2bbc37909641aec59faa2cc0d575ed71"/>
+<section title="DeleteMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850ab2cf6dd76ad98dac2522d54116368f52"/>
+<section title="UnknownMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a59ec694b60ba30aacdd4547978a4e9b8"/>
+</section>
+<section title="HandlerType" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067">
+<section title="NetworkManager" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067aeb863dc47e2737bd824aff6d83a40ccf"/>
+<section title="ServerHandler" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067a626b52765668b58d7df5818cb04b2635"/>
+<section title="UnknownHandler" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067a023bc205b1afea9a2f5a5c60d678860a"/>
+</section>
+<section title="~AbstractRequestHandler" ref="class_rest_link_1_1_abstract_request_handler.html#aeb415492ec19b4b8879312d88a420a28"/>
+<section title="AbstractRequestHandler" ref="class_rest_link_1_1_abstract_request_handler.html#a2033be1e76a620ccdf270d4390958baa"/>
+<section title="handlerName" ref="class_rest_link_1_1_abstract_request_handler.html#a4381ce039bc43dd90a1f70f1c62a9d55"/>
+<section title="head" ref="class_rest_link_1_1_abstract_request_handler.html#a67abaa66b8cc20530f7c1c88626bf40d"/>
+<section title="get" ref="class_rest_link_1_1_abstract_request_handler.html#a7d7259e5b6f25e8b58b497bfb0b391cc"/>
+<section title="post" ref="class_rest_link_1_1_abstract_request_handler.html#a191247b75260e2b330b05c355872a08b"/>
+<section title="put" ref="class_rest_link_1_1_abstract_request_handler.html#aade9b4e3f1c1b1746f1f04a0d4d0884b"/>
+<section title="patch" ref="class_rest_link_1_1_abstract_request_handler.html#a70d5fcf3d0ec0898a0180ceee6652d65"/>
+<section title="deleteResource" ref="class_rest_link_1_1_abstract_request_handler.html#acb48d919bd613c569d43eaee942e9e3a"/>
+<section title="send" ref="class_rest_link_1_1_abstract_request_handler.html#aa87fbd720f9bf1794d06c9cf612d730f"/>
+<section title="requestInterceptors" ref="class_rest_link_1_1_abstract_request_handler.html#a5291545b995c7766fd39c50c8ed216f6"/>
+<section title="addRequestInterceptor" ref="class_rest_link_1_1_abstract_request_handler.html#aeb2025a346d920845ec7359bb2f407b6"/>
+<section title="removeRequestInterceptor" ref="class_rest_link_1_1_abstract_request_handler.html#a2c3e04facac9e5732757eb09cf2590bd"/>
+<section title="supportedSchemes" ref="class_rest_link_1_1_abstract_request_handler.html#a225f66fd015dc9fe5d479dbb89aeec54"/>
+<section title="handlerType" ref="class_rest_link_1_1_abstract_request_handler.html#aa717b83607a1204afa3277175e957f48"/>
+<section title="isRequestSupported" ref="class_rest_link_1_1_abstract_request_handler.html#a9a10a1f0312103eaba698d826494ba66"/>
+<section title="initResponse" ref="class_rest_link_1_1_abstract_request_handler.html#a77e60826ad19616a88dd1b0fd3b70ce0"/>
+<section title="sendRequest" ref="class_rest_link_1_1_abstract_request_handler.html#aef0f2448a04f4a39e67ece92ead491be"/>
+<section title="d_ptr" ref="class_rest_link_1_1_abstract_request_handler.html#a07f09f9f608ef9efcab20aa2f471b726"/>
+</section>
+<section title="AbstractRequestInterceptor" ref="class_rest_link_1_1_abstract_request_interceptor.html">
+<section title="~AbstractRequestInterceptor" ref="class_rest_link_1_1_abstract_request_interceptor.html#ab61d569c2130a994b3e38239ab146620"/>
+<section title="intercept" ref="class_rest_link_1_1_abstract_request_interceptor.html#ac0a24d942085bf402c388589de188767"/>
+</section>
 <section title="AbstractResourceController" ref="class_rest_link_1_1_abstract_resource_controller.html">
 <section title="~AbstractResourceController" ref="class_rest_link_1_1_abstract_resource_controller.html#a43fa36be6d0a9b5bb58c5dc4c5a3f69b"/>
 <section title="index" ref="class_rest_link_1_1_abstract_resource_controller.html#a16da3e8f03d755ba2730f7e4139560ef"/>
@@ -52,13 +91,13 @@
 <section title="~Api" ref="class_rest_link_1_1_api.html#a4c8eafa1e1b003f7ced044b233e9adb0"/>
 <section title="name" ref="class_rest_link_1_1_api.html#a650c6533d2c23851372cbe63eba221e3"/>
 <section title="setName" ref="class_rest_link_1_1_api.html#af0e09706bb5f3b3d55bccebdbfb285e0"/>
-<section title="nameChanged" ref="class_rest_link_1_1_api.html#a06ae8d52049106d31fdea6857d7ee369"/>
+<section title="nameChanged" ref="class_rest_link_1_1_api.html#a73e01f333056776904df33df2d76bb51"/>
 <section title="version" ref="class_rest_link_1_1_api.html#ae53904ec93efece3f491816fcb0c569f"/>
 <section title="setVersion" ref="class_rest_link_1_1_api.html#ad1c7891a661dbaa554e42c4555e64641"/>
-<section title="versionChanged" ref="class_rest_link_1_1_api.html#ac68ccc08464c96bd47fedfd7cda82127"/>
+<section title="versionChanged" ref="class_rest_link_1_1_api.html#a21a4d32504fb2fa5bff483f50cdda311"/>
 <section title="url" ref="class_rest_link_1_1_api.html#a73ee1a5b8223b05dd382688376b3d99c"/>
 <section title="setUrl" ref="class_rest_link_1_1_api.html#a7fe9134916fa729bd75f87a8dba9587e"/>
-<section title="urlChanged" ref="class_rest_link_1_1_api.html#a188ff813f3a85b06a40982bb2608eec7"/>
+<section title="urlChanged" ref="class_rest_link_1_1_api.html#a275f65ee1958d56d3238de7de202f079"/>
 <section title="locale" ref="class_rest_link_1_1_api.html#adc3e7bb7a63e2dd64569d38f9efe7476"/>
 <section title="setLocale" ref="class_rest_link_1_1_api.html#af44ce798c34a75c645c894b09e05b33c"/>
 <section title="localeChanged" ref="class_rest_link_1_1_api.html#a4da41316d01dbaa08d27d6f28bc6bbc4"/>
@@ -67,12 +106,12 @@
 <section title="bearerTokenChanged" ref="class_rest_link_1_1_api.html#a264c2485b62018207576ac3f96c53d15"/>
 <section title="userAgent" ref="class_rest_link_1_1_api.html#a4af630e5fdebfa82c13a0c8e6c6eaa6c"/>
 <section title="setUserAgent" ref="class_rest_link_1_1_api.html#aba4ef411220d0f77eb1ab19bfa23e615"/>
-<section title="userAgentChanged" ref="class_rest_link_1_1_api.html#a5f6305bcc78c204e4d44a3c0ee9543a1"/>
+<section title="userAgentChanged" ref="class_rest_link_1_1_api.html#abecb88bf20f104eac3b15f818ba71230"/>
 <section title="configure" ref="class_rest_link_1_1_api.html#a5c6e0e8e9163b7ef0552dda621360159"/>
 <section title="configure" ref="class_rest_link_1_1_api.html#afeb72fa6ad28e2e0abe30c9ff34791eb"/>
-<section title="configurationCompleted" ref="class_rest_link_1_1_api.html#a6b1bf42438db36b2e95dd94b0d0a46d2"/>
-<section title="configurationFailed" ref="class_rest_link_1_1_api.html#ae7696b7646746e2eaf5ab2ee5e12f63e"/>
-<section title="send" ref="class_rest_link_1_1_api.html#af62f4f4f6c7895f45204ad220478f9eb"/>
+<section title="configurationCompleted" ref="class_rest_link_1_1_api.html#a07dc1855eb454346a1fecc3ca7ccc747"/>
+<section title="configurationFailed" ref="class_rest_link_1_1_api.html#a7b732e053d6f8ee3ee551b7e8793c079"/>
+<section title="send" ref="class_rest_link_1_1_api.html#a162007c3be9a6e6379f772c46c211851"/>
 <section title="ApiPrivate" ref="class_rest_link_1_1_api.html#ab607062e3955e227058db919cd7bdb62"/>
 <section title="name" ref="class_rest_link_1_1_api.html#ab3a343293a5ff57ee10b2cea3ddceaf2"/>
 <section title="version" ref="class_rest_link_1_1_api.html#a0079d2bba2ead99fca2a1473f52fad89"/>
@@ -98,11 +137,8 @@
 <section title="patch" ref="class_rest_link_1_1_api_base.html#aac4f290f2196f107e862371cf74de826"/>
 <section title="deleteResource" ref="class_rest_link_1_1_api_base.html#a7b75a4b36426b1b3ded6d7ed05840df2"/>
 <section title="deleteResource" ref="class_rest_link_1_1_api_base.html#a84c5ad205dd4dc1ee6a45752bad3f2ee"/>
-<section title="send" ref="class_rest_link_1_1_api_base.html#a0ace50ab47ea112b0988d030f8c8ac20"/>
+<section title="send" ref="class_rest_link_1_1_api_base.html#a7c44e0a3db1d3b65d74c2f9ed92830f5"/>
 <section title="userAgent" ref="class_rest_link_1_1_api_base.html#a0682831b71c6f4d60a32a423d946e7a2"/>
-<section title="requestInterceptors" ref="class_rest_link_1_1_api_base.html#ab0fa0676d5fdeb53076baf4abfb67ec9"/>
-<section title="addRequestInterceptor" ref="class_rest_link_1_1_api_base.html#af21ac04e37989e896c844a4387dff46b"/>
-<section title="removeRequestInterceptor" ref="class_rest_link_1_1_api_base.html#a2191397a2641e9f523f5ee30dcea50f1"/>
 <section title="networkManager" ref="class_rest_link_1_1_api_base.html#a81f5c18d495fb8ddd5ccbf4fccaefa92"/>
 <section title="setNetworkManager" ref="class_rest_link_1_1_api_base.html#a8e1d108a89597b6d0d0e7e878536a0bd"/>
 <section title="ApiBasePrivate" ref="class_rest_link_1_1_api_base.html#ae54b57ec57b8742beb638cc0683b2cb6"/>
@@ -172,12 +208,22 @@
 <section title="CookieJar" ref="class_rest_link_1_1_cookie_jar.html">
 <section title="CookieJar" ref="class_rest_link_1_1_cookie_jar.html#a257b99d077cb3fbf535e248c350ffbb0"/>
 <section title="~CookieJar" ref="class_rest_link_1_1_cookie_jar.html#a6ab7e8e80e1cbf8c5e9d06ac2f4768dc"/>
+<section title="load" ref="class_rest_link_1_1_cookie_jar.html#af311cbee52c08b3dd70c5490a2694eea"/>
+<section title="save" ref="class_rest_link_1_1_cookie_jar.html#a6b46f213b10fee2e49befdd9a6bccce4"/>
+<section title="loadFromFile" ref="class_rest_link_1_1_cookie_jar.html#a6903961104fc6444404b52a1b0c28212"/>
+<section title="saveToFile" ref="class_rest_link_1_1_cookie_jar.html#a9c654c67a890745c17a2c31edfb757c9"/>
+<section title="loadFromDevice" ref="class_rest_link_1_1_cookie_jar.html#a463ba548b69cb4a0cf6112b1569ed486"/>
+<section title="saveToDevice" ref="class_rest_link_1_1_cookie_jar.html#a35edf2957e039a1b7c6ad0318a2ee773"/>
+<section title="loadFromData" ref="class_rest_link_1_1_cookie_jar.html#a0d1935a67c39c9fab42aa2e4b595748c"/>
+<section title="saveToData" ref="class_rest_link_1_1_cookie_jar.html#a2b0e3a2702bf9236e496a5da6bdac683"/>
 </section>
 <section title="File" ref="class_rest_link_1_1_file.html">
 <section title="File" ref="class_rest_link_1_1_file.html#aebb3dfb94d291669ca76f090d6a42bcc"/>
 <section title="File" ref="class_rest_link_1_1_file.html#ac01f1f56ab44f76fbbdcd7fb1428cd68"/>
 <section title="File" ref="class_rest_link_1_1_file.html#ac02b3f7ee5e0710644303c2a35882c89"/>
 <section title="open" ref="class_rest_link_1_1_file.html#a1d137151af2563e5b9232eb5697e3be6"/>
+</section>
+<section title="FileUtils" ref="class_rest_link_1_1_file_utils.html">
 </section>
 <section title="Header" ref="class_rest_link_1_1_header.html">
 <section title="Header" ref="class_rest_link_1_1_header.html#a69bc99de6cb5a668988aec7fc2abc4b3"/>
@@ -194,27 +240,27 @@
 <section title="LogRequestInterceptor" ref="class_rest_link_1_1_log_request_interceptor.html#a9916c5454f44a7df78c5c367930f7d69"/>
 <section title="LogRequestInterceptor" ref="class_rest_link_1_1_log_request_interceptor.html#a2bb03198de5d2b4cd53f96300a006e4d"/>
 <section title="~LogRequestInterceptor" ref="class_rest_link_1_1_log_request_interceptor.html#abef823c388bde597aa68d8432a8297dc"/>
-<section title="intercept" ref="class_rest_link_1_1_log_request_interceptor.html#a5e9f3ef2b4ee7daf0bd6779688d502d5"/>
+<section title="intercept" ref="class_rest_link_1_1_log_request_interceptor.html#aa4e4217951592c8eb6e3ecf468d1a65d"/>
 </section>
 <section title="NetworkManager" ref="class_rest_link_1_1_network_manager.html">
 <section title="NetworkManager" ref="class_rest_link_1_1_network_manager.html#ab8d686f89050e5a29976839c0653a612"/>
 <section title="supportedSchemes" ref="class_rest_link_1_1_network_manager.html#a47cbb795dd50e2fa3879d5398b57c164"/>
-<section title="handlerType" ref="class_rest_link_1_1_network_manager.html#a3ed09035da41035b63d26173bcbbe657"/>
+<section title="handlerType" ref="class_rest_link_1_1_network_manager.html#a7d63aafe24dfe06afcf20877be77f259"/>
 <section title="sendRequest" ref="class_rest_link_1_1_network_manager.html#abfa1503175db8c743946adb8194aa94f"/>
 <section title="generateNetworkRequest" ref="class_rest_link_1_1_network_manager.html#a56a4a7a4fc19c8de3f4fa968224d41c0"/>
 <section title="generateNetworkReply" ref="class_rest_link_1_1_network_manager.html#a661210edae121cbc04737631b2511944"/>
-<section title="head" ref="class_rest_link_1_1_network_manager.html#ad7fb6489b7ebeb95529422af2fdaf184"/>
-<section title="get" ref="class_rest_link_1_1_network_manager.html#a14b72499a8e69053dffcae0b9cb565fb"/>
-<section title="post" ref="class_rest_link_1_1_network_manager.html#a93f5e342f620a49c95d247ba64a37e51"/>
-<section title="put" ref="class_rest_link_1_1_network_manager.html#a20549216ecfb72e61671122def5ee327"/>
-<section title="patch" ref="class_rest_link_1_1_network_manager.html#ab249e081964f9b32fba718b7071d3c47"/>
-<section title="deleteResource" ref="class_rest_link_1_1_network_manager.html#ada7deaadc71211428c96558ec0ff1e3f"/>
+<section title="head" ref="class_rest_link_1_1_network_manager.html#a67abaa66b8cc20530f7c1c88626bf40d"/>
+<section title="get" ref="class_rest_link_1_1_network_manager.html#a7d7259e5b6f25e8b58b497bfb0b391cc"/>
+<section title="post" ref="class_rest_link_1_1_network_manager.html#a191247b75260e2b330b05c355872a08b"/>
+<section title="put" ref="class_rest_link_1_1_network_manager.html#aade9b4e3f1c1b1746f1f04a0d4d0884b"/>
+<section title="patch" ref="class_rest_link_1_1_network_manager.html#a70d5fcf3d0ec0898a0180ceee6652d65"/>
+<section title="deleteResource" ref="class_rest_link_1_1_network_manager.html#acb48d919bd613c569d43eaee942e9e3a"/>
 <section title="Api" ref="class_rest_link_1_1_network_manager.html#a1f45b14d517f25b1c55c57861c1ecef6"/>
 <section title="supportedSchemes" ref="class_rest_link_1_1_network_manager.html#a7e1f8667944949f88a8029d08ed049f9"/>
 </section>
 <section title="NetworkResponse" ref="class_rest_link_1_1_network_response.html">
 <section title="NetworkResponse" ref="class_rest_link_1_1_network_response.html#acce419f62d8b5435a1479b4d5290ef8b"/>
-<section title="method" ref="class_rest_link_1_1_network_response.html#ac3af7e4598a6755628cb63897d3c02df"/>
+<section title="method" ref="class_rest_link_1_1_network_response.html#a7340c720c3be02ab2b08f8820214a79c"/>
 <section title="networkRequest" ref="class_rest_link_1_1_network_response.html#ab3731669452b1bb0aa9c8f148c2f8b07"/>
 <section title="isFinished" ref="class_rest_link_1_1_network_response.html#a42e03d69b0e4eb7ba768b091cf8b4092"/>
 <section title="httpStatusCode" ref="class_rest_link_1_1_network_response.html#a4a59a651014d36ed1dfb2ae94da1b9a7"/>
@@ -313,16 +359,13 @@
 <section title="name" ref="class_rest_link_1_1_plugin.html#a800d9eae5b7c9f17688e33617138e4ee"/>
 <section title="metaData" ref="class_rest_link_1_1_plugin.html#a90dda6ccd29fe44a22365f4b88b3a18e"/>
 <section title="setMetaData" ref="class_rest_link_1_1_plugin.html#a9bbcea8df1dff9fa97e1c1be94607aee"/>
-<section title="createHandler" ref="class_rest_link_1_1_plugin.html#a362331af13f8c1b420a31c5ada2035fb"/>
+<section title="createHandler" ref="class_rest_link_1_1_plugin.html#a043daf66b65fe0e006ddd0857f307ccd"/>
 <section title="uuid" ref="class_rest_link_1_1_plugin.html#aebb48695c54b3334c98ba90700c2d494"/>
 <section title="name" ref="class_rest_link_1_1_plugin.html#a7b95fddde4d779d922caf449be381e0a"/>
 </section>
 <section title="PluginManager" ref="class_rest_link_1_1_plugin_manager.html">
 <section title="PluginManager" ref="class_rest_link_1_1_plugin_manager.html#ae82b65aed68603b3e06f6bc519eac868"/>
 <section title="~PluginManager" ref="class_rest_link_1_1_plugin_manager.html#a27a15cc509c55ba4ba7274d32dd71988"/>
-<section title="createHandler" ref="class_rest_link_1_1_plugin_manager.html#a8c80b2323ef08b1b839941d20fd4a5e0"/>
-<section title="loadPlugin" ref="class_rest_link_1_1_plugin_manager.html#aa6a2ba9569c4a250075e5595f678135c"/>
-<section title="unloadPlugin" ref="class_rest_link_1_1_plugin_manager.html#aa7b220bda5b260f8e05d55c49e3a125c"/>
 </section>
 <section title="QueryParameter" ref="class_rest_link_1_1_query_parameter.html">
 <section title="QueryParameter" ref="class_rest_link_1_1_query_parameter.html#a3bbebcee3c40af369d0bdfbc496c5578"/>
@@ -380,44 +423,6 @@
 <section title="ServerRequest" ref="class_rest_link_1_1_request.html#a0d171f28a77dd0096201591f25e09278"/>
 <section title="d_ptr" ref="class_rest_link_1_1_request.html#a66d3f96b8d09b72cab8b980f84d3fad1"/>
 </section>
-<section title="RequestHandler" ref="class_rest_link_1_1_request_handler.html">
-<section title="Method" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">
-<section title="HeadMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647"/>
-<section title="GetMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7"/>
-<section title="PostMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8"/>
-<section title="PutMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955"/>
-<section title="PatchMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6"/>
-<section title="DeleteMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3"/>
-<section title="UnknownMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28cae5fd416b1be239ea8ec3903dd3936f1a"/>
-</section>
-<section title="HandlerType" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69">
-<section title="NetworkManager" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58"/>
-<section title="ServerHandler" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10"/>
-<section title="UnknownHandler" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a5cbaf439a047d82643484a7084352145"/>
-</section>
-<section title="~RequestHandler" ref="class_rest_link_1_1_request_handler.html#a27baa47deebe70a56784383cabfa23b8"/>
-<section title="handlerName" ref="class_rest_link_1_1_request_handler.html#a1823bb312903f39da976046e1ee5c2ca"/>
-<section title="head" ref="class_rest_link_1_1_request_handler.html#ad7fb6489b7ebeb95529422af2fdaf184"/>
-<section title="get" ref="class_rest_link_1_1_request_handler.html#a14b72499a8e69053dffcae0b9cb565fb"/>
-<section title="post" ref="class_rest_link_1_1_request_handler.html#a93f5e342f620a49c95d247ba64a37e51"/>
-<section title="put" ref="class_rest_link_1_1_request_handler.html#a20549216ecfb72e61671122def5ee327"/>
-<section title="patch" ref="class_rest_link_1_1_request_handler.html#ab249e081964f9b32fba718b7071d3c47"/>
-<section title="deleteResource" ref="class_rest_link_1_1_request_handler.html#ada7deaadc71211428c96558ec0ff1e3f"/>
-<section title="send" ref="class_rest_link_1_1_request_handler.html#a52f25f751a437a00bdecf64bf0c60db3"/>
-<section title="requestInterceptors" ref="class_rest_link_1_1_request_handler.html#a0e84ce3a99a9220c856efd0a6e690472"/>
-<section title="addRequestInterceptor" ref="class_rest_link_1_1_request_handler.html#a29fb1300bb746625db0424d927f3cf1c"/>
-<section title="removeRequestInterceptor" ref="class_rest_link_1_1_request_handler.html#a1c39638548b3dbed7ae745d58204374d"/>
-<section title="supportedSchemes" ref="class_rest_link_1_1_request_handler.html#a7776c7e9a6cef2623deafc0e9d20b618"/>
-<section title="handlerType" ref="class_rest_link_1_1_request_handler.html#a166ae3d84d55211d476ead71268da29a"/>
-<section title="isRequestSupported" ref="class_rest_link_1_1_request_handler.html#a9a6d08d7d2ff50be0cb4f073adb855d0"/>
-<section title="initResponse" ref="class_rest_link_1_1_request_handler.html#ac2b133a74fe4e90fc7d4160ae26a6436"/>
-<section title="sendRequest" ref="class_rest_link_1_1_request_handler.html#a4bbd39becc2279452fe3b3db53658901"/>
-<section title="d_ptr" ref="class_rest_link_1_1_request_handler.html#a87e4a85c2c0a62c37cb87a0166895382"/>
-</section>
-<section title="RequestInterceptor" ref="class_rest_link_1_1_request_interceptor.html">
-<section title="~RequestInterceptor" ref="class_rest_link_1_1_request_interceptor.html#a0faa10593637a27e3ab5537f32c88882"/>
-<section title="intercept" ref="class_rest_link_1_1_request_interceptor.html#a9eb40bfa9fcdf74ded9ff64adc13c3d4"/>
-</section>
 <section title="RequestInterface" ref="class_rest_link_1_1_request_interface.html">
 <section title="hasPathParameter" ref="class_rest_link_1_1_request_interface.html#af8d364900cb9c10df5487e9fed248568"/>
 <section title="pathParameter" ref="class_rest_link_1_1_request_interface.html#ab0a45bd990928a450bfd0e50c3e0ef68"/>
@@ -459,7 +464,7 @@
 <section title="Response" ref="class_rest_link_1_1_response.html#a106454b4c32a01f121546b4df38ee4b6"/>
 <section title="endpoint" ref="class_rest_link_1_1_response.html#a97425e1415411f3c0113e768baf0970a"/>
 <section title="request" ref="class_rest_link_1_1_response.html#a581dc27b50e96ef48dd6f53b0b7f6003"/>
-<section title="method" ref="class_rest_link_1_1_response.html#a9bda87491c3434ee982d17f96965dac7"/>
+<section title="method" ref="class_rest_link_1_1_response.html#a6e1c8a21a3af8eab19d3d0b44c8d323b"/>
 <section title="api" ref="class_rest_link_1_1_response.html#aa9b0e939dbc4d86bfe25eb9f3e17acdd"/>
 <section title="url" ref="class_rest_link_1_1_response.html#a3967ddaae9ffaa9b272aa897873f5ff5"/>
 <section title="networkRequest" ref="class_rest_link_1_1_response.html#afc9955e3a7c4b6761aa365a3247da2d4"/>
@@ -486,7 +491,7 @@
 <section title="networkErrorOccured" ref="class_rest_link_1_1_response.html#a8913a0ec4975d69041687f467d378488"/>
 <section title="finished" ref="class_rest_link_1_1_response.html#ad826efbff4cfd9af2084a5f4bcc9c522"/>
 <section title="sslErrorsOccured" ref="class_rest_link_1_1_response.html#aed25ef83f84dde00e9a72558f60f626a"/>
-<section title="RequestHandler" ref="class_rest_link_1_1_response.html#a885dbb0d49886f3402b8ed12ab9c076a"/>
+<section title="AbstractRequestHandler" ref="class_rest_link_1_1_response.html#a74de2396d9aea87710036ec0b9481fbc"/>
 <section title="d_ptr" ref="class_rest_link_1_1_response.html#add48abcdc24e746c6f28a58a4e68fb2c"/>
 <section title="endpoint" ref="class_rest_link_1_1_response.html#a5940e0a5cc630326a7bf326b4a9ae86e"/>
 <section title="method" ref="class_rest_link_1_1_response.html#a6691eab9bddb50203242a3d1e0cbf7b6"/>
@@ -547,7 +552,7 @@
 <section title="error" ref="class_rest_link_1_1_server.html#a0df3efb3b88c1c946d7b5c463fd4c906"/>
 <section title="errorString" ref="class_rest_link_1_1_server.html#a2d6ebddcdf036978b8a74cf37ef5fbd4"/>
 <section title="registerController" ref="class_rest_link_1_1_server.html#a5ad951ee07a35342a459aedd2f3c5dc8"/>
-<section title="handlerType" ref="class_rest_link_1_1_server.html#a93a02400f3fd6d3d9f51d60466eaee36"/>
+<section title="handlerType" ref="class_rest_link_1_1_server.html#a98a5adade817e4ae387ede790ea5e4d2"/>
 <section title="stateChanged" ref="class_rest_link_1_1_server.html#a981f29f882de4d25360d6d5cc6ba18f0"/>
 <section title="errorOccured" ref="class_rest_link_1_1_server.html#a09ea7db7664bad271d0f04c97765d4fb"/>
 <section title="init" ref="class_rest_link_1_1_server.html#a64520f9e6f250d4fd789a6b8523aec88"/>
@@ -555,7 +560,8 @@
 <section title="maintain" ref="class_rest_link_1_1_server.html#a6a40e2bfe7d5aa19e7acd4459e16ef1c"/>
 <section title="sendRequest" ref="class_rest_link_1_1_server.html#aa9cce440964f853c101d8d72714abd69"/>
 <section title="processInternalRequest" ref="class_rest_link_1_1_server.html#a5f3364264d6120ca0143d6bcb45d0991"/>
-<section title="processRequest" ref="class_rest_link_1_1_server.html#a07be4e4a272fdb51fa09d15a35a43bb1"/>
+<section title="processStandardRequest" ref="class_rest_link_1_1_server.html#ab68b2eba2a8d7b16d143b792a5c68865"/>
+<section title="processUnsupportedRequest" ref="class_rest_link_1_1_server.html#acc75ec233a65230c8f980d66d13acbf6"/>
 <section title="findController" ref="class_rest_link_1_1_server.html#ae7dda679969a98c6c13e94e64ac6700f"/>
 <section title="prepareController" ref="class_rest_link_1_1_server.html#a070f4554042998f1f7f9eeba44881b73"/>
 <section title="setError" ref="class_rest_link_1_1_server.html#a0e088c19c6b8ed096fb55c9b2c3ef076"/>
@@ -565,21 +571,21 @@
 </section>
 <section title="ServerRequest" ref="class_rest_link_1_1_server_request.html">
 <section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#abc199b8d7072e977a0f225d2a1d462cd"/>
-<section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#adcdb51726ccdb8458780f4d3f4e3386d"/>
+<section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#afc04721552b7fd2a96f837c4427353e0"/>
 <section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#adcaf276788726ce502ebfad7efa0093e"/>
 <section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#a9e52f035eb14b349cbf287f049ed4db0"/>
 <section title="~ServerRequest" ref="class_rest_link_1_1_server_request.html#a07f34fe2029307f38b78a9326f82f9dd"/>
 <section title="operator=" ref="class_rest_link_1_1_server_request.html#a227b75a2ae066150248d591b2eb452de"/>
 <section title="operator=" ref="class_rest_link_1_1_server_request.html#ac03eb0456bae830b3e3de44fd246307b"/>
-<section title="method" ref="class_rest_link_1_1_server_request.html#ac4ece74403b1bc172583db45df0c8810"/>
+<section title="method" ref="class_rest_link_1_1_server_request.html#aad79a65df685b25516b90894a502b0ed"/>
 <section title="resource" ref="class_rest_link_1_1_server_request.html#a58435537113f72015ed49f725f63e8ff"/>
 <section title="identifier" ref="class_rest_link_1_1_server_request.html#a917845bcb6e644f615b7d0ba143dcff4"/>
 <section title="body" ref="class_rest_link_1_1_server_request.html#ada952c70096d60196c0a7a6c2b050c4d"/>
 </section>
 <section title="ServerResponse" ref="class_rest_link_1_1_server_response.html">
 <section title="ServerResponse" ref="class_rest_link_1_1_server_response.html#aef90632cf5600ec2b9c8156567e1cb2d"/>
-<section title="method" ref="class_rest_link_1_1_server_response.html#ac1c8b6784fa75278081d2e81ebc74549"/>
-<section title="setMethod" ref="class_rest_link_1_1_server_response.html#a507ac2c172d5d1133d2d733fb329660c"/>
+<section title="method" ref="class_rest_link_1_1_server_response.html#ae50a672ce410676e8ad5da292ebfbbb6"/>
+<section title="setMethod" ref="class_rest_link_1_1_server_response.html#a5eab423b78984954e2ded4f2c49df381"/>
 <section title="isFinished" ref="class_rest_link_1_1_server_response.html#a3f04919a175e103b998697aca4346c15"/>
 <section title="httpStatusCode" ref="class_rest_link_1_1_server_response.html#a6f5ff75c6f8f04a5851261d17174cd04"/>
 <section title="setHttpStatusCode" ref="class_rest_link_1_1_server_response.html#a41bbc305456dee2bca218564e5e3a022"/>
@@ -627,6 +633,45 @@
 <section title="dataSource" ref="class_rest_link_1_1_abstract_controller.html#acacb825b98b8f0556233d0612abdc241"/>
 <section title="setDataSource" ref="class_rest_link_1_1_abstract_controller.html#a1b20a548b45cb4544c92433b993d4f79"/>
 </section>
+<section title="AbstractRequestHandler" ref="class_rest_link_1_1_abstract_request_handler.html">
+<section title="Method" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850">
+<section title="HeadMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a6c1effcdaeca52aa02df3b83d836756e"/>
+<section title="GetMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a4c63bcce1c8401f718232b806ef2ebbd"/>
+<section title="PostMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a7f144639049565db412a1700cc408dbf"/>
+<section title="PutMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a35ba17a6aa317b91435138f89a044c36"/>
+<section title="PatchMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a2bbc37909641aec59faa2cc0d575ed71"/>
+<section title="DeleteMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850ab2cf6dd76ad98dac2522d54116368f52"/>
+<section title="UnknownMethod" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a59ec694b60ba30aacdd4547978a4e9b8"/>
+</section>
+<section title="HandlerType" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067">
+<section title="NetworkManager" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067aeb863dc47e2737bd824aff6d83a40ccf"/>
+<section title="ServerHandler" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067a626b52765668b58d7df5818cb04b2635"/>
+<section title="UnknownHandler" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067a023bc205b1afea9a2f5a5c60d678860a"/>
+</section>
+<section title="~AbstractRequestHandler" ref="class_rest_link_1_1_abstract_request_handler.html#aeb415492ec19b4b8879312d88a420a28"/>
+<section title="AbstractRequestHandler" ref="class_rest_link_1_1_abstract_request_handler.html#a2033be1e76a620ccdf270d4390958baa"/>
+<section title="handlerName" ref="class_rest_link_1_1_abstract_request_handler.html#a4381ce039bc43dd90a1f70f1c62a9d55"/>
+<section title="head" ref="class_rest_link_1_1_abstract_request_handler.html#a67abaa66b8cc20530f7c1c88626bf40d"/>
+<section title="get" ref="class_rest_link_1_1_abstract_request_handler.html#a7d7259e5b6f25e8b58b497bfb0b391cc"/>
+<section title="post" ref="class_rest_link_1_1_abstract_request_handler.html#a191247b75260e2b330b05c355872a08b"/>
+<section title="put" ref="class_rest_link_1_1_abstract_request_handler.html#aade9b4e3f1c1b1746f1f04a0d4d0884b"/>
+<section title="patch" ref="class_rest_link_1_1_abstract_request_handler.html#a70d5fcf3d0ec0898a0180ceee6652d65"/>
+<section title="deleteResource" ref="class_rest_link_1_1_abstract_request_handler.html#acb48d919bd613c569d43eaee942e9e3a"/>
+<section title="send" ref="class_rest_link_1_1_abstract_request_handler.html#aa87fbd720f9bf1794d06c9cf612d730f"/>
+<section title="requestInterceptors" ref="class_rest_link_1_1_abstract_request_handler.html#a5291545b995c7766fd39c50c8ed216f6"/>
+<section title="addRequestInterceptor" ref="class_rest_link_1_1_abstract_request_handler.html#aeb2025a346d920845ec7359bb2f407b6"/>
+<section title="removeRequestInterceptor" ref="class_rest_link_1_1_abstract_request_handler.html#a2c3e04facac9e5732757eb09cf2590bd"/>
+<section title="supportedSchemes" ref="class_rest_link_1_1_abstract_request_handler.html#a225f66fd015dc9fe5d479dbb89aeec54"/>
+<section title="handlerType" ref="class_rest_link_1_1_abstract_request_handler.html#aa717b83607a1204afa3277175e957f48"/>
+<section title="isRequestSupported" ref="class_rest_link_1_1_abstract_request_handler.html#a9a10a1f0312103eaba698d826494ba66"/>
+<section title="initResponse" ref="class_rest_link_1_1_abstract_request_handler.html#a77e60826ad19616a88dd1b0fd3b70ce0"/>
+<section title="sendRequest" ref="class_rest_link_1_1_abstract_request_handler.html#aef0f2448a04f4a39e67ece92ead491be"/>
+<section title="d_ptr" ref="class_rest_link_1_1_abstract_request_handler.html#a07f09f9f608ef9efcab20aa2f471b726"/>
+</section>
+<section title="AbstractRequestInterceptor" ref="class_rest_link_1_1_abstract_request_interceptor.html">
+<section title="~AbstractRequestInterceptor" ref="class_rest_link_1_1_abstract_request_interceptor.html#ab61d569c2130a994b3e38239ab146620"/>
+<section title="intercept" ref="class_rest_link_1_1_abstract_request_interceptor.html#ac0a24d942085bf402c388589de188767"/>
+</section>
 <section title="AbstractResourceController" ref="class_rest_link_1_1_abstract_resource_controller.html">
 <section title="~AbstractResourceController" ref="class_rest_link_1_1_abstract_resource_controller.html#a43fa36be6d0a9b5bb58c5dc4c5a3f69b"/>
 <section title="index" ref="class_rest_link_1_1_abstract_resource_controller.html#a16da3e8f03d755ba2730f7e4139560ef"/>
@@ -642,13 +687,13 @@
 <section title="~Api" ref="class_rest_link_1_1_api.html#a4c8eafa1e1b003f7ced044b233e9adb0"/>
 <section title="name" ref="class_rest_link_1_1_api.html#a650c6533d2c23851372cbe63eba221e3"/>
 <section title="setName" ref="class_rest_link_1_1_api.html#af0e09706bb5f3b3d55bccebdbfb285e0"/>
-<section title="nameChanged" ref="class_rest_link_1_1_api.html#a06ae8d52049106d31fdea6857d7ee369"/>
+<section title="nameChanged" ref="class_rest_link_1_1_api.html#a73e01f333056776904df33df2d76bb51"/>
 <section title="version" ref="class_rest_link_1_1_api.html#ae53904ec93efece3f491816fcb0c569f"/>
 <section title="setVersion" ref="class_rest_link_1_1_api.html#ad1c7891a661dbaa554e42c4555e64641"/>
-<section title="versionChanged" ref="class_rest_link_1_1_api.html#ac68ccc08464c96bd47fedfd7cda82127"/>
+<section title="versionChanged" ref="class_rest_link_1_1_api.html#a21a4d32504fb2fa5bff483f50cdda311"/>
 <section title="url" ref="class_rest_link_1_1_api.html#a73ee1a5b8223b05dd382688376b3d99c"/>
 <section title="setUrl" ref="class_rest_link_1_1_api.html#a7fe9134916fa729bd75f87a8dba9587e"/>
-<section title="urlChanged" ref="class_rest_link_1_1_api.html#a188ff813f3a85b06a40982bb2608eec7"/>
+<section title="urlChanged" ref="class_rest_link_1_1_api.html#a275f65ee1958d56d3238de7de202f079"/>
 <section title="locale" ref="class_rest_link_1_1_api.html#adc3e7bb7a63e2dd64569d38f9efe7476"/>
 <section title="setLocale" ref="class_rest_link_1_1_api.html#af44ce798c34a75c645c894b09e05b33c"/>
 <section title="localeChanged" ref="class_rest_link_1_1_api.html#a4da41316d01dbaa08d27d6f28bc6bbc4"/>
@@ -657,12 +702,12 @@
 <section title="bearerTokenChanged" ref="class_rest_link_1_1_api.html#a264c2485b62018207576ac3f96c53d15"/>
 <section title="userAgent" ref="class_rest_link_1_1_api.html#a4af630e5fdebfa82c13a0c8e6c6eaa6c"/>
 <section title="setUserAgent" ref="class_rest_link_1_1_api.html#aba4ef411220d0f77eb1ab19bfa23e615"/>
-<section title="userAgentChanged" ref="class_rest_link_1_1_api.html#a5f6305bcc78c204e4d44a3c0ee9543a1"/>
+<section title="userAgentChanged" ref="class_rest_link_1_1_api.html#abecb88bf20f104eac3b15f818ba71230"/>
 <section title="configure" ref="class_rest_link_1_1_api.html#a5c6e0e8e9163b7ef0552dda621360159"/>
 <section title="configure" ref="class_rest_link_1_1_api.html#afeb72fa6ad28e2e0abe30c9ff34791eb"/>
-<section title="configurationCompleted" ref="class_rest_link_1_1_api.html#a6b1bf42438db36b2e95dd94b0d0a46d2"/>
-<section title="configurationFailed" ref="class_rest_link_1_1_api.html#ae7696b7646746e2eaf5ab2ee5e12f63e"/>
-<section title="send" ref="class_rest_link_1_1_api.html#af62f4f4f6c7895f45204ad220478f9eb"/>
+<section title="configurationCompleted" ref="class_rest_link_1_1_api.html#a07dc1855eb454346a1fecc3ca7ccc747"/>
+<section title="configurationFailed" ref="class_rest_link_1_1_api.html#a7b732e053d6f8ee3ee551b7e8793c079"/>
+<section title="send" ref="class_rest_link_1_1_api.html#a162007c3be9a6e6379f772c46c211851"/>
 <section title="ApiPrivate" ref="class_rest_link_1_1_api.html#ab607062e3955e227058db919cd7bdb62"/>
 <section title="name" ref="class_rest_link_1_1_api.html#ab3a343293a5ff57ee10b2cea3ddceaf2"/>
 <section title="version" ref="class_rest_link_1_1_api.html#a0079d2bba2ead99fca2a1473f52fad89"/>
@@ -688,11 +733,8 @@
 <section title="patch" ref="class_rest_link_1_1_api_base.html#aac4f290f2196f107e862371cf74de826"/>
 <section title="deleteResource" ref="class_rest_link_1_1_api_base.html#a7b75a4b36426b1b3ded6d7ed05840df2"/>
 <section title="deleteResource" ref="class_rest_link_1_1_api_base.html#a84c5ad205dd4dc1ee6a45752bad3f2ee"/>
-<section title="send" ref="class_rest_link_1_1_api_base.html#a0ace50ab47ea112b0988d030f8c8ac20"/>
+<section title="send" ref="class_rest_link_1_1_api_base.html#a7c44e0a3db1d3b65d74c2f9ed92830f5"/>
 <section title="userAgent" ref="class_rest_link_1_1_api_base.html#a0682831b71c6f4d60a32a423d946e7a2"/>
-<section title="requestInterceptors" ref="class_rest_link_1_1_api_base.html#ab0fa0676d5fdeb53076baf4abfb67ec9"/>
-<section title="addRequestInterceptor" ref="class_rest_link_1_1_api_base.html#af21ac04e37989e896c844a4387dff46b"/>
-<section title="removeRequestInterceptor" ref="class_rest_link_1_1_api_base.html#a2191397a2641e9f523f5ee30dcea50f1"/>
 <section title="networkManager" ref="class_rest_link_1_1_api_base.html#a81f5c18d495fb8ddd5ccbf4fccaefa92"/>
 <section title="setNetworkManager" ref="class_rest_link_1_1_api_base.html#a8e1d108a89597b6d0d0e7e878536a0bd"/>
 <section title="ApiBasePrivate" ref="class_rest_link_1_1_api_base.html#ae54b57ec57b8742beb638cc0683b2cb6"/>
@@ -762,12 +804,22 @@
 <section title="CookieJar" ref="class_rest_link_1_1_cookie_jar.html">
 <section title="CookieJar" ref="class_rest_link_1_1_cookie_jar.html#a257b99d077cb3fbf535e248c350ffbb0"/>
 <section title="~CookieJar" ref="class_rest_link_1_1_cookie_jar.html#a6ab7e8e80e1cbf8c5e9d06ac2f4768dc"/>
+<section title="load" ref="class_rest_link_1_1_cookie_jar.html#af311cbee52c08b3dd70c5490a2694eea"/>
+<section title="save" ref="class_rest_link_1_1_cookie_jar.html#a6b46f213b10fee2e49befdd9a6bccce4"/>
+<section title="loadFromFile" ref="class_rest_link_1_1_cookie_jar.html#a6903961104fc6444404b52a1b0c28212"/>
+<section title="saveToFile" ref="class_rest_link_1_1_cookie_jar.html#a9c654c67a890745c17a2c31edfb757c9"/>
+<section title="loadFromDevice" ref="class_rest_link_1_1_cookie_jar.html#a463ba548b69cb4a0cf6112b1569ed486"/>
+<section title="saveToDevice" ref="class_rest_link_1_1_cookie_jar.html#a35edf2957e039a1b7c6ad0318a2ee773"/>
+<section title="loadFromData" ref="class_rest_link_1_1_cookie_jar.html#a0d1935a67c39c9fab42aa2e4b595748c"/>
+<section title="saveToData" ref="class_rest_link_1_1_cookie_jar.html#a2b0e3a2702bf9236e496a5da6bdac683"/>
 </section>
 <section title="File" ref="class_rest_link_1_1_file.html">
 <section title="File" ref="class_rest_link_1_1_file.html#aebb3dfb94d291669ca76f090d6a42bcc"/>
 <section title="File" ref="class_rest_link_1_1_file.html#ac01f1f56ab44f76fbbdcd7fb1428cd68"/>
 <section title="File" ref="class_rest_link_1_1_file.html#ac02b3f7ee5e0710644303c2a35882c89"/>
 <section title="open" ref="class_rest_link_1_1_file.html#a1d137151af2563e5b9232eb5697e3be6"/>
+</section>
+<section title="FileUtils" ref="class_rest_link_1_1_file_utils.html">
 </section>
 <section title="Header" ref="class_rest_link_1_1_header.html">
 <section title="Header" ref="class_rest_link_1_1_header.html#a69bc99de6cb5a668988aec7fc2abc4b3"/>
@@ -784,27 +836,27 @@
 <section title="LogRequestInterceptor" ref="class_rest_link_1_1_log_request_interceptor.html#a9916c5454f44a7df78c5c367930f7d69"/>
 <section title="LogRequestInterceptor" ref="class_rest_link_1_1_log_request_interceptor.html#a2bb03198de5d2b4cd53f96300a006e4d"/>
 <section title="~LogRequestInterceptor" ref="class_rest_link_1_1_log_request_interceptor.html#abef823c388bde597aa68d8432a8297dc"/>
-<section title="intercept" ref="class_rest_link_1_1_log_request_interceptor.html#a5e9f3ef2b4ee7daf0bd6779688d502d5"/>
+<section title="intercept" ref="class_rest_link_1_1_log_request_interceptor.html#aa4e4217951592c8eb6e3ecf468d1a65d"/>
 </section>
 <section title="NetworkManager" ref="class_rest_link_1_1_network_manager.html">
 <section title="NetworkManager" ref="class_rest_link_1_1_network_manager.html#ab8d686f89050e5a29976839c0653a612"/>
 <section title="supportedSchemes" ref="class_rest_link_1_1_network_manager.html#a47cbb795dd50e2fa3879d5398b57c164"/>
-<section title="handlerType" ref="class_rest_link_1_1_network_manager.html#a3ed09035da41035b63d26173bcbbe657"/>
+<section title="handlerType" ref="class_rest_link_1_1_network_manager.html#a7d63aafe24dfe06afcf20877be77f259"/>
 <section title="sendRequest" ref="class_rest_link_1_1_network_manager.html#abfa1503175db8c743946adb8194aa94f"/>
 <section title="generateNetworkRequest" ref="class_rest_link_1_1_network_manager.html#a56a4a7a4fc19c8de3f4fa968224d41c0"/>
 <section title="generateNetworkReply" ref="class_rest_link_1_1_network_manager.html#a661210edae121cbc04737631b2511944"/>
-<section title="head" ref="class_rest_link_1_1_network_manager.html#ad7fb6489b7ebeb95529422af2fdaf184"/>
-<section title="get" ref="class_rest_link_1_1_network_manager.html#a14b72499a8e69053dffcae0b9cb565fb"/>
-<section title="post" ref="class_rest_link_1_1_network_manager.html#a93f5e342f620a49c95d247ba64a37e51"/>
-<section title="put" ref="class_rest_link_1_1_network_manager.html#a20549216ecfb72e61671122def5ee327"/>
-<section title="patch" ref="class_rest_link_1_1_network_manager.html#ab249e081964f9b32fba718b7071d3c47"/>
-<section title="deleteResource" ref="class_rest_link_1_1_network_manager.html#ada7deaadc71211428c96558ec0ff1e3f"/>
+<section title="head" ref="class_rest_link_1_1_network_manager.html#a67abaa66b8cc20530f7c1c88626bf40d"/>
+<section title="get" ref="class_rest_link_1_1_network_manager.html#a7d7259e5b6f25e8b58b497bfb0b391cc"/>
+<section title="post" ref="class_rest_link_1_1_network_manager.html#a191247b75260e2b330b05c355872a08b"/>
+<section title="put" ref="class_rest_link_1_1_network_manager.html#aade9b4e3f1c1b1746f1f04a0d4d0884b"/>
+<section title="patch" ref="class_rest_link_1_1_network_manager.html#a70d5fcf3d0ec0898a0180ceee6652d65"/>
+<section title="deleteResource" ref="class_rest_link_1_1_network_manager.html#acb48d919bd613c569d43eaee942e9e3a"/>
 <section title="Api" ref="class_rest_link_1_1_network_manager.html#a1f45b14d517f25b1c55c57861c1ecef6"/>
 <section title="supportedSchemes" ref="class_rest_link_1_1_network_manager.html#a7e1f8667944949f88a8029d08ed049f9"/>
 </section>
 <section title="NetworkResponse" ref="class_rest_link_1_1_network_response.html">
 <section title="NetworkResponse" ref="class_rest_link_1_1_network_response.html#acce419f62d8b5435a1479b4d5290ef8b"/>
-<section title="method" ref="class_rest_link_1_1_network_response.html#ac3af7e4598a6755628cb63897d3c02df"/>
+<section title="method" ref="class_rest_link_1_1_network_response.html#a7340c720c3be02ab2b08f8820214a79c"/>
 <section title="networkRequest" ref="class_rest_link_1_1_network_response.html#ab3731669452b1bb0aa9c8f148c2f8b07"/>
 <section title="isFinished" ref="class_rest_link_1_1_network_response.html#a42e03d69b0e4eb7ba768b091cf8b4092"/>
 <section title="httpStatusCode" ref="class_rest_link_1_1_network_response.html#a4a59a651014d36ed1dfb2ae94da1b9a7"/>
@@ -903,16 +955,13 @@
 <section title="name" ref="class_rest_link_1_1_plugin.html#a800d9eae5b7c9f17688e33617138e4ee"/>
 <section title="metaData" ref="class_rest_link_1_1_plugin.html#a90dda6ccd29fe44a22365f4b88b3a18e"/>
 <section title="setMetaData" ref="class_rest_link_1_1_plugin.html#a9bbcea8df1dff9fa97e1c1be94607aee"/>
-<section title="createHandler" ref="class_rest_link_1_1_plugin.html#a362331af13f8c1b420a31c5ada2035fb"/>
+<section title="createHandler" ref="class_rest_link_1_1_plugin.html#a043daf66b65fe0e006ddd0857f307ccd"/>
 <section title="uuid" ref="class_rest_link_1_1_plugin.html#aebb48695c54b3334c98ba90700c2d494"/>
 <section title="name" ref="class_rest_link_1_1_plugin.html#a7b95fddde4d779d922caf449be381e0a"/>
 </section>
 <section title="PluginManager" ref="class_rest_link_1_1_plugin_manager.html">
 <section title="PluginManager" ref="class_rest_link_1_1_plugin_manager.html#ae82b65aed68603b3e06f6bc519eac868"/>
 <section title="~PluginManager" ref="class_rest_link_1_1_plugin_manager.html#a27a15cc509c55ba4ba7274d32dd71988"/>
-<section title="createHandler" ref="class_rest_link_1_1_plugin_manager.html#a8c80b2323ef08b1b839941d20fd4a5e0"/>
-<section title="loadPlugin" ref="class_rest_link_1_1_plugin_manager.html#aa6a2ba9569c4a250075e5595f678135c"/>
-<section title="unloadPlugin" ref="class_rest_link_1_1_plugin_manager.html#aa7b220bda5b260f8e05d55c49e3a125c"/>
 </section>
 <section title="QueryParameter" ref="class_rest_link_1_1_query_parameter.html">
 <section title="QueryParameter" ref="class_rest_link_1_1_query_parameter.html#a3bbebcee3c40af369d0bdfbc496c5578"/>
@@ -970,44 +1019,6 @@
 <section title="ServerRequest" ref="class_rest_link_1_1_request.html#a0d171f28a77dd0096201591f25e09278"/>
 <section title="d_ptr" ref="class_rest_link_1_1_request.html#a66d3f96b8d09b72cab8b980f84d3fad1"/>
 </section>
-<section title="RequestHandler" ref="class_rest_link_1_1_request_handler.html">
-<section title="Method" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">
-<section title="HeadMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647"/>
-<section title="GetMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7"/>
-<section title="PostMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8"/>
-<section title="PutMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955"/>
-<section title="PatchMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6"/>
-<section title="DeleteMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3"/>
-<section title="UnknownMethod" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28cae5fd416b1be239ea8ec3903dd3936f1a"/>
-</section>
-<section title="HandlerType" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69">
-<section title="NetworkManager" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58"/>
-<section title="ServerHandler" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10"/>
-<section title="UnknownHandler" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a5cbaf439a047d82643484a7084352145"/>
-</section>
-<section title="~RequestHandler" ref="class_rest_link_1_1_request_handler.html#a27baa47deebe70a56784383cabfa23b8"/>
-<section title="handlerName" ref="class_rest_link_1_1_request_handler.html#a1823bb312903f39da976046e1ee5c2ca"/>
-<section title="head" ref="class_rest_link_1_1_request_handler.html#ad7fb6489b7ebeb95529422af2fdaf184"/>
-<section title="get" ref="class_rest_link_1_1_request_handler.html#a14b72499a8e69053dffcae0b9cb565fb"/>
-<section title="post" ref="class_rest_link_1_1_request_handler.html#a93f5e342f620a49c95d247ba64a37e51"/>
-<section title="put" ref="class_rest_link_1_1_request_handler.html#a20549216ecfb72e61671122def5ee327"/>
-<section title="patch" ref="class_rest_link_1_1_request_handler.html#ab249e081964f9b32fba718b7071d3c47"/>
-<section title="deleteResource" ref="class_rest_link_1_1_request_handler.html#ada7deaadc71211428c96558ec0ff1e3f"/>
-<section title="send" ref="class_rest_link_1_1_request_handler.html#a52f25f751a437a00bdecf64bf0c60db3"/>
-<section title="requestInterceptors" ref="class_rest_link_1_1_request_handler.html#a0e84ce3a99a9220c856efd0a6e690472"/>
-<section title="addRequestInterceptor" ref="class_rest_link_1_1_request_handler.html#a29fb1300bb746625db0424d927f3cf1c"/>
-<section title="removeRequestInterceptor" ref="class_rest_link_1_1_request_handler.html#a1c39638548b3dbed7ae745d58204374d"/>
-<section title="supportedSchemes" ref="class_rest_link_1_1_request_handler.html#a7776c7e9a6cef2623deafc0e9d20b618"/>
-<section title="handlerType" ref="class_rest_link_1_1_request_handler.html#a166ae3d84d55211d476ead71268da29a"/>
-<section title="isRequestSupported" ref="class_rest_link_1_1_request_handler.html#a9a6d08d7d2ff50be0cb4f073adb855d0"/>
-<section title="initResponse" ref="class_rest_link_1_1_request_handler.html#ac2b133a74fe4e90fc7d4160ae26a6436"/>
-<section title="sendRequest" ref="class_rest_link_1_1_request_handler.html#a4bbd39becc2279452fe3b3db53658901"/>
-<section title="d_ptr" ref="class_rest_link_1_1_request_handler.html#a87e4a85c2c0a62c37cb87a0166895382"/>
-</section>
-<section title="RequestInterceptor" ref="class_rest_link_1_1_request_interceptor.html">
-<section title="~RequestInterceptor" ref="class_rest_link_1_1_request_interceptor.html#a0faa10593637a27e3ab5537f32c88882"/>
-<section title="intercept" ref="class_rest_link_1_1_request_interceptor.html#a9eb40bfa9fcdf74ded9ff64adc13c3d4"/>
-</section>
 <section title="RequestInterface" ref="class_rest_link_1_1_request_interface.html">
 <section title="hasPathParameter" ref="class_rest_link_1_1_request_interface.html#af8d364900cb9c10df5487e9fed248568"/>
 <section title="pathParameter" ref="class_rest_link_1_1_request_interface.html#ab0a45bd990928a450bfd0e50c3e0ef68"/>
@@ -1049,7 +1060,7 @@
 <section title="Response" ref="class_rest_link_1_1_response.html#a106454b4c32a01f121546b4df38ee4b6"/>
 <section title="endpoint" ref="class_rest_link_1_1_response.html#a97425e1415411f3c0113e768baf0970a"/>
 <section title="request" ref="class_rest_link_1_1_response.html#a581dc27b50e96ef48dd6f53b0b7f6003"/>
-<section title="method" ref="class_rest_link_1_1_response.html#a9bda87491c3434ee982d17f96965dac7"/>
+<section title="method" ref="class_rest_link_1_1_response.html#a6e1c8a21a3af8eab19d3d0b44c8d323b"/>
 <section title="api" ref="class_rest_link_1_1_response.html#aa9b0e939dbc4d86bfe25eb9f3e17acdd"/>
 <section title="url" ref="class_rest_link_1_1_response.html#a3967ddaae9ffaa9b272aa897873f5ff5"/>
 <section title="networkRequest" ref="class_rest_link_1_1_response.html#afc9955e3a7c4b6761aa365a3247da2d4"/>
@@ -1076,7 +1087,7 @@
 <section title="networkErrorOccured" ref="class_rest_link_1_1_response.html#a8913a0ec4975d69041687f467d378488"/>
 <section title="finished" ref="class_rest_link_1_1_response.html#ad826efbff4cfd9af2084a5f4bcc9c522"/>
 <section title="sslErrorsOccured" ref="class_rest_link_1_1_response.html#aed25ef83f84dde00e9a72558f60f626a"/>
-<section title="RequestHandler" ref="class_rest_link_1_1_response.html#a885dbb0d49886f3402b8ed12ab9c076a"/>
+<section title="AbstractRequestHandler" ref="class_rest_link_1_1_response.html#a74de2396d9aea87710036ec0b9481fbc"/>
 <section title="d_ptr" ref="class_rest_link_1_1_response.html#add48abcdc24e746c6f28a58a4e68fb2c"/>
 <section title="endpoint" ref="class_rest_link_1_1_response.html#a5940e0a5cc630326a7bf326b4a9ae86e"/>
 <section title="method" ref="class_rest_link_1_1_response.html#a6691eab9bddb50203242a3d1e0cbf7b6"/>
@@ -1137,7 +1148,7 @@
 <section title="error" ref="class_rest_link_1_1_server.html#a0df3efb3b88c1c946d7b5c463fd4c906"/>
 <section title="errorString" ref="class_rest_link_1_1_server.html#a2d6ebddcdf036978b8a74cf37ef5fbd4"/>
 <section title="registerController" ref="class_rest_link_1_1_server.html#a5ad951ee07a35342a459aedd2f3c5dc8"/>
-<section title="handlerType" ref="class_rest_link_1_1_server.html#a93a02400f3fd6d3d9f51d60466eaee36"/>
+<section title="handlerType" ref="class_rest_link_1_1_server.html#a98a5adade817e4ae387ede790ea5e4d2"/>
 <section title="stateChanged" ref="class_rest_link_1_1_server.html#a981f29f882de4d25360d6d5cc6ba18f0"/>
 <section title="errorOccured" ref="class_rest_link_1_1_server.html#a09ea7db7664bad271d0f04c97765d4fb"/>
 <section title="init" ref="class_rest_link_1_1_server.html#a64520f9e6f250d4fd789a6b8523aec88"/>
@@ -1145,7 +1156,8 @@
 <section title="maintain" ref="class_rest_link_1_1_server.html#a6a40e2bfe7d5aa19e7acd4459e16ef1c"/>
 <section title="sendRequest" ref="class_rest_link_1_1_server.html#aa9cce440964f853c101d8d72714abd69"/>
 <section title="processInternalRequest" ref="class_rest_link_1_1_server.html#a5f3364264d6120ca0143d6bcb45d0991"/>
-<section title="processRequest" ref="class_rest_link_1_1_server.html#a07be4e4a272fdb51fa09d15a35a43bb1"/>
+<section title="processStandardRequest" ref="class_rest_link_1_1_server.html#ab68b2eba2a8d7b16d143b792a5c68865"/>
+<section title="processUnsupportedRequest" ref="class_rest_link_1_1_server.html#acc75ec233a65230c8f980d66d13acbf6"/>
 <section title="findController" ref="class_rest_link_1_1_server.html#ae7dda679969a98c6c13e94e64ac6700f"/>
 <section title="prepareController" ref="class_rest_link_1_1_server.html#a070f4554042998f1f7f9eeba44881b73"/>
 <section title="setError" ref="class_rest_link_1_1_server.html#a0e088c19c6b8ed096fb55c9b2c3ef076"/>
@@ -1155,21 +1167,21 @@
 </section>
 <section title="ServerRequest" ref="class_rest_link_1_1_server_request.html">
 <section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#abc199b8d7072e977a0f225d2a1d462cd"/>
-<section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#adcdb51726ccdb8458780f4d3f4e3386d"/>
+<section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#afc04721552b7fd2a96f837c4427353e0"/>
 <section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#adcaf276788726ce502ebfad7efa0093e"/>
 <section title="ServerRequest" ref="class_rest_link_1_1_server_request.html#a9e52f035eb14b349cbf287f049ed4db0"/>
 <section title="~ServerRequest" ref="class_rest_link_1_1_server_request.html#a07f34fe2029307f38b78a9326f82f9dd"/>
 <section title="operator=" ref="class_rest_link_1_1_server_request.html#a227b75a2ae066150248d591b2eb452de"/>
 <section title="operator=" ref="class_rest_link_1_1_server_request.html#ac03eb0456bae830b3e3de44fd246307b"/>
-<section title="method" ref="class_rest_link_1_1_server_request.html#ac4ece74403b1bc172583db45df0c8810"/>
+<section title="method" ref="class_rest_link_1_1_server_request.html#aad79a65df685b25516b90894a502b0ed"/>
 <section title="resource" ref="class_rest_link_1_1_server_request.html#a58435537113f72015ed49f725f63e8ff"/>
 <section title="identifier" ref="class_rest_link_1_1_server_request.html#a917845bcb6e644f615b7d0ba143dcff4"/>
 <section title="body" ref="class_rest_link_1_1_server_request.html#ada952c70096d60196c0a7a6c2b050c4d"/>
 </section>
 <section title="ServerResponse" ref="class_rest_link_1_1_server_response.html">
 <section title="ServerResponse" ref="class_rest_link_1_1_server_response.html#aef90632cf5600ec2b9c8156567e1cb2d"/>
-<section title="method" ref="class_rest_link_1_1_server_response.html#ac1c8b6784fa75278081d2e81ebc74549"/>
-<section title="setMethod" ref="class_rest_link_1_1_server_response.html#a507ac2c172d5d1133d2d733fb329660c"/>
+<section title="method" ref="class_rest_link_1_1_server_response.html#ae50a672ce410676e8ad5da292ebfbbb6"/>
+<section title="setMethod" ref="class_rest_link_1_1_server_response.html#a5eab423b78984954e2ded4f2c49df381"/>
 <section title="isFinished" ref="class_rest_link_1_1_server_response.html#a3f04919a175e103b998697aca4346c15"/>
 <section title="httpStatusCode" ref="class_rest_link_1_1_server_response.html#a6f5ff75c6f8f04a5851261d17174cd04"/>
 <section title="setHttpStatusCode" ref="class_rest_link_1_1_server_response.html#a41bbc305456dee2bca218564e5e3a022"/>
@@ -1200,9 +1212,17 @@
 <section title="RestLink::AbstractController" ref="class_rest_link_1_1_abstract_controller.html">
 <section title="RestLink::AbstractResourceController" ref="class_rest_link_1_1_abstract_resource_controller.html"/>
 </section>
+<section title="RestLink::AbstractRequestHandler" ref="class_rest_link_1_1_abstract_request_handler.html">
+<section title="RestLink::NetworkManager" ref="class_rest_link_1_1_network_manager.html"/>
+<section title="RestLink::Server" ref="class_rest_link_1_1_server.html"/>
+</section>
+<section title="RestLink::AbstractRequestInterceptor" ref="class_rest_link_1_1_abstract_request_interceptor.html">
+<section title="RestLink::LogRequestInterceptor" ref="class_rest_link_1_1_log_request_interceptor.html"/>
+</section>
 <section title="RestLink::Body" ref="class_rest_link_1_1_body.html"/>
 <section title="RestLink::CompressionUtils" ref="class_rest_link_1_1_compression_utils.html"/>
 <section title="RestLink::File" ref="class_rest_link_1_1_file.html"/>
+<section title="RestLink::FileUtils" ref="class_rest_link_1_1_file_utils.html"/>
 <section title="RestLink::HttpUtils" ref="class_rest_link_1_1_http_utils.html"/>
 <section title="RestLink::Parameter" ref="class_rest_link_1_1_parameter.html">
 <section title="RestLink::Header" ref="class_rest_link_1_1_header.html"/>
@@ -1236,13 +1256,6 @@
 </section>
 <section title="RestLink::Plugin" ref="class_rest_link_1_1_plugin.html"/>
 <section title="RestLink::Server" ref="class_rest_link_1_1_server.html"/>
-</section>
-<section title="RestLink::RequestHandler" ref="class_rest_link_1_1_request_handler.html">
-<section title="RestLink::NetworkManager" ref="class_rest_link_1_1_network_manager.html"/>
-<section title="RestLink::Server" ref="class_rest_link_1_1_server.html"/>
-</section>
-<section title="RestLink::RequestInterceptor" ref="class_rest_link_1_1_request_interceptor.html">
-<section title="RestLink::LogRequestInterceptor" ref="class_rest_link_1_1_log_request_interceptor.html"/>
 </section>
 <section title="RestLink::RequestInterface" ref="class_rest_link_1_1_request_interface.html">
 <section title="RestLink::ApiBase" ref="class_rest_link_1_1_api_base.html"/>
@@ -1312,6 +1325,8 @@
 </toc>
 <keywords>
 <keyword name="RestLink::AbstractController" id="RestLink::AbstractController_" ref="class_rest_link_1_1_abstract_controller.html"/>
+<keyword name="RestLink::AbstractRequestHandler" id="RestLink::AbstractRequestHandler_" ref="class_rest_link_1_1_abstract_request_handler.html"/>
+<keyword name="RestLink::AbstractRequestInterceptor" id="RestLink::AbstractRequestInterceptor_" ref="class_rest_link_1_1_abstract_request_interceptor.html"/>
 <keyword name="RestLink::AbstractResourceController" id="RestLink::AbstractResourceController_" ref="class_rest_link_1_1_abstract_resource_controller.html"/>
 <keyword name="RestLink::Api" id="RestLink::Api_" ref="class_rest_link_1_1_api.html"/>
 <keyword name="RestLink::ApiBase" id="RestLink::ApiBase_" ref="class_rest_link_1_1_api_base.html"/>
@@ -1320,6 +1335,7 @@
 <keyword name="RestLink::CompressionUtils" id="RestLink::CompressionUtils_" ref="class_rest_link_1_1_compression_utils.html"/>
 <keyword name="RestLink::CookieJar" id="RestLink::CookieJar_" ref="class_rest_link_1_1_cookie_jar.html"/>
 <keyword name="RestLink::File" id="RestLink::File_" ref="class_rest_link_1_1_file.html"/>
+<keyword name="RestLink::FileUtils" id="RestLink::FileUtils_" ref="class_rest_link_1_1_file_utils.html"/>
 <keyword name="RestLink::Header" id="RestLink::Header_" ref="class_rest_link_1_1_header.html"/>
 <keyword name="RestLink::HttpUtils" id="RestLink::HttpUtils_" ref="class_rest_link_1_1_http_utils.html"/>
 <keyword name="RestLink::LogRequestInterceptor" id="RestLink::LogRequestInterceptor_" ref="class_rest_link_1_1_log_request_interceptor.html"/>
@@ -1332,8 +1348,6 @@
 <keyword name="RestLink::PluginManager" id="RestLink::PluginManager_" ref="class_rest_link_1_1_plugin_manager.html"/>
 <keyword name="RestLink::QueryParameter" id="RestLink::QueryParameter_" ref="class_rest_link_1_1_query_parameter.html"/>
 <keyword name="RestLink::Request" id="RestLink::Request_" ref="class_rest_link_1_1_request.html"/>
-<keyword name="RestLink::RequestHandler" id="RestLink::RequestHandler_" ref="class_rest_link_1_1_request_handler.html"/>
-<keyword name="RestLink::RequestInterceptor" id="RestLink::RequestInterceptor_" ref="class_rest_link_1_1_request_interceptor.html"/>
 <keyword name="RestLink::RequestInterface" id="RestLink::RequestInterface_" ref="class_rest_link_1_1_request_interface.html"/>
 <keyword name="RestLink::Response" id="RestLink::Response_" ref="class_rest_link_1_1_response.html"/>
 <keyword name="RestLink::ResponseBase" id="RestLink::ResponseBase_" ref="class_rest_link_1_1_response_base.html"/>
@@ -1346,13 +1360,14 @@
 <keyword name="abort()=0" id="RestLink::Response::abort_a7447050619e33b148553e1b615ca91a7" ref="class_rest_link_1_1_response.html#a7447050619e33b148553e1b615ca91a7"/>
 <keyword name="abort() override" id="RestLink::ServerResponse::abort_a35c34e949c366a50847b853c17c4ea36" ref="class_rest_link_1_1_server_response.html#a35c34e949c366a50847b853c17c4ea36"/>
 <keyword name="AbstractController()" id="RestLink::AbstractController::AbstractController_a38bc8168cc41367dca603709a2cfe526" ref="class_rest_link_1_1_abstract_controller.html#a38bc8168cc41367dca603709a2cfe526"/>
+<keyword name="AbstractRequestHandler" id="RestLink::Response::AbstractRequestHandler_a74de2396d9aea87710036ec0b9481fbc" ref="class_rest_link_1_1_response.html#a74de2396d9aea87710036ec0b9481fbc"/>
+<keyword name="AbstractRequestHandler()" id="RestLink::AbstractRequestHandler::AbstractRequestHandler_a2033be1e76a620ccdf270d4390958baa" ref="class_rest_link_1_1_abstract_request_handler.html#a2033be1e76a620ccdf270d4390958baa"/>
 <keyword name="addParameter(const QString &amp;name, const QVariant &amp;value)" id="RestLink::ParameterList::addParameter_a1ed484052ef187ccbcfc7ced7a3fad0e" ref="class_rest_link_1_1_parameter_list.html#a1ed484052ef187ccbcfc7ced7a3fad0e"/>
 <keyword name="addParameter(const QString &amp;name, const QVariantList &amp;values)" id="RestLink::ParameterList::addParameter_ab9777e710c0761ee2f00207e7e0354e7" ref="class_rest_link_1_1_parameter_list.html#ab9777e710c0761ee2f00207e7e0354e7"/>
 <keyword name="addParameter(const P &amp;param)" id="RestLink::ParameterList::addParameter_a2a1968dd57f9e859f192b20f06563f93" ref="class_rest_link_1_1_parameter_list.html#a2a1968dd57f9e859f192b20f06563f93"/>
 <keyword name="addQueryParameter(const QString &amp;name, const QVariant &amp;value)" id="RestLink::RequestInterface::addQueryParameter_a177b271e28c6a34a723259819af160a8" ref="class_rest_link_1_1_request_interface.html#a177b271e28c6a34a723259819af160a8"/>
 <keyword name="addQueryParameter(const QueryParameter &amp;param)" id="RestLink::RequestInterface::addQueryParameter_a8e3259dcebd3b88e250849d632196c0e" ref="class_rest_link_1_1_request_interface.html#a8e3259dcebd3b88e250849d632196c0e"/>
-<keyword name="addRequestInterceptor(RequestInterceptor *interceptor)" id="RestLink::ApiBase::addRequestInterceptor_af21ac04e37989e896c844a4387dff46b" ref="class_rest_link_1_1_api_base.html#af21ac04e37989e896c844a4387dff46b"/>
-<keyword name="addRequestInterceptor(RequestInterceptor *interceptor)" id="RestLink::RequestHandler::addRequestInterceptor_a29fb1300bb746625db0424d927f3cf1c" ref="class_rest_link_1_1_request_handler.html#a29fb1300bb746625db0424d927f3cf1c"/>
+<keyword name="addRequestInterceptor(AbstractRequestInterceptor *interceptor)" id="RestLink::AbstractRequestHandler::addRequestInterceptor_aeb2025a346d920845ec7359bb2f407b6" ref="class_rest_link_1_1_abstract_request_handler.html#aeb2025a346d920845ec7359bb2f407b6"/>
 <keyword name="addValue(const QVariant &amp;value)" id="RestLink::Parameter::addValue_a0a08492fb445417c3ade190b333a5f78" ref="class_rest_link_1_1_parameter.html#a0a08492fb445417c3ade190b333a5f78"/>
 <keyword name="api() const" id="RestLink::Request::api_a041428352e3bc8a83a3979bf4447bf5d" ref="class_rest_link_1_1_request.html#a041428352e3bc8a83a3979bf4447bf5d"/>
 <keyword name="api() const" id="RestLink::Response::api_aa9b0e939dbc4d86bfe25eb9f3e17acdd" ref="class_rest_link_1_1_response.html#aa9b0e939dbc4d86bfe25eb9f3e17acdd"/>
@@ -1365,12 +1380,12 @@
 <keyword name="ApiPrivate" id="RestLink::Api::ApiPrivate_ab607062e3955e227058db919cd7bdb62" ref="class_rest_link_1_1_api.html#ab607062e3955e227058db919cd7bdb62"/>
 <keyword name="Asynchronous" id="RestLink::Server::Asynchronous_afb2b18ba38dbb66eb8b3ae0c417cb21eaf1c68e7b539c720a71a12f15f3dd51cb" ref="class_rest_link_1_1_server.html#afb2b18ba38dbb66eb8b3ae0c417cb21eaf1c68e7b539c720a71a12f15f3dd51cb"/>
 <keyword name="atEnd() const override" id="RestLink::ResponseBase::atEnd_aa36d49d6b9828717061c8ffc63430a4c" ref="class_rest_link_1_1_response_base.html#aa36d49d6b9828717061c8ffc63430a4c"/>
+<keyword name="attribute(Attribute attribute) const" id="RestLink::Request::attribute_aa229ffa0dd87957023432404defb9664" ref="class_rest_link_1_1_request.html#aa229ffa0dd87957023432404defb9664"/>
+<keyword name="attribute(Attribute attribute, const QVariant &amp;defaultValue) const" id="RestLink::Request::attribute_a5cff468ad991cea721e17538c62f7d30" ref="class_rest_link_1_1_request.html#a5cff468ad991cea721e17538c62f7d30"/>
 <keyword name="Attribute" id="RestLink::Request::Attribute_af1d6d3bd73bf63548a2d74820eb46d11" ref="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11"/>
 <keyword name="CacheLoadControlAttribute" id="RestLink::Request::CacheLoadControlAttribute_af1d6d3bd73bf63548a2d74820eb46d11a5069fd3a349a2eea735a9477eeb3d565" ref="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11a5069fd3a349a2eea735a9477eeb3d565"/>
 <keyword name="CacheSaveControlAttribute" id="RestLink::Request::CacheSaveControlAttribute_af1d6d3bd73bf63548a2d74820eb46d11adb0d113aa44e0379575de1bdfd11dfe7" ref="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11adb0d113aa44e0379575de1bdfd11dfe7"/>
 <keyword name="CompressionAllowedAttribute" id="RestLink::Request::CompressionAllowedAttribute_af1d6d3bd73bf63548a2d74820eb46d11ae0e92e6e0beab8ce1003c2337e143ab9" ref="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11ae0e92e6e0beab8ce1003c2337e143ab9"/>
-<keyword name="attribute(Attribute attribute) const" id="RestLink::Request::attribute_aa229ffa0dd87957023432404defb9664" ref="class_rest_link_1_1_request.html#aa229ffa0dd87957023432404defb9664"/>
-<keyword name="attribute(Attribute attribute, const QVariant &amp;defaultValue) const" id="RestLink::Request::attribute_a5cff468ad991cea721e17538c62f7d30" ref="class_rest_link_1_1_request.html#a5cff468ad991cea721e17538c62f7d30"/>
 <keyword name="Authentication" id="RestLink::Parameter::Authentication_a9df60b48a85ed0c7e00d2992ea7ebd36a03b4f31cbb4862a6af543db80a91a9bd" ref="class_rest_link_1_1_parameter.html#a9df60b48a85ed0c7e00d2992ea7ebd36a03b4f31cbb4862a6af543db80a91a9bd"/>
 <keyword name="BaseType" id="RestLink::Parameter::BaseType_adc7ade54226f71d8dd4f3b00e2bd4e37a99f24ea6df3a1ae7ccf09aff0ff22418" ref="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37a99f24ea6df3a1ae7ccf09aff0ff22418"/>
 <keyword name="baseUrl() const" id="RestLink::Request::baseUrl_aa451475c8e1785035efdd2de872b7280" ref="class_rest_link_1_1_request.html#aa451475c8e1785035efdd2de872b7280"/>
@@ -1410,8 +1425,8 @@
 <keyword name="complete()" id="RestLink::ServerResponse::complete_aa4ce3fe220bd7656ad159c70ed31a84c" ref="class_rest_link_1_1_server_response.html#aa4ce3fe220bd7656ad159c70ed31a84c"/>
 <keyword name="CompressionAllowedAttribute" id="RestLink::Request::CompressionAllowedAttribute_af1d6d3bd73bf63548a2d74820eb46d11ae0e92e6e0beab8ce1003c2337e143ab9" ref="class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11ae0e92e6e0beab8ce1003c2337e143ab9"/>
 <keyword name="configuration() const" id="RestLink::Server::configuration_a214548ffc6d4171481876064106dfed5" ref="class_rest_link_1_1_server.html#a214548ffc6d4171481876064106dfed5"/>
-<keyword name="configurationCompleted()" id="RestLink::Api::configurationCompleted_a6b1bf42438db36b2e95dd94b0d0a46d2" ref="class_rest_link_1_1_api.html#a6b1bf42438db36b2e95dd94b0d0a46d2"/>
-<keyword name="configurationFailed()" id="RestLink::Api::configurationFailed_ae7696b7646746e2eaf5ab2ee5e12f63e" ref="class_rest_link_1_1_api.html#ae7696b7646746e2eaf5ab2ee5e12f63e"/>
+<keyword name="configurationCompleted()" id="RestLink::Api::configurationCompleted_a07dc1855eb454346a1fecc3ca7ccc747" ref="class_rest_link_1_1_api.html#a07dc1855eb454346a1fecc3ca7ccc747"/>
+<keyword name="configurationFailed()" id="RestLink::Api::configurationFailed_a7b732e053d6f8ee3ee551b7e8793c079" ref="class_rest_link_1_1_api.html#a7b732e053d6f8ee3ee551b7e8793c079"/>
 <keyword name="configure(const QUrl &amp;url)" id="RestLink::Api::configure_a5c6e0e8e9163b7ef0552dda621360159" ref="class_rest_link_1_1_api.html#a5c6e0e8e9163b7ef0552dda621360159"/>
 <keyword name="configure(const QJsonObject &amp;config)" id="RestLink::Api::configure_afeb72fa6ad28e2e0abe30c9ff34791eb" ref="class_rest_link_1_1_api.html#afeb72fa6ad28e2e0abe30c9ff34791eb"/>
 <keyword name="constHeaders() const =0" id="RestLink::RequestInterface::constHeaders_a3de74923b20951492a6d08a48175d705" ref="class_rest_link_1_1_request_interface.html#a3de74923b20951492a6d08a48175d705"/>
@@ -1422,23 +1437,22 @@
 <keyword name="contentType() const" id="RestLink::Body::contentType_ab122b5754b7c58dffc74735f1ce03912" ref="class_rest_link_1_1_body.html#ab122b5754b7c58dffc74735f1ce03912"/>
 <keyword name="controller() const" id="RestLink::Request::controller_aefd648a08c39a8ece363f5a5e0fc3953" ref="class_rest_link_1_1_request.html#aefd648a08c39a8ece363f5a5e0fc3953"/>
 <keyword name="CookieJar(QObject *parent=nullptr)" id="RestLink::CookieJar::CookieJar_a257b99d077cb3fbf535e248c350ffbb0" ref="class_rest_link_1_1_cookie_jar.html#a257b99d077cb3fbf535e248c350ffbb0"/>
-<keyword name="createHandler()=0" id="RestLink::Plugin::createHandler_a362331af13f8c1b420a31c5ada2035fb" ref="class_rest_link_1_1_plugin.html#a362331af13f8c1b420a31c5ada2035fb"/>
-<keyword name="createHandler(Plugin *plugin)" id="RestLink::PluginManager::createHandler_a8c80b2323ef08b1b839941d20fd4a5e0" ref="class_rest_link_1_1_plugin_manager.html#a8c80b2323ef08b1b839941d20fd4a5e0"/>
+<keyword name="createHandler()=0" id="RestLink::Plugin::createHandler_a043daf66b65fe0e006ddd0857f307ccd" ref="class_rest_link_1_1_plugin.html#a043daf66b65fe0e006ddd0857f307ccd"/>
+<keyword name="d_ptr" id="RestLink::AbstractRequestHandler::d_ptr_a07f09f9f608ef9efcab20aa2f471b726" ref="class_rest_link_1_1_abstract_request_handler.html#a07f09f9f608ef9efcab20aa2f471b726"/>
 <keyword name="d_ptr" id="RestLink::ApiBase::d_ptr_a22e99194f7cdc7865f09b36f85c75417" ref="class_rest_link_1_1_api_base.html#a22e99194f7cdc7865f09b36f85c75417"/>
 <keyword name="d_ptr" id="RestLink::Parameter::d_ptr_a1e79af565721ef4e8ab0fbba4679605e" ref="class_rest_link_1_1_parameter.html#a1e79af565721ef4e8ab0fbba4679605e"/>
 <keyword name="d_ptr" id="RestLink::Request::d_ptr_a66d3f96b8d09b72cab8b980f84d3fad1" ref="class_rest_link_1_1_request.html#a66d3f96b8d09b72cab8b980f84d3fad1"/>
-<keyword name="d_ptr" id="RestLink::RequestHandler::d_ptr_a87e4a85c2c0a62c37cb87a0166895382" ref="class_rest_link_1_1_request_handler.html#a87e4a85c2c0a62c37cb87a0166895382"/>
 <keyword name="d_ptr" id="RestLink::Response::d_ptr_add48abcdc24e746c6f28a58a4e68fb2c" ref="class_rest_link_1_1_response.html#add48abcdc24e746c6f28a58a4e68fb2c"/>
 <keyword name="d_ptr" id="RestLink::Server::d_ptr_a83350e04dae9a21ea82348f1acb742d6" ref="class_rest_link_1_1_server.html#a83350e04dae9a21ea82348f1acb742d6"/>
 <keyword name="data(const QUrl &amp;url) override" id="RestLink::Cache::data_a0b963e22d05287c13cdf001be3f14f06" ref="class_rest_link_1_1_cache.html#a0b963e22d05287c13cdf001be3f14f06"/>
 <keyword name="dataFromJsonObject(ParameterData *data, const QJsonObject &amp;object)" id="RestLink::Parameter::dataFromJsonObject_abbe7e1920dd6548935fea2e9e44b31cb" ref="class_rest_link_1_1_parameter.html#abbe7e1920dd6548935fea2e9e44b31cb"/>
 <keyword name="dataSource() const" id="RestLink::AbstractController::dataSource_acacb825b98b8f0556233d0612abdc241" ref="class_rest_link_1_1_abstract_controller.html#acacb825b98b8f0556233d0612abdc241"/>
 <keyword name="decompress(const QByteArray &amp;input, const QByteArray &amp;algorithm)" id="RestLink::CompressionUtils::decompress_a39e43657e237b5bf2001bf2e519c7888" ref="class_rest_link_1_1_compression_utils.html#a39e43657e237b5bf2001bf2e519c7888"/>
-<keyword name="DeleteMethod" id="RestLink::RequestHandler::DeleteMethod_a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3"/>
+<keyword name="DeleteMethod" id="RestLink::AbstractRequestHandler::DeleteMethod_aeb04e45bdb17467123d5f796c5524850ab2cf6dd76ad98dac2522d54116368f52" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850ab2cf6dd76ad98dac2522d54116368f52"/>
+<keyword name="deleteResource(const Request &amp;request)" id="RestLink::AbstractRequestHandler::deleteResource_acb48d919bd613c569d43eaee942e9e3a" ref="class_rest_link_1_1_abstract_request_handler.html#acb48d919bd613c569d43eaee942e9e3a"/>
 <keyword name="deleteResource(const Request &amp;request, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::deleteResource_a7b75a4b36426b1b3ded6d7ed05840df2" ref="class_rest_link_1_1_api_base.html#a7b75a4b36426b1b3ded6d7ed05840df2"/>
 <keyword name="deleteResource(const Request &amp;request)" id="RestLink::ApiBase::deleteResource_a84c5ad205dd4dc1ee6a45752bad3f2ee" ref="class_rest_link_1_1_api_base.html#a84c5ad205dd4dc1ee6a45752bad3f2ee"/>
-<keyword name="deleteResource(const Request &amp;request)" id="RestLink::RequestHandler::deleteResource_ada7deaadc71211428c96558ec0ff1e3f" ref="class_rest_link_1_1_request_handler.html#ada7deaadc71211428c96558ec0ff1e3f"/>
-<keyword name="deleteResource(const Request &amp;request)" id="RestLink::NetworkManager::deleteResource_ada7deaadc71211428c96558ec0ff1e3f" ref="class_rest_link_1_1_network_manager.html#ada7deaadc71211428c96558ec0ff1e3f"/>
+<keyword name="deleteResource(const Request &amp;request)" id="RestLink::NetworkManager::deleteResource_acb48d919bd613c569d43eaee942e9e3a" ref="class_rest_link_1_1_network_manager.html#acb48d919bd613c569d43eaee942e9e3a"/>
 <keyword name="destroy(const ServerRequest &amp;request, ServerResponse *response)=0" id="RestLink::AbstractResourceController::destroy_ab2e3f52b622410cf0a78faba136647c1" ref="class_rest_link_1_1_abstract_resource_controller.html#ab2e3f52b622410cf0a78faba136647c1"/>
 <keyword name="device() const" id="RestLink::Body::device_a5e49a87d626e4ccb43c038b697f4afca" ref="class_rest_link_1_1_body.html#a5e49a87d626e4ccb43c038b697f4afca"/>
 <keyword name="downloadProgress(qint64 bytesReceived, qint64 bytesTotal)" id="RestLink::Response::downloadProgress_a070f004d5c64b62c47fdde540a9e4754" ref="class_rest_link_1_1_response.html#a070f004d5c64b62c47fdde540a9e4754"/>
@@ -1467,23 +1481,26 @@
 <keyword name="fromJsonObject(const QJsonObject &amp;object, Type type)" id="RestLink::Parameter::fromJsonObject_aa2622d548a572189d31b11a7b78581a7" ref="class_rest_link_1_1_parameter.html#aa2622d548a572189d31b11a7b78581a7"/>
 <keyword name="fromJsonObject(const QJsonObject &amp;object)" id="RestLink::PathParameter::fromJsonObject_a37dc928eb1adc56af534d9fbc28db43b" ref="class_rest_link_1_1_path_parameter.html#a37dc928eb1adc56af534d9fbc28db43b"/>
 <keyword name="fromJsonObject(const QJsonObject &amp;object)" id="RestLink::QueryParameter::fromJsonObject_af27c2704f81e0c4ea44977ee5cf47f0b" ref="class_rest_link_1_1_query_parameter.html#af27c2704f81e0c4ea44977ee5cf47f0b"/>
+<keyword name="generateCacheDir()" id="RestLink::FileUtils::generateCacheDir_aec6fa4de17b3c45e535fcacdcf50ec87" ref="class_rest_link_1_1_file_utils.html#aec6fa4de17b3c45e535fcacdcf50ec87"/>
+<keyword name="generateCookieFile()" id="RestLink::FileUtils::generateCookieFile_a07edf1e1de2d6bcb943622c7ceab021a" ref="class_rest_link_1_1_file_utils.html#a07edf1e1de2d6bcb943622c7ceab021a"/>
+<keyword name="generateDir(const QString &amp;name, QStandardPaths::StandardLocation location)" id="RestLink::FileUtils::generateDir_a17c732c8171d6c91b961da1a76554187" ref="class_rest_link_1_1_file_utils.html#a17c732c8171d6c91b961da1a76554187"/>
 <keyword name="generateNetworkReply(Method method, const QNetworkRequest &amp;request, const Body &amp;body)" id="RestLink::NetworkManager::generateNetworkReply_a661210edae121cbc04737631b2511944" ref="class_rest_link_1_1_network_manager.html#a661210edae121cbc04737631b2511944"/>
 <keyword name="generateNetworkRequest(Method method, const Request &amp;request, const Body &amp;body)" id="RestLink::NetworkManager::generateNetworkRequest_a56a4a7a4fc19c8de3f4fa968224d41c0" ref="class_rest_link_1_1_network_manager.html#a56a4a7a4fc19c8de3f4fa968224d41c0"/>
+<keyword name="get(const Request &amp;request)" id="RestLink::AbstractRequestHandler::get_a7d7259e5b6f25e8b58b497bfb0b391cc" ref="class_rest_link_1_1_abstract_request_handler.html#a7d7259e5b6f25e8b58b497bfb0b391cc"/>
 <keyword name="get(const Request &amp;request, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::get_a986342385e2e88b628d8740a1da4209e" ref="class_rest_link_1_1_api_base.html#a986342385e2e88b628d8740a1da4209e"/>
 <keyword name="get(const Request &amp;request)" id="RestLink::ApiBase::get_a753092a332ae26dac90c15cfb0993d5d" ref="class_rest_link_1_1_api_base.html#a753092a332ae26dac90c15cfb0993d5d"/>
-<keyword name="get(const Request &amp;request)" id="RestLink::RequestHandler::get_a14b72499a8e69053dffcae0b9cb565fb" ref="class_rest_link_1_1_request_handler.html#a14b72499a8e69053dffcae0b9cb565fb"/>
-<keyword name="get(const Request &amp;request)" id="RestLink::NetworkManager::get_a14b72499a8e69053dffcae0b9cb565fb" ref="class_rest_link_1_1_network_manager.html#a14b72499a8e69053dffcae0b9cb565fb"/>
-<keyword name="GetMethod" id="RestLink::RequestHandler::GetMethod_a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7"/>
+<keyword name="get(const Request &amp;request)" id="RestLink::NetworkManager::get_a7d7259e5b6f25e8b58b497bfb0b391cc" ref="class_rest_link_1_1_network_manager.html#a7d7259e5b6f25e8b58b497bfb0b391cc"/>
+<keyword name="GetMethod" id="RestLink::AbstractRequestHandler::GetMethod_aeb04e45bdb17467123d5f796c5524850a4c63bcce1c8401f718232b806ef2ebbd" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a4c63bcce1c8401f718232b806ef2ebbd"/>
 <keyword name="global()" id="RestLink::PluginManager::global_a723b1c1d5427b0ce0805d88384a2c41d" ref="class_rest_link_1_1_plugin_manager.html#a723b1c1d5427b0ce0805d88384a2c41d"/>
-<keyword name="handlerName() const" id="RestLink::RequestHandler::handlerName_a1823bb312903f39da976046e1ee5c2ca" ref="class_rest_link_1_1_request_handler.html#a1823bb312903f39da976046e1ee5c2ca"/>
-<keyword name="handlers()" id="RestLink::PluginManager::handlers_ad06a415779cc33bfe4e1542b691b2638" ref="class_rest_link_1_1_plugin_manager.html#ad06a415779cc33bfe4e1542b691b2638"/>
-<keyword name="handlerType() const override final" id="RestLink::NetworkManager::handlerType_a3ed09035da41035b63d26173bcbbe657" ref="class_rest_link_1_1_network_manager.html#a3ed09035da41035b63d26173bcbbe657"/>
-<keyword name="handlerType() const =0" id="RestLink::RequestHandler::handlerType_a166ae3d84d55211d476ead71268da29a" ref="class_rest_link_1_1_request_handler.html#a166ae3d84d55211d476ead71268da29a"/>
-<keyword name="handlerType() const override" id="RestLink::Server::handlerType_a93a02400f3fd6d3d9f51d60466eaee36" ref="class_rest_link_1_1_server.html#a93a02400f3fd6d3d9f51d60466eaee36"/>
-<keyword name="HandlerType" id="RestLink::RequestHandler::HandlerType_adb1babe9fe47ce421b3616c66a34ae69" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69"/>
-<keyword name="NetworkManager" id="RestLink::RequestHandler::NetworkManager_adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58"/>
-<keyword name="ServerHandler" id="RestLink::RequestHandler::ServerHandler_adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10"/>
-<keyword name="UnknownHandler" id="RestLink::RequestHandler::UnknownHandler_adb1babe9fe47ce421b3616c66a34ae69a5cbaf439a047d82643484a7084352145" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a5cbaf439a047d82643484a7084352145"/>
+<keyword name="handlerName() const" id="RestLink::AbstractRequestHandler::handlerName_a4381ce039bc43dd90a1f70f1c62a9d55" ref="class_rest_link_1_1_abstract_request_handler.html#a4381ce039bc43dd90a1f70f1c62a9d55"/>
+<keyword name="handlers()" id="RestLink::PluginManager::handlers_a5751310fdb50e97b44cf514cfa01a5ca" ref="class_rest_link_1_1_plugin_manager.html#a5751310fdb50e97b44cf514cfa01a5ca"/>
+<keyword name="HandlerType" id="RestLink::AbstractRequestHandler::HandlerType_ae2e7fb617ef9b64b821ca974f0c49067" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067"/>
+<keyword name="NetworkManager" id="RestLink::AbstractRequestHandler::NetworkManager_ae2e7fb617ef9b64b821ca974f0c49067aeb863dc47e2737bd824aff6d83a40ccf" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067aeb863dc47e2737bd824aff6d83a40ccf"/>
+<keyword name="ServerHandler" id="RestLink::AbstractRequestHandler::ServerHandler_ae2e7fb617ef9b64b821ca974f0c49067a626b52765668b58d7df5818cb04b2635" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067a626b52765668b58d7df5818cb04b2635"/>
+<keyword name="UnknownHandler" id="RestLink::AbstractRequestHandler::UnknownHandler_ae2e7fb617ef9b64b821ca974f0c49067a023bc205b1afea9a2f5a5c60d678860a" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067a023bc205b1afea9a2f5a5c60d678860a"/>
+<keyword name="handlerType() const =0" id="RestLink::AbstractRequestHandler::handlerType_aa717b83607a1204afa3277175e957f48" ref="class_rest_link_1_1_abstract_request_handler.html#aa717b83607a1204afa3277175e957f48"/>
+<keyword name="handlerType() const override final" id="RestLink::NetworkManager::handlerType_a7d63aafe24dfe06afcf20877be77f259" ref="class_rest_link_1_1_network_manager.html#a7d63aafe24dfe06afcf20877be77f259"/>
+<keyword name="handlerType() const override" id="RestLink::Server::handlerType_a98a5adade817e4ae387ede790ea5e4d2" ref="class_rest_link_1_1_server.html#a98a5adade817e4ae387ede790ea5e4d2"/>
 <keyword name="hasFlag(Flag flag) const" id="RestLink::Parameter::hasFlag_ac50308dda8d5f0c7a001e31193fa252c" ref="class_rest_link_1_1_parameter.html#ac50308dda8d5f0c7a001e31193fa252c"/>
 <keyword name="hasHeader(const QByteArray &amp;name) const override" id="RestLink::NetworkResponse::hasHeader_a6621cfc62b7dcc2855cf738bb0f28a8d" ref="class_rest_link_1_1_network_response.html#a6621cfc62b7dcc2855cf738bb0f28a8d"/>
 <keyword name="hasHeader(const QString &amp;name) const" id="RestLink::RequestInterface::hasHeader_a25436a94d99726ed4cb8cddd6d3e327e" ref="class_rest_link_1_1_request_interface.html#a25436a94d99726ed4cb8cddd6d3e327e"/>
@@ -1499,10 +1516,10 @@
 <keyword name="hasPlainText() const" id="RestLink::Body::hasPlainText_a4525696431d8588fbeb966ea648c3665" ref="class_rest_link_1_1_body.html#a4525696431d8588fbeb966ea648c3665"/>
 <keyword name="hasQueryParameter(const QString &amp;name) const" id="RestLink::RequestInterface::hasQueryParameter_aa1d936036969fccdde4b6a468ccbc86b" ref="class_rest_link_1_1_request_interface.html#aa1d936036969fccdde4b6a468ccbc86b"/>
 <keyword name="hasValue(const QVariant &amp;value) const" id="RestLink::Parameter::hasValue_a5bb442210b0165bc033914625773abac" ref="class_rest_link_1_1_parameter.html#a5bb442210b0165bc033914625773abac"/>
+<keyword name="head(const Request &amp;request)" id="RestLink::AbstractRequestHandler::head_a67abaa66b8cc20530f7c1c88626bf40d" ref="class_rest_link_1_1_abstract_request_handler.html#a67abaa66b8cc20530f7c1c88626bf40d"/>
 <keyword name="head(const Request &amp;request, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::head_a55af30c40922e42547f47901e6b56c1a" ref="class_rest_link_1_1_api_base.html#a55af30c40922e42547f47901e6b56c1a"/>
 <keyword name="head(const Request &amp;request)" id="RestLink::ApiBase::head_a7d228b925d871e01f4ce213f12a3bd6e" ref="class_rest_link_1_1_api_base.html#a7d228b925d871e01f4ce213f12a3bd6e"/>
-<keyword name="head(const Request &amp;request)" id="RestLink::RequestHandler::head_ad7fb6489b7ebeb95529422af2fdaf184" ref="class_rest_link_1_1_request_handler.html#ad7fb6489b7ebeb95529422af2fdaf184"/>
-<keyword name="head(const Request &amp;request)" id="RestLink::NetworkManager::head_ad7fb6489b7ebeb95529422af2fdaf184" ref="class_rest_link_1_1_network_manager.html#ad7fb6489b7ebeb95529422af2fdaf184"/>
+<keyword name="head(const Request &amp;request)" id="RestLink::NetworkManager::head_a67abaa66b8cc20530f7c1c88626bf40d" ref="class_rest_link_1_1_network_manager.html#a67abaa66b8cc20530f7c1c88626bf40d"/>
 <keyword name="Header()" id="RestLink::Header::Header_a69bc99de6cb5a668988aec7fc2abc4b3" ref="class_rest_link_1_1_header.html#a69bc99de6cb5a668988aec7fc2abc4b3"/>
 <keyword name="Header(const QString &amp;name, const QVariant &amp;value)" id="RestLink::Header::Header_aec2292d440ea8c374fd95026c8407aa2" ref="class_rest_link_1_1_header.html#aec2292d440ea8c374fd95026c8407aa2"/>
 <keyword name="Header(const Header &amp;other)=default" id="RestLink::Header::Header_a1b0117bbec1b4b4a00ab8773b7246762" ref="class_rest_link_1_1_header.html#a1b0117bbec1b4b4a00ab8773b7246762"/>
@@ -1521,7 +1538,7 @@
 <keyword name="headers() const" id="RestLink::RequestInterface::headers_ac12fa4571256c57fc563e20fd599cd15" ref="class_rest_link_1_1_request_interface.html#ac12fa4571256c57fc563e20fd599cd15"/>
 <keyword name="HeaderType" id="RestLink::Parameter::HeaderType_adc7ade54226f71d8dd4f3b00e2bd4e37a803ad827c15176ab9f2c318da4ee0114" ref="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37a803ad827c15176ab9f2c318da4ee0114"/>
 <keyword name="headerValues(const QString &amp;name) const" id="RestLink::RequestInterface::headerValues_ade32ae766379961268379f5d6fd707d7" ref="class_rest_link_1_1_request_interface.html#ade32ae766379961268379f5d6fd707d7"/>
-<keyword name="HeadMethod" id="RestLink::RequestHandler::HeadMethod_a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647"/>
+<keyword name="HeadMethod" id="RestLink::AbstractRequestHandler::HeadMethod_aeb04e45bdb17467123d5f796c5524850a6c1effcdaeca52aa02df3b83d836756e" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a6c1effcdaeca52aa02df3b83d836756e"/>
 <keyword name="httpHeaders() const" id="RestLink::Request::httpHeaders_aacc7f2f63dedaa39845adca04a97b8cf" ref="class_rest_link_1_1_request.html#aacc7f2f63dedaa39845adca04a97b8cf"/>
 <keyword name="HttpMultiPart" id="RestLink::Body::HttpMultiPart_acaf718409bfbb4d761f4bacf72fcb426ace5e025372f90fce11d7577fb56ad1d1" ref="class_rest_link_1_1_body.html#acaf718409bfbb4d761f4bacf72fcb426ace5e025372f90fce11d7577fb56ad1d1"/>
 <keyword name="httpReasonPhrase" id="RestLink::Response::httpReasonPhrase_a4fa108b61a1a4ec9421fa4c008a74764" ref="class_rest_link_1_1_response.html#a4fa108b61a1a4ec9421fa4c008a74764"/>
@@ -1537,10 +1554,10 @@
 <keyword name="ignoreSslErrors() override" id="RestLink::ServerResponse::ignoreSslErrors_ab563e9a92110a9cb879bf2d9958b522c" ref="class_rest_link_1_1_server_response.html#ab563e9a92110a9cb879bf2d9958b522c"/>
 <keyword name="index(const ServerRequest &amp;request, ServerResponse *response)=0" id="RestLink::AbstractResourceController::index_a16da3e8f03d755ba2730f7e4139560ef" ref="class_rest_link_1_1_abstract_resource_controller.html#a16da3e8f03d755ba2730f7e4139560ef"/>
 <keyword name="init()=0" id="RestLink::Server::init_a64520f9e6f250d4fd789a6b8523aec88" ref="class_rest_link_1_1_server.html#a64520f9e6f250d4fd789a6b8523aec88"/>
-<keyword name="initResponse(Response *response, const Request &amp;request, Method method)" id="RestLink::RequestHandler::initResponse_ac2b133a74fe4e90fc7d4160ae26a6436" ref="class_rest_link_1_1_request_handler.html#ac2b133a74fe4e90fc7d4160ae26a6436"/>
+<keyword name="initResponse(Response *response, const Request &amp;request, Method method)" id="RestLink::AbstractRequestHandler::initResponse_a77e60826ad19616a88dd1b0fd3b70ce0" ref="class_rest_link_1_1_abstract_request_handler.html#a77e60826ad19616a88dd1b0fd3b70ce0"/>
 <keyword name="insert(QIODevice *device) override" id="RestLink::Cache::insert_a7dc591e50adcb42f3731f930b1e6fb63" ref="class_rest_link_1_1_cache.html#a7dc591e50adcb42f3731f930b1e6fb63"/>
-<keyword name="intercept(RequestHandler::Method method, const Request &amp;request, const Body &amp;body)=0" id="RestLink::RequestInterceptor::intercept_a9eb40bfa9fcdf74ded9ff64adc13c3d4" ref="class_rest_link_1_1_request_interceptor.html#a9eb40bfa9fcdf74ded9ff64adc13c3d4"/>
-<keyword name="intercept(RequestHandler::Method method, const Request &amp;request, const Body &amp;body) override" id="RestLink::LogRequestInterceptor::intercept_a5e9f3ef2b4ee7daf0bd6779688d502d5" ref="class_rest_link_1_1_log_request_interceptor.html#a5e9f3ef2b4ee7daf0bd6779688d502d5"/>
+<keyword name="intercept(AbstractRequestHandler::Method method, Request &amp;request, Body &amp;body)=0" id="RestLink::AbstractRequestInterceptor::intercept_ac0a24d942085bf402c388589de188767" ref="class_rest_link_1_1_abstract_request_interceptor.html#ac0a24d942085bf402c388589de188767"/>
+<keyword name="intercept(AbstractRequestHandler::Method method, Request &amp;request, Body &amp;body) override" id="RestLink::LogRequestInterceptor::intercept_aa4e4217951592c8eb6e3ecf468d1a65d" ref="class_rest_link_1_1_log_request_interceptor.html#aa4e4217951592c8eb6e3ecf468d1a65d"/>
 <keyword name="IODevice" id="RestLink::Body::IODevice_acaf718409bfbb4d761f4bacf72fcb426af0df252e316f049d3fa85451fe4c9ef4" ref="class_rest_link_1_1_body.html#acaf718409bfbb4d761f4bacf72fcb426af0df252e316f049d3fa85451fe4c9ef4"/>
 <keyword name="isDevice() const" id="RestLink::Body::isDevice_a0e2b3716f93066186309e1ab58843adf" ref="class_rest_link_1_1_body.html#a0e2b3716f93066186309e1ab58843adf"/>
 <keyword name="isDiscoveryEnabled()" id="RestLink::PluginManager::isDiscoveryEnabled_a966574b7f1a64d4c9cc802e882e22d09" ref="class_rest_link_1_1_plugin_manager.html#a966574b7f1a64d4c9cc802e882e22d09"/>
@@ -1550,7 +1567,7 @@
 <keyword name="isHttpStatusSuccess() const" id="RestLink::Response::isHttpStatusSuccess_ace24582e43ed3d89d22fe65caf7b2033" ref="class_rest_link_1_1_response.html#ace24582e43ed3d89d22fe65caf7b2033"/>
 <keyword name="isListening() const" id="RestLink::Server::isListening_a91f37ef1a576cd5b03c033ea0eaad03a" ref="class_rest_link_1_1_server.html#a91f37ef1a576cd5b03c033ea0eaad03a"/>
 <keyword name="isMultiPart() const" id="RestLink::Body::isMultiPart_a9292ac5c296be815235c3f27197cc1f4" ref="class_rest_link_1_1_body.html#a9292ac5c296be815235c3f27197cc1f4"/>
-<keyword name="isRequestSupported(const Request &amp;request) const" id="RestLink::RequestHandler::isRequestSupported_a9a6d08d7d2ff50be0cb4f073adb855d0" ref="class_rest_link_1_1_request_handler.html#a9a6d08d7d2ff50be0cb4f073adb855d0"/>
+<keyword name="isRequestSupported(const Request &amp;request) const" id="RestLink::AbstractRequestHandler::isRequestSupported_a9a10a1f0312103eaba698d826494ba66" ref="class_rest_link_1_1_abstract_request_handler.html#a9a10a1f0312103eaba698d826494ba66"/>
 <keyword name="isRunning() const" id="RestLink::Response::isRunning_a180d8aceda041f86cab186ffe202cb2d" ref="class_rest_link_1_1_response.html#a180d8aceda041f86cab186ffe202cb2d"/>
 <keyword name="isSequential() const override" id="RestLink::ResponseBase::isSequential_a52f0339ed5aa5b6581b74a07b7a3de47" ref="class_rest_link_1_1_response_base.html#a52f0339ed5aa5b6581b74a07b7a3de47"/>
 <keyword name="isSuccess() const" id="RestLink::Response::isSuccess_a39f27ad6d47e9eb178abe88a0ad9f898" ref="class_rest_link_1_1_response.html#a39f27ad6d47e9eb178abe88a0ad9f898"/>
@@ -1559,11 +1576,14 @@
 <keyword name="JsonData" id="RestLink::Body::JsonData_acaf718409bfbb4d761f4bacf72fcb426abffc2f13b332b0f4e3be63aeaddee1d2" ref="class_rest_link_1_1_body.html#acaf718409bfbb4d761f4bacf72fcb426abffc2f13b332b0f4e3be63aeaddee1d2"/>
 <keyword name="jsonObject() const" id="RestLink::Body::jsonObject_ae674f1572ad609dd4e70bb7dccbcce8f" ref="class_rest_link_1_1_body.html#ae674f1572ad609dd4e70bb7dccbcce8f"/>
 <keyword name="listen()" id="RestLink::Server::listen_affddac6a17f3f7334d248d8adc088e44" ref="class_rest_link_1_1_server.html#affddac6a17f3f7334d248d8adc088e44"/>
-<keyword name="loadPlugin(const QString &amp;name)" id="RestLink::PluginManager::loadPlugin_aa6a2ba9569c4a250075e5595f678135c" ref="class_rest_link_1_1_plugin_manager.html#aa6a2ba9569c4a250075e5595f678135c"/>
-<keyword name="Locale" id="RestLink::Parameter::Locale_a9df60b48a85ed0c7e00d2992ea7ebd36a101ffccf597773f8c797b31dfd5c4ae7" ref="class_rest_link_1_1_parameter.html#a9df60b48a85ed0c7e00d2992ea7ebd36a101ffccf597773f8c797b31dfd5c4ae7"/>
+<keyword name="load()" id="RestLink::CookieJar::load_af311cbee52c08b3dd70c5490a2694eea" ref="class_rest_link_1_1_cookie_jar.html#af311cbee52c08b3dd70c5490a2694eea"/>
+<keyword name="loadFromData(const QByteArray &amp;data)" id="RestLink::CookieJar::loadFromData_a0d1935a67c39c9fab42aa2e4b595748c" ref="class_rest_link_1_1_cookie_jar.html#a0d1935a67c39c9fab42aa2e4b595748c"/>
+<keyword name="loadFromDevice(QIODevice *device)" id="RestLink::CookieJar::loadFromDevice_a463ba548b69cb4a0cf6112b1569ed486" ref="class_rest_link_1_1_cookie_jar.html#a463ba548b69cb4a0cf6112b1569ed486"/>
+<keyword name="loadFromFile(const QString &amp;fileName)" id="RestLink::CookieJar::loadFromFile_a6903961104fc6444404b52a1b0c28212" ref="class_rest_link_1_1_cookie_jar.html#a6903961104fc6444404b52a1b0c28212"/>
 <keyword name="locale" id="RestLink::Api::locale_a5666b1c186e8c461b1122c3853f9cea8" ref="class_rest_link_1_1_api.html#a5666b1c186e8c461b1122c3853f9cea8"/>
 <keyword name="locale() const override" id="RestLink::Api::locale_adc3e7bb7a63e2dd64569d38f9efe7476" ref="class_rest_link_1_1_api.html#adc3e7bb7a63e2dd64569d38f9efe7476"/>
 <keyword name="locale() const" id="RestLink::ApiBase::locale_a3a55e077f89cc11e8bc650c4471997c7" ref="class_rest_link_1_1_api_base.html#a3a55e077f89cc11e8bc650c4471997c7"/>
+<keyword name="Locale" id="RestLink::Parameter::Locale_a9df60b48a85ed0c7e00d2992ea7ebd36a101ffccf597773f8c797b31dfd5c4ae7" ref="class_rest_link_1_1_parameter.html#a9df60b48a85ed0c7e00d2992ea7ebd36a101ffccf597773f8c797b31dfd5c4ae7"/>
 <keyword name="localeChanged(const QLocale &amp;locale)" id="RestLink::Api::localeChanged_a4da41316d01dbaa08d27d6f28bc6bbc4" ref="class_rest_link_1_1_api.html#a4da41316d01dbaa08d27d6f28bc6bbc4"/>
 <keyword name="LogRequestInterceptor(const char *category, QtMsgType enableForLevel=QtDebugMsg)" id="RestLink::LogRequestInterceptor::LogRequestInterceptor_a9916c5454f44a7df78c5c367930f7d69" ref="class_rest_link_1_1_log_request_interceptor.html#a9916c5454f44a7df78c5c367930f7d69"/>
 <keyword name="LogRequestInterceptor(QLoggingCategory *category)" id="RestLink::LogRequestInterceptor::LogRequestInterceptor_a2bb03198de5d2b4cd53f96300a006e4d" ref="class_rest_link_1_1_log_request_interceptor.html#a2bb03198de5d2b4cd53f96300a006e4d"/>
@@ -1575,19 +1595,19 @@
 <keyword name="merge(const Request &amp;r1, const Request &amp;r2)" id="RestLink::Request::merge_a4bf1543bb5ecd58bf14feed3ea125434" ref="class_rest_link_1_1_request.html#a4bf1543bb5ecd58bf14feed3ea125434"/>
 <keyword name="metaData(const QUrl &amp;url) override" id="RestLink::Cache::metaData_a27646a4fb9edead55904d4218af4f99e" ref="class_rest_link_1_1_cache.html#a27646a4fb9edead55904d4218af4f99e"/>
 <keyword name="metaData() const" id="RestLink::Plugin::metaData_a90dda6ccd29fe44a22365f4b88b3a18e" ref="class_rest_link_1_1_plugin.html#a90dda6ccd29fe44a22365f4b88b3a18e"/>
+<keyword name="Method" id="RestLink::AbstractRequestHandler::Method_aeb04e45bdb17467123d5f796c5524850" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850"/>
+<keyword name="HeadMethod" id="RestLink::AbstractRequestHandler::HeadMethod_aeb04e45bdb17467123d5f796c5524850a6c1effcdaeca52aa02df3b83d836756e" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a6c1effcdaeca52aa02df3b83d836756e"/>
+<keyword name="GetMethod" id="RestLink::AbstractRequestHandler::GetMethod_aeb04e45bdb17467123d5f796c5524850a4c63bcce1c8401f718232b806ef2ebbd" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a4c63bcce1c8401f718232b806ef2ebbd"/>
+<keyword name="PostMethod" id="RestLink::AbstractRequestHandler::PostMethod_aeb04e45bdb17467123d5f796c5524850a7f144639049565db412a1700cc408dbf" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a7f144639049565db412a1700cc408dbf"/>
+<keyword name="PutMethod" id="RestLink::AbstractRequestHandler::PutMethod_aeb04e45bdb17467123d5f796c5524850a35ba17a6aa317b91435138f89a044c36" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a35ba17a6aa317b91435138f89a044c36"/>
+<keyword name="PatchMethod" id="RestLink::AbstractRequestHandler::PatchMethod_aeb04e45bdb17467123d5f796c5524850a2bbc37909641aec59faa2cc0d575ed71" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a2bbc37909641aec59faa2cc0d575ed71"/>
+<keyword name="DeleteMethod" id="RestLink::AbstractRequestHandler::DeleteMethod_aeb04e45bdb17467123d5f796c5524850ab2cf6dd76ad98dac2522d54116368f52" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850ab2cf6dd76ad98dac2522d54116368f52"/>
+<keyword name="UnknownMethod" id="RestLink::AbstractRequestHandler::UnknownMethod_aeb04e45bdb17467123d5f796c5524850a59ec694b60ba30aacdd4547978a4e9b8" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a59ec694b60ba30aacdd4547978a4e9b8"/>
 <keyword name="method" id="RestLink::Response::method_a6691eab9bddb50203242a3d1e0cbf7b6" ref="class_rest_link_1_1_response.html#a6691eab9bddb50203242a3d1e0cbf7b6"/>
-<keyword name="method() const override" id="RestLink::NetworkResponse::method_ac3af7e4598a6755628cb63897d3c02df" ref="class_rest_link_1_1_network_response.html#ac3af7e4598a6755628cb63897d3c02df"/>
-<keyword name="method() const =0" id="RestLink::Response::method_a9bda87491c3434ee982d17f96965dac7" ref="class_rest_link_1_1_response.html#a9bda87491c3434ee982d17f96965dac7"/>
-<keyword name="method() const" id="RestLink::ServerRequest::method_ac4ece74403b1bc172583db45df0c8810" ref="class_rest_link_1_1_server_request.html#ac4ece74403b1bc172583db45df0c8810"/>
-<keyword name="method() const override" id="RestLink::ServerResponse::method_ac1c8b6784fa75278081d2e81ebc74549" ref="class_rest_link_1_1_server_response.html#ac1c8b6784fa75278081d2e81ebc74549"/>
-<keyword name="Method" id="RestLink::RequestHandler::Method_a165ab084b5fdf72c59f8b2a14890b28c" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c"/>
-<keyword name="HeadMethod" id="RestLink::RequestHandler::HeadMethod_a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca13177e40ad185b9529b084a718b76647"/>
-<keyword name="GetMethod" id="RestLink::RequestHandler::GetMethod_a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca16183e978effda61e1ce431fb694b3c7"/>
-<keyword name="PostMethod" id="RestLink::RequestHandler::PostMethod_a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8"/>
-<keyword name="PutMethod" id="RestLink::RequestHandler::PutMethod_a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955"/>
-<keyword name="PatchMethod" id="RestLink::RequestHandler::PatchMethod_a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6"/>
-<keyword name="DeleteMethod" id="RestLink::RequestHandler::DeleteMethod_a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca9388a01b5361fa15660d737a22257eb3"/>
-<keyword name="UnknownMethod" id="RestLink::RequestHandler::UnknownMethod_a165ab084b5fdf72c59f8b2a14890b28cae5fd416b1be239ea8ec3903dd3936f1a" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28cae5fd416b1be239ea8ec3903dd3936f1a"/>
+<keyword name="method() const override" id="RestLink::NetworkResponse::method_a7340c720c3be02ab2b08f8820214a79c" ref="class_rest_link_1_1_network_response.html#a7340c720c3be02ab2b08f8820214a79c"/>
+<keyword name="method() const =0" id="RestLink::Response::method_a6e1c8a21a3af8eab19d3d0b44c8d323b" ref="class_rest_link_1_1_response.html#a6e1c8a21a3af8eab19d3d0b44c8d323b"/>
+<keyword name="method() const" id="RestLink::ServerRequest::method_aad79a65df685b25516b90894a502b0ed" ref="class_rest_link_1_1_server_request.html#aad79a65df685b25516b90894a502b0ed"/>
+<keyword name="method() const override" id="RestLink::ServerResponse::method_ae50a672ce410676e8ad5da292ebfbbb6" ref="class_rest_link_1_1_server_response.html#ae50a672ce410676e8ad5da292ebfbbb6"/>
 <keyword name="multiPart() const" id="RestLink::Body::multiPart_a71ec63b5fc586c7dea540e9e1d02487e" ref="class_rest_link_1_1_body.html#a71ec63b5fc586c7dea540e9e1d02487e"/>
 <keyword name="mutableHeaders()=0" id="RestLink::RequestInterface::mutableHeaders_a1f085819e99c76a5857936f92dca5d4d" ref="class_rest_link_1_1_request_interface.html#a1f085819e99c76a5857936f92dca5d4d"/>
 <keyword name="mutablePathParameters()=0" id="RestLink::RequestInterface::mutablePathParameters_a9e04dd0db32a3980ec787d94bfc12e7b" ref="class_rest_link_1_1_request_interface.html#a9e04dd0db32a3980ec787d94bfc12e7b"/>
@@ -1597,7 +1617,7 @@
 <keyword name="name() const" id="RestLink::Api::name_a650c6533d2c23851372cbe63eba221e3" ref="class_rest_link_1_1_api.html#a650c6533d2c23851372cbe63eba221e3"/>
 <keyword name="name() const" id="RestLink::Parameter::name_aa5560b03355c61a01d147dc3686e1e1c" ref="class_rest_link_1_1_parameter.html#aa5560b03355c61a01d147dc3686e1e1c"/>
 <keyword name="name() const" id="RestLink::Plugin::name_a800d9eae5b7c9f17688e33617138e4ee" ref="class_rest_link_1_1_plugin.html#a800d9eae5b7c9f17688e33617138e4ee"/>
-<keyword name="nameChanged(const QString &amp;name)" id="RestLink::Api::nameChanged_a06ae8d52049106d31fdea6857d7ee369" ref="class_rest_link_1_1_api.html#a06ae8d52049106d31fdea6857d7ee369"/>
+<keyword name="nameChanged(const QString &amp;name)" id="RestLink::Api::nameChanged_a73e01f333056776904df33df2d76bb51" ref="class_rest_link_1_1_api.html#a73e01f333056776904df33df2d76bb51"/>
 <keyword name="networkError" id="RestLink::Response::networkError_ab980aeceaecc9f99c701704426c0b6e4" ref="class_rest_link_1_1_response.html#ab980aeceaecc9f99c701704426c0b6e4"/>
 <keyword name="networkError() const override" id="RestLink::NetworkResponse::networkError_a34fd3652b07f51b715616e7c9ea24a03" ref="class_rest_link_1_1_network_response.html#a34fd3652b07f51b715616e7c9ea24a03"/>
 <keyword name="networkError() const" id="RestLink::Response::networkError_a3fd9f301571c07b2daa1d6702bd8579d" ref="class_rest_link_1_1_response.html#a3fd9f301571c07b2daa1d6702bd8579d"/>
@@ -1605,10 +1625,10 @@
 <keyword name="networkErrorString" id="RestLink::Response::networkErrorString_af0f116d98b0d513cf55b50db1ab25d0c" ref="class_rest_link_1_1_response.html#af0f116d98b0d513cf55b50db1ab25d0c"/>
 <keyword name="networkErrorString() const override" id="RestLink::NetworkResponse::networkErrorString_ab0507012fe9a9de38fe686298d60ed5f" ref="class_rest_link_1_1_network_response.html#ab0507012fe9a9de38fe686298d60ed5f"/>
 <keyword name="networkErrorString() const" id="RestLink::Response::networkErrorString_a38d9c0d47627c810e843216443954855" ref="class_rest_link_1_1_response.html#a38d9c0d47627c810e843216443954855"/>
-<keyword name="NetworkManager" id="RestLink::NetworkResponse::NetworkManager_a82ca116715acd6c64f2acf4dc71e4038" ref="class_rest_link_1_1_network_response.html#a82ca116715acd6c64f2acf4dc71e4038"/>
-<keyword name="NetworkManager" id="RestLink::RequestHandler::NetworkManager_adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a212b0ba09d74ad2b7fcf4943d16e4a58"/>
-<keyword name="NetworkManager(QObject *parent=nullptr)" id="RestLink::NetworkManager::NetworkManager_ab8d686f89050e5a29976839c0653a612" ref="class_rest_link_1_1_network_manager.html#ab8d686f89050e5a29976839c0653a612"/>
 <keyword name="networkManager() const" id="RestLink::ApiBase::networkManager_a81f5c18d495fb8ddd5ccbf4fccaefa92" ref="class_rest_link_1_1_api_base.html#a81f5c18d495fb8ddd5ccbf4fccaefa92"/>
+<keyword name="NetworkManager" id="RestLink::AbstractRequestHandler::NetworkManager_ae2e7fb617ef9b64b821ca974f0c49067aeb863dc47e2737bd824aff6d83a40ccf" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067aeb863dc47e2737bd824aff6d83a40ccf"/>
+<keyword name="NetworkManager" id="RestLink::NetworkResponse::NetworkManager_a82ca116715acd6c64f2acf4dc71e4038" ref="class_rest_link_1_1_network_response.html#a82ca116715acd6c64f2acf4dc71e4038"/>
+<keyword name="NetworkManager(QObject *parent=nullptr)" id="RestLink::NetworkManager::NetworkManager_ab8d686f89050e5a29976839c0653a612" ref="class_rest_link_1_1_network_manager.html#ab8d686f89050e5a29976839c0653a612"/>
 <keyword name="networkReply() const override" id="RestLink::NetworkResponse::networkReply_a3e6a082f99b07f086b06c65c983ac4a0" ref="class_rest_link_1_1_network_response.html#a3e6a082f99b07f086b06c65c983ac4a0"/>
 <keyword name="networkReply() const =0" id="RestLink::Response::networkReply_a845bf76a4a205b90b53ed08c8c4cb0d9" ref="class_rest_link_1_1_response.html#a845bf76a4a205b90b53ed08c8c4cb0d9"/>
 <keyword name="networkReply() const override" id="RestLink::ServerResponse::networkReply_a73d996318638ade2036b19aa83eb4f93" ref="class_rest_link_1_1_server_response.html#a73d996318638ade2036b19aa83eb4f93"/>
@@ -1652,11 +1672,11 @@
 <keyword name="ParameterList()" id="RestLink::ParameterList::ParameterList_a973fb325513472701edbdeb80f82eab1" ref="class_rest_link_1_1_parameter_list.html#a973fb325513472701edbdeb80f82eab1"/>
 <keyword name="ParameterList(const QList&lt; P &gt; &amp;other)" id="RestLink::ParameterList::ParameterList_ad9cea564137edb205a40973a9773ad88" ref="class_rest_link_1_1_parameter_list.html#ad9cea564137edb205a40973a9773ad88"/>
 <keyword name="parameters() const" id="RestLink::ParameterList::parameters_a789d8674c9d50c61b7361a0ab7379792" ref="class_rest_link_1_1_parameter_list.html#a789d8674c9d50c61b7361a0ab7379792"/>
+<keyword name="patch(const Request &amp;request, const Body &amp;body)" id="RestLink::AbstractRequestHandler::patch_a70d5fcf3d0ec0898a0180ceee6652d65" ref="class_rest_link_1_1_abstract_request_handler.html#a70d5fcf3d0ec0898a0180ceee6652d65"/>
 <keyword name="patch(const Request &amp;request, const Body &amp;body, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::patch_a3b91f59781cf4f7c63bd1aa10789247e" ref="class_rest_link_1_1_api_base.html#a3b91f59781cf4f7c63bd1aa10789247e"/>
 <keyword name="patch(const Request &amp;request, const Body &amp;body)" id="RestLink::ApiBase::patch_aac4f290f2196f107e862371cf74de826" ref="class_rest_link_1_1_api_base.html#aac4f290f2196f107e862371cf74de826"/>
-<keyword name="patch(const Request &amp;request, const Body &amp;body)" id="RestLink::RequestHandler::patch_ab249e081964f9b32fba718b7071d3c47" ref="class_rest_link_1_1_request_handler.html#ab249e081964f9b32fba718b7071d3c47"/>
-<keyword name="patch(const Request &amp;request, const Body &amp;body)" id="RestLink::NetworkManager::patch_ab249e081964f9b32fba718b7071d3c47" ref="class_rest_link_1_1_network_manager.html#ab249e081964f9b32fba718b7071d3c47"/>
-<keyword name="PatchMethod" id="RestLink::RequestHandler::PatchMethod_a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca647f959e07e027501d01e8f0100f63e6"/>
+<keyword name="patch(const Request &amp;request, const Body &amp;body)" id="RestLink::NetworkManager::patch_a70d5fcf3d0ec0898a0180ceee6652d65" ref="class_rest_link_1_1_network_manager.html#a70d5fcf3d0ec0898a0180ceee6652d65"/>
+<keyword name="PatchMethod" id="RestLink::AbstractRequestHandler::PatchMethod_aeb04e45bdb17467123d5f796c5524850a2bbc37909641aec59faa2cc0d575ed71" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a2bbc37909641aec59faa2cc0d575ed71"/>
 <keyword name="PathParameter()" id="RestLink::PathParameter::PathParameter_a834256d31339e615993dc768c937c44a" ref="class_rest_link_1_1_path_parameter.html#a834256d31339e615993dc768c937c44a"/>
 <keyword name="PathParameter(const QString &amp;name, const QVariant &amp;value)" id="RestLink::PathParameter::PathParameter_aac8ea3970f6f2087df5ccea3078a5fa8" ref="class_rest_link_1_1_path_parameter.html#aac8ea3970f6f2087df5ccea3078a5fa8"/>
 <keyword name="PathParameter(const PathParameter &amp;other)=default" id="RestLink::PathParameter::PathParameter_a64a2d34c90d8be29819a34f547453e09" ref="class_rest_link_1_1_path_parameter.html#a64a2d34c90d8be29819a34f547453e09"/>
@@ -1671,24 +1691,25 @@
 <keyword name="Plugin(QObject *parent=nullptr)" id="RestLink::Plugin::Plugin_a61c37271abaaca1d152d73f491773204" ref="class_rest_link_1_1_plugin.html#a61c37271abaaca1d152d73f491773204"/>
 <keyword name="PluginManager()" id="RestLink::PluginManager::PluginManager_ae82b65aed68603b3e06f6bc519eac868" ref="class_rest_link_1_1_plugin_manager.html#ae82b65aed68603b3e06f6bc519eac868"/>
 <keyword name="pos() const override" id="RestLink::ResponseBase::pos_ac81464845eb95016de13fb7e94b202c5" ref="class_rest_link_1_1_response_base.html#ac81464845eb95016de13fb7e94b202c5"/>
+<keyword name="post(const Request &amp;request, const Body &amp;body)" id="RestLink::AbstractRequestHandler::post_a191247b75260e2b330b05c355872a08b" ref="class_rest_link_1_1_abstract_request_handler.html#a191247b75260e2b330b05c355872a08b"/>
 <keyword name="post(const Request &amp;request, const Body &amp;body, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::post_a76cf68429916345a2472040b84a231c9" ref="class_rest_link_1_1_api_base.html#a76cf68429916345a2472040b84a231c9"/>
 <keyword name="post(const Request &amp;request, const Body &amp;body)" id="RestLink::ApiBase::post_aeaa13a32e278187e0fb62ca8a4ea24be" ref="class_rest_link_1_1_api_base.html#aeaa13a32e278187e0fb62ca8a4ea24be"/>
-<keyword name="post(const Request &amp;request, const Body &amp;body)" id="RestLink::RequestHandler::post_a93f5e342f620a49c95d247ba64a37e51" ref="class_rest_link_1_1_request_handler.html#a93f5e342f620a49c95d247ba64a37e51"/>
-<keyword name="post(const Request &amp;request, const Body &amp;body)" id="RestLink::NetworkManager::post_a93f5e342f620a49c95d247ba64a37e51" ref="class_rest_link_1_1_network_manager.html#a93f5e342f620a49c95d247ba64a37e51"/>
-<keyword name="PostMethod" id="RestLink::RequestHandler::PostMethod_a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca914e6100340a8eda42342169d901cbd8"/>
+<keyword name="post(const Request &amp;request, const Body &amp;body)" id="RestLink::NetworkManager::post_a191247b75260e2b330b05c355872a08b" ref="class_rest_link_1_1_network_manager.html#a191247b75260e2b330b05c355872a08b"/>
+<keyword name="PostMethod" id="RestLink::AbstractRequestHandler::PostMethod_aeb04e45bdb17467123d5f796c5524850a7f144639049565db412a1700cc408dbf" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a7f144639049565db412a1700cc408dbf"/>
 <keyword name="prepare(const QNetworkCacheMetaData &amp;metaData) override" id="RestLink::Cache::prepare_a76db7775bca44e51e17fe865abb9a7cb" ref="class_rest_link_1_1_cache.html#a76db7775bca44e51e17fe865abb9a7cb"/>
 <keyword name="prepareController(AbstractController *controller, const ServerRequest &amp;request, ServerResponse *response)" id="RestLink::Server::prepareController_a070f4554042998f1f7f9eeba44881b73" ref="class_rest_link_1_1_server.html#a070f4554042998f1f7f9eeba44881b73"/>
 <keyword name="processing() const" id="RestLink::Request::processing_ad471bfa13a6d2677907ff82caf8024aa" ref="class_rest_link_1_1_request.html#ad471bfa13a6d2677907ff82caf8024aa"/>
 <keyword name="processInternalRequest(const ServerRequest &amp;request, ServerResponse *response)" id="RestLink::Server::processInternalRequest_a5f3364264d6120ca0143d6bcb45d0991" ref="class_rest_link_1_1_server.html#a5f3364264d6120ca0143d6bcb45d0991"/>
 <keyword name="processRequest(const ServerRequest &amp;request, ServerResponse *response)=0" id="RestLink::AbstractController::processRequest_ae5ab53bdc0e9ea8cf776228f43eb5630" ref="class_rest_link_1_1_abstract_controller.html#ae5ab53bdc0e9ea8cf776228f43eb5630"/>
 <keyword name="processRequest(const ServerRequest &amp;request, ServerResponse *response) override" id="RestLink::AbstractResourceController::processRequest_a3182a6bdf5e2f4238357df3e6caf8159" ref="class_rest_link_1_1_abstract_resource_controller.html#a3182a6bdf5e2f4238357df3e6caf8159"/>
-<keyword name="processRequest(const ServerRequest &amp;request, ServerResponse *response)" id="RestLink::Server::processRequest_a07be4e4a272fdb51fa09d15a35a43bb1" ref="class_rest_link_1_1_server.html#a07be4e4a272fdb51fa09d15a35a43bb1"/>
+<keyword name="processStandardRequest(const ServerRequest &amp;request, ServerResponse *response)" id="RestLink::Server::processStandardRequest_ab68b2eba2a8d7b16d143b792a5c68865" ref="class_rest_link_1_1_server.html#ab68b2eba2a8d7b16d143b792a5c68865"/>
+<keyword name="processUnsupportedRequest(const ServerRequest &amp;request, ServerResponse *response)" id="RestLink::Server::processUnsupportedRequest_acc75ec233a65230c8f980d66d13acbf6" ref="class_rest_link_1_1_server.html#acc75ec233a65230c8f980d66d13acbf6"/>
 <keyword name="PublicUrl" id="RestLink::Request::PublicUrl_a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09" ref="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09"/>
+<keyword name="put(const Request &amp;request, const Body &amp;body)" id="RestLink::AbstractRequestHandler::put_aade9b4e3f1c1b1746f1f04a0d4d0884b" ref="class_rest_link_1_1_abstract_request_handler.html#aade9b4e3f1c1b1746f1f04a0d4d0884b"/>
 <keyword name="put(const Request &amp;request, const Body &amp;body, const ApiRunCallback &amp;callback)" id="RestLink::ApiBase::put_a93676a6f2b3b285c50c789f20eb4f9e4" ref="class_rest_link_1_1_api_base.html#a93676a6f2b3b285c50c789f20eb4f9e4"/>
 <keyword name="put(const Request &amp;request, const Body &amp;body)" id="RestLink::ApiBase::put_add35b3db631cb671fe2bf7ce3b0d4f17" ref="class_rest_link_1_1_api_base.html#add35b3db631cb671fe2bf7ce3b0d4f17"/>
-<keyword name="put(const Request &amp;request, const Body &amp;body)" id="RestLink::RequestHandler::put_a20549216ecfb72e61671122def5ee327" ref="class_rest_link_1_1_request_handler.html#a20549216ecfb72e61671122def5ee327"/>
-<keyword name="put(const Request &amp;request, const Body &amp;body)" id="RestLink::NetworkManager::put_a20549216ecfb72e61671122def5ee327" ref="class_rest_link_1_1_network_manager.html#a20549216ecfb72e61671122def5ee327"/>
-<keyword name="PutMethod" id="RestLink::RequestHandler::PutMethod_a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28ca900198d233721d4a27673a3f6f498955"/>
+<keyword name="put(const Request &amp;request, const Body &amp;body)" id="RestLink::NetworkManager::put_aade9b4e3f1c1b1746f1f04a0d4d0884b" ref="class_rest_link_1_1_network_manager.html#aade9b4e3f1c1b1746f1f04a0d4d0884b"/>
+<keyword name="PutMethod" id="RestLink::AbstractRequestHandler::PutMethod_aeb04e45bdb17467123d5f796c5524850a35ba17a6aa317b91435138f89a044c36" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a35ba17a6aa317b91435138f89a044c36"/>
 <keyword name="QueryParameter()" id="RestLink::QueryParameter::QueryParameter_a3bbebcee3c40af369d0bdfbc496c5578" ref="class_rest_link_1_1_query_parameter.html#a3bbebcee3c40af369d0bdfbc496c5578"/>
 <keyword name="QueryParameter(const QString &amp;name, const QVariant &amp;value)" id="RestLink::QueryParameter::QueryParameter_a80da6eb191097b6f1f21167913dc179f" ref="class_rest_link_1_1_query_parameter.html#a80da6eb191097b6f1f21167913dc179f"/>
 <keyword name="QueryParameter(const QueryParameter &amp;other)" id="RestLink::QueryParameter::QueryParameter_a7ac11c0aba2ddfe699b1dbf24f8c0286" ref="class_rest_link_1_1_query_parameter.html#a7ac11c0aba2ddfe699b1dbf24f8c0286"/>
@@ -1721,8 +1742,7 @@
 <keyword name="removeParameter(const QString &amp;name, const QVariantList &amp;values)" id="RestLink::ParameterList::removeParameter_a4b03f46b8d6d213f641ff45f8514aee1" ref="class_rest_link_1_1_parameter_list.html#a4b03f46b8d6d213f641ff45f8514aee1"/>
 <keyword name="removeQueryParameter(const QString &amp;name)" id="RestLink::RequestInterface::removeQueryParameter_a95a836ce3cf8c29058c50c33da21d542" ref="class_rest_link_1_1_request_interface.html#a95a836ce3cf8c29058c50c33da21d542"/>
 <keyword name="removeQueryParameter(const QString &amp;name, const QVariant &amp;value)" id="RestLink::RequestInterface::removeQueryParameter_a2d6fb82039e75db8505ec686da290ea7" ref="class_rest_link_1_1_request_interface.html#a2d6fb82039e75db8505ec686da290ea7"/>
-<keyword name="removeRequestInterceptor(RequestInterceptor *interceptor)" id="RestLink::ApiBase::removeRequestInterceptor_a2191397a2641e9f523f5ee30dcea50f1" ref="class_rest_link_1_1_api_base.html#a2191397a2641e9f523f5ee30dcea50f1"/>
-<keyword name="removeRequestInterceptor(RequestInterceptor *interceptor)" id="RestLink::RequestHandler::removeRequestInterceptor_a1c39638548b3dbed7ae745d58204374d" ref="class_rest_link_1_1_request_handler.html#a1c39638548b3dbed7ae745d58204374d"/>
+<keyword name="removeRequestInterceptor(AbstractRequestInterceptor *interceptor)" id="RestLink::AbstractRequestHandler::removeRequestInterceptor_a2c3e04facac9e5732757eb09cf2590bd" ref="class_rest_link_1_1_abstract_request_handler.html#a2c3e04facac9e5732757eb09cf2590bd"/>
 <keyword name="removeValue(const QVariant &amp;value)" id="RestLink::Parameter::removeValue_a57870da892723251d6a1474076f96813" ref="class_rest_link_1_1_parameter.html#a57870da892723251d6a1474076f96813"/>
 <keyword name="Request()" id="RestLink::Request::Request_ae6fa5c29de906de35fb54a9ecb123769" ref="class_rest_link_1_1_request.html#ae6fa5c29de906de35fb54a9ecb123769"/>
 <keyword name="Request(const char *endpoint)" id="RestLink::Request::Request_a7baee0189c44e945c57b9942fd82c279" ref="class_rest_link_1_1_request.html#a7baee0189c44e945c57b9942fd82c279"/>
@@ -1733,9 +1753,7 @@
 <keyword name="Request(Request &amp;&amp;other)" id="RestLink::Request::Request_a7170a1515f1d8f8a6373b8dd32d91e82" ref="class_rest_link_1_1_request.html#a7170a1515f1d8f8a6373b8dd32d91e82"/>
 <keyword name="Request(RequestPrivate *d)" id="RestLink::Request::Request_a5eca4c4c54f478b345b592d5bb7b1dfb" ref="class_rest_link_1_1_request.html#a5eca4c4c54f478b345b592d5bb7b1dfb"/>
 <keyword name="request() const" id="RestLink::Response::request_a581dc27b50e96ef48dd6f53b0b7f6003" ref="class_rest_link_1_1_response.html#a581dc27b50e96ef48dd6f53b0b7f6003"/>
-<keyword name="RequestHandler" id="RestLink::Response::RequestHandler_a885dbb0d49886f3402b8ed12ab9c076a" ref="class_rest_link_1_1_response.html#a885dbb0d49886f3402b8ed12ab9c076a"/>
-<keyword name="requestInterceptors() const" id="RestLink::ApiBase::requestInterceptors_ab0fa0676d5fdeb53076baf4abfb67ec9" ref="class_rest_link_1_1_api_base.html#ab0fa0676d5fdeb53076baf4abfb67ec9"/>
-<keyword name="requestInterceptors() const" id="RestLink::RequestHandler::requestInterceptors_a0e84ce3a99a9220c856efd0a6e690472" ref="class_rest_link_1_1_request_handler.html#a0e84ce3a99a9220c856efd0a6e690472"/>
+<keyword name="requestInterceptors() const" id="RestLink::AbstractRequestHandler::requestInterceptors_a5291545b995c7766fd39c50c8ed216f6" ref="class_rest_link_1_1_abstract_request_handler.html#a5291545b995c7766fd39c50c8ed216f6"/>
 <keyword name="reset() override" id="RestLink::ResponseBase::reset_aad7575c53aceb263df869f92f65b319e" ref="class_rest_link_1_1_response_base.html#aad7575c53aceb263df869f92f65b319e"/>
 <keyword name="resource() const" id="RestLink::ServerRequest::resource_a58435537113f72015ed49f725f63e8ff" ref="class_rest_link_1_1_server_request.html#a58435537113f72015ed49f725f63e8ff"/>
 <keyword name="ResourceHandler" id="RestLink::Server::ResourceHandler_ac74606765019f5ec34211a9091ee7527" ref="class_rest_link_1_1_server.html#ac74606765019f5ec34211a9091ee7527"/>
@@ -1743,24 +1761,28 @@
 <keyword name="ResponseBase(QObject *parent=nullptr)" id="RestLink::ResponseBase::ResponseBase_ae7aa812a84b22908530175230822b87d" ref="class_rest_link_1_1_response_base.html#ae7aa812a84b22908530175230822b87d"/>
 <keyword name="responseDevice() const" id="RestLink::ResponseBase::responseDevice_a3e6afe2b8d15a0dba846a3106c489cd4" ref="class_rest_link_1_1_response_base.html#a3e6afe2b8d15a0dba846a3106c489cd4"/>
 <keyword name="running" id="RestLink::Response::running_ac44f63f4d5c188859e285c039aef53a1" ref="class_rest_link_1_1_response.html#ac44f63f4d5c188859e285c039aef53a1"/>
+<keyword name="save()" id="RestLink::CookieJar::save_a6b46f213b10fee2e49befdd9a6bccce4" ref="class_rest_link_1_1_cookie_jar.html#a6b46f213b10fee2e49befdd9a6bccce4"/>
+<keyword name="saveToData(QByteArray *data) const" id="RestLink::CookieJar::saveToData_a2b0e3a2702bf9236e496a5da6bdac683" ref="class_rest_link_1_1_cookie_jar.html#a2b0e3a2702bf9236e496a5da6bdac683"/>
+<keyword name="saveToDevice(QIODevice *device) const" id="RestLink::CookieJar::saveToDevice_a35edf2957e039a1b7c6ad0318a2ee773" ref="class_rest_link_1_1_cookie_jar.html#a35edf2957e039a1b7c6ad0318a2ee773"/>
+<keyword name="saveToFile(const QString &amp;fileName) const" id="RestLink::CookieJar::saveToFile_a9c654c67a890745c17a2c31edfb757c9" ref="class_rest_link_1_1_cookie_jar.html#a9c654c67a890745c17a2c31edfb757c9"/>
 <keyword name="Secret" id="RestLink::Parameter::Secret_a9df60b48a85ed0c7e00d2992ea7ebd36aada1026aaba4a599b3d78ac1608a2799" ref="class_rest_link_1_1_parameter.html#a9df60b48a85ed0c7e00d2992ea7ebd36aada1026aaba4a599b3d78ac1608a2799"/>
 <keyword name="SecretUrl" id="RestLink::Request::SecretUrl_a806a10e6928933cbf75e46dd98308edea3c5baa9695cb1eaa2e649baa20c062dd" ref="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea3c5baa9695cb1eaa2e649baa20c062dd"/>
 <keyword name="seek(qint64 pos) override" id="RestLink::ResponseBase::seek_a940f6f0b9557cf9f6321672d72db28ca" ref="class_rest_link_1_1_response_base.html#a940f6f0b9557cf9f6321672d72db28ca"/>
-<keyword name="send(RequestHandler::Method method, const Request &amp;request, const Body &amp;body) override" id="RestLink::Api::send_af62f4f4f6c7895f45204ad220478f9eb" ref="class_rest_link_1_1_api.html#af62f4f4f6c7895f45204ad220478f9eb"/>
-<keyword name="send(RequestHandler::Method method, const Request &amp;request, const Body &amp;body)" id="RestLink::ApiBase::send_a0ace50ab47ea112b0988d030f8c8ac20" ref="class_rest_link_1_1_api_base.html#a0ace50ab47ea112b0988d030f8c8ac20"/>
-<keyword name="send(Method method, const Request &amp;request, const Body &amp;body)" id="RestLink::RequestHandler::send_a52f25f751a437a00bdecf64bf0c60db3" ref="class_rest_link_1_1_request_handler.html#a52f25f751a437a00bdecf64bf0c60db3"/>
+<keyword name="send(Method method, const Request &amp;request, const Body &amp;body)" id="RestLink::AbstractRequestHandler::send_aa87fbd720f9bf1794d06c9cf612d730f" ref="class_rest_link_1_1_abstract_request_handler.html#aa87fbd720f9bf1794d06c9cf612d730f"/>
+<keyword name="send(AbstractRequestHandler::Method method, const Request &amp;request, const Body &amp;body) override" id="RestLink::Api::send_a162007c3be9a6e6379f772c46c211851" ref="class_rest_link_1_1_api.html#a162007c3be9a6e6379f772c46c211851"/>
+<keyword name="send(AbstractRequestHandler::Method method, const Request &amp;request, const Body &amp;body)" id="RestLink::ApiBase::send_a7c44e0a3db1d3b65d74c2f9ed92830f5" ref="class_rest_link_1_1_api_base.html#a7c44e0a3db1d3b65d74c2f9ed92830f5"/>
+<keyword name="sendRequest(Method method, const Request &amp;request, const Body &amp;body)=0" id="RestLink::AbstractRequestHandler::sendRequest_aef0f2448a04f4a39e67ece92ead491be" ref="class_rest_link_1_1_abstract_request_handler.html#aef0f2448a04f4a39e67ece92ead491be"/>
 <keyword name="sendRequest(Method method, const Request &amp;request, const Body &amp;body) override" id="RestLink::NetworkManager::sendRequest_abfa1503175db8c743946adb8194aa94f" ref="class_rest_link_1_1_network_manager.html#abfa1503175db8c743946adb8194aa94f"/>
-<keyword name="sendRequest(Method method, const Request &amp;request, const Body &amp;body)=0" id="RestLink::RequestHandler::sendRequest_a4bbd39becc2279452fe3b3db53658901" ref="class_rest_link_1_1_request_handler.html#a4bbd39becc2279452fe3b3db53658901"/>
 <keyword name="sendRequest(Method method, const Request &amp;request, const Body &amp;body) override final" id="RestLink::Server::sendRequest_aa9cce440964f853c101d8d72714abd69" ref="class_rest_link_1_1_server.html#aa9cce440964f853c101d8d72714abd69"/>
+<keyword name="server() const" id="RestLink::ServerResponse::server_a56410e14bf518080ad5f67cb090e7232" ref="class_rest_link_1_1_server_response.html#a56410e14bf518080ad5f67cb090e7232"/>
 <keyword name="Server(QObject *parent=nullptr)" id="RestLink::Server::Server_a58371b0103ef1073dc9ffb6d4d5eb7fb" ref="class_rest_link_1_1_server.html#a58371b0103ef1073dc9ffb6d4d5eb7fb"/>
 <keyword name="Server(ServerType type, QObject *parent=nullptr)" id="RestLink::Server::Server_a53947fdc4e62effab3cd33d5753c978e" ref="class_rest_link_1_1_server.html#a53947fdc4e62effab3cd33d5753c978e"/>
 <keyword name="Server(ServerPrivate *d, QObject *parent)" id="RestLink::Server::Server_a262250862094e8ad0f9c558325125d4d" ref="class_rest_link_1_1_server.html#a262250862094e8ad0f9c558325125d4d"/>
-<keyword name="server() const" id="RestLink::ServerResponse::server_a56410e14bf518080ad5f67cb090e7232" ref="class_rest_link_1_1_server_response.html#a56410e14bf518080ad5f67cb090e7232"/>
-<keyword name="ServerHandler" id="RestLink::RequestHandler::ServerHandler_adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a63d9f2560b28850617c07d0e498dbf10"/>
+<keyword name="ServerHandler" id="RestLink::AbstractRequestHandler::ServerHandler_ae2e7fb617ef9b64b821ca974f0c49067a626b52765668b58d7df5818cb04b2635" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067a626b52765668b58d7df5818cb04b2635"/>
 <keyword name="ServerPrivate" id="RestLink::Server::ServerPrivate_a10e22a6c04ccab4769ff16e441473fae" ref="class_rest_link_1_1_server.html#a10e22a6c04ccab4769ff16e441473fae"/>
 <keyword name="ServerRequest" id="RestLink::Request::ServerRequest_a0d171f28a77dd0096201591f25e09278" ref="class_rest_link_1_1_request.html#a0d171f28a77dd0096201591f25e09278"/>
 <keyword name="ServerRequest()" id="RestLink::ServerRequest::ServerRequest_abc199b8d7072e977a0f225d2a1d462cd" ref="class_rest_link_1_1_server_request.html#abc199b8d7072e977a0f225d2a1d462cd"/>
-<keyword name="ServerRequest(RequestHandler::Method method, const Request &amp;request, const Body &amp;body)" id="RestLink::ServerRequest::ServerRequest_adcdb51726ccdb8458780f4d3f4e3386d" ref="class_rest_link_1_1_server_request.html#adcdb51726ccdb8458780f4d3f4e3386d"/>
+<keyword name="ServerRequest(AbstractRequestHandler::Method method, const Request &amp;request, const Body &amp;body)" id="RestLink::ServerRequest::ServerRequest_afc04721552b7fd2a96f837c4427353e0" ref="class_rest_link_1_1_server_request.html#afc04721552b7fd2a96f837c4427353e0"/>
 <keyword name="ServerRequest(const ServerRequest &amp;)" id="RestLink::ServerRequest::ServerRequest_adcaf276788726ce502ebfad7efa0093e" ref="class_rest_link_1_1_server_request.html#adcaf276788726ce502ebfad7efa0093e"/>
 <keyword name="ServerRequest(ServerRequest &amp;&amp;)" id="RestLink::ServerRequest::ServerRequest_a9e52f035eb14b349cbf287f049ed4db0" ref="class_rest_link_1_1_server_request.html#a9e52f035eb14b349cbf287f049ed4db0"/>
 <keyword name="ServerResponse(Server *server)" id="RestLink::ServerResponse::ServerResponse_aef90632cf5600ec2b9c8156567e1cb2d" ref="class_rest_link_1_1_server_response.html#aef90632cf5600ec2b9c8156567e1cb2d"/>
@@ -1787,7 +1809,7 @@
 <keyword name="setLocale(const QLocale &amp;locale)" id="RestLink::Api::setLocale_af44ce798c34a75c645c894b09e05b33c" ref="class_rest_link_1_1_api.html#af44ce798c34a75c645c894b09e05b33c"/>
 <keyword name="setMaxCacheSize(qint64 size)" id="RestLink::Cache::setMaxCacheSize_a2b9a63c2fa50f482680fa1aedb478c91" ref="class_rest_link_1_1_cache.html#a2b9a63c2fa50f482680fa1aedb478c91"/>
 <keyword name="setMetaData(const QJsonObject &amp;metaData)" id="RestLink::Plugin::setMetaData_a9bbcea8df1dff9fa97e1c1be94607aee" ref="class_rest_link_1_1_plugin.html#a9bbcea8df1dff9fa97e1c1be94607aee"/>
-<keyword name="setMethod(RequestHandler::Method method)" id="RestLink::ServerResponse::setMethod_a507ac2c172d5d1133d2d733fb329660c" ref="class_rest_link_1_1_server_response.html#a507ac2c172d5d1133d2d733fb329660c"/>
+<keyword name="setMethod(AbstractRequestHandler::Method method)" id="RestLink::ServerResponse::setMethod_a5eab423b78984954e2ded4f2c49df381" ref="class_rest_link_1_1_server_response.html#a5eab423b78984954e2ded4f2c49df381"/>
 <keyword name="setName(const QString &amp;name)" id="RestLink::Api::setName_af0e09706bb5f3b3d55bccebdbfb285e0" ref="class_rest_link_1_1_api.html#af0e09706bb5f3b3d55bccebdbfb285e0"/>
 <keyword name="setName(const QString &amp;name)" id="RestLink::Parameter::setName_a6a6158938ce097b7418b265bd151e427" ref="class_rest_link_1_1_parameter.html#a6a6158938ce097b7418b265bd151e427"/>
 <keyword name="setNetworkManager(NetworkManager *manager)" id="RestLink::ApiBase::setNetworkManager_a8e1d108a89597b6d0d0e7e878536a0bd" ref="class_rest_link_1_1_api_base.html#a8e1d108a89597b6d0d0e7e878536a0bd"/>
@@ -1818,8 +1840,8 @@
 <keyword name="success" id="RestLink::Response::success_aeaab61c00874fc300845159b61c8bf82" ref="class_rest_link_1_1_response.html#aeaab61c00874fc300845159b61c8bf82"/>
 <keyword name="supportedAlgorithms()" id="RestLink::CompressionUtils::supportedAlgorithms_a31c1bc23a152ea2ab154d1b5c9887e0a" ref="class_rest_link_1_1_compression_utils.html#a31c1bc23a152ea2ab154d1b5c9887e0a"/>
 <keyword name="supportedSchemes" id="RestLink::NetworkManager::supportedSchemes_a7e1f8667944949f88a8029d08ed049f9" ref="class_rest_link_1_1_network_manager.html#a7e1f8667944949f88a8029d08ed049f9"/>
+<keyword name="supportedSchemes() const =0" id="RestLink::AbstractRequestHandler::supportedSchemes_a225f66fd015dc9fe5d479dbb89aeec54" ref="class_rest_link_1_1_abstract_request_handler.html#a225f66fd015dc9fe5d479dbb89aeec54"/>
 <keyword name="supportedSchemes() const override final" id="RestLink::NetworkManager::supportedSchemes_a47cbb795dd50e2fa3879d5398b57c164" ref="class_rest_link_1_1_network_manager.html#a47cbb795dd50e2fa3879d5398b57c164"/>
-<keyword name="supportedSchemes() const =0" id="RestLink::RequestHandler::supportedSchemes_a7776c7e9a6cef2623deafc0e9d20b618" ref="class_rest_link_1_1_request_handler.html#a7776c7e9a6cef2623deafc0e9d20b618"/>
 <keyword name="swap(Request &amp;other)" id="RestLink::Request::swap_ab5ecfeca1c802d198ef7acc0a4ee9f72" ref="class_rest_link_1_1_request.html#ab5ecfeca1c802d198ef7acc0a4ee9f72"/>
 <keyword name="Synchronous" id="RestLink::Server::Synchronous_afb2b18ba38dbb66eb8b3ae0c417cb21ea794332af0bea444e8f19cf18b8911569" ref="class_rest_link_1_1_server.html#afb2b18ba38dbb66eb8b3ae0c417cb21ea794332af0bea444e8f19cf18b8911569"/>
 <keyword name="toByteArray() const" id="RestLink::Body::toByteArray_a6c7db41ce61a0b2fbecd94e00be438a7" ref="class_rest_link_1_1_body.html#a6c7db41ce61a0b2fbecd94e00be438a7"/>
@@ -1843,9 +1865,8 @@
 <keyword name="HeaderType" id="RestLink::Parameter::HeaderType_adc7ade54226f71d8dd4f3b00e2bd4e37a803ad827c15176ab9f2c318da4ee0114" ref="class_rest_link_1_1_parameter.html#adc7ade54226f71d8dd4f3b00e2bd4e37a803ad827c15176ab9f2c318da4ee0114"/>
 <keyword name="type() const" id="RestLink::Parameter::type_a8096c40b8a5481f9fb2f2dd5ff406e16" ref="class_rest_link_1_1_parameter.html#a8096c40b8a5481f9fb2f2dd5ff406e16"/>
 <keyword name="Unknown" id="RestLink::Body::Unknown_acaf718409bfbb4d761f4bacf72fcb426a88183b946cc5f0e8c96b2e66e1c74a7e" ref="class_rest_link_1_1_body.html#acaf718409bfbb4d761f4bacf72fcb426a88183b946cc5f0e8c96b2e66e1c74a7e"/>
-<keyword name="UnknownHandler" id="RestLink::RequestHandler::UnknownHandler_adb1babe9fe47ce421b3616c66a34ae69a5cbaf439a047d82643484a7084352145" ref="class_rest_link_1_1_request_handler.html#adb1babe9fe47ce421b3616c66a34ae69a5cbaf439a047d82643484a7084352145"/>
-<keyword name="UnknownMethod" id="RestLink::RequestHandler::UnknownMethod_a165ab084b5fdf72c59f8b2a14890b28cae5fd416b1be239ea8ec3903dd3936f1a" ref="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28cae5fd416b1be239ea8ec3903dd3936f1a"/>
-<keyword name="unloadPlugin()" id="RestLink::PluginManager::unloadPlugin_aa7b220bda5b260f8e05d55c49e3a125c" ref="class_rest_link_1_1_plugin_manager.html#aa7b220bda5b260f8e05d55c49e3a125c"/>
+<keyword name="UnknownHandler" id="RestLink::AbstractRequestHandler::UnknownHandler_ae2e7fb617ef9b64b821ca974f0c49067a023bc205b1afea9a2f5a5c60d678860a" ref="class_rest_link_1_1_abstract_request_handler.html#ae2e7fb617ef9b64b821ca974f0c49067a023bc205b1afea9a2f5a5c60d678860a"/>
+<keyword name="UnknownMethod" id="RestLink::AbstractRequestHandler::UnknownMethod_aeb04e45bdb17467123d5f796c5524850a59ec694b60ba30aacdd4547978a4e9b8" ref="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850a59ec694b60ba30aacdd4547978a4e9b8"/>
 <keyword name="unsetHeader(const QString &amp;name)" id="RestLink::RequestInterface::unsetHeader_a5b3710603e7ef336a4027c3dba5290ee" ref="class_rest_link_1_1_request_interface.html#a5b3710603e7ef336a4027c3dba5290ee"/>
 <keyword name="unsetPathParameter(const QString &amp;name)" id="RestLink::RequestInterface::unsetPathParameter_a7191df764b66b90331b6f28aba05b640" ref="class_rest_link_1_1_request_interface.html#a7191df764b66b90331b6f28aba05b640"/>
 <keyword name="update(const ServerRequest &amp;request, ServerResponse *response)=0" id="RestLink::AbstractResourceController::update_a8d1261bdf2e0679fc782ebc2bbfed19b" ref="class_rest_link_1_1_abstract_resource_controller.html#a8d1261bdf2e0679fc782ebc2bbfed19b"/>
@@ -1859,7 +1880,7 @@
 <keyword name="url() const =0" id="RestLink::ApiBase::url_ad5eca4a4c2d02f399b9c3b55de8ffd73" ref="class_rest_link_1_1_api_base.html#ad5eca4a4c2d02f399b9c3b55de8ffd73"/>
 <keyword name="url(UrlType type=SecretUrl) const" id="RestLink::Request::url_aaa1d429a3626276d24ac6335d3f08670" ref="class_rest_link_1_1_request.html#aaa1d429a3626276d24ac6335d3f08670"/>
 <keyword name="url() const" id="RestLink::Response::url_a3967ddaae9ffaa9b272aa897873f5ff5" ref="class_rest_link_1_1_response.html#a3967ddaae9ffaa9b272aa897873f5ff5"/>
-<keyword name="urlChanged(const QUrl &amp;url)" id="RestLink::Api::urlChanged_a188ff813f3a85b06a40982bb2608eec7" ref="class_rest_link_1_1_api.html#a188ff813f3a85b06a40982bb2608eec7"/>
+<keyword name="urlChanged(const QUrl &amp;url)" id="RestLink::Api::urlChanged_a275f65ee1958d56d3238de7de202f079" ref="class_rest_link_1_1_api.html#a275f65ee1958d56d3238de7de202f079"/>
 <keyword name="urlPath() const" id="RestLink::Request::urlPath_a8d463f4779bd11981443a3e8631a7a4f" ref="class_rest_link_1_1_request.html#a8d463f4779bd11981443a3e8631a7a4f"/>
 <keyword name="UrlType" id="RestLink::Request::UrlType_a806a10e6928933cbf75e46dd98308ede" ref="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308ede"/>
 <keyword name="PublicUrl" id="RestLink::Request::PublicUrl_a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09" ref="class_rest_link_1_1_request.html#a806a10e6928933cbf75e46dd98308edea7747ba4e4f910aa372e8af57c01b4e09"/>
@@ -1867,21 +1888,23 @@
 <keyword name="userAgent" id="RestLink::Api::userAgent_aad8c42de0fc2fd62afdabdf231680d6a" ref="class_rest_link_1_1_api.html#aad8c42de0fc2fd62afdabdf231680d6a"/>
 <keyword name="userAgent() const override" id="RestLink::Api::userAgent_a4af630e5fdebfa82c13a0c8e6c6eaa6c" ref="class_rest_link_1_1_api.html#a4af630e5fdebfa82c13a0c8e6c6eaa6c"/>
 <keyword name="userAgent() const" id="RestLink::ApiBase::userAgent_a0682831b71c6f4d60a32a423d946e7a2" ref="class_rest_link_1_1_api_base.html#a0682831b71c6f4d60a32a423d946e7a2"/>
-<keyword name="userAgentChanged(const QString &amp;agent)" id="RestLink::Api::userAgentChanged_a5f6305bcc78c204e4d44a3c0ee9543a1" ref="class_rest_link_1_1_api.html#a5f6305bcc78c204e4d44a3c0ee9543a1"/>
+<keyword name="userAgentChanged(const QString &amp;agent)" id="RestLink::Api::userAgentChanged_abecb88bf20f104eac3b15f818ba71230" ref="class_rest_link_1_1_api.html#abecb88bf20f104eac3b15f818ba71230"/>
 <keyword name="uuid" id="RestLink::Plugin::uuid_aebb48695c54b3334c98ba90700c2d494" ref="class_rest_link_1_1_plugin.html#aebb48695c54b3334c98ba90700c2d494"/>
 <keyword name="uuid() const" id="RestLink::Plugin::uuid_a21ef5ec6aaaf5c49218fc99fcc163cad" ref="class_rest_link_1_1_plugin.html#a21ef5ec6aaaf5c49218fc99fcc163cad"/>
 <keyword name="value() const" id="RestLink::Parameter::value_aea1d5eb6d9de49e406580fb225189424" ref="class_rest_link_1_1_parameter.html#aea1d5eb6d9de49e406580fb225189424"/>
 <keyword name="value(const QString &amp;name) const" id="RestLink::ParameterList::value_a192abe05da155584d5da0f82770ffecb" ref="class_rest_link_1_1_parameter_list.html#a192abe05da155584d5da0f82770ffecb"/>
 <keyword name="values() const" id="RestLink::Parameter::values_a62ec635929d2c961e0f396177b31077d" ref="class_rest_link_1_1_parameter.html#a62ec635929d2c961e0f396177b31077d"/>
 <keyword name="values(const QString &amp;name) const" id="RestLink::ParameterList::values_a3576a6121aef51dd2553b137905a5736" ref="class_rest_link_1_1_parameter_list.html#a3576a6121aef51dd2553b137905a5736"/>
-<keyword name="verbString(RequestHandler::Method method)" id="RestLink::HttpUtils::verbString_a717baedb47f8c91e170ffea222aa66e0" ref="class_rest_link_1_1_http_utils.html#a717baedb47f8c91e170ffea222aa66e0"/>
+<keyword name="verbString(AbstractRequestHandler::Method method)" id="RestLink::HttpUtils::verbString_a93543f8e61dfc290098d39898884d1aa" ref="class_rest_link_1_1_http_utils.html#a93543f8e61dfc290098d39898884d1aa"/>
 <keyword name="version" id="RestLink::Api::version_a0079d2bba2ead99fca2a1473f52fad89" ref="class_rest_link_1_1_api.html#a0079d2bba2ead99fca2a1473f52fad89"/>
 <keyword name="version() const" id="RestLink::Api::version_ae53904ec93efece3f491816fcb0c569f" ref="class_rest_link_1_1_api.html#ae53904ec93efece3f491816fcb0c569f"/>
-<keyword name="versionChanged()" id="RestLink::Api::versionChanged_ac68ccc08464c96bd47fedfd7cda82127" ref="class_rest_link_1_1_api.html#ac68ccc08464c96bd47fedfd7cda82127"/>
+<keyword name="versionChanged()" id="RestLink::Api::versionChanged_a21a4d32504fb2fa5bff483f50cdda311" ref="class_rest_link_1_1_api.html#a21a4d32504fb2fa5bff483f50cdda311"/>
 <keyword name="waitForBytesWritten(int msecs) override" id="RestLink::ResponseBase::waitForBytesWritten_a2764eca38b2121a76c4c1541c4bad13b" ref="class_rest_link_1_1_response_base.html#a2764eca38b2121a76c4c1541c4bad13b"/>
 <keyword name="waitForReadyRead(int msecs) override" id="RestLink::ResponseBase::waitForReadyRead_a900554404b8e2d44e6d0084b8b1a7fb1" ref="class_rest_link_1_1_response_base.html#a900554404b8e2d44e6d0084b8b1a7fb1"/>
 <keyword name="writeData(const char *data, qint64 len) override" id="RestLink::ResponseBase::writeData_ad5443a7e4a25da15e22de42f17af9928" ref="class_rest_link_1_1_response_base.html#ad5443a7e4a25da15e22de42f17af9928"/>
 <keyword name="~AbstractController()" id="RestLink::AbstractController::~AbstractController_ab90dc1d0926d6d862ec51d67ef8798a4" ref="class_rest_link_1_1_abstract_controller.html#ab90dc1d0926d6d862ec51d67ef8798a4"/>
+<keyword name="~AbstractRequestHandler()" id="RestLink::AbstractRequestHandler::~AbstractRequestHandler_aeb415492ec19b4b8879312d88a420a28" ref="class_rest_link_1_1_abstract_request_handler.html#aeb415492ec19b4b8879312d88a420a28"/>
+<keyword name="~AbstractRequestInterceptor()=default" id="RestLink::AbstractRequestInterceptor::~AbstractRequestInterceptor_ab61d569c2130a994b3e38239ab146620" ref="class_rest_link_1_1_abstract_request_interceptor.html#ab61d569c2130a994b3e38239ab146620"/>
 <keyword name="~AbstractResourceController()=default" id="RestLink::AbstractResourceController::~AbstractResourceController_a43fa36be6d0a9b5bb58c5dc4c5a3f69b" ref="class_rest_link_1_1_abstract_resource_controller.html#a43fa36be6d0a9b5bb58c5dc4c5a3f69b"/>
 <keyword name="~Api()" id="RestLink::Api::~Api_a4c8eafa1e1b003f7ced044b233e9adb0" ref="class_rest_link_1_1_api.html#a4c8eafa1e1b003f7ced044b233e9adb0"/>
 <keyword name="~ApiBase()" id="RestLink::ApiBase::~ApiBase_a85706408c858ec3854f6c2b18e79b5a4" ref="class_rest_link_1_1_api_base.html#a85706408c858ec3854f6c2b18e79b5a4"/>
@@ -1894,8 +1917,6 @@
 <keyword name="~PluginManager()" id="RestLink::PluginManager::~PluginManager_a27a15cc509c55ba4ba7274d32dd71988" ref="class_rest_link_1_1_plugin_manager.html#a27a15cc509c55ba4ba7274d32dd71988"/>
 <keyword name="~QueryParameter()" id="RestLink::QueryParameter::~QueryParameter_a536329c7db82faf4f8a15f6e61933893" ref="class_rest_link_1_1_query_parameter.html#a536329c7db82faf4f8a15f6e61933893"/>
 <keyword name="~Request()" id="RestLink::Request::~Request_a689c09f88ff8c0e0bb4e73d09d347b48" ref="class_rest_link_1_1_request.html#a689c09f88ff8c0e0bb4e73d09d347b48"/>
-<keyword name="~RequestHandler()" id="RestLink::RequestHandler::~RequestHandler_a27baa47deebe70a56784383cabfa23b8" ref="class_rest_link_1_1_request_handler.html#a27baa47deebe70a56784383cabfa23b8"/>
-<keyword name="~RequestInterceptor()=default" id="RestLink::RequestInterceptor::~RequestInterceptor_a0faa10593637a27e3ab5537f32c88882" ref="class_rest_link_1_1_request_interceptor.html#a0faa10593637a27e3ab5537f32c88882"/>
 <keyword name="~Response()" id="RestLink::Response::~Response_abe88e463cf78cd37f877d4af4a38b465" ref="class_rest_link_1_1_response.html#abe88e463cf78cd37f877d4af4a38b465"/>
 <keyword name="~ResponseBase()" id="RestLink::ResponseBase::~ResponseBase_ad612307cdd4d62b88a5b3f9570478167" ref="class_rest_link_1_1_response_base.html#ad612307cdd4d62b88a5b3f9570478167"/>
 <keyword name="~Server()" id="RestLink::Server::~Server_a2d7f3ff7b82d53350a06ccb33bced26e" ref="class_rest_link_1_1_server.html#a2d7f3ff7b82d53350a06ccb33bced26e"/>
@@ -1908,6 +1929,8 @@
 </keywords>
 <files>
 <file>abstractcontroller_8h_source.html</file>
+<file>abstractrequesthandler_8h_source.html</file>
+<file>abstractrequestinterceptor_8h_source.html</file>
 <file>annotated.html</file>
 <file>api_8h_source.html</file>
 <file>apibase_8h_source.html</file>
@@ -1917,6 +1940,10 @@
 <file>cache_8h_source.html</file>
 <file>class_rest_link_1_1_abstract_controller-members.html</file>
 <file>class_rest_link_1_1_abstract_controller.html</file>
+<file>class_rest_link_1_1_abstract_request_handler-members.html</file>
+<file>class_rest_link_1_1_abstract_request_handler.html</file>
+<file>class_rest_link_1_1_abstract_request_interceptor-members.html</file>
+<file>class_rest_link_1_1_abstract_request_interceptor.html</file>
 <file>class_rest_link_1_1_abstract_resource_controller-members.html</file>
 <file>class_rest_link_1_1_abstract_resource_controller.html</file>
 <file>class_rest_link_1_1_api-members.html</file>
@@ -1933,6 +1960,8 @@
 <file>class_rest_link_1_1_cookie_jar.html</file>
 <file>class_rest_link_1_1_file-members.html</file>
 <file>class_rest_link_1_1_file.html</file>
+<file>class_rest_link_1_1_file_utils-members.html</file>
+<file>class_rest_link_1_1_file_utils.html</file>
 <file>class_rest_link_1_1_header-members.html</file>
 <file>class_rest_link_1_1_header.html</file>
 <file>class_rest_link_1_1_http_utils-members.html</file>
@@ -1957,10 +1986,6 @@
 <file>class_rest_link_1_1_query_parameter.html</file>
 <file>class_rest_link_1_1_request-members.html</file>
 <file>class_rest_link_1_1_request.html</file>
-<file>class_rest_link_1_1_request_handler-members.html</file>
-<file>class_rest_link_1_1_request_handler.html</file>
-<file>class_rest_link_1_1_request_interceptor-members.html</file>
-<file>class_rest_link_1_1_request_interceptor.html</file>
 <file>class_rest_link_1_1_request_interface-members.html</file>
 <file>class_rest_link_1_1_request_interface.html</file>
 <file>class_rest_link_1_1_response-members.html</file>
@@ -1988,6 +2013,7 @@
 <file>doxygen.css</file>
 <file>doxygen.svg</file>
 <file>dynsections.js</file>
+<file>fileutils_8h_source.html</file>
 <file>functions.html</file>
 <file>functions_b.html</file>
 <file>functions_c.html</file>
@@ -2066,8 +2092,6 @@
 <file>pluginmanager_8h_source.html</file>
 <file>queryparameter_8h_source.html</file>
 <file>request_8h_source.html</file>
-<file>requesthandler_8h_source.html</file>
-<file>requestinterceptor_8h_source.html</file>
 <file>requestinterface_8h_source.html</file>
 <file>resourcecontroller_8h_source.html</file>
 <file>response_8h_source.html</file>

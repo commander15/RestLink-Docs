@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Base class for <a class="el" href="namespace_rest_link.html">RestLink</a> plugins that provide custom request handlers.  
+ <a href="class_rest_link_1_1_plugin.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="plugin_8h_source.html">plugin.h</a>&gt;</code></p>
 
 <p>Inherits QObject.</p>
@@ -89,19 +92,25 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a61c37271abaaca1d152d73f491773204" id="r_a61c37271abaaca1d152d73f491773204"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_plugin.html#a61c37271abaaca1d152d73f491773204">Plugin</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a61c37271abaaca1d152d73f491773204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="class_rest_link_1_1_plugin.html" title="Base class for RestLink plugins that provide custom request handlers.">Plugin</a> instance.  <br /></td></tr>
 <tr class="separator:a61c37271abaaca1d152d73f491773204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b4df663815cc8dd551434a03b67c13" id="r_af5b4df663815cc8dd551434a03b67c13"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_plugin.html#af5b4df663815cc8dd551434a03b67c13">~Plugin</a> ()</td></tr>
+<tr class="memdesc:af5b4df663815cc8dd551434a03b67c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="class_rest_link_1_1_plugin.html" title="Base class for RestLink plugins that provide custom request handlers.">Plugin</a> instance.  <br /></td></tr>
 <tr class="separator:af5b4df663815cc8dd551434a03b67c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21ef5ec6aaaf5c49218fc99fcc163cad" id="r_a21ef5ec6aaaf5c49218fc99fcc163cad"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_plugin.html#a21ef5ec6aaaf5c49218fc99fcc163cad">uuid</a> () const</td></tr>
+<tr class="memdesc:a21ef5ec6aaaf5c49218fc99fcc163cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the plugin UUID from metadata.  <br /></td></tr>
 <tr class="separator:a21ef5ec6aaaf5c49218fc99fcc163cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a800d9eae5b7c9f17688e33617138e4ee" id="r_a800d9eae5b7c9f17688e33617138e4ee"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_plugin.html#a800d9eae5b7c9f17688e33617138e4ee">name</a> () const</td></tr>
+<tr class="memdesc:a800d9eae5b7c9f17688e33617138e4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the plugin name from metadata.  <br /></td></tr>
 <tr class="separator:a800d9eae5b7c9f17688e33617138e4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90dda6ccd29fe44a22365f4b88b3a18e" id="r_a90dda6ccd29fe44a22365f4b88b3a18e"><td class="memItemLeft" align="right" valign="top">QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_plugin.html#a90dda6ccd29fe44a22365f4b88b3a18e">metaData</a> () const</td></tr>
+<tr class="memdesc:a90dda6ccd29fe44a22365f4b88b3a18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw plugin metadata.  <br /></td></tr>
 <tr class="separator:a90dda6ccd29fe44a22365f4b88b3a18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bbcea8df1dff9fa97e1c1be94607aee" id="r_a9bbcea8df1dff9fa97e1c1be94607aee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_plugin.html#a9bbcea8df1dff9fa97e1c1be94607aee">setMetaData</a> (const QJsonObject &amp;<a class="el" href="class_rest_link_1_1_plugin.html#a90dda6ccd29fe44a22365f4b88b3a18e">metaData</a>)</td></tr>
+<tr class="memdesc:a9bbcea8df1dff9fa97e1c1be94607aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the plugin metadata.  <br /></td></tr>
 <tr class="separator:a9bbcea8df1dff9fa97e1c1be94607aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a362331af13f8c1b420a31c5ada2035fb" id="r_a362331af13f8c1b420a31c5ada2035fb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rest_link_1_1_request_handler.html">RequestHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_plugin.html#a362331af13f8c1b420a31c5ada2035fb">createHandler</a> ()=0</td></tr>
-<tr class="separator:a362331af13f8c1b420a31c5ada2035fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043daf66b65fe0e006ddd0857f307ccd" id="r_a043daf66b65fe0e006ddd0857f307ccd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rest_link_1_1_abstract_request_handler.html">AbstractRequestHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_plugin.html#a043daf66b65fe0e006ddd0857f307ccd">createHandler</a> ()=0</td></tr>
+<tr class="separator:a043daf66b65fe0e006ddd0857f307ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -110,7 +119,11 @@ Properties</h2></td></tr>
 <tr class="memitem:a7b95fddde4d779d922caf449be381e0a" id="r_a7b95fddde4d779d922caf449be381e0a"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_plugin.html#a7b95fddde4d779d922caf449be381e0a">name</a></td></tr>
 <tr class="separator:a7b95fddde4d779d922caf449be381e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for <a class="el" href="namespace_rest_link.html">RestLink</a> plugins that provide custom request handlers. </p>
+<p>Plugins implementing this class can be dynamically loaded and are expected to return an instance of <a class="el" href="class_rest_link_1_1_abstract_request_handler.html" title="The AbstractRequestHandler class defines an abstract base for sending HTTP-like requests.">AbstractRequestHandler</a> via <a class="el" href="class_rest_link_1_1_plugin.html#a043daf66b65fe0e006ddd0857f307ccd">createHandler()</a>. Metadata such as UUID and name can be attached using <a class="el" href="class_rest_link_1_1_plugin.html#a9bbcea8df1dff9fa97e1c1be94607aee" title="Sets the plugin metadata.">setMetaData()</a>.</p>
+<p>When creating a plugin, consider the <b>RESTLINK_PLUGIN_IID</b> macro for the IID. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a61c37271abaaca1d152d73f491773204" name="a61c37271abaaca1d152d73f491773204"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61c37271abaaca1d152d73f491773204">&#9670;&#160;</a></span>Plugin()</h2>
 
@@ -134,6 +147,14 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="class_rest_link_1_1_plugin.html" title="Base class for RestLink plugins that provide custom request handlers.">Plugin</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent QObject. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -160,6 +181,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Destroys the <a class="el" href="class_rest_link_1_1_plugin.html" title="Base class for RestLink plugins that provide custom request handlers.">Plugin</a> instance. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -178,6 +201,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the plugin UUID from metadata. </p>
+<dl class="section return"><dt>Returns</dt><dd>UUID as a QString. </dd></dl>
+
 </div>
 </div>
 <a id="a800d9eae5b7c9f17688e33617138e4ee" name="a800d9eae5b7c9f17688e33617138e4ee"></a>
@@ -195,6 +221,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the plugin name from metadata. </p>
+<dl class="section return"><dt>Returns</dt><dd>Name as a QString. </dd></dl>
+
 </div>
 </div>
 <a id="a90dda6ccd29fe44a22365f4b88b3a18e" name="a90dda6ccd29fe44a22365f4b88b3a18e"></a>
@@ -211,6 +240,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the raw plugin metadata. </p>
+<dl class="section return"><dt>Returns</dt><dd>A QJsonObject containing metadata. </dd></dl>
 
 </div>
 </div>
@@ -230,10 +262,18 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the plugin metadata. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">metaData</td><td>A QJsonObject containing metadata fields such as uuid and name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a362331af13f8c1b420a31c5ada2035fb" name="a362331af13f8c1b420a31c5ada2035fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a362331af13f8c1b420a31c5ada2035fb">&#9670;&#160;</a></span>createHandler()</h2>
+<a id="a043daf66b65fe0e006ddd0857f307ccd" name="a043daf66b65fe0e006ddd0857f307ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043daf66b65fe0e006ddd0857f307ccd">&#9670;&#160;</a></span>createHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +282,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_rest_link_1_1_request_handler.html">RequestHandler</a> * RestLink::Plugin::createHandler </td>
+          <td class="memname">virtual <a class="el" href="class_rest_link_1_1_abstract_request_handler.html">AbstractRequestHandler</a> * RestLink::Plugin::createHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

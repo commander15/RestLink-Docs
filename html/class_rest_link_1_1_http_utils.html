@@ -88,9 +88,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a717baedb47f8c91e170ffea222aa66e0" id="r_a717baedb47f8c91e170ffea222aa66e0"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_http_utils.html#a717baedb47f8c91e170ffea222aa66e0">verbString</a> (<a class="el" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RequestHandler::Method</a> method)</td></tr>
-<tr class="memdesc:a717baedb47f8c91e170ffea222aa66e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an HTTP method enum to its string representation.  <br /></td></tr>
-<tr class="separator:a717baedb47f8c91e170ffea222aa66e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93543f8e61dfc290098d39898884d1aa" id="r_a93543f8e61dfc290098d39898884d1aa"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_http_utils.html#a93543f8e61dfc290098d39898884d1aa">verbString</a> (<a class="el" href="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850">AbstractRequestHandler::Method</a> method)</td></tr>
+<tr class="memdesc:a93543f8e61dfc290098d39898884d1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an HTTP method enum to its string representation.  <br /></td></tr>
+<tr class="separator:a93543f8e61dfc290098d39898884d1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a495ad0d372a5fe5ac200ceee4fd343a8" id="r_a495ad0d372a5fe5ac200ceee4fd343a8"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rest_link_1_1_http_utils.html#a495ad0d372a5fe5ac200ceee4fd343a8">reasonPhrase</a> (int code)</td></tr>
 <tr class="memdesc:a495ad0d372a5fe5ac200ceee4fd343a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the standard reason phrase for a given HTTP status code.  <br /></td></tr>
 <tr class="separator:a495ad0d372a5fe5ac200ceee4fd343a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,8 +99,8 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Utility class providing helper functions for HTTP-related operations. </p>
 <p>This class offers static methods to convert HTTP methods to strings and retrieve reason phrases for HTTP status codes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a717baedb47f8c91e170ffea222aa66e0" name="a717baedb47f8c91e170ffea222aa66e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a717baedb47f8c91e170ffea222aa66e0">&#9670;&#160;</a></span>verbString()</h2>
+<a id="a93543f8e61dfc290098d39898884d1aa" name="a93543f8e61dfc290098d39898884d1aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93543f8e61dfc290098d39898884d1aa">&#9670;&#160;</a></span>verbString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,7 +111,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">QString RestLink::HttpUtils::verbString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c">RequestHandler::Method</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_rest_link_1_1_abstract_request_handler.html#aeb04e45bdb17467123d5f796c5524850">AbstractRequestHandler::Method</a>&#160;</td>
           <td class="paramname"><em>method</em></td><td>)</td>
           <td></td>
         </tr>
@@ -126,7 +126,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Converts an HTTP method enum to its string representation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">method</td><td>The HTTP method as defined in <a class="el" href="class_rest_link_1_1_request_handler.html#a165ab084b5fdf72c59f8b2a14890b28c" title="Defines supported HTTP methods for handling outgoing requests.">RequestHandler::Method</a>. </td></tr>
+    <tr><td class="paramname">method</td><td>The HTTP method as defined in RequestHandler::Method. </td></tr>
   </table>
   </dd>
 </dl>

@@ -84,7 +84,7 @@ $(function() {
 <p>Defines the base interface for all server-side controllers.  
  <a href="class_rest_link_1_1_abstract_controller.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="resourcecontroller_8h_source.html">resourcecontroller.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="abstractcontroller_8h_source.html">abstractcontroller.h</a>&gt;</code></p>
 
 <p>Inherited by <a class="el" href="class_rest_link_1_1_abstract_resource_controller.html">RestLink::AbstractResourceController</a>.</p>
 <table class="memberdecls">
@@ -112,7 +112,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines the base interface for all server-side controllers. </p>
-<p>This class provides a contract for handling incoming server requests. Subclasses must implement the <code><a class="el" href="class_rest_link_1_1_abstract_controller.html#ac2d26166203e21efa07aeb65553fda6b" title="Returns the base endpoint this controller is responsible for.">endpoint()</a></code> and <code><a class="el" href="class_rest_link_1_1_abstract_controller.html#ae5ab53bdc0e9ea8cf776228f43eb5630" title="Processes the incoming request and writes the response.">processRequest()</a></code> methods. A generic data source can be associated with the controller using <code><a class="el" href="class_rest_link_1_1_abstract_controller.html#a1b20a548b45cb4544c92433b993d4f79" title="Sets the data source for the controller.">setDataSource()</a></code>. </p>
+<p>This class provides a contract for handling incoming server requests. Subclasses must implement the <code><a class="el" href="class_rest_link_1_1_abstract_controller.html#ac2d26166203e21efa07aeb65553fda6b" title="Returns the base endpoint this controller is responsible for.">endpoint()</a></code>, <code><a class="el" href="class_rest_link_1_1_abstract_controller.html#a9b1e1f5d9afe690e23ed182d5a0222ee" title="Determines whether the controller can process the given request.">canProcessRequest()</a></code> and <code><a class="el" href="class_rest_link_1_1_abstract_controller.html#ae5ab53bdc0e9ea8cf776228f43eb5630" title="Processes the incoming request and writes the response.">processRequest()</a></code> methods. A generic data source can be associated with the controller using <code><a class="el" href="class_rest_link_1_1_abstract_controller.html#a1b20a548b45cb4544c92433b993d4f79" title="Sets the data source for the controller.">setDataSource()</a></code>, the <a class="el" href="namespace_rest_link.html">RestLink</a> SQL plugin will set a QSqlDatabase instance for example. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a38bc8168cc41367dca603709a2cfe526" name="a38bc8168cc41367dca603709a2cfe526"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38bc8168cc41367dca603709a2cfe526">&#9670;&#160;</a></span>AbstractController()</h2>

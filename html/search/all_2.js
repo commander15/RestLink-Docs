@@ -19,8 +19,8 @@ var searchData=
   ['compressionallowedattribute_16',['CompressionAllowedAttribute',['../class_rest_link_1_1_request.html#af1d6d3bd73bf63548a2d74820eb46d11ae0e92e6e0beab8ce1003c2337e143ab9',1,'RestLink::Request']]],
   ['compressionutils_17',['CompressionUtils',['../class_rest_link_1_1_compression_utils.html',1,'RestLink']]],
   ['configuration_18',['configuration',['../class_rest_link_1_1_server.html#a214548ffc6d4171481876064106dfed5',1,'RestLink::Server']]],
-  ['configurationcompleted_19',['configurationCompleted',['../class_rest_link_1_1_api.html#a6b1bf42438db36b2e95dd94b0d0a46d2',1,'RestLink::Api']]],
-  ['configurationfailed_20',['configurationFailed',['../class_rest_link_1_1_api.html#ae7696b7646746e2eaf5ab2ee5e12f63e',1,'RestLink::Api']]],
+  ['configurationcompleted_19',['configurationCompleted',['../class_rest_link_1_1_api.html#a07dc1855eb454346a1fecc3ca7ccc747',1,'RestLink::Api']]],
+  ['configurationfailed_20',['configurationFailed',['../class_rest_link_1_1_api.html#a7b732e053d6f8ee3ee551b7e8793c079',1,'RestLink::Api']]],
   ['configure_21',['configure',['../class_rest_link_1_1_api.html#afeb72fa6ad28e2e0abe30c9ff34791eb',1,'RestLink::Api::configure(const QJsonObject &amp;config)'],['../class_rest_link_1_1_api.html#a5c6e0e8e9163b7ef0552dda621360159',1,'RestLink::Api::configure(const QUrl &amp;url)']]],
   ['constheaders_22',['constHeaders',['../class_rest_link_1_1_request_interface.html#a3de74923b20951492a6d08a48175d705',1,'RestLink::RequestInterface']]],
   ['constpathparameters_23',['constPathParameters',['../class_rest_link_1_1_request_interface.html#aee73404e857fcaa6e37491e049343e8e',1,'RestLink::RequestInterface']]],
@@ -30,5 +30,5 @@ var searchData=
   ['contenttype_27',['contentType',['../class_rest_link_1_1_body.html#ab122b5754b7c58dffc74735f1ce03912',1,'RestLink::Body']]],
   ['controller_28',['controller',['../class_rest_link_1_1_request.html#aefd648a08c39a8ece363f5a5e0fc3953',1,'RestLink::Request']]],
   ['cookiejar_29',['cookiejar',['../class_rest_link_1_1_cookie_jar.html#a257b99d077cb3fbf535e248c350ffbb0',1,'RestLink::CookieJar::CookieJar()'],['../class_rest_link_1_1_cookie_jar.html',1,'RestLink::CookieJar']]],
-  ['createhandler_30',['createhandler',['../class_rest_link_1_1_plugin.html#a362331af13f8c1b420a31c5ada2035fb',1,'RestLink::Plugin::createHandler()'],['../class_rest_link_1_1_plugin_manager.html#a8c80b2323ef08b1b839941d20fd4a5e0',1,'RestLink::PluginManager::createHandler()']]]
+  ['createhandler_30',['createHandler',['../class_rest_link_1_1_plugin.html#a043daf66b65fe0e006ddd0857f307ccd',1,'RestLink::Plugin']]]
 ];
